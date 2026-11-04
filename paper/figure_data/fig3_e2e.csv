@@ -1,0 +1,9 @@
+﻿dataset,method,correct,n,accuracy
+mixed400,直接读,305,400,0.7625
+mixed400,SSC,321,400,0.8025
+mixed400,SSC-EVID,350,400,0.875
+mixed400,独立投票(达预算),304,400,0.76
+numeric400,直接读,274,400,0.685
+numeric400,SSC,308,400,0.77
+numeric400,SSC-EVID,325,400,0.8125
+numeric400,独立投票(达预算),280,400,0.7

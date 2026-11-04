@@ -1,0 +1,1605 @@
+{
+ "version": "finqa_full_context_pil_v1",
+ "records": [
+  {
+   "sample_id": "FQADEV001",
+   "source_id": "GS/2016/page_70.pdf-2",
+   "width": 1600,
+   "height": 1971,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV002",
+   "source_id": "TROW/2010/page_22.pdf-1",
+   "width": 1600,
+   "height": 1656,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV003",
+   "source_id": "GS/2017/page_106.pdf-1",
+   "width": 1600,
+   "height": 1669,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV004",
+   "source_id": "NKE/2016/page_37.pdf-2",
+   "width": 1600,
+   "height": 2887,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV005",
+   "source_id": "ABMD/2004/page_26.pdf-1",
+   "width": 1600,
+   "height": 1913,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV006",
+   "source_id": "C/2008/page_211.pdf-2",
+   "width": 1600,
+   "height": 2235,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV007",
+   "source_id": "RE/2017/page_159.pdf-3",
+   "width": 1600,
+   "height": 1350,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV008",
+   "source_id": "PNC/2013/page_62.pdf-1",
+   "width": 1600,
+   "height": 1973,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV009",
+   "source_id": "MRO/2006/page_33.pdf-2",
+   "width": 1600,
+   "height": 1937,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV010",
+   "source_id": "GPN/2017/page_77.pdf-1",
+   "width": 1600,
+   "height": 1679,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV011",
+   "source_id": "LMT/2015/page_54.pdf-3",
+   "width": 1600,
+   "height": 1549,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV012",
+   "source_id": "DVN/2007/page_58.pdf-2",
+   "width": 1600,
+   "height": 1815,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV013",
+   "source_id": "SNA/2012/page_33.pdf-3",
+   "width": 1600,
+   "height": 801,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV014",
+   "source_id": "LMT/2015/page_99.pdf-3",
+   "width": 1600,
+   "height": 1576,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV015",
+   "source_id": "AAL/2015/page_118.pdf-1",
+   "width": 1600,
+   "height": 1451,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV016",
+   "source_id": "LLY/2018/page_63.pdf-3",
+   "width": 1600,
+   "height": 1493,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV017",
+   "source_id": "UNP/2014/page_35.pdf-2",
+   "width": 1600,
+   "height": 1043,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV018",
+   "source_id": "HIG/2011/page_188.pdf-3",
+   "width": 1600,
+   "height": 1413,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV019",
+   "source_id": "APD/2014/page_44.pdf-2",
+   "width": 1600,
+   "height": 2094,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV020",
+   "source_id": "ANSS/2013/page_55.pdf-2",
+   "width": 1600,
+   "height": 1141,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV021",
+   "source_id": "C/2010/page_223.pdf-3",
+   "width": 1600,
+   "height": 1144,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV022",
+   "source_id": "L/2015/page_59.pdf-3",
+   "width": 1600,
+   "height": 695,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV023",
+   "source_id": "ETFC/2011/page_82.pdf-3",
+   "width": 1600,
+   "height": 971,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV024",
+   "source_id": "LMT/2006/page_90.pdf-3",
+   "width": 1600,
+   "height": 1767,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV025",
+   "source_id": "AAP/2012/page_12.pdf-2",
+   "width": 1600,
+   "height": 1498,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV026",
+   "source_id": "LKQ/2010/page_84.pdf-4",
+   "width": 1600,
+   "height": 1414,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV027",
+   "source_id": "ETR/2008/page_355.pdf-3",
+   "width": 1600,
+   "height": 1214,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV028",
+   "source_id": "JPM/2008/page_85.pdf-1",
+   "width": 1600,
+   "height": 1976,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV029",
+   "source_id": "AES/2002/page_46.pdf-1",
+   "width": 1600,
+   "height": 796,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV030",
+   "source_id": "BLK/2012/page_160.pdf-4",
+   "width": 1600,
+   "height": 2190,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV031",
+   "source_id": "AMAT/2014/page_18.pdf-2",
+   "width": 1600,
+   "height": 1507,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV032",
+   "source_id": "HUM/2017/page_133.pdf-2",
+   "width": 1600,
+   "height": 1367,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV033",
+   "source_id": "UNP/2015/page_24.pdf-1",
+   "width": 1600,
+   "height": 1389,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV034",
+   "source_id": "HII/2017/page_47.pdf-2",
+   "width": 1600,
+   "height": 934,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV035",
+   "source_id": "RSG/2017/page_138.pdf-1",
+   "width": 1600,
+   "height": 1207,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV036",
+   "source_id": "LMT/2013/page_74.pdf-3",
+   "width": 1600,
+   "height": 1634,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV037",
+   "source_id": "JPM/2005/page_37.pdf-1",
+   "width": 1600,
+   "height": 2132,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV038",
+   "source_id": "RCL/2014/page_17.pdf-2",
+   "width": 1600,
+   "height": 1536,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV039",
+   "source_id": "CDNS/2012/page_30.pdf-4",
+   "width": 1600,
+   "height": 659,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV040",
+   "source_id": "PNC/2009/page_46.pdf-1",
+   "width": 1600,
+   "height": 2141,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV041",
+   "source_id": "AON/2009/page_46.pdf-3",
+   "width": 1600,
+   "height": 1453,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV042",
+   "source_id": "PNC/2013/page_112.pdf-2",
+   "width": 1600,
+   "height": 2049,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV043",
+   "source_id": "PM/2017/page_38.pdf-2",
+   "width": 1600,
+   "height": 1351,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV044",
+   "source_id": "CMCSA/2015/page_64.pdf-2",
+   "width": 1600,
+   "height": 1377,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV045",
+   "source_id": "MRO/2009/page_139.pdf-3",
+   "width": 1600,
+   "height": 1877,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV046",
+   "source_id": "UNP/2014/page_75.pdf-1",
+   "width": 1600,
+   "height": 1787,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV047",
+   "source_id": "ETR/2011/page_341.pdf-3",
+   "width": 1600,
+   "height": 1087,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV048",
+   "source_id": "UNP/2008/page_79.pdf-3",
+   "width": 1600,
+   "height": 1503,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV049",
+   "source_id": "LMT/2012/page_47.pdf-4",
+   "width": 1600,
+   "height": 1455,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV050",
+   "source_id": "JPM/2009/page_133.pdf-2",
+   "width": 1600,
+   "height": 1963,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV051",
+   "source_id": "IPG/2008/page_93.pdf-3",
+   "width": 1600,
+   "height": 1550,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV052",
+   "source_id": "ETR/2008/page_321.pdf-1",
+   "width": 1600,
+   "height": 1256,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV053",
+   "source_id": "DRE/2009/page_72.pdf-1",
+   "width": 1600,
+   "height": 1362,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV054",
+   "source_id": "PM/2015/page_127.pdf-3",
+   "width": 1600,
+   "height": 1404,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV055",
+   "source_id": "GIS/2012/page_64.pdf-1",
+   "width": 1600,
+   "height": 1755,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV056",
+   "source_id": "DRE/2013/page_39.pdf-2",
+   "width": 1600,
+   "height": 1240,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV057",
+   "source_id": "ETR/2008/page_377.pdf-3",
+   "width": 1600,
+   "height": 1533,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV058",
+   "source_id": "FIS/2007/page_91.pdf-2",
+   "width": 1600,
+   "height": 1790,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV059",
+   "source_id": "DRE/2009/page_56.pdf-1",
+   "width": 1600,
+   "height": 1847,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV060",
+   "source_id": "UNP/2013/page_44.pdf-3",
+   "width": 1600,
+   "height": 1628,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV061",
+   "source_id": "ETR/2017/page_26.pdf-3",
+   "width": 1600,
+   "height": 1332,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV062",
+   "source_id": "GS/2012/page_165.pdf-1",
+   "width": 1600,
+   "height": 1623,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV063",
+   "source_id": "BDX/2018/page_82.pdf-4",
+   "width": 1600,
+   "height": 978,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV064",
+   "source_id": "IP/2006/page_32.pdf-1",
+   "width": 1600,
+   "height": 1883,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV065",
+   "source_id": "CAT/2017/page_85.pdf-2",
+   "width": 1600,
+   "height": 2229,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV066",
+   "source_id": "DISH/2013/page_138.pdf-2",
+   "width": 1600,
+   "height": 1334,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV067",
+   "source_id": "DRE/2007/page_59.pdf-1",
+   "width": 1600,
+   "height": 1499,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV068",
+   "source_id": "HOLX/2007/page_129.pdf-2",
+   "width": 1600,
+   "height": 1502,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV069",
+   "source_id": "EW/2017/page_82.pdf-1",
+   "width": 1600,
+   "height": 1627,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV070",
+   "source_id": "MRO/2011/page_73.pdf-3",
+   "width": 1600,
+   "height": 1551,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV071",
+   "source_id": "HII/2014/page_69.pdf-2",
+   "width": 1600,
+   "height": 1490,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV072",
+   "source_id": "PM/2015/page_38.pdf-2",
+   "width": 1600,
+   "height": 2152,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV073",
+   "source_id": "AMT/2008/page_32.pdf-3",
+   "width": 1600,
+   "height": 1117,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV074",
+   "source_id": "TFX/2015/page_70.pdf-2",
+   "width": 1600,
+   "height": 1884,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV075",
+   "source_id": "SNPS/2006/page_69.pdf-1",
+   "width": 1600,
+   "height": 1461,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV076",
+   "source_id": "IP/2012/page_93.pdf-2",
+   "width": 1600,
+   "height": 1907,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV077",
+   "source_id": "APD/2013/page_40.pdf-1",
+   "width": 1600,
+   "height": 2195,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV078",
+   "source_id": "AAPL/2014/page_38.pdf-2",
+   "width": 1600,
+   "height": 1554,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV079",
+   "source_id": "ETR/2017/page_316.pdf-1",
+   "width": 1600,
+   "height": 1041,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV080",
+   "source_id": "BKR/2017/page_103.pdf-2",
+   "width": 1600,
+   "height": 1506,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV081",
+   "source_id": "MRO/2007/page_149.pdf-1",
+   "width": 1600,
+   "height": 1112,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV082",
+   "source_id": "MS/2017/page_74.pdf-1",
+   "width": 1600,
+   "height": 2105,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV083",
+   "source_id": "UNP/2013/page_54.pdf-2",
+   "width": 1600,
+   "height": 1657,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV084",
+   "source_id": "ETFC/2013/page_26.pdf-1",
+   "width": 1600,
+   "height": 1618,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV085",
+   "source_id": "V/2008/page_17.pdf-2",
+   "width": 1600,
+   "height": 3020,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV086",
+   "source_id": "IPG/2009/page_85.pdf-2",
+   "width": 1600,
+   "height": 1659,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV087",
+   "source_id": "AAPL/2004/page_36.pdf-1",
+   "width": 1600,
+   "height": 1397,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV088",
+   "source_id": "MSI/2006/page_61.pdf-1",
+   "width": 1600,
+   "height": 1779,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV089",
+   "source_id": "UPS/2006/page_32.pdf-2",
+   "width": 1600,
+   "height": 703,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV090",
+   "source_id": "ABMD/2009/page_56.pdf-1",
+   "width": 1600,
+   "height": 1749,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV091",
+   "source_id": "APD/2013/page_32.pdf-1",
+   "width": 1600,
+   "height": 1762,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV092",
+   "source_id": "IP/2009/page_37.pdf-1",
+   "width": 1600,
+   "height": 1818,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV093",
+   "source_id": "UNP/2008/page_77.pdf-3",
+   "width": 1600,
+   "height": 1662,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV094",
+   "source_id": "C/2017/page_328.pdf-3",
+   "width": 1600,
+   "height": 621,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV095",
+   "source_id": "AES/2015/page_117.pdf-4",
+   "width": 1600,
+   "height": 2003,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV096",
+   "source_id": "AMT/2004/page_81.pdf-2",
+   "width": 1600,
+   "height": 1494,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV097",
+   "source_id": "CB/2010/page_200.pdf-1",
+   "width": 1600,
+   "height": 1631,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV098",
+   "source_id": "LMT/2006/page_37.pdf-1",
+   "width": 1600,
+   "height": 717,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV099",
+   "source_id": "MAS/2018/page_35.pdf-3",
+   "width": 1600,
+   "height": 1545,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV100",
+   "source_id": "AES/2016/page_185.pdf-3",
+   "width": 1600,
+   "height": 1732,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV101",
+   "source_id": "HII/2017/page_124.pdf-2",
+   "width": 1600,
+   "height": 1122,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV102",
+   "source_id": "AON/2009/page_48.pdf-2",
+   "width": 1600,
+   "height": 1446,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV103",
+   "source_id": "ZBH/2003/page_58.pdf-1",
+   "width": 1600,
+   "height": 2031,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV104",
+   "source_id": "CME/2012/page_70.pdf-1",
+   "width": 1600,
+   "height": 5879,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV105",
+   "source_id": "ETR/2011/page_324.pdf-4",
+   "width": 1600,
+   "height": 1552,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV106",
+   "source_id": "UNP/2011/page_21.pdf-3",
+   "width": 1600,
+   "height": 849,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV107",
+   "source_id": "ETR/2016/page_418.pdf-4",
+   "width": 1600,
+   "height": 1072,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV108",
+   "source_id": "K/2013/page_62.pdf-1",
+   "width": 1600,
+   "height": 1274,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV109",
+   "source_id": "DISCA/2012/page_39.pdf-3",
+   "width": 1600,
+   "height": 1698,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV110",
+   "source_id": "BLK/2016/page_119.pdf-4",
+   "width": 1600,
+   "height": 2310,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV111",
+   "source_id": "GS/2017/page_143.pdf-2",
+   "width": 1600,
+   "height": 2588,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV112",
+   "source_id": "LMT/2017/page_80.pdf-1",
+   "width": 1600,
+   "height": 1907,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV113",
+   "source_id": "FBHS/2017/page_23.pdf-2",
+   "width": 1600,
+   "height": 1636,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV114",
+   "source_id": "APD/2018/page_59.pdf-2",
+   "width": 1600,
+   "height": 1710,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV115",
+   "source_id": "DRE/2002/page_40.pdf-2",
+   "width": 1600,
+   "height": 567,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV116",
+   "source_id": "PM/2015/page_85.pdf-3",
+   "width": 1600,
+   "height": 3266,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV117",
+   "source_id": "FIS/2007/page_94.pdf-2",
+   "width": 1600,
+   "height": 1479,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV118",
+   "source_id": "GPN/2009/page_70.pdf-4",
+   "width": 1600,
+   "height": 1556,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV119",
+   "source_id": "PM/2014/page_67.pdf-1",
+   "width": 1600,
+   "height": 2140,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV120",
+   "source_id": "PPG/2013/page_40.pdf-4",
+   "width": 1600,
+   "height": 1994,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV121",
+   "source_id": "PNC/2015/page_159.pdf-1",
+   "width": 1600,
+   "height": 987,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV122",
+   "source_id": "MRO/2008/page_69.pdf-2",
+   "width": 1600,
+   "height": 1768,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV123",
+   "source_id": "ADI/2011/page_81.pdf-2",
+   "width": 1600,
+   "height": 1545,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV124",
+   "source_id": "ETR/2002/page_24.pdf-3",
+   "width": 1600,
+   "height": 956,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV125",
+   "source_id": "STT/2008/page_83.pdf-1",
+   "width": 1600,
+   "height": 1458,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV126",
+   "source_id": "IP/2007/page_75.pdf-2",
+   "width": 1600,
+   "height": 1698,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV127",
+   "source_id": "PM/2017/page_99.pdf-2",
+   "width": 1600,
+   "height": 823,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV128",
+   "source_id": "MRO/2017/page_111.pdf-4",
+   "width": 1600,
+   "height": 1697,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV129",
+   "source_id": "VTR/2007/page_47.pdf-1",
+   "width": 1600,
+   "height": 832,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV130",
+   "source_id": "AES/2017/page_157.pdf-4",
+   "width": 1600,
+   "height": 1829,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV131",
+   "source_id": "HOLX/2008/page_144.pdf-2",
+   "width": 1600,
+   "height": 1654,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV132",
+   "source_id": "MA/2008/page_126.pdf-1",
+   "width": 1600,
+   "height": 1824,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV133",
+   "source_id": "GS/2013/page_152.pdf-3",
+   "width": 1600,
+   "height": 1292,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV134",
+   "source_id": "JPM/2014/page_65.pdf-5",
+   "width": 1600,
+   "height": 819,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV135",
+   "source_id": "INTC/2013/page_33.pdf-2",
+   "width": 1600,
+   "height": 1732,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV136",
+   "source_id": "HOLX/2007/page_128.pdf-1",
+   "width": 1600,
+   "height": 1605,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV137",
+   "source_id": "AMT/2012/page_125.pdf-2",
+   "width": 1600,
+   "height": 1313,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV138",
+   "source_id": "BLK/2012/page_37.pdf-1",
+   "width": 1600,
+   "height": 1730,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV139",
+   "source_id": "APD/2013/page_36.pdf-1",
+   "width": 1600,
+   "height": 981,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV140",
+   "source_id": "AAPL/2008/page_78.pdf-2",
+   "width": 1600,
+   "height": 1439,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV141",
+   "source_id": "SLB/2012/page_44.pdf-4",
+   "width": 1600,
+   "height": 1481,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV142",
+   "source_id": "MRO/2014/page_58.pdf-1",
+   "width": 1600,
+   "height": 1925,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV143",
+   "source_id": "JKHY/2014/page_30.pdf-1",
+   "width": 1600,
+   "height": 784,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV144",
+   "source_id": "APD/2019/page_31.pdf-1",
+   "width": 1600,
+   "height": 893,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV145",
+   "source_id": "RSG/2015/page_126.pdf-2",
+   "width": 1600,
+   "height": 1272,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV146",
+   "source_id": "LMT/2016/page_48.pdf-2",
+   "width": 1600,
+   "height": 1534,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV147",
+   "source_id": "PM/2018/page_31.pdf-2",
+   "width": 1600,
+   "height": 2108,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV148",
+   "source_id": "AES/2017/page_175.pdf-1",
+   "width": 1600,
+   "height": 1707,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV149",
+   "source_id": "JPM/2018/page_110.pdf-1",
+   "width": 1600,
+   "height": 2225,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV150",
+   "source_id": "RE/2015/page_33.pdf-4",
+   "width": 1600,
+   "height": 1443,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV151",
+   "source_id": "VLO/2018/page_25.pdf-3",
+   "width": 1600,
+   "height": 1239,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV152",
+   "source_id": "ETR/2008/page_249.pdf-1",
+   "width": 1600,
+   "height": 1106,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV153",
+   "source_id": "JPM/2007/page_33.pdf-2",
+   "width": 1600,
+   "height": 2188,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV154",
+   "source_id": "PNC/2011/page_78.pdf-1",
+   "width": 1600,
+   "height": 1857,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV155",
+   "source_id": "APD/2016/page_96.pdf-2",
+   "width": 1600,
+   "height": 669,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV156",
+   "source_id": "IP/2007/page_31.pdf-4",
+   "width": 1600,
+   "height": 1796,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV157",
+   "source_id": "LMT/2010/page_42.pdf-1",
+   "width": 1600,
+   "height": 1849,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV158",
+   "source_id": "EW/2016/page_94.pdf-3",
+   "width": 1600,
+   "height": 1420,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV159",
+   "source_id": "GS/2016/page_77.pdf-4",
+   "width": 1600,
+   "height": 1932,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV160",
+   "source_id": "PNC/2011/page_87.pdf-4",
+   "width": 1600,
+   "height": 1927,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV161",
+   "source_id": "ETR/2003/page_84.pdf-2",
+   "width": 1600,
+   "height": 1463,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV162",
+   "source_id": "TSCO/2018/page_34.pdf-2",
+   "width": 1600,
+   "height": 551,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV163",
+   "source_id": "UNP/2015/page_35.pdf-3",
+   "width": 1600,
+   "height": 1079,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV164",
+   "source_id": "BLL/2007/page_47.pdf-2",
+   "width": 1600,
+   "height": 1757,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV165",
+   "source_id": "BLL/2007/page_35.pdf-4",
+   "width": 1600,
+   "height": 1368,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV166",
+   "source_id": "GIS/2019/page_37.pdf-2",
+   "width": 1600,
+   "height": 1584,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV167",
+   "source_id": "FRT/2005/page_117.pdf-1",
+   "width": 1600,
+   "height": 800,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV168",
+   "source_id": "ABMD/2009/page_88.pdf-1",
+   "width": 1600,
+   "height": 1739,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV169",
+   "source_id": "PKG/2009/page_65.pdf-2",
+   "width": 1600,
+   "height": 1344,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV170",
+   "source_id": "APD/2016/page_57.pdf-1",
+   "width": 1600,
+   "height": 1795,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV171",
+   "source_id": "JPM/2007/page_157.pdf-2",
+   "width": 1600,
+   "height": 2527,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV172",
+   "source_id": "AON/2010/page_115.pdf-1",
+   "width": 1600,
+   "height": 1552,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV173",
+   "source_id": "IP/2005/page_19.pdf-1",
+   "width": 1600,
+   "height": 1889,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV174",
+   "source_id": "C/2008/page_102.pdf-2",
+   "width": 1600,
+   "height": 1679,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV175",
+   "source_id": "SYY/2019/page_9.pdf-2",
+   "width": 1600,
+   "height": 1783,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV176",
+   "source_id": "ETR/2013/page_118.pdf-4",
+   "width": 1600,
+   "height": 1348,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV177",
+   "source_id": "UA/2015/page_71.pdf-2",
+   "width": 1600,
+   "height": 1033,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV178",
+   "source_id": "ETFC/2007/page_126.pdf-3",
+   "width": 1600,
+   "height": 1201,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV179",
+   "source_id": "AMT/2005/page_54.pdf-1",
+   "width": 1600,
+   "height": 1796,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV180",
+   "source_id": "IPG/2008/page_21.pdf-4",
+   "width": 1600,
+   "height": 1792,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV181",
+   "source_id": "JPM/2013/page_209.pdf-2",
+   "width": 1600,
+   "height": 1303,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV182",
+   "source_id": "AMT/2005/page_85.pdf-1",
+   "width": 1600,
+   "height": 1422,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV183",
+   "source_id": "MRO/2004/page_36.pdf-2",
+   "width": 1600,
+   "height": 1728,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV184",
+   "source_id": "AMT/2010/page_34.pdf-4",
+   "width": 1600,
+   "height": 1016,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV185",
+   "source_id": "IPG/2015/page_48.pdf-2",
+   "width": 1600,
+   "height": 1645,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV186",
+   "source_id": "ETR/2015/page_131.pdf-1",
+   "width": 1600,
+   "height": 1449,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV187",
+   "source_id": "LKQ/2016/page_26.pdf-3",
+   "width": 1600,
+   "height": 508,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV188",
+   "source_id": "BLK/2013/page_125.pdf-3",
+   "width": 1600,
+   "height": 2332,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV189",
+   "source_id": "AAL/2013/page_15.pdf-4",
+   "width": 1600,
+   "height": 897,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV190",
+   "source_id": "STT/2009/page_73.pdf-1",
+   "width": 1600,
+   "height": 1130,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV191",
+   "source_id": "RSG/2017/page_142.pdf-1",
+   "width": 1600,
+   "height": 1387,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV192",
+   "source_id": "ALLE/2016/page_43.pdf-1",
+   "width": 1600,
+   "height": 486,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV193",
+   "source_id": "ABMD/2007/page_52.pdf-1",
+   "width": 1600,
+   "height": 1827,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV194",
+   "source_id": "AAPL/2005/page_83.pdf-1",
+   "width": 1600,
+   "height": 1216,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV195",
+   "source_id": "AES/2003/page_52.pdf-1",
+   "width": 1600,
+   "height": 1652,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV196",
+   "source_id": "ADBE/2018/page_86.pdf-2",
+   "width": 1600,
+   "height": 1973,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV197",
+   "source_id": "ETR/2011/page_376.pdf-4",
+   "width": 1600,
+   "height": 1025,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV198",
+   "source_id": "BLL/2010/page_28.pdf-2",
+   "width": 1600,
+   "height": 931,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV199",
+   "source_id": "PNC/2009/page_41.pdf-1",
+   "width": 1600,
+   "height": 2125,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  },
+  {
+   "sample_id": "FQADEV200",
+   "source_id": "UNP/2007/page_65.pdf-3",
+   "width": 1600,
+   "height": 1515,
+   "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+   "font_px": 21
+  }
+ ]
+}

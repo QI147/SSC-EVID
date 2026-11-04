@@ -1,0 +1,242 @@
+{
+ "n_checks": 47,
+ "pass": 47,
+ "fail": 0,
+ "checks": [
+  {
+   "check": "SHA256 51_SSC_EVID_400统一对照\\runs\\mixed400\\e2e\\results.jsonl",
+   "pass": true,
+   "detail": "6c33ae26dd50d75e"
+  },
+  {
+   "check": "SHA256 51_SSC_EVID_400统一对照\\runs\\mixed400\\initial\\results.jsonl",
+   "pass": true,
+   "detail": "97214fb0be1d3287"
+  },
+  {
+   "check": "SHA256 51_SSC_EVID_400统一对照\\runs\\mixed400\\repair2\\results.jsonl",
+   "pass": true,
+   "detail": "46bb77b23c80b499"
+  },
+  {
+   "check": "SHA256 53_实验四消融\\runs\\A\\results.jsonl",
+   "pass": true,
+   "detail": "c2e34144f5580ba6"
+  },
+  {
+   "check": "SHA256 53_实验四消融\\runs\\B\\results.jsonl",
+   "pass": true,
+   "detail": "950668ea072ba95e"
+  },
+  {
+   "check": "SHA256 53_实验四消融\\reports\\per_sample.csv",
+   "pass": true,
+   "detail": "dd2591007338ee23"
+  },
+  {
+   "check": "56 D_generic2=311",
+   "pass": true,
+   "detail": "{'C': 311, 'W': 89}"
+  },
+  {
+   "check": "56 COMMON=301(A6)",
+   "pass": true,
+   "detail": "{'C': 301, 'W': 93, 'A': 6}"
+  },
+  {
+   "check": "56 EVID_INIT=322",
+   "pass": true,
+   "detail": "{'C': 322, 'W': 77, 'A': 1}"
+  },
+  {
+   "check": "56 COMMON->D_generic2 gained/lost",
+   "pass": true,
+   "detail": "29/19"
+  },
+  {
+   "check": "56 D_generic2->EVID_INIT gained/lost",
+   "pass": true,
+   "detail": "27/16"
+  },
+  {
+   "check": "56 COMMON->EVID_INIT gained/lost",
+   "pass": true,
+   "detail": "38/17"
+  },
+  {
+   "check": "56 800次请求 ¥1.2111",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "53 A_full(EVID_INIT)=344",
+   "pass": true,
+   "detail": "{'C': 344, 'W': 54, 'A': 2}"
+  },
+  {
+   "check": "53 A_generic(GENERIC2)=334",
+   "pass": true,
+   "detail": "{'C': 334, 'W': 63, 'A': 3}"
+  },
+  {
+   "check": "53 B_full=342",
+   "pass": true,
+   "detail": "{'C': 342, 'W': 54, 'A': 4}"
+  },
+  {
+   "check": "53 B_generic=345",
+   "pass": true,
+   "detail": "{'C': 345, 'W': 51, 'A': 4}"
+  },
+  {
+   "check": "53 C_no_gate=345",
+   "pass": true,
+   "detail": "{'C': 345, 'W': 51, 'A': 4}"
+  },
+  {
+   "check": "53 common=323",
+   "pass": true,
+   "detail": "{'C': 323, 'W': 73, 'A': 4}"
+  },
+  {
+   "check": "53 4A +10 p≈0.132",
+   "pass": true,
+   "detail": "g23 l13 p0.1325"
+  },
+  {
+   "check": "53 4B +3 p=0.375",
+   "pass": true,
+   "detail": "g4 l1 p0.3750"
+  },
+  {
+   "check": "53 门禁回放 +3 p=0.25",
+   "pass": true,
+   "detail": "g3 l0 p0.2500"
+  },
+  {
+   "check": "53 误拦3题",
+   "pass": true,
+   "detail": "['NEW341', 'NEW365', 'NEW109']"
+  },
+  {
+   "check": "55 fin250 投票终态=245",
+   "pass": true,
+   "detail": "{'W': 5, 'C': 245}"
+  },
+  {
+   "check": "55 fin250 全部达预算",
+   "pass": true,
+   "detail": "250"
+  },
+  {
+   "check": "55 fin250 token总量",
+   "pass": true,
+   "detail": "1343906"
+  },
+  {
+   "check": "55 fin250 目标总量",
+   "pass": true,
+   "detail": "1227531"
+  },
+  {
+   "check": "55 mixed400 投票终态=304",
+   "pass": true,
+   "detail": "{'C': 304, 'W': 96}"
+  },
+  {
+   "check": "55 mixed400 全部达预算",
+   "pass": true,
+   "detail": "400"
+  },
+  {
+   "check": "55 mixed400 token总量",
+   "pass": true,
+   "detail": "2899101"
+  },
+  {
+   "check": "55 mixed400 目标总量",
+   "pass": true,
+   "detail": "2726050"
+  },
+  {
+   "check": "55 numeric400 投票终态=280",
+   "pass": true,
+   "detail": "{'C': 280, 'W': 120}"
+  },
+  {
+   "check": "55 numeric400 全部达预算",
+   "pass": true,
+   "detail": "400"
+  },
+  {
+   "check": "55 numeric400 token总量",
+   "pass": true,
+   "detail": "3383189"
+  },
+  {
+   "check": "55 numeric400 目标总量",
+   "pass": true,
+   "detail": "3016905"
+  },
+  {
+   "check": "51 ('numeric400', 'SSC') 初态/R1/R2/错对/对错",
+   "pass": true,
+   "detail": "301/317/316/18/3"
+  },
+  {
+   "check": "51 ('numeric400', 'EVID') 初态/R1/R2/错对/对错",
+   "pass": true,
+   "detail": "301/323/325/26/2"
+  },
+  {
+   "check": "51 ('mixed400', 'SSC') 初态/R1/R2/错对/对错",
+   "pass": true,
+   "detail": "323/338/341/22/4"
+  },
+  {
+   "check": "51 ('mixed400', 'EVID') 初态/R1/R2/错对/对错",
+   "pass": true,
+   "detail": "323/342/346/27/4"
+  },
+  {
+   "check": "51 mixed400 e2e四臂",
+   "pass": true,
+   "detail": "{'DIRECT': 305, 'REREAD2': 313, 'SSC': 321, 'EVID': 350}"
+  },
+  {
+   "check": "51 numeric400 e2e四臂",
+   "pass": true,
+   "detail": "{'DIRECT': 274, 'REREAD2': 285, 'SSC': 308, 'EVID': 325}"
+  },
+  {
+   "check": "mixed400 主检验族Holm e2e≈0.00023/repair≈0.359",
+   "pass": true,
+   "detail": "0.00023/0.35928"
+  },
+  {
+   "check": "numeric400 主检验族Holm e2e≈0.048/repair≈0.127",
+   "pass": true,
+   "detail": "0.04828/0.12714"
+  },
+  {
+   "check": "重叠174题、并集626",
+   "pass": true,
+   "detail": "174/626"
+  },
+  {
+   "check": "fin250 EVID官方246/exact231/项目232",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "fin250 REREAD2官方247/exact225/项目229",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "fin250 EVID token=投票目标",
+   "pass": true,
+   "detail": ""
+  }
+ ]
+}

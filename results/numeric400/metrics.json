@@ -1,0 +1,821 @@
+{
+ "dataset": "numeric400",
+ "n": 400,
+ "design": "e2e 4 arms; repair 2 arms (SSC vs EVID36) + call-matched reread control; RR_MATCH comparisons are exploratory and outside the Holm set",
+ "common_initial": {
+  "C": 301,
+  "W": 93,
+  "A": 6
+ },
+ "common_cost": {
+  "requests": 400,
+  "input_tokens": 628901,
+  "output_tokens": 31891,
+  "cost_cny_estimated": 0.589233,
+  "known_cost_subtotal_cny": 0.589233,
+  "usage_missing_requests": 0,
+  "finish": {
+   "stop": 399,
+   "length": 1
+  },
+  "http_status": {
+   "ok": 400
+  }
+ },
+ "e2e": {
+  "DIRECT": {
+   "n": 400,
+   "initial_counts": {
+    "C": 274,
+    "W": 126
+   },
+   "final_counts": {
+    "C": 274,
+    "W": 126
+   },
+   "matrix": {
+    "C->C": 274,
+    "W->W": 126
+   },
+   "accuracy": 0.685,
+   "corrected": 0,
+   "corrupted": 0,
+   "correct_lost_to_unsubmitted": 0,
+   "repair_rate": 0.0,
+   "corruption_rate": 0.0,
+   "correct_loss_rate": 0.0,
+   "correct_retention_rate": 1.0,
+   "net_repair_per_all": 0.0,
+   "cost": {
+    "requests": 400,
+    "input_tokens": 618892,
+    "output_tokens": 2878,
+    "cost_cny_estimated": 0.502894,
+    "known_cost_subtotal_cny": 0.502894,
+    "usage_missing_requests": 0,
+    "finish": {
+     "stop": 400
+    },
+    "http_status": {
+     "ok": 400
+    }
+   },
+   "by_source": {
+    "finqa_rendered": {
+     "C": 105,
+     "W": 95
+    },
+    "fintabnetqa": {
+     "C": 169,
+     "W": 31
+    }
+   }
+  },
+  "REREAD2": {
+   "n": 400,
+   "initial_counts": {
+    "C": 280,
+    "W": 120
+   },
+   "final_counts": {
+    "C": 285,
+    "W": 115
+   },
+   "matrix": {
+    "C->C": 261,
+    "W->W": 96,
+    "W->C": 24,
+    "C->W": 19
+   },
+   "accuracy": 0.7125,
+   "corrected": 24,
+   "corrupted": 19,
+   "correct_lost_to_unsubmitted": 0,
+   "repair_rate": 0.2,
+   "corruption_rate": 0.06785714285714285,
+   "correct_loss_rate": 0.06785714285714285,
+   "correct_retention_rate": 0.9321428571428572,
+   "net_repair_per_all": 0.0125,
+   "cost": {
+    "requests": 800,
+    "input_tokens": 1246512,
+    "output_tokens": 11958,
+    "cost_cny_estimated": 1.029513,
+    "known_cost_subtotal_cny": 1.029513,
+    "usage_missing_requests": 0,
+    "finish": {
+     "stop": 798,
+     "length": 2
+    },
+    "http_status": {
+     "ok": 800
+    }
+   },
+   "by_source": {
+    "finqa_rendered": {
+     "C": 102,
+     "W": 98
+    },
+    "fintabnetqa": {
+     "C": 183,
+     "W": 17
+    }
+   }
+  },
+  "SSC": {
+   "n": 400,
+   "initial_counts": {
+    "C": 310,
+    "W": 90
+   },
+   "final_counts": {
+    "C": 308,
+    "W": 92
+   },
+   "matrix": {
+    "C->C": 307,
+    "W->W": 89,
+    "C->W": 3,
+    "W->C": 1
+   },
+   "accuracy": 0.77,
+   "corrected": 1,
+   "corrupted": 3,
+   "correct_lost_to_unsubmitted": 0,
+   "repair_rate": 0.011111111111111112,
+   "corruption_rate": 0.00967741935483871,
+   "correct_loss_rate": 0.00967741935483871,
+   "correct_retention_rate": 0.9903225806451613,
+   "net_repair_per_all": -0.005,
+   "cost": {
+    "requests": 810,
+    "input_tokens": 1416408,
+    "output_tokens": 164735,
+    "cost_cny_estimated": 1.57792,
+    "known_cost_subtotal_cny": 1.57792,
+    "usage_missing_requests": 0,
+    "finish": {
+     "stop": 806,
+     "length": 4
+    },
+    "http_status": {
+     "ok": 810
+    }
+   },
+   "by_source": {
+    "finqa_rendered": {
+     "W": 60,
+     "C": 140
+    },
+    "fintabnetqa": {
+     "C": 168,
+     "W": 32
+    }
+   }
+  },
+  "EVID": {
+   "n": 400,
+   "initial_counts": {
+    "C": 322,
+    "W": 77,
+    "A": 1
+   },
+   "final_counts": {
+    "C": 325,
+    "W": 74,
+    "A": 1
+   },
+   "matrix": {
+    "C->C": 321,
+    "W->W": 73,
+    "W->C": 4,
+    "C->W": 1,
+    "A->A": 1
+   },
+   "accuracy": 0.8125,
+   "corrected": 4,
+   "corrupted": 1,
+   "correct_lost_to_unsubmitted": 0,
+   "repair_rate": 0.05194805194805195,
+   "corruption_rate": 0.003105590062111801,
+   "correct_loss_rate": 0.003105590062111801,
+   "correct_retention_rate": 0.9968944099378882,
+   "net_repair_per_all": 0.0075,
+   "cost": {
+    "requests": 1241,
+    "input_tokens": 2810203,
+    "output_tokens": 206702,
+    "cost_cny_estimated": 2.806269,
+    "known_cost_subtotal_cny": 2.806269,
+    "usage_missing_requests": 0,
+    "finish": {
+     "stop": 1241
+    },
+    "http_status": {
+     "ok": 1241
+    }
+   },
+   "by_source": {
+    "finqa_rendered": {
+     "C": 138,
+     "W": 61,
+     "A": 1
+    },
+    "fintabnetqa": {
+     "C": 187,
+     "W": 13
+    }
+   }
+  }
+ },
+ "repair": {
+  "SSC": {
+   "r1": {
+    "n": 400,
+    "initial_counts": {
+     "C": 301,
+     "W": 93,
+     "A": 6
+    },
+    "final_counts": {
+     "C": 317,
+     "W": 77,
+     "A": 6
+    },
+    "matrix": {
+     "C->C": 299,
+     "W->W": 75,
+     "W->C": 18,
+     "C->W": 2,
+     "A->A": 6
+    },
+    "accuracy": 0.7925,
+    "corrected": 18,
+    "corrupted": 2,
+    "correct_lost_to_unsubmitted": 0,
+    "repair_rate": 0.1935483870967742,
+    "corruption_rate": 0.006644518272425249,
+    "correct_loss_rate": 0.006644518272425249,
+    "correct_retention_rate": 0.9933554817275747,
+    "net_repair_per_all": 0.04,
+    "increment_from_previous_round": {
+     "n": 400,
+     "initial_counts": {
+      "C": 301,
+      "W": 93,
+      "A": 6
+     },
+     "final_counts": {
+      "C": 317,
+      "W": 77,
+      "A": 6
+     },
+     "matrix": {
+      "C->C": 299,
+      "W->W": 75,
+      "W->C": 18,
+      "C->W": 2,
+      "A->A": 6
+     },
+     "accuracy": 0.7925,
+     "corrected": 18,
+     "corrupted": 2,
+     "correct_lost_to_unsubmitted": 0,
+     "repair_rate": 0.1935483870967742,
+     "corruption_rate": 0.006644518272425249,
+     "correct_loss_rate": 0.006644518272425249,
+     "correct_retention_rate": 0.9933554817275747,
+     "net_repair_per_all": 0.04
+    },
+    "detection_current_round": {
+     "classified": 394,
+     "TN": 297,
+     "FN": 64,
+     "FP": 4,
+     "TP": 29,
+     "initial_unsubmitted": 6,
+     "error_recall": 0.3118279569892473,
+     "detection_precision": 0.8787878787878788,
+     "selective_accuracy": 0.8274111675126904,
+     "coverage": 1.0,
+     "unknown_rate": 0.0,
+     "note": "UNKNOWN/unexecuted not classified as right/wrong; recall denominator all current W"
+    },
+    "changed_wrong_to_wrong": 11,
+    "exclusive_round_cost": {
+     "requests": 427,
+     "input_tokens": 783646,
+     "output_tokens": 123630,
+     "cost_cny_estimated": 0.96072,
+     "known_cost_subtotal_cny": 0.96072,
+     "usage_missing_requests": 0,
+     "finish": {
+      "stop": 406,
+      "length": 21
+     },
+     "http_status": {
+      "ok": 427
+     }
+    }
+   },
+   "r2": {
+    "n": 400,
+    "initial_counts": {
+     "C": 301,
+     "W": 93,
+     "A": 6
+    },
+    "final_counts": {
+     "C": 316,
+     "W": 78,
+     "A": 6
+    },
+    "matrix": {
+     "C->C": 298,
+     "W->W": 75,
+     "W->C": 18,
+     "C->W": 3,
+     "A->A": 6
+    },
+    "accuracy": 0.79,
+    "corrected": 18,
+    "corrupted": 3,
+    "correct_lost_to_unsubmitted": 0,
+    "repair_rate": 0.1935483870967742,
+    "corruption_rate": 0.009966777408637873,
+    "correct_loss_rate": 0.009966777408637873,
+    "correct_retention_rate": 0.9900332225913622,
+    "net_repair_per_all": 0.0375,
+    "increment_from_previous_round": {
+     "n": 400,
+     "initial_counts": {
+      "C": 317,
+      "W": 77,
+      "A": 6
+     },
+     "final_counts": {
+      "C": 316,
+      "W": 78,
+      "A": 6
+     },
+     "matrix": {
+      "C->C": 315,
+      "W->W": 76,
+      "A->A": 6,
+      "W->C": 1,
+      "C->W": 2
+     },
+     "accuracy": 0.79,
+     "corrected": 1,
+     "corrupted": 2,
+     "correct_lost_to_unsubmitted": 0,
+     "repair_rate": 0.012987012987012988,
+     "corruption_rate": 0.006309148264984227,
+     "correct_loss_rate": 0.006309148264984227,
+     "correct_retention_rate": 0.9936908517350158,
+     "net_repair_per_all": -0.0025
+    },
+    "detection_current_round": {
+     "not_executed": 361,
+     "classified": 33,
+     "TN": 18,
+     "TP": 7,
+     "FN": 6,
+     "initial_unsubmitted": 6,
+     "FP": 2,
+     "error_recall": 0.09090909090909091,
+     "detection_precision": 0.7777777777777778,
+     "selective_accuracy": 0.7575757575757576,
+     "coverage": 0.08375634517766498,
+     "unknown_rate": 0.0,
+     "note": "UNKNOWN/unexecuted not classified as right/wrong; recall denominator all current W"
+    },
+    "changed_wrong_to_wrong": 10,
+    "exclusive_round_cost": {
+     "requests": 42,
+     "input_tokens": 120905,
+     "output_tokens": 13653,
+     "cost_cny_estimated": 0.133588,
+     "known_cost_subtotal_cny": 0.133588,
+     "usage_missing_requests": 0,
+     "finish": {
+      "stop": 41,
+      "length": 1
+     },
+     "http_status": {
+      "ok": 42
+     }
+    }
+   }
+  },
+  "EVID": {
+   "r1": {
+    "n": 400,
+    "initial_counts": {
+     "C": 301,
+     "W": 93,
+     "A": 6
+    },
+    "final_counts": {
+     "C": 323,
+     "W": 71,
+     "A": 6
+    },
+    "matrix": {
+     "C->C": 299,
+     "W->W": 69,
+     "W->C": 24,
+     "C->W": 2,
+     "A->A": 6
+    },
+    "accuracy": 0.8075,
+    "corrected": 24,
+    "corrupted": 2,
+    "correct_lost_to_unsubmitted": 0,
+    "repair_rate": 0.25806451612903225,
+    "corruption_rate": 0.006644518272425249,
+    "correct_loss_rate": 0.006644518272425249,
+    "correct_retention_rate": 0.9933554817275747,
+    "net_repair_per_all": 0.055,
+    "increment_from_previous_round": {
+     "n": 400,
+     "initial_counts": {
+      "C": 301,
+      "W": 93,
+      "A": 6
+     },
+     "final_counts": {
+      "C": 323,
+      "W": 71,
+      "A": 6
+     },
+     "matrix": {
+      "C->C": 299,
+      "W->W": 69,
+      "W->C": 24,
+      "C->W": 2,
+      "A->A": 6
+     },
+     "accuracy": 0.8075,
+     "corrected": 24,
+     "corrupted": 2,
+     "correct_lost_to_unsubmitted": 0,
+     "repair_rate": 0.25806451612903225,
+     "corruption_rate": 0.006644518272425249,
+     "correct_loss_rate": 0.006644518272425249,
+     "correct_retention_rate": 0.9933554817275747,
+     "net_repair_per_all": 0.055
+    },
+    "detection_current_round": {
+     "classified": 389,
+     "TN": 287,
+     "FN": 48,
+     "FP": 11,
+     "TP": 43,
+     "parse_or_method_failure": 3,
+     "initial_unsubmitted": 6,
+     "unknown": 2,
+     "error_recall": 0.46236559139784944,
+     "detection_precision": 0.7962962962962963,
+     "selective_accuracy": 0.8483290488431876,
+     "coverage": 0.9873096446700508,
+     "unknown_rate": 0.005076142131979695,
+     "note": "UNKNOWN/unexecuted not classified as right/wrong; recall denominator all current W"
+    },
+    "changed_wrong_to_wrong": 13,
+    "exclusive_round_cost": {
+     "requests": 555,
+     "input_tokens": 1295651,
+     "output_tokens": 132688,
+     "cost_cny_estimated": 1.39478,
+     "known_cost_subtotal_cny": 1.39478,
+     "usage_missing_requests": 0,
+     "finish": {
+      "stop": 554,
+      "length": 1
+     },
+     "http_status": {
+      "ok": 555
+     }
+    }
+   },
+   "r2": {
+    "n": 400,
+    "initial_counts": {
+     "C": 301,
+     "W": 93,
+     "A": 6
+    },
+    "final_counts": {
+     "C": 325,
+     "W": 69,
+     "A": 6
+    },
+    "matrix": {
+     "C->C": 299,
+     "W->W": 67,
+     "W->C": 26,
+     "C->W": 2,
+     "A->A": 6
+    },
+    "accuracy": 0.8125,
+    "corrected": 26,
+    "corrupted": 2,
+    "correct_lost_to_unsubmitted": 0,
+    "repair_rate": 0.27956989247311825,
+    "corruption_rate": 0.006644518272425249,
+    "correct_loss_rate": 0.006644518272425249,
+    "correct_retention_rate": 0.9933554817275747,
+    "net_repair_per_all": 0.06,
+    "increment_from_previous_round": {
+     "n": 400,
+     "initial_counts": {
+      "C": 323,
+      "W": 71,
+      "A": 6
+     },
+     "final_counts": {
+      "C": 325,
+      "W": 69,
+      "A": 6
+     },
+     "matrix": {
+      "C->C": 323,
+      "W->W": 69,
+      "A->A": 6,
+      "W->C": 2
+     },
+     "accuracy": 0.8125,
+     "corrected": 2,
+     "corrupted": 0,
+     "correct_lost_to_unsubmitted": 0,
+     "repair_rate": 0.028169014084507043,
+     "corruption_rate": 0.0,
+     "correct_loss_rate": 0.0,
+     "correct_retention_rate": 1.0,
+     "net_repair_per_all": 0.005
+    },
+    "detection_current_round": {
+     "not_executed": 335,
+     "classified": 56,
+     "TN": 35,
+     "FN": 17,
+     "initial_unsubmitted": 6,
+     "TP": 4,
+     "unknown": 2,
+     "parse_or_method_failure": 1,
+     "error_recall": 0.056338028169014086,
+     "detection_precision": 1.0,
+     "selective_accuracy": 0.6964285714285714,
+     "coverage": 0.14213197969543148,
+     "unknown_rate": 0.005076142131979695,
+     "note": "UNKNOWN/unexecuted not classified as right/wrong; recall denominator all current W"
+    },
+    "changed_wrong_to_wrong": 14,
+    "exclusive_round_cost": {
+     "requests": 73,
+     "input_tokens": 230501,
+     "output_tokens": 19781,
+     "cost_cny_estimated": 0.23781,
+     "known_cost_subtotal_cny": 0.23781,
+     "usage_missing_requests": 0,
+     "finish": {
+      "stop": 73
+     },
+     "http_status": {
+      "ok": 73
+     }
+    }
+   }
+  },
+  "RR_MATCH": {
+   "r1": {
+    "n": 400,
+    "initial_counts": {
+     "C": 301,
+     "W": 93,
+     "A": 6
+    },
+    "final_counts": {
+     "C": 328,
+     "W": 66,
+     "A": 6
+    },
+    "matrix": {
+     "C->C": 295,
+     "W->W": 60,
+     "W->C": 33,
+     "C->W": 6,
+     "A->A": 6
+    },
+    "accuracy": 0.82,
+    "corrected": 33,
+    "corrupted": 6,
+    "correct_lost_to_unsubmitted": 0,
+    "repair_rate": 0.3548387096774194,
+    "corruption_rate": 0.019933554817275746,
+    "correct_loss_rate": 0.019933554817275746,
+    "correct_retention_rate": 0.9800664451827242,
+    "net_repair_per_all": 0.0675,
+    "increment_from_previous_round": {
+     "n": 400,
+     "initial_counts": {
+      "C": 301,
+      "W": 93,
+      "A": 6
+     },
+     "final_counts": {
+      "C": 328,
+      "W": 66,
+      "A": 6
+     },
+     "matrix": {
+      "C->C": 295,
+      "W->W": 60,
+      "W->C": 33,
+      "C->W": 6,
+      "A->A": 6
+     },
+     "accuracy": 0.82,
+     "corrected": 33,
+     "corrupted": 6,
+     "correct_lost_to_unsubmitted": 0,
+     "repair_rate": 0.3548387096774194,
+     "corruption_rate": 0.019933554817275746,
+     "correct_loss_rate": 0.019933554817275746,
+     "correct_retention_rate": 0.9800664451827242,
+     "net_repair_per_all": 0.0675
+    },
+    "detection_current_round": {
+     "no_detection_protocol": 394,
+     "initial_unsubmitted": 6,
+     "error_recall": 0.0,
+     "detection_precision": null,
+     "selective_accuracy": null,
+     "coverage": 0.0,
+     "unknown_rate": 0.0,
+     "note": "UNKNOWN/unexecuted not classified as right/wrong; recall denominator all current W"
+    },
+    "changed_wrong_to_wrong": 22,
+    "exclusive_round_cost": {
+     "requests": 555,
+     "input_tokens": 1029579,
+     "output_tokens": 50895,
+     "cost_cny_estimated": 0.961083,
+     "known_cost_subtotal_cny": 0.961083,
+     "usage_missing_requests": 0,
+     "finish": {
+      "stop": 555
+     },
+     "http_status": {
+      "ok": 555
+     }
+    }
+   },
+   "r2": {
+    "n": 400,
+    "initial_counts": {
+     "C": 301,
+     "W": 93,
+     "A": 6
+    },
+    "final_counts": {
+     "C": 329,
+     "W": 65,
+     "A": 6
+    },
+    "matrix": {
+     "C->C": 295,
+     "W->W": 59,
+     "W->C": 34,
+     "C->W": 6,
+     "A->A": 6
+    },
+    "accuracy": 0.8225,
+    "corrected": 34,
+    "corrupted": 6,
+    "correct_lost_to_unsubmitted": 0,
+    "repair_rate": 0.3655913978494624,
+    "corruption_rate": 0.019933554817275746,
+    "correct_loss_rate": 0.019933554817275746,
+    "correct_retention_rate": 0.9800664451827242,
+    "net_repair_per_all": 0.07,
+    "increment_from_previous_round": {
+     "n": 400,
+     "initial_counts": {
+      "C": 328,
+      "W": 66,
+      "A": 6
+     },
+     "final_counts": {
+      "C": 329,
+      "W": 65,
+      "A": 6
+     },
+     "matrix": {
+      "C->C": 327,
+      "W->W": 64,
+      "A->A": 6,
+      "W->C": 2,
+      "C->W": 1
+     },
+     "accuracy": 0.8225,
+     "corrected": 2,
+     "corrupted": 1,
+     "correct_lost_to_unsubmitted": 0,
+     "repair_rate": 0.030303030303030304,
+     "corruption_rate": 0.003048780487804878,
+     "correct_loss_rate": 0.003048780487804878,
+     "correct_retention_rate": 0.9969512195121951,
+     "net_repair_per_all": 0.0025
+    },
+    "detection_current_round": {
+     "not_executed": 335,
+     "no_detection_protocol": 59,
+     "initial_unsubmitted": 6,
+     "error_recall": 0.0,
+     "detection_precision": null,
+     "selective_accuracy": null,
+     "coverage": 0.0,
+     "unknown_rate": 0.0,
+     "note": "UNKNOWN/unexecuted not classified as right/wrong; recall denominator all current W"
+    },
+    "changed_wrong_to_wrong": 22,
+    "exclusive_round_cost": {
+     "requests": 73,
+     "input_tokens": 171877,
+     "output_tokens": 8285,
+     "cost_cny_estimated": 0.159869,
+     "known_cost_subtotal_cny": 0.159869,
+     "usage_missing_requests": 0,
+     "finish": {
+      "stop": 73
+     },
+     "http_status": {
+      "ok": 73
+     }
+    }
+   }
+  }
+ },
+ "comparisons": {
+  "primary_e2e_EVID_minus_SSC": {
+   "n": 400,
+   "gained": 31,
+   "lost": 14,
+   "net": 17,
+   "mcnemar_raw": 0.016094360031274846,
+   "source_table_bootstrap95": [
+    0.010178117048346057,
+    0.07616707616707617
+   ],
+   "holm_primary_p": 0.04828308009382454
+  },
+  "primary_repair_r2_EVID_minus_SSC": {
+   "n": 400,
+   "gained": 14,
+   "lost": 5,
+   "net": 9,
+   "mcnemar_raw": 0.063568115234375,
+   "source_table_bootstrap95": [
+    0.0024691358024691358,
+    0.042821158690176324
+   ],
+   "holm_primary_p": 0.12713623046875
+  },
+  "exploratory_repair_r2_EVID_minus_RR_MATCH": {
+   "n": 400,
+   "gained": 8,
+   "lost": 12,
+   "net": -4,
+   "mcnemar_raw": 0.5034446716308594,
+   "source_table_bootstrap95": [
+    -0.031862745098039214,
+    0.009925558312655087
+   ]
+  },
+  "exploratory_repair_r2_SSC_minus_RR_MATCH": {
+   "n": 400,
+   "gained": 6,
+   "lost": 19,
+   "net": -13,
+   "mcnemar_raw": 0.01463329792022705,
+   "source_table_bootstrap95": [
+    -0.055415617128463476,
+    -0.010101010101010102
+   ]
+  }
+ },
+ "scope": "development; main natural errors only; shared initial costs not summed across arms",
+ "input_freeze": {
+  "master": "c70a329e5e9eaf763bcdd2654b8146c72250e6d4494b35c911731fce20994ace",
+  "repair_v2": "2459d8ba382580000c71df136b270f7a441bfb52f85a29e06834052a183546bf",
+  "results": {
+   "initial": "7f82470b350316f1f8d2be18584d785833c1a4de17a101e4aa22a09e4dc03641",
+   "e2e": "d57d02a868a7c12bee949bb62d2d999e23925be5d8a49895784fa940b16d7b28",
+   "repair2": "bfc4c6736227b4b5442aad12a9fc73a0f520a2115402167768dd533fd77eb7e5",
+   "rrmatch": "2dbd4383cfc9deee46e1e11c46d3caa02896a56d7609bce4cd4675a7f28a7338"
+  },
+  "rrmatch_freeze": "2fad7d580d9658c50ae61b99f22659b98e7c4fd60a2c01aad0c81dcdaf2e92a8"
+ }
+}

@@ -1,0 +1,2274 @@
+{
+ "freeze": "7f1445b55fa1844d3cfc37e82c25fd48b5085c90890ffbd4f4820311649fe7a8",
+ "n_unique_items": 626,
+ "n_logical": 800,
+ "contracts": {
+  "strict": {
+   "datasets": {
+    "mixed400": {
+     "counts": {
+      "FULL": {
+       "C": 352,
+       "W": 45,
+       "A": 3
+      },
+      "NO_FACT_FIRST": {
+       "C": 350,
+       "W": 49,
+       "A": 1
+      },
+      "GENERIC_ACQ": {
+       "C": 354,
+       "W": 43,
+       "A": 3
+      },
+      "NO_ACQ": {
+       "C": 352,
+       "W": 45,
+       "A": 3
+      },
+      "NO_GATE": {
+       "C": 354,
+       "W": 43,
+       "A": 3
+      }
+     },
+     "accuracy": {
+      "FULL": 0.88,
+      "NO_FACT_FIRST": 0.875,
+      "GENERIC_ACQ": 0.885,
+      "NO_ACQ": 0.88,
+      "NO_GATE": 0.885
+     },
+     "transitions": {
+      "FULL": {
+       "matrix": {
+        "C->C": 341,
+        "W->W": 43,
+        "A->A": 3,
+        "W->C": 11,
+        "C->W": 2
+       },
+       "initial": {
+        "C": 343,
+        "W": 54,
+        "A": 3
+       },
+       "final": {
+        "C": 352,
+        "W": 45,
+        "A": 3
+       },
+       "W_to_C": 11,
+       "C_to_W": 2,
+       "W_to_W": 43,
+       "C_to_C": 341,
+       "A_to_C": 0,
+       "C_to_A": 0,
+       "W_to_A": 0,
+       "A_to_W": 0,
+       "A_to_A": 3
+      },
+      "NO_FACT_FIRST": {
+       "matrix": {
+        "C->C": 341,
+        "W->W": 48,
+        "A->A": 1,
+        "W->C": 9,
+        "C->W": 1
+       },
+       "initial": {
+        "C": 342,
+        "W": 57,
+        "A": 1
+       },
+       "final": {
+        "C": 350,
+        "W": 49,
+        "A": 1
+       },
+       "W_to_C": 9,
+       "C_to_W": 1,
+       "W_to_W": 48,
+       "C_to_C": 341,
+       "A_to_C": 0,
+       "C_to_A": 0,
+       "W_to_A": 0,
+       "A_to_W": 0,
+       "A_to_A": 1
+      },
+      "GENERIC_ACQ": {
+       "matrix": {
+        "C->C": 342,
+        "W->W": 42,
+        "A->A": 3,
+        "W->C": 12,
+        "C->W": 1
+       },
+       "initial": {
+        "C": 343,
+        "W": 54,
+        "A": 3
+       },
+       "final": {
+        "C": 354,
+        "W": 43,
+        "A": 3
+       },
+       "W_to_C": 12,
+       "C_to_W": 1,
+       "W_to_W": 42,
+       "C_to_C": 342,
+       "A_to_C": 0,
+       "C_to_A": 0,
+       "W_to_A": 0,
+       "A_to_W": 0,
+       "A_to_A": 3
+      },
+      "NO_ACQ": {
+       "matrix": {
+        "C->C": 342,
+        "W->W": 44,
+        "A->A": 3,
+        "W->C": 10,
+        "C->W": 1
+       },
+       "initial": {
+        "C": 343,
+        "W": 54,
+        "A": 3
+       },
+       "final": {
+        "C": 352,
+        "W": 45,
+        "A": 3
+       },
+       "W_to_C": 10,
+       "C_to_W": 1,
+       "W_to_W": 44,
+       "C_to_C": 342,
+       "A_to_C": 0,
+       "C_to_A": 0,
+       "W_to_A": 0,
+       "A_to_W": 0,
+       "A_to_A": 3
+      },
+      "NO_GATE": {
+       "matrix": {
+        "C->C": 341,
+        "W->W": 41,
+        "W->C": 13,
+        "A->A": 3,
+        "C->W": 2
+       },
+       "initial": {
+        "C": 343,
+        "W": 54,
+        "A": 3
+       },
+       "final": {
+        "C": 354,
+        "W": 43,
+        "A": 3
+       },
+       "W_to_C": 13,
+       "C_to_W": 2,
+       "W_to_W": 41,
+       "C_to_C": 341,
+       "A_to_C": 0,
+       "C_to_A": 0,
+       "W_to_A": 0,
+       "A_to_W": 0,
+       "A_to_A": 3
+      }
+     },
+     "states": {
+      "FULL": {
+       "status": {
+        "KEPT_EVIDENCE_SUPPORTED": 366,
+        "FALLBACK_UNVERIFIED": 11,
+        "INITIAL_MISSING": 3,
+        "CORRECTED_EVIDENCE_SUPPORTED": 18,
+        "KEPT_AFTER_ACQUISITION": 2
+       },
+       "check_verdict": {
+        "correct": 368,
+        "incorrect": 25,
+        "null": 5,
+        "unknown": 2
+       },
+       "gap_type": {
+        "null": 373,
+        "COVERAGE": 7,
+        "VALUE": 6,
+        "CALCULATION": 9,
+        "QUESTION": 3,
+        "CONTEXT": 1,
+        "UNIT": 1
+       },
+       "fallback_reasons": {
+        "final_not_supported": 4,
+        "check_unparseable": 2,
+        "acquisition_unparseable": 1,
+        "unknown_gap_type": 1,
+        "duplicate_evidence_id": 2,
+        "repair_unresolved": 1
+       }
+      },
+      "NO_FACT_FIRST": {
+       "status": {
+        "KEPT_EVIDENCE_SUPPORTED": 378,
+        "FALLBACK_UNVERIFIED": 10,
+        "INITIAL_MISSING": 1,
+        "CORRECTED_EVIDENCE_SUPPORTED": 11
+       },
+       "check_verdict": {
+        "correct": 378,
+        "null": 4,
+        "incorrect": 16,
+        "unknown": 2
+       },
+       "gap_type": {
+        "null": 383,
+        "VALUE": 9,
+        "TIME": 1,
+        "CALCULATION": 5,
+        "COVERAGE": 2
+       },
+       "fallback_reasons": {
+        "missing_evidence": 1,
+        "repair_unknown": 2,
+        "invalid_evidence_source": 1,
+        "unknown_gap_type": 1,
+        "check_unparseable": 2,
+        "invalid_verdict": 1,
+        "final_not_supported": 2
+       }
+      },
+      "GENERIC_ACQ": {
+       "status": {
+        "KEPT_EVIDENCE_SUPPORTED": 366,
+        "FALLBACK_UNVERIFIED": 12,
+        "INITIAL_MISSING": 3,
+        "CORRECTED_EVIDENCE_SUPPORTED": 17,
+        "KEPT_AFTER_ACQUISITION": 2
+       },
+       "check_verdict": {
+        "correct": 368,
+        "incorrect": 25,
+        "null": 5,
+        "unknown": 2
+       },
+       "gap_type": {
+        "null": 373,
+        "COVERAGE": 7,
+        "VALUE": 6,
+        "CALCULATION": 9,
+        "QUESTION": 3,
+        "CONTEXT": 1,
+        "UNIT": 1
+       },
+       "fallback_reasons": {
+        "final_not_supported": 6,
+        "check_unparseable": 2,
+        "repair_unknown": 1,
+        "unknown_gap_type": 1,
+        "duplicate_evidence_id": 2
+       }
+      },
+      "NO_ACQ": {
+       "status": {
+        "KEPT_EVIDENCE_SUPPORTED": 366,
+        "FALLBACK_UNVERIFIED": 14,
+        "INITIAL_MISSING": 3,
+        "CORRECTED_EVIDENCE_SUPPORTED": 15,
+        "KEPT_AFTER_ACQUISITION": 2
+       },
+       "check_verdict": {
+        "correct": 368,
+        "incorrect": 25,
+        "null": 5,
+        "unknown": 2
+       },
+       "gap_type": {
+        "null": 373,
+        "COVERAGE": 7,
+        "VALUE": 6,
+        "CALCULATION": 9,
+        "QUESTION": 3,
+        "CONTEXT": 1,
+        "UNIT": 1
+       },
+       "fallback_reasons": {
+        "final_not_supported": 7,
+        "check_unparseable": 2,
+        "repair_unknown": 1,
+        "unknown_gap_type": 1,
+        "duplicate_evidence_id": 2,
+        "invalid_support_reference": 1
+       }
+      },
+      "NO_GATE": {
+       "status": {
+        "KEPT_EVIDENCE_SUPPORTED": 366,
+        "CORRECTED_EVIDENCE_SUPPORTED": 22,
+        "INITIAL_MISSING": 3,
+        "FALLBACK_UNVERIFIED": 7,
+        "KEPT_AFTER_ACQUISITION": 2
+       },
+       "check_verdict": {
+        "correct": 368,
+        "incorrect": 25,
+        "null": 5,
+        "unknown": 2
+       },
+       "gap_type": {
+        "null": 373,
+        "COVERAGE": 7,
+        "VALUE": 6,
+        "CALCULATION": 9,
+        "QUESTION": 3,
+        "CONTEXT": 1,
+        "UNIT": 1
+       },
+       "fallback_reasons": {
+        "check_unparseable": 2,
+        "acquisition_unparseable": 1,
+        "unknown_gap_type": 1,
+        "duplicate_evidence_id": 2,
+        "repair_unresolved": 1
+       }
+      }
+     },
+     "n": 400
+    },
+    "numeric400": {
+     "counts": {
+      "FULL": {
+       "C": 327,
+       "W": 71,
+       "A": 2
+      },
+      "NO_FACT_FIRST": {
+       "C": 322,
+       "W": 75,
+       "A": 3
+      },
+      "GENERIC_ACQ": {
+       "C": 326,
+       "W": 72,
+       "A": 2
+      },
+      "NO_ACQ": {
+       "C": 327,
+       "W": 71,
+       "A": 2
+      },
+      "NO_GATE": {
+       "C": 326,
+       "W": 72,
+       "A": 2
+      }
+     },
+     "accuracy": {
+      "FULL": 0.8175,
+      "NO_FACT_FIRST": 0.805,
+      "GENERIC_ACQ": 0.815,
+      "NO_ACQ": 0.8175,
+      "NO_GATE": 0.815
+     },
+     "transitions": {
+      "FULL": {
+       "matrix": {
+        "C->C": 323,
+        "W->W": 68,
+        "A->A": 2,
+        "W->C": 4,
+        "C->W": 3
+       },
+       "initial": {
+        "C": 326,
+        "W": 72,
+        "A": 2
+       },
+       "final": {
+        "C": 327,
+        "W": 71,
+        "A": 2
+       },
+       "W_to_C": 4,
+       "C_to_W": 3,
+       "W_to_W": 68,
+       "C_to_C": 323,
+       "A_to_C": 0,
+       "C_to_A": 0,
+       "W_to_A": 0,
+       "A_to_W": 0,
+       "A_to_A": 2
+      },
+      "NO_FACT_FIRST": {
+       "matrix": {
+        "C->C": 317,
+        "W->W": 73,
+        "W->C": 5,
+        "A->A": 3,
+        "C->W": 2
+       },
+       "initial": {
+        "C": 319,
+        "W": 78,
+        "A": 3
+       },
+       "final": {
+        "C": 322,
+        "W": 75,
+        "A": 3
+       },
+       "W_to_C": 5,
+       "C_to_W": 2,
+       "W_to_W": 73,
+       "C_to_C": 317,
+       "A_to_C": 0,
+       "C_to_A": 0,
+       "W_to_A": 0,
+       "A_to_W": 0,
+       "A_to_A": 3
+      },
+      "GENERIC_ACQ": {
+       "matrix": {
+        "C->C": 323,
+        "W->W": 69,
+        "A->A": 2,
+        "W->C": 3,
+        "C->W": 3
+       },
+       "initial": {
+        "C": 326,
+        "W": 72,
+        "A": 2
+       },
+       "final": {
+        "C": 326,
+        "W": 72,
+        "A": 2
+       },
+       "W_to_C": 3,
+       "C_to_W": 3,
+       "W_to_W": 69,
+       "C_to_C": 323,
+       "A_to_C": 0,
+       "C_to_A": 0,
+       "W_to_A": 0,
+       "A_to_W": 0,
+       "A_to_A": 2
+      },
+      "NO_ACQ": {
+       "matrix": {
+        "C->C": 323,
+        "W->W": 68,
+        "A->A": 2,
+        "W->C": 4,
+        "C->W": 3
+       },
+       "initial": {
+        "C": 326,
+        "W": 72,
+        "A": 2
+       },
+       "final": {
+        "C": 327,
+        "W": 71,
+        "A": 2
+       },
+       "W_to_C": 4,
+       "C_to_W": 3,
+       "W_to_W": 68,
+       "C_to_C": 323,
+       "A_to_C": 0,
+       "C_to_A": 0,
+       "W_to_A": 0,
+       "A_to_W": 0,
+       "A_to_A": 2
+      },
+      "NO_GATE": {
+       "matrix": {
+        "C->C": 322,
+        "W->W": 68,
+        "A->A": 2,
+        "W->C": 4,
+        "C->W": 4
+       },
+       "initial": {
+        "C": 326,
+        "W": 72,
+        "A": 2
+       },
+       "final": {
+        "C": 326,
+        "W": 72,
+        "A": 2
+       },
+       "W_to_C": 4,
+       "C_to_W": 4,
+       "W_to_W": 68,
+       "C_to_C": 322,
+       "A_to_C": 0,
+       "C_to_A": 0,
+       "W_to_A": 0,
+       "A_to_W": 0,
+       "A_to_A": 2
+      }
+     },
+     "states": {
+      "FULL": {
+       "status": {
+        "KEPT_EVIDENCE_SUPPORTED": 372,
+        "CORRECTED_EVIDENCE_SUPPORTED": 16,
+        "FALLBACK_UNVERIFIED": 10,
+        "INITIAL_MISSING": 2
+       },
+       "check_verdict": {
+        "correct": 373,
+        "incorrect": 21,
+        "null": 5,
+        "unknown": 1
+       },
+       "gap_type": {
+        "null": 378,
+        "CALCULATION": 11,
+        "QUESTION": 3,
+        "TIME": 1,
+        "COVERAGE": 1,
+        "BINDING": 1,
+        "VALUE": 4,
+        "UNIT": 1
+       },
+       "fallback_reasons": {
+        "check_unparseable": 3,
+        "repair_unresolved": 3,
+        "final_not_supported": 2,
+        "changed_without_incorrect": 1,
+        "duplicate_evidence_id": 1
+       }
+      },
+      "NO_FACT_FIRST": {
+       "status": {
+        "KEPT_EVIDENCE_SUPPORTED": 361,
+        "FALLBACK_UNVERIFIED": 15,
+        "CORRECTED_EVIDENCE_SUPPORTED": 21,
+        "INITIAL_MISSING": 3
+       },
+       "check_verdict": {
+        "correct": 361,
+        "null": 14,
+        "incorrect": 24,
+        "unknown": 1
+       },
+       "gap_type": {
+        "null": 375,
+        "CALCULATION": 18,
+        "TIME": 2,
+        "UNIT": 1,
+        "VALUE": 2,
+        "COVERAGE": 1,
+        "BINDING": 1
+       },
+       "fallback_reasons": {
+        "missing_evidence": 1,
+        "check_unparseable": 10,
+        "final_not_supported": 1,
+        "repair_unknown": 2,
+        "invalid_verdict": 1
+       }
+      },
+      "GENERIC_ACQ": {
+       "status": {
+        "KEPT_EVIDENCE_SUPPORTED": 372,
+        "CORRECTED_EVIDENCE_SUPPORTED": 16,
+        "FALLBACK_UNVERIFIED": 9,
+        "INITIAL_MISSING": 2,
+        "KEPT_AFTER_ACQUISITION": 1
+       },
+       "check_verdict": {
+        "correct": 373,
+        "incorrect": 21,
+        "null": 5,
+        "unknown": 1
+       },
+       "gap_type": {
+        "null": 378,
+        "CALCULATION": 11,
+        "QUESTION": 3,
+        "TIME": 1,
+        "COVERAGE": 1,
+        "BINDING": 1,
+        "VALUE": 4,
+        "UNIT": 1
+       },
+       "fallback_reasons": {
+        "check_unparseable": 3,
+        "changed_without_incorrect": 2,
+        "invalid_evidence_source": 1,
+        "final_not_supported": 1,
+        "repair_unresolved": 1,
+        "duplicate_evidence_id": 1
+       }
+      },
+      "NO_ACQ": {
+       "status": {
+        "KEPT_EVIDENCE_SUPPORTED": 372,
+        "CORRECTED_EVIDENCE_SUPPORTED": 16,
+        "FALLBACK_UNVERIFIED": 8,
+        "INITIAL_MISSING": 2,
+        "KEPT_AFTER_ACQUISITION": 2
+       },
+       "check_verdict": {
+        "correct": 373,
+        "incorrect": 21,
+        "null": 5,
+        "unknown": 1
+       },
+       "gap_type": {
+        "null": 378,
+        "CALCULATION": 11,
+        "QUESTION": 3,
+        "TIME": 1,
+        "COVERAGE": 1,
+        "BINDING": 1,
+        "VALUE": 4,
+        "UNIT": 1
+       },
+       "fallback_reasons": {
+        "check_unparseable": 3,
+        "repair_unresolved": 2,
+        "final_not_supported": 1,
+        "changed_without_incorrect": 1,
+        "duplicate_evidence_id": 1
+       }
+      },
+      "NO_GATE": {
+       "status": {
+        "KEPT_EVIDENCE_SUPPORTED": 372,
+        "CORRECTED_EVIDENCE_SUPPORTED": 18,
+        "FALLBACK_UNVERIFIED": 8,
+        "INITIAL_MISSING": 2
+       },
+       "check_verdict": {
+        "correct": 373,
+        "incorrect": 21,
+        "null": 5,
+        "unknown": 1
+       },
+       "gap_type": {
+        "null": 378,
+        "CALCULATION": 11,
+        "QUESTION": 3,
+        "TIME": 1,
+        "COVERAGE": 1,
+        "BINDING": 1,
+        "VALUE": 4,
+        "UNIT": 1
+       },
+       "fallback_reasons": {
+        "check_unparseable": 3,
+        "repair_unresolved": 3,
+        "changed_without_incorrect": 1,
+        "duplicate_evidence_id": 1
+       }
+      }
+     },
+     "n": 400
+    }
+   },
+   "comparisons": {
+    "mixed400:NO_FACT_FIRST_minus_FULL": {
+     "n": 400,
+     "from_correct": 352,
+     "to_correct": 350,
+     "gained": 15,
+     "lost": 17,
+     "net": -2,
+     "mcnemar_raw": 0.8600500659,
+     "cluster_bootstrap95_pp": [
+      -3.316,
+      2.256
+     ],
+     "discordant": 32,
+     "mde80_pp": 3.96,
+     "dataset": "mixed400",
+     "ablation": "NO_FACT_FIRST",
+     "vs": "FULL",
+     "holm_p": 1.0
+    },
+    "mixed400:GENERIC_ACQ_minus_FULL": {
+     "n": 400,
+     "from_correct": 352,
+     "to_correct": 354,
+     "gained": 2,
+     "lost": 0,
+     "net": 2,
+     "mcnemar_raw": 0.5,
+     "cluster_bootstrap95_pp": [
+      0.0,
+      1.272
+     ],
+     "discordant": 2,
+     "mde80_pp": 0.99,
+     "dataset": "mixed400",
+     "ablation": "GENERIC_ACQ",
+     "vs": "FULL",
+     "holm_p": 1.0
+    },
+    "mixed400:NO_ACQ_minus_FULL": {
+     "n": 400,
+     "from_correct": 352,
+     "to_correct": 352,
+     "gained": 2,
+     "lost": 2,
+     "net": 0,
+     "mcnemar_raw": 1.0,
+     "cluster_bootstrap95_pp": [
+      -0.993,
+      1.0
+     ],
+     "discordant": 4,
+     "mde80_pp": 1.4,
+     "dataset": "mixed400",
+     "ablation": "NO_ACQ",
+     "vs": "FULL",
+     "holm_p": 1.0
+    },
+    "mixed400:NO_GATE_minus_FULL": {
+     "n": 400,
+     "from_correct": 352,
+     "to_correct": 354,
+     "gained": 2,
+     "lost": 0,
+     "net": 2,
+     "mcnemar_raw": 0.5,
+     "cluster_bootstrap95_pp": [
+      0.0,
+      1.272
+     ],
+     "discordant": 2,
+     "mde80_pp": 0.99,
+     "dataset": "mixed400",
+     "ablation": "NO_GATE",
+     "vs": "FULL",
+     "holm_p": 1.0
+    },
+    "numeric400:NO_FACT_FIRST_minus_FULL": {
+     "n": 400,
+     "from_correct": 327,
+     "to_correct": 322,
+     "gained": 15,
+     "lost": 20,
+     "net": -5,
+     "mcnemar_raw": 0.4995598332,
+     "cluster_bootstrap95_pp": [
+      -4.25,
+      1.754
+     ],
+     "discordant": 35,
+     "mde80_pp": 4.14,
+     "dataset": "numeric400",
+     "ablation": "NO_FACT_FIRST",
+     "vs": "FULL",
+     "holm_p": 1.0
+    },
+    "numeric400:GENERIC_ACQ_minus_FULL": {
+     "n": 400,
+     "from_correct": 327,
+     "to_correct": 326,
+     "gained": 0,
+     "lost": 1,
+     "net": -1,
+     "mcnemar_raw": 1.0,
+     "cluster_bootstrap95_pp": [
+      -0.761,
+      0.0
+     ],
+     "discordant": 1,
+     "mde80_pp": 0.7,
+     "dataset": "numeric400",
+     "ablation": "GENERIC_ACQ",
+     "vs": "FULL",
+     "holm_p": 1.0
+    },
+    "numeric400:NO_ACQ_minus_FULL": {
+     "n": 400,
+     "from_correct": 327,
+     "to_correct": 327,
+     "gained": 0,
+     "lost": 0,
+     "net": 0,
+     "mcnemar_raw": 1.0,
+     "cluster_bootstrap95_pp": [
+      0.0,
+      0.0
+     ],
+     "discordant": 0,
+     "mde80_pp": null,
+     "dataset": "numeric400",
+     "ablation": "NO_ACQ",
+     "vs": "FULL",
+     "holm_p": 1.0
+    },
+    "numeric400:NO_GATE_minus_FULL": {
+     "n": 400,
+     "from_correct": 327,
+     "to_correct": 326,
+     "gained": 0,
+     "lost": 1,
+     "net": -1,
+     "mcnemar_raw": 1.0,
+     "cluster_bootstrap95_pp": [
+      -0.761,
+      0.0
+     ],
+     "discordant": 1,
+     "mde80_pp": 0.7,
+     "dataset": "numeric400",
+     "ablation": "NO_GATE",
+     "vs": "FULL",
+     "holm_p": 1.0
+    }
+   },
+   "holm_family_size": 8,
+   "holm_scope": "8 项预注册比较（4 消融 × 2 题集）",
+   "s1_repair_reachable": {
+    "mixed400": {
+     "n": 27,
+     "comparisons": {
+      "NO_FACT_FIRST": {
+       "n": 27,
+       "from_correct": 16,
+       "to_correct": 17,
+       "gained": 4,
+       "lost": 3,
+       "net": 1,
+       "mcnemar_raw": 1.0,
+       "cluster_bootstrap95_pp": [
+        -15.385,
+        23.077
+       ],
+       "discordant": 7,
+       "mde80_pp": 27.46,
+       "dataset": "mixed400",
+       "ablation": "NO_FACT_FIRST",
+       "note": "S1 修复可达子集，探索性"
+      },
+      "GENERIC_ACQ": {
+       "n": 27,
+       "from_correct": 16,
+       "to_correct": 18,
+       "gained": 2,
+       "lost": 0,
+       "net": 2,
+       "mcnemar_raw": 0.5,
+       "cluster_bootstrap95_pp": [
+        0.0,
+        19.231
+       ],
+       "discordant": 2,
+       "mde80_pp": 14.68,
+       "dataset": "mixed400",
+       "ablation": "GENERIC_ACQ",
+       "note": "S1 修复可达子集，探索性"
+      },
+      "NO_ACQ": {
+       "n": 27,
+       "from_correct": 16,
+       "to_correct": 16,
+       "gained": 2,
+       "lost": 2,
+       "net": 0,
+       "mcnemar_raw": 1.0,
+       "cluster_bootstrap95_pp": [
+        -14.815,
+        14.815
+       ],
+       "discordant": 4,
+       "mde80_pp": 20.76,
+       "dataset": "mixed400",
+       "ablation": "NO_ACQ",
+       "note": "S1 修复可达子集，探索性"
+      },
+      "NO_GATE": {
+       "n": 27,
+       "from_correct": 16,
+       "to_correct": 18,
+       "gained": 2,
+       "lost": 0,
+       "net": 2,
+       "mcnemar_raw": 0.5,
+       "cluster_bootstrap95_pp": [
+        0.0,
+        19.231
+       ],
+       "discordant": 2,
+       "mde80_pp": 14.68,
+       "dataset": "mixed400",
+       "ablation": "NO_GATE",
+       "note": "S1 修复可达子集，探索性"
+      }
+     }
+    },
+    "numeric400": {
+     "n": 22,
+     "comparisons": {
+      "NO_FACT_FIRST": {
+       "n": 22,
+       "from_correct": 10,
+       "to_correct": 10,
+       "gained": 2,
+       "lost": 2,
+       "net": 0,
+       "mcnemar_raw": 1.0,
+       "cluster_bootstrap95_pp": [
+        -18.182,
+        18.182
+       ],
+       "discordant": 4,
+       "mde80_pp": 25.47,
+       "dataset": "numeric400",
+       "ablation": "NO_FACT_FIRST",
+       "note": "S1 修复可达子集，探索性"
+      },
+      "GENERIC_ACQ": {
+       "n": 22,
+       "from_correct": 10,
+       "to_correct": 9,
+       "gained": 0,
+       "lost": 1,
+       "net": -1,
+       "mcnemar_raw": 1.0,
+       "cluster_bootstrap95_pp": [
+        -13.636,
+        0.0
+       ],
+       "discordant": 1,
+       "mde80_pp": 12.74,
+       "dataset": "numeric400",
+       "ablation": "GENERIC_ACQ",
+       "note": "S1 修复可达子集，探索性"
+      },
+      "NO_ACQ": {
+       "n": 22,
+       "from_correct": 10,
+       "to_correct": 10,
+       "gained": 0,
+       "lost": 0,
+       "net": 0,
+       "mcnemar_raw": 1.0,
+       "cluster_bootstrap95_pp": [
+        0.0,
+        0.0
+       ],
+       "discordant": 0,
+       "mde80_pp": null,
+       "dataset": "numeric400",
+       "ablation": "NO_ACQ",
+       "note": "S1 修复可达子集，探索性"
+      },
+      "NO_GATE": {
+       "n": 22,
+       "from_correct": 10,
+       "to_correct": 9,
+       "gained": 0,
+       "lost": 1,
+       "net": -1,
+       "mcnemar_raw": 1.0,
+       "cluster_bootstrap95_pp": [
+        -13.636,
+        0.0
+       ],
+       "discordant": 1,
+       "mde80_pp": 12.74,
+       "dataset": "numeric400",
+       "ablation": "NO_GATE",
+       "note": "S1 修复可达子集，探索性"
+      }
+     }
+    }
+   }
+  },
+  "unit_merged": {
+   "datasets": {
+    "mixed400": {
+     "counts": {
+      "FULL": {
+       "C": 361,
+       "W": 36,
+       "A": 3
+      },
+      "NO_FACT_FIRST": {
+       "C": 360,
+       "W": 39,
+       "A": 1
+      },
+      "GENERIC_ACQ": {
+       "C": 363,
+       "W": 34,
+       "A": 3
+      },
+      "NO_ACQ": {
+       "C": 361,
+       "W": 36,
+       "A": 3
+      },
+      "NO_GATE": {
+       "C": 363,
+       "W": 34,
+       "A": 3
+      }
+     },
+     "accuracy": {
+      "FULL": 0.9025,
+      "NO_FACT_FIRST": 0.9,
+      "GENERIC_ACQ": 0.9075,
+      "NO_ACQ": 0.9025,
+      "NO_GATE": 0.9075
+     },
+     "transitions": {
+      "FULL": {
+       "matrix": {
+        "C->C": 350,
+        "W->W": 34,
+        "A->A": 3,
+        "W->C": 11,
+        "C->W": 2
+       },
+       "initial": {
+        "C": 352,
+        "W": 45,
+        "A": 3
+       },
+       "final": {
+        "C": 361,
+        "W": 36,
+        "A": 3
+       },
+       "W_to_C": 11,
+       "C_to_W": 2,
+       "W_to_W": 34,
+       "C_to_C": 350,
+       "A_to_C": 0,
+       "C_to_A": 0,
+       "W_to_A": 0,
+       "A_to_W": 0,
+       "A_to_A": 3
+      },
+      "NO_FACT_FIRST": {
+       "matrix": {
+        "C->C": 351,
+        "W->W": 39,
+        "A->A": 1,
+        "W->C": 9
+       },
+       "initial": {
+        "C": 351,
+        "W": 48,
+        "A": 1
+       },
+       "final": {
+        "C": 360,
+        "W": 39,
+        "A": 1
+       },
+       "W_to_C": 9,
+       "C_to_W": 0,
+       "W_to_W": 39,
+       "C_to_C": 351,
+       "A_to_C": 0,
+       "C_to_A": 0,
+       "W_to_A": 0,
+       "A_to_W": 0,
+       "A_to_A": 1
+      },
+      "GENERIC_ACQ": {
+       "matrix": {
+        "C->C": 351,
+        "W->W": 33,
+        "A->A": 3,
+        "W->C": 12,
+        "C->W": 1
+       },
+       "initial": {
+        "C": 352,
+        "W": 45,
+        "A": 3
+       },
+       "final": {
+        "C": 363,
+        "W": 34,
+        "A": 3
+       },
+       "W_to_C": 12,
+       "C_to_W": 1,
+       "W_to_W": 33,
+       "C_to_C": 351,
+       "A_to_C": 0,
+       "C_to_A": 0,
+       "W_to_A": 0,
+       "A_to_W": 0,
+       "A_to_A": 3
+      },
+      "NO_ACQ": {
+       "matrix": {
+        "C->C": 351,
+        "W->W": 35,
+        "A->A": 3,
+        "W->C": 10,
+        "C->W": 1
+       },
+       "initial": {
+        "C": 352,
+        "W": 45,
+        "A": 3
+       },
+       "final": {
+        "C": 361,
+        "W": 36,
+        "A": 3
+       },
+       "W_to_C": 10,
+       "C_to_W": 1,
+       "W_to_W": 35,
+       "C_to_C": 351,
+       "A_to_C": 0,
+       "C_to_A": 0,
+       "W_to_A": 0,
+       "A_to_W": 0,
+       "A_to_A": 3
+      },
+      "NO_GATE": {
+       "matrix": {
+        "C->C": 350,
+        "W->W": 32,
+        "W->C": 13,
+        "A->A": 3,
+        "C->W": 2
+       },
+       "initial": {
+        "C": 352,
+        "W": 45,
+        "A": 3
+       },
+       "final": {
+        "C": 363,
+        "W": 34,
+        "A": 3
+       },
+       "W_to_C": 13,
+       "C_to_W": 2,
+       "W_to_W": 32,
+       "C_to_C": 350,
+       "A_to_C": 0,
+       "C_to_A": 0,
+       "W_to_A": 0,
+       "A_to_W": 0,
+       "A_to_A": 3
+      }
+     },
+     "states": {
+      "FULL": {
+       "status": {
+        "KEPT_EVIDENCE_SUPPORTED": 366,
+        "FALLBACK_UNVERIFIED": 11,
+        "INITIAL_MISSING": 3,
+        "CORRECTED_EVIDENCE_SUPPORTED": 18,
+        "KEPT_AFTER_ACQUISITION": 2
+       },
+       "check_verdict": {
+        "correct": 368,
+        "incorrect": 25,
+        "null": 5,
+        "unknown": 2
+       },
+       "gap_type": {
+        "null": 373,
+        "COVERAGE": 7,
+        "VALUE": 6,
+        "CALCULATION": 9,
+        "QUESTION": 3,
+        "CONTEXT": 1,
+        "UNIT": 1
+       },
+       "fallback_reasons": {
+        "final_not_supported": 4,
+        "check_unparseable": 2,
+        "acquisition_unparseable": 1,
+        "unknown_gap_type": 1,
+        "duplicate_evidence_id": 2,
+        "repair_unresolved": 1
+       }
+      },
+      "NO_FACT_FIRST": {
+       "status": {
+        "KEPT_EVIDENCE_SUPPORTED": 378,
+        "FALLBACK_UNVERIFIED": 10,
+        "INITIAL_MISSING": 1,
+        "CORRECTED_EVIDENCE_SUPPORTED": 11
+       },
+       "check_verdict": {
+        "correct": 378,
+        "null": 4,
+        "incorrect": 16,
+        "unknown": 2
+       },
+       "gap_type": {
+        "null": 383,
+        "VALUE": 9,
+        "TIME": 1,
+        "CALCULATION": 5,
+        "COVERAGE": 2
+       },
+       "fallback_reasons": {
+        "missing_evidence": 1,
+        "repair_unknown": 2,
+        "invalid_evidence_source": 1,
+        "unknown_gap_type": 1,
+        "check_unparseable": 2,
+        "invalid_verdict": 1,
+        "final_not_supported": 2
+       }
+      },
+      "GENERIC_ACQ": {
+       "status": {
+        "KEPT_EVIDENCE_SUPPORTED": 366,
+        "FALLBACK_UNVERIFIED": 12,
+        "INITIAL_MISSING": 3,
+        "CORRECTED_EVIDENCE_SUPPORTED": 17,
+        "KEPT_AFTER_ACQUISITION": 2
+       },
+       "check_verdict": {
+        "correct": 368,
+        "incorrect": 25,
+        "null": 5,
+        "unknown": 2
+       },
+       "gap_type": {
+        "null": 373,
+        "COVERAGE": 7,
+        "VALUE": 6,
+        "CALCULATION": 9,
+        "QUESTION": 3,
+        "CONTEXT": 1,
+        "UNIT": 1
+       },
+       "fallback_reasons": {
+        "final_not_supported": 6,
+        "check_unparseable": 2,
+        "repair_unknown": 1,
+        "unknown_gap_type": 1,
+        "duplicate_evidence_id": 2
+       }
+      },
+      "NO_ACQ": {
+       "status": {
+        "KEPT_EVIDENCE_SUPPORTED": 366,
+        "FALLBACK_UNVERIFIED": 14,
+        "INITIAL_MISSING": 3,
+        "CORRECTED_EVIDENCE_SUPPORTED": 15,
+        "KEPT_AFTER_ACQUISITION": 2
+       },
+       "check_verdict": {
+        "correct": 368,
+        "incorrect": 25,
+        "null": 5,
+        "unknown": 2
+       },
+       "gap_type": {
+        "null": 373,
+        "COVERAGE": 7,
+        "VALUE": 6,
+        "CALCULATION": 9,
+        "QUESTION": 3,
+        "CONTEXT": 1,
+        "UNIT": 1
+       },
+       "fallback_reasons": {
+        "final_not_supported": 7,
+        "check_unparseable": 2,
+        "repair_unknown": 1,
+        "unknown_gap_type": 1,
+        "duplicate_evidence_id": 2,
+        "invalid_support_reference": 1
+       }
+      },
+      "NO_GATE": {
+       "status": {
+        "KEPT_EVIDENCE_SUPPORTED": 366,
+        "CORRECTED_EVIDENCE_SUPPORTED": 22,
+        "INITIAL_MISSING": 3,
+        "FALLBACK_UNVERIFIED": 7,
+        "KEPT_AFTER_ACQUISITION": 2
+       },
+       "check_verdict": {
+        "correct": 368,
+        "incorrect": 25,
+        "null": 5,
+        "unknown": 2
+       },
+       "gap_type": {
+        "null": 373,
+        "COVERAGE": 7,
+        "VALUE": 6,
+        "CALCULATION": 9,
+        "QUESTION": 3,
+        "CONTEXT": 1,
+        "UNIT": 1
+       },
+       "fallback_reasons": {
+        "check_unparseable": 2,
+        "acquisition_unparseable": 1,
+        "unknown_gap_type": 1,
+        "duplicate_evidence_id": 2,
+        "repair_unresolved": 1
+       }
+      }
+     },
+     "n": 400
+    },
+    "numeric400": {
+     "counts": {
+      "FULL": {
+       "C": 342,
+       "W": 56,
+       "A": 2
+      },
+      "NO_FACT_FIRST": {
+       "C": 337,
+       "W": 60,
+       "A": 3
+      },
+      "GENERIC_ACQ": {
+       "C": 341,
+       "W": 57,
+       "A": 2
+      },
+      "NO_ACQ": {
+       "C": 342,
+       "W": 56,
+       "A": 2
+      },
+      "NO_GATE": {
+       "C": 341,
+       "W": 57,
+       "A": 2
+      }
+     },
+     "accuracy": {
+      "FULL": 0.855,
+      "NO_FACT_FIRST": 0.8425,
+      "GENERIC_ACQ": 0.8525,
+      "NO_ACQ": 0.855,
+      "NO_GATE": 0.8525
+     },
+     "transitions": {
+      "FULL": {
+       "matrix": {
+        "C->C": 337,
+        "W->W": 53,
+        "A->A": 2,
+        "W->C": 5,
+        "C->W": 3
+       },
+       "initial": {
+        "C": 340,
+        "W": 58,
+        "A": 2
+       },
+       "final": {
+        "C": 342,
+        "W": 56,
+        "A": 2
+       },
+       "W_to_C": 5,
+       "C_to_W": 3,
+       "W_to_W": 53,
+       "C_to_C": 337,
+       "A_to_C": 0,
+       "C_to_A": 0,
+       "W_to_A": 0,
+       "A_to_W": 0,
+       "A_to_A": 2
+      },
+      "NO_FACT_FIRST": {
+       "matrix": {
+        "C->C": 333,
+        "W->W": 59,
+        "W->C": 4,
+        "A->A": 3,
+        "C->W": 1
+       },
+       "initial": {
+        "C": 334,
+        "W": 63,
+        "A": 3
+       },
+       "final": {
+        "C": 337,
+        "W": 60,
+        "A": 3
+       },
+       "W_to_C": 4,
+       "C_to_W": 1,
+       "W_to_W": 59,
+       "C_to_C": 333,
+       "A_to_C": 0,
+       "C_to_A": 0,
+       "W_to_A": 0,
+       "A_to_W": 0,
+       "A_to_A": 3
+      },
+      "GENERIC_ACQ": {
+       "matrix": {
+        "C->C": 337,
+        "W->W": 54,
+        "A->A": 2,
+        "W->C": 4,
+        "C->W": 3
+       },
+       "initial": {
+        "C": 340,
+        "W": 58,
+        "A": 2
+       },
+       "final": {
+        "C": 341,
+        "W": 57,
+        "A": 2
+       },
+       "W_to_C": 4,
+       "C_to_W": 3,
+       "W_to_W": 54,
+       "C_to_C": 337,
+       "A_to_C": 0,
+       "C_to_A": 0,
+       "W_to_A": 0,
+       "A_to_W": 0,
+       "A_to_A": 2
+      },
+      "NO_ACQ": {
+       "matrix": {
+        "C->C": 337,
+        "W->W": 53,
+        "A->A": 2,
+        "W->C": 5,
+        "C->W": 3
+       },
+       "initial": {
+        "C": 340,
+        "W": 58,
+        "A": 2
+       },
+       "final": {
+        "C": 342,
+        "W": 56,
+        "A": 2
+       },
+       "W_to_C": 5,
+       "C_to_W": 3,
+       "W_to_W": 53,
+       "C_to_C": 337,
+       "A_to_C": 0,
+       "C_to_A": 0,
+       "W_to_A": 0,
+       "A_to_W": 0,
+       "A_to_A": 2
+      },
+      "NO_GATE": {
+       "matrix": {
+        "C->C": 336,
+        "W->W": 53,
+        "A->A": 2,
+        "W->C": 5,
+        "C->W": 4
+       },
+       "initial": {
+        "C": 340,
+        "W": 58,
+        "A": 2
+       },
+       "final": {
+        "C": 341,
+        "W": 57,
+        "A": 2
+       },
+       "W_to_C": 5,
+       "C_to_W": 4,
+       "W_to_W": 53,
+       "C_to_C": 336,
+       "A_to_C": 0,
+       "C_to_A": 0,
+       "W_to_A": 0,
+       "A_to_W": 0,
+       "A_to_A": 2
+      }
+     },
+     "states": {
+      "FULL": {
+       "status": {
+        "KEPT_EVIDENCE_SUPPORTED": 372,
+        "CORRECTED_EVIDENCE_SUPPORTED": 16,
+        "FALLBACK_UNVERIFIED": 10,
+        "INITIAL_MISSING": 2
+       },
+       "check_verdict": {
+        "correct": 373,
+        "incorrect": 21,
+        "null": 5,
+        "unknown": 1
+       },
+       "gap_type": {
+        "null": 378,
+        "CALCULATION": 11,
+        "QUESTION": 3,
+        "TIME": 1,
+        "COVERAGE": 1,
+        "BINDING": 1,
+        "VALUE": 4,
+        "UNIT": 1
+       },
+       "fallback_reasons": {
+        "check_unparseable": 3,
+        "repair_unresolved": 3,
+        "final_not_supported": 2,
+        "changed_without_incorrect": 1,
+        "duplicate_evidence_id": 1
+       }
+      },
+      "NO_FACT_FIRST": {
+       "status": {
+        "KEPT_EVIDENCE_SUPPORTED": 361,
+        "FALLBACK_UNVERIFIED": 15,
+        "CORRECTED_EVIDENCE_SUPPORTED": 21,
+        "INITIAL_MISSING": 3
+       },
+       "check_verdict": {
+        "correct": 361,
+        "null": 14,
+        "incorrect": 24,
+        "unknown": 1
+       },
+       "gap_type": {
+        "null": 375,
+        "CALCULATION": 18,
+        "TIME": 2,
+        "UNIT": 1,
+        "VALUE": 2,
+        "COVERAGE": 1,
+        "BINDING": 1
+       },
+       "fallback_reasons": {
+        "missing_evidence": 1,
+        "check_unparseable": 10,
+        "final_not_supported": 1,
+        "repair_unknown": 2,
+        "invalid_verdict": 1
+       }
+      },
+      "GENERIC_ACQ": {
+       "status": {
+        "KEPT_EVIDENCE_SUPPORTED": 372,
+        "CORRECTED_EVIDENCE_SUPPORTED": 16,
+        "FALLBACK_UNVERIFIED": 9,
+        "INITIAL_MISSING": 2,
+        "KEPT_AFTER_ACQUISITION": 1
+       },
+       "check_verdict": {
+        "correct": 373,
+        "incorrect": 21,
+        "null": 5,
+        "unknown": 1
+       },
+       "gap_type": {
+        "null": 378,
+        "CALCULATION": 11,
+        "QUESTION": 3,
+        "TIME": 1,
+        "COVERAGE": 1,
+        "BINDING": 1,
+        "VALUE": 4,
+        "UNIT": 1
+       },
+       "fallback_reasons": {
+        "check_unparseable": 3,
+        "changed_without_incorrect": 2,
+        "invalid_evidence_source": 1,
+        "final_not_supported": 1,
+        "repair_unresolved": 1,
+        "duplicate_evidence_id": 1
+       }
+      },
+      "NO_ACQ": {
+       "status": {
+        "KEPT_EVIDENCE_SUPPORTED": 372,
+        "CORRECTED_EVIDENCE_SUPPORTED": 16,
+        "FALLBACK_UNVERIFIED": 8,
+        "INITIAL_MISSING": 2,
+        "KEPT_AFTER_ACQUISITION": 2
+       },
+       "check_verdict": {
+        "correct": 373,
+        "incorrect": 21,
+        "null": 5,
+        "unknown": 1
+       },
+       "gap_type": {
+        "null": 378,
+        "CALCULATION": 11,
+        "QUESTION": 3,
+        "TIME": 1,
+        "COVERAGE": 1,
+        "BINDING": 1,
+        "VALUE": 4,
+        "UNIT": 1
+       },
+       "fallback_reasons": {
+        "check_unparseable": 3,
+        "repair_unresolved": 2,
+        "final_not_supported": 1,
+        "changed_without_incorrect": 1,
+        "duplicate_evidence_id": 1
+       }
+      },
+      "NO_GATE": {
+       "status": {
+        "KEPT_EVIDENCE_SUPPORTED": 372,
+        "CORRECTED_EVIDENCE_SUPPORTED": 18,
+        "FALLBACK_UNVERIFIED": 8,
+        "INITIAL_MISSING": 2
+       },
+       "check_verdict": {
+        "correct": 373,
+        "incorrect": 21,
+        "null": 5,
+        "unknown": 1
+       },
+       "gap_type": {
+        "null": 378,
+        "CALCULATION": 11,
+        "QUESTION": 3,
+        "TIME": 1,
+        "COVERAGE": 1,
+        "BINDING": 1,
+        "VALUE": 4,
+        "UNIT": 1
+       },
+       "fallback_reasons": {
+        "check_unparseable": 3,
+        "repair_unresolved": 3,
+        "changed_without_incorrect": 1,
+        "duplicate_evidence_id": 1
+       }
+      }
+     },
+     "n": 400
+    }
+   },
+   "comparisons": {
+    "mixed400:NO_FACT_FIRST_minus_FULL": {
+     "n": 400,
+     "from_correct": 361,
+     "to_correct": 360,
+     "gained": 11,
+     "lost": 12,
+     "net": -1,
+     "mcnemar_raw": 1.0,
+     "cluster_bootstrap95_pp": [
+      -2.657,
+      2.046
+     ],
+     "discordant": 23,
+     "mde80_pp": 3.36,
+     "dataset": "mixed400",
+     "ablation": "NO_FACT_FIRST",
+     "vs": "FULL",
+     "holm_p": 1.0
+    },
+    "mixed400:GENERIC_ACQ_minus_FULL": {
+     "n": 400,
+     "from_correct": 361,
+     "to_correct": 363,
+     "gained": 2,
+     "lost": 0,
+     "net": 2,
+     "mcnemar_raw": 0.5,
+     "cluster_bootstrap95_pp": [
+      0.0,
+      1.272
+     ],
+     "discordant": 2,
+     "mde80_pp": 0.99,
+     "dataset": "mixed400",
+     "ablation": "GENERIC_ACQ",
+     "vs": "FULL",
+     "holm_p": 1.0
+    },
+    "mixed400:NO_ACQ_minus_FULL": {
+     "n": 400,
+     "from_correct": 361,
+     "to_correct": 361,
+     "gained": 2,
+     "lost": 2,
+     "net": 0,
+     "mcnemar_raw": 1.0,
+     "cluster_bootstrap95_pp": [
+      -0.993,
+      1.0
+     ],
+     "discordant": 4,
+     "mde80_pp": 1.4,
+     "dataset": "mixed400",
+     "ablation": "NO_ACQ",
+     "vs": "FULL",
+     "holm_p": 1.0
+    },
+    "mixed400:NO_GATE_minus_FULL": {
+     "n": 400,
+     "from_correct": 361,
+     "to_correct": 363,
+     "gained": 2,
+     "lost": 0,
+     "net": 2,
+     "mcnemar_raw": 0.5,
+     "cluster_bootstrap95_pp": [
+      0.0,
+      1.272
+     ],
+     "discordant": 2,
+     "mde80_pp": 0.99,
+     "dataset": "mixed400",
+     "ablation": "NO_GATE",
+     "vs": "FULL",
+     "holm_p": 1.0
+    },
+    "numeric400:NO_FACT_FIRST_minus_FULL": {
+     "n": 400,
+     "from_correct": 342,
+     "to_correct": 337,
+     "gained": 8,
+     "lost": 13,
+     "net": -5,
+     "mcnemar_raw": 0.383310318,
+     "cluster_bootstrap95_pp": [
+      -3.518,
+      0.995
+     ],
+     "discordant": 21,
+     "mde80_pp": 3.21,
+     "dataset": "numeric400",
+     "ablation": "NO_FACT_FIRST",
+     "vs": "FULL",
+     "holm_p": 1.0
+    },
+    "numeric400:GENERIC_ACQ_minus_FULL": {
+     "n": 400,
+     "from_correct": 342,
+     "to_correct": 341,
+     "gained": 0,
+     "lost": 1,
+     "net": -1,
+     "mcnemar_raw": 1.0,
+     "cluster_bootstrap95_pp": [
+      -0.761,
+      0.0
+     ],
+     "discordant": 1,
+     "mde80_pp": 0.7,
+     "dataset": "numeric400",
+     "ablation": "GENERIC_ACQ",
+     "vs": "FULL",
+     "holm_p": 1.0
+    },
+    "numeric400:NO_ACQ_minus_FULL": {
+     "n": 400,
+     "from_correct": 342,
+     "to_correct": 342,
+     "gained": 0,
+     "lost": 0,
+     "net": 0,
+     "mcnemar_raw": 1.0,
+     "cluster_bootstrap95_pp": [
+      0.0,
+      0.0
+     ],
+     "discordant": 0,
+     "mde80_pp": null,
+     "dataset": "numeric400",
+     "ablation": "NO_ACQ",
+     "vs": "FULL",
+     "holm_p": 1.0
+    },
+    "numeric400:NO_GATE_minus_FULL": {
+     "n": 400,
+     "from_correct": 342,
+     "to_correct": 341,
+     "gained": 0,
+     "lost": 1,
+     "net": -1,
+     "mcnemar_raw": 1.0,
+     "cluster_bootstrap95_pp": [
+      -0.761,
+      0.0
+     ],
+     "discordant": 1,
+     "mde80_pp": 0.7,
+     "dataset": "numeric400",
+     "ablation": "NO_GATE",
+     "vs": "FULL",
+     "holm_p": 1.0
+    }
+   },
+   "holm_family_size": 8,
+   "holm_scope": "8 项预注册比较（4 消融 × 2 题集）",
+   "s1_repair_reachable": {
+    "mixed400": {
+     "n": 27,
+     "comparisons": {
+      "NO_FACT_FIRST": {
+       "n": 27,
+       "from_correct": 16,
+       "to_correct": 17,
+       "gained": 4,
+       "lost": 3,
+       "net": 1,
+       "mcnemar_raw": 1.0,
+       "cluster_bootstrap95_pp": [
+        -15.385,
+        23.077
+       ],
+       "discordant": 7,
+       "mde80_pp": 27.46,
+       "dataset": "mixed400",
+       "ablation": "NO_FACT_FIRST",
+       "note": "S1 修复可达子集，探索性"
+      },
+      "GENERIC_ACQ": {
+       "n": 27,
+       "from_correct": 16,
+       "to_correct": 18,
+       "gained": 2,
+       "lost": 0,
+       "net": 2,
+       "mcnemar_raw": 0.5,
+       "cluster_bootstrap95_pp": [
+        0.0,
+        19.231
+       ],
+       "discordant": 2,
+       "mde80_pp": 14.68,
+       "dataset": "mixed400",
+       "ablation": "GENERIC_ACQ",
+       "note": "S1 修复可达子集，探索性"
+      },
+      "NO_ACQ": {
+       "n": 27,
+       "from_correct": 16,
+       "to_correct": 16,
+       "gained": 2,
+       "lost": 2,
+       "net": 0,
+       "mcnemar_raw": 1.0,
+       "cluster_bootstrap95_pp": [
+        -14.815,
+        14.815
+       ],
+       "discordant": 4,
+       "mde80_pp": 20.76,
+       "dataset": "mixed400",
+       "ablation": "NO_ACQ",
+       "note": "S1 修复可达子集，探索性"
+      },
+      "NO_GATE": {
+       "n": 27,
+       "from_correct": 16,
+       "to_correct": 18,
+       "gained": 2,
+       "lost": 0,
+       "net": 2,
+       "mcnemar_raw": 0.5,
+       "cluster_bootstrap95_pp": [
+        0.0,
+        19.231
+       ],
+       "discordant": 2,
+       "mde80_pp": 14.68,
+       "dataset": "mixed400",
+       "ablation": "NO_GATE",
+       "note": "S1 修复可达子集，探索性"
+      }
+     }
+    },
+    "numeric400": {
+     "n": 22,
+     "comparisons": {
+      "NO_FACT_FIRST": {
+       "n": 22,
+       "from_correct": 11,
+       "to_correct": 11,
+       "gained": 2,
+       "lost": 2,
+       "net": 0,
+       "mcnemar_raw": 1.0,
+       "cluster_bootstrap95_pp": [
+        -18.182,
+        18.182
+       ],
+       "discordant": 4,
+       "mde80_pp": 25.47,
+       "dataset": "numeric400",
+       "ablation": "NO_FACT_FIRST",
+       "note": "S1 修复可达子集，探索性"
+      },
+      "GENERIC_ACQ": {
+       "n": 22,
+       "from_correct": 11,
+       "to_correct": 10,
+       "gained": 0,
+       "lost": 1,
+       "net": -1,
+       "mcnemar_raw": 1.0,
+       "cluster_bootstrap95_pp": [
+        -13.636,
+        0.0
+       ],
+       "discordant": 1,
+       "mde80_pp": 12.74,
+       "dataset": "numeric400",
+       "ablation": "GENERIC_ACQ",
+       "note": "S1 修复可达子集，探索性"
+      },
+      "NO_ACQ": {
+       "n": 22,
+       "from_correct": 11,
+       "to_correct": 11,
+       "gained": 0,
+       "lost": 0,
+       "net": 0,
+       "mcnemar_raw": 1.0,
+       "cluster_bootstrap95_pp": [
+        0.0,
+        0.0
+       ],
+       "discordant": 0,
+       "mde80_pp": null,
+       "dataset": "numeric400",
+       "ablation": "NO_ACQ",
+       "note": "S1 修复可达子集，探索性"
+      },
+      "NO_GATE": {
+       "n": 22,
+       "from_correct": 11,
+       "to_correct": 10,
+       "gained": 0,
+       "lost": 1,
+       "net": -1,
+       "mcnemar_raw": 1.0,
+       "cluster_bootstrap95_pp": [
+        -13.636,
+        0.0
+       ],
+       "discordant": 1,
+       "mde80_pp": 12.74,
+       "dataset": "numeric400",
+       "ablation": "NO_GATE",
+       "note": "S1 修复可达子集，探索性"
+      }
+     }
+    }
+   }
+  }
+ },
+ "cost": {
+  "FULL": {
+   "logical": 2032,
+   "real": 2005,
+   "cached": 27,
+   "cost_cny": 4.7631,
+   "prompt_tokens": 4622370,
+   "completion_tokens": 394509,
+   "http_status": {
+    "ok": 2005
+   },
+   "finish": {
+    "stop": 1992,
+    "length": 13
+   },
+   "by_phase": {
+    "observe_facts": 626,
+    "initial_answer": 626,
+    "evidence_check": 621,
+    "acquire_A_CALC": 20,
+    "evidence_reassess_and_correct": 45,
+    "recheck": 41,
+    "acquire_A_SCOPE": 8,
+    "acquire_A_VALUE": 9,
+    "acquire_A_INTERPRET": 6,
+    "acquire_A_BIND": 1,
+    "acquire_A_UNIT": 1,
+    "acquire_A_TIME": 1
+   }
+  },
+  "NO_FACT_FIRST": {
+   "logical": 1997,
+   "real": 1990,
+   "cached": 7,
+   "cost_cny": 3.3612,
+   "prompt_tokens": 3170581,
+   "completion_tokens": 305461,
+   "http_status": {
+    "ok": 1990
+   },
+   "finish": {
+    "stop": 1979,
+    "length": 11
+   },
+   "by_phase": {
+    "read1": 626,
+    "read2": 626,
+    "evidence_check": 622,
+    "acquire_A_CALC": 23,
+    "evidence_reassess_and_correct": 40,
+    "recheck": 36,
+    "acquire_A_SCOPE": 3,
+    "acquire_A_VALUE": 9,
+    "acquire_A_UNIT": 1,
+    "acquire_A_TIME": 3,
+    "acquire_A_BIND": 1
+   }
+  },
+  "GENERIC_ACQ": {
+   "logical": 2005,
+   "real": 132,
+   "cached": 1873,
+   "cost_cny": 0.4905,
+   "prompt_tokens": 502086,
+   "completion_tokens": 32890,
+   "http_status": {
+    "ok": 132
+   },
+   "finish": {
+    "stop": 132
+   },
+   "by_phase": {
+    "acquire_GENERIC": 46,
+    "evidence_reassess_and_correct": 45,
+    "recheck": 41
+   }
+  },
+  "NO_ACQ": {
+   "logical": 1961,
+   "real": 88,
+   "cached": 1873,
+   "cost_cny": 0.3719,
+   "prompt_tokens": 398419,
+   "completion_tokens": 19679,
+   "http_status": {
+    "ok": 88
+   },
+   "finish": {
+    "stop": 88
+   },
+   "by_phase": {
+    "evidence_reassess_and_correct": 46,
+    "recheck": 42
+   }
+  },
+  "NO_GATE": {
+   "logical": 1964,
+   "real": 0,
+   "cached": 1964,
+   "cost_cny": 0,
+   "prompt_tokens": 0,
+   "completion_tokens": 0,
+   "http_status": {},
+   "finish": {},
+   "by_phase": {}
+  },
+  "_total": {
+   "logical": 9959,
+   "real": 4215,
+   "cost_cny": 8.9866
+  }
+ },
+ "cap": 9000,
+ "model": {
+  "name": "qwen3.8-flash",
+  "temperature": 0,
+  "thinking": false,
+  "max_tokens": 1200,
+  "retry": 0,
+  "price_cny_per_mtok": {
+   "in": 0.8,
+   "out": 2.7
+  }
+ },
+ "endpoint": {
+  "scheme": "https",
+  "host": "<endpoint>",
+  "path": "/compatible-mode/v1",
+  "source": "BAILIAN_CRED_FILE / 环境变量",
+  "key_present": true
+ },
+ "total_items": 626,
+ "pooled": {
+  "strict": {
+   "n": 626,
+   "steps": [
+    {
+     "n": 626,
+     "from_correct": 516,
+     "to_correct": 510,
+     "gained": 26,
+     "lost": 32,
+     "net": -6,
+     "mcnemar_raw": 0.5118423084,
+     "cluster_bootstrap95_pp": [
+      -0.958,
+      -0.958
+     ],
+     "discordant": 58,
+     "mde80_pp": 3.41,
+     "ablation": "NO_FACT_FIRST",
+     "vs": "FULL",
+     "holm_p": 1.0
+    },
+    {
+     "n": 626,
+     "from_correct": 516,
+     "to_correct": 517,
+     "gained": 2,
+     "lost": 1,
+     "net": 1,
+     "mcnemar_raw": 1.0,
+     "cluster_bootstrap95_pp": [
+      0.16,
+      0.16
+     ],
+     "discordant": 3,
+     "mde80_pp": 0.78,
+     "ablation": "GENERIC_ACQ",
+     "vs": "FULL",
+     "holm_p": 1.0
+    },
+    {
+     "n": 626,
+     "from_correct": 516,
+     "to_correct": 516,
+     "gained": 2,
+     "lost": 2,
+     "net": 0,
+     "mcnemar_raw": 1.0,
+     "cluster_bootstrap95_pp": [
+      0.0,
+      0.0
+     ],
+     "discordant": 4,
+     "mde80_pp": 0.9,
+     "ablation": "NO_ACQ",
+     "vs": "FULL",
+     "holm_p": 1.0
+    },
+    {
+     "n": 626,
+     "from_correct": 516,
+     "to_correct": 517,
+     "gained": 2,
+     "lost": 1,
+     "net": 1,
+     "mcnemar_raw": 1.0,
+     "cluster_bootstrap95_pp": [
+      0.16,
+      0.16
+     ],
+     "discordant": 3,
+     "mde80_pp": 0.78,
+     "ablation": "NO_GATE",
+     "vs": "FULL",
+     "holm_p": 1.0
+    }
+   ]
+  },
+  "unit_merged": {
+   "n": 626,
+   "steps": [
+    {
+     "n": 626,
+     "from_correct": 531,
+     "to_correct": 525,
+     "gained": 19,
+     "lost": 25,
+     "net": -6,
+     "mcnemar_raw": 0.4513808324,
+     "cluster_bootstrap95_pp": [
+      -0.958,
+      -0.958
+     ],
+     "discordant": 44,
+     "mde80_pp": 2.97,
+     "ablation": "NO_FACT_FIRST",
+     "vs": "FULL",
+     "holm_p": 1.0
+    },
+    {
+     "n": 626,
+     "from_correct": 531,
+     "to_correct": 532,
+     "gained": 2,
+     "lost": 1,
+     "net": 1,
+     "mcnemar_raw": 1.0,
+     "cluster_bootstrap95_pp": [
+      0.16,
+      0.16
+     ],
+     "discordant": 3,
+     "mde80_pp": 0.78,
+     "ablation": "GENERIC_ACQ",
+     "vs": "FULL",
+     "holm_p": 1.0
+    },
+    {
+     "n": 626,
+     "from_correct": 531,
+     "to_correct": 531,
+     "gained": 2,
+     "lost": 2,
+     "net": 0,
+     "mcnemar_raw": 1.0,
+     "cluster_bootstrap95_pp": [
+      0.0,
+      0.0
+     ],
+     "discordant": 4,
+     "mde80_pp": 0.9,
+     "ablation": "NO_ACQ",
+     "vs": "FULL",
+     "holm_p": 1.0
+    },
+    {
+     "n": 626,
+     "from_correct": 531,
+     "to_correct": 532,
+     "gained": 2,
+     "lost": 1,
+     "net": 1,
+     "mcnemar_raw": 1.0,
+     "cluster_bootstrap95_pp": [
+      0.16,
+      0.16
+     ],
+     "discordant": 3,
+     "mde80_pp": 0.78,
+     "ablation": "NO_GATE",
+     "vs": "FULL",
+     "holm_p": 1.0
+    }
+   ]
+  }
+ }
+}

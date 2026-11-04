@@ -1,0 +1,17 @@
+﻿dataset,contract,arm,correct,n
+mixed400,primary,COMMON,323,400
+mixed400,primary,GENERIC2,334,400
+mixed400,primary,EVID_INIT,344,400
+mixed400,primary,EVID_FINAL,350,400
+mixed400,merged,COMMON,332,400
+mixed400,merged,GENERIC2,345,400
+mixed400,merged,EVID_INIT,351,400
+mixed400,merged,EVID_FINAL,357,400
+numeric400,primary,COMMON,301,400
+numeric400,primary,GENERIC2,311,400
+numeric400,primary,EVID_INIT,322,400
+numeric400,primary,EVID_FINAL,325,400
+numeric400,merged,COMMON,308,400
+numeric400,merged,GENERIC2,325,400
+numeric400,merged,EVID_INIT,328,400
+numeric400,merged,EVID_FINAL,331,400

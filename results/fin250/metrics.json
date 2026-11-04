@@ -1,0 +1,1116 @@
+{
+ "freeze_sha256": "09226383cea4f91db8ce82eb20a733fe15e529798643398c5a911be872398558",
+ "fin250": {
+  "n": 250,
+  "metrics": "official relieved + official exact; historical display/exec separately",
+  "arms": {
+   "REREAD2": {
+    "official_correct": 247,
+    "official_accuracy": 0.988,
+    "official_exact_correct": 225,
+    "historical_counts": {
+     "W": 21,
+     "C": 229
+    },
+    "official_transition": {
+     "n": 250,
+     "initial_counts": {
+      "W": 3,
+      "C": 247
+     },
+     "final_counts": {
+      "W": 3,
+      "C": 247
+     },
+     "matrix": {
+      "W->W": 3,
+      "C->C": 247
+     },
+     "accuracy": 0.988,
+     "corrected": 0,
+     "corrupted": 0,
+     "correct_lost_to_unsubmitted": 0,
+     "repair_rate": 0.0,
+     "corruption_rate": 0.0,
+     "correct_loss_rate": 0.0,
+     "correct_retention_rate": 1.0,
+     "net_repair_per_all": 0.0
+    },
+    "cost": {
+     "requests": 500,
+     "input_tokens": 434660,
+     "output_tokens": 3466,
+     "cost_cny_estimated": 0.357111,
+     "known_cost_subtotal_cny": 0.357111,
+     "usage_missing_requests": 0,
+     "finish": {
+      "stop": 500
+     },
+     "http_status": {
+      "ok": 500
+     }
+    }
+   },
+   "EVID": {
+    "official_correct": 246,
+    "official_accuracy": 0.984,
+    "official_exact_correct": 231,
+    "historical_counts": {
+     "W": 18,
+     "C": 232
+    },
+    "official_transition": {
+     "n": 250,
+     "initial_counts": {
+      "C": 246,
+      "W": 4
+     },
+     "final_counts": {
+      "C": 246,
+      "W": 4
+     },
+     "matrix": {
+      "C->C": 245,
+      "W->W": 3,
+      "C->W": 1,
+      "W->C": 1
+     },
+     "accuracy": 0.984,
+     "corrected": 1,
+     "corrupted": 1,
+     "correct_lost_to_unsubmitted": 0,
+     "repair_rate": 0.25,
+     "corruption_rate": 0.0040650406504065045,
+     "correct_loss_rate": 0.0040650406504065045,
+     "correct_retention_rate": 0.9959349593495935,
+     "net_repair_per_all": 0.0
+    },
+    "cost": {
+     "requests": 759,
+     "input_tokens": 1125012,
+     "output_tokens": 102519,
+     "cost_cny_estimated": 1.176809,
+     "known_cost_subtotal_cny": 1.176809,
+     "usage_missing_requests": 0,
+     "finish": {
+      "stop": 759
+     },
+     "http_status": {
+      "ok": 759
+     }
+    }
+   }
+  },
+  "literature_reference": {
+   "GPT4V_upstream": {
+    "n": 250,
+    "correct": 199,
+    "accuracy": 0.796,
+    "exact_correct": 141,
+    "kind": "official historical released predictions; not rerun; different backbone/time",
+    "source": "https://github.com/naver-ai/tablevqabench/tree/master/outputs/gpt4v_evaluated"
+   }
+  },
+  "new_call_usage": {
+   "requests": 1259,
+   "input_tokens": 1559672,
+   "output_tokens": 105985,
+   "cost_cny_estimated": 1.53392,
+   "known_cost_subtotal_cny": 1.53392,
+   "usage_missing_requests": 0,
+   "finish": {
+    "stop": 1259
+   },
+   "http_status": {
+    "ok": 1259
+   }
+  },
+  "paired_EVID_minus_REREAD2": {
+   "n": 250,
+   "gained": 2,
+   "lost": 3,
+   "net": -1,
+   "mcnemar_raw": 1.0,
+   "source_table_bootstrap95": [
+    -0.02066115702479339,
+    0.013043478260869565
+   ]
+  }
+ },
+ "repair_reread": {
+  "numeric400": {
+   "n": 400,
+   "common_initial": {
+    "C": 301,
+    "W": 93,
+    "A": 6
+   },
+   "arms": {
+    "SSC": {
+     "n": 400,
+     "initial_counts": {
+      "C": 301,
+      "W": 93,
+      "A": 6
+     },
+     "final_counts": {
+      "C": 316,
+      "W": 78,
+      "A": 6
+     },
+     "matrix": {
+      "C->C": 298,
+      "W->W": 75,
+      "W->C": 18,
+      "C->W": 3,
+      "A->A": 6
+     },
+     "accuracy": 0.79,
+     "corrected": 18,
+     "corrupted": 3,
+     "correct_lost_to_unsubmitted": 0,
+     "repair_rate": 0.1935483870967742,
+     "corruption_rate": 0.009966777408637873,
+     "correct_loss_rate": 0.009966777408637873,
+     "correct_retention_rate": 0.9900332225913622,
+     "net_repair_per_all": 0.0375
+    },
+    "EVID": {
+     "n": 400,
+     "initial_counts": {
+      "C": 301,
+      "W": 93,
+      "A": 6
+     },
+     "final_counts": {
+      "C": 325,
+      "W": 69,
+      "A": 6
+     },
+     "matrix": {
+      "C->C": 299,
+      "W->W": 67,
+      "W->C": 26,
+      "C->W": 2,
+      "A->A": 6
+     },
+     "accuracy": 0.8125,
+     "corrected": 26,
+     "corrupted": 2,
+     "correct_lost_to_unsubmitted": 0,
+     "repair_rate": 0.27956989247311825,
+     "corruption_rate": 0.006644518272425249,
+     "correct_loss_rate": 0.006644518272425249,
+     "correct_retention_rate": 0.9933554817275747,
+     "net_repair_per_all": 0.06
+    },
+    "RR_LEQ": {
+     "n": 400,
+     "initial_counts": {
+      "C": 301,
+      "W": 93,
+      "A": 6
+     },
+     "final_counts": {
+      "C": 327,
+      "W": 67,
+      "A": 6
+     },
+     "matrix": {
+      "C->C": 299,
+      "W->W": 65,
+      "W->C": 28,
+      "C->W": 2,
+      "A->A": 6
+     },
+     "accuracy": 0.8175,
+     "corrected": 28,
+     "corrupted": 2,
+     "correct_lost_to_unsubmitted": 0,
+     "repair_rate": 0.3010752688172043,
+     "corruption_rate": 0.006644518272425249,
+     "correct_loss_rate": 0.006644518272425249,
+     "correct_retention_rate": 0.9933554817275747,
+     "net_repair_per_all": 0.065
+    },
+    "RR_GEQ": {
+     "n": 400,
+     "initial_counts": {
+      "C": 301,
+      "W": 93,
+      "A": 6
+     },
+     "final_counts": {
+      "C": 328,
+      "W": 66,
+      "A": 6
+     },
+     "matrix": {
+      "C->C": 300,
+      "W->W": 65,
+      "W->C": 28,
+      "C->W": 1,
+      "A->A": 6
+     },
+     "accuracy": 0.82,
+     "corrected": 28,
+     "corrupted": 1,
+     "correct_lost_to_unsubmitted": 0,
+     "repair_rate": 0.3010752688172043,
+     "corruption_rate": 0.0033222591362126247,
+     "correct_loss_rate": 0.0033222591362126247,
+     "correct_retention_rate": 0.9966777408637874,
+     "net_repair_per_all": 0.0675
+    },
+    "RR_FINAL": {
+     "n": 400,
+     "initial_counts": {
+      "C": 301,
+      "W": 93,
+      "A": 6
+     },
+     "final_counts": {
+      "C": 328,
+      "W": 66,
+      "A": 6
+     },
+     "matrix": {
+      "C->C": 300,
+      "W->W": 65,
+      "W->C": 28,
+      "C->W": 1,
+      "A->A": 6
+     },
+     "accuracy": 0.82,
+     "corrected": 28,
+     "corrupted": 1,
+     "correct_lost_to_unsubmitted": 0,
+     "repair_rate": 0.3010752688172043,
+     "corruption_rate": 0.0033222591362126247,
+     "correct_loss_rate": 0.0033222591362126247,
+     "correct_retention_rate": 0.9966777408637874,
+     "net_repair_per_all": 0.0675
+    }
+   },
+   "budget": {
+    "eligible_common": 394,
+    "reached": 394,
+    "reached_fraction": 1.0,
+    "target_token_total": 1678621,
+    "actual_known_token_total": 2144193,
+    "median_relative_overshoot_reached": 0.38569317761764266,
+    "p90_relative_overshoot_reached": 0.6821705426356589,
+    "max_relative_overshoot_reached": 0.78728391444477,
+    "usage_unknown_rows": 0
+   },
+   "new_call_usage": {
+    "requests": 1070,
+    "input_tokens": 2065657,
+    "output_tokens": 78536,
+    "cost_cny_estimated": 1.86458,
+    "known_cost_subtotal_cny": 1.86458,
+    "usage_missing_requests": 0,
+    "finish": {
+     "stop": 1070
+    },
+    "http_status": {
+     "ok": 1070
+    }
+   },
+   "by_source": {
+    "fintabnetqa": {
+     "SSC": {
+      "n": 200,
+      "initial_counts": {
+       "C": 190,
+       "W": 10
+      },
+      "final_counts": {
+       "C": 190,
+       "W": 10
+      },
+      "matrix": {
+       "C->C": 190,
+       "W->W": 10
+      },
+      "accuracy": 0.95,
+      "corrected": 0,
+      "corrupted": 0,
+      "correct_lost_to_unsubmitted": 0,
+      "repair_rate": 0.0,
+      "corruption_rate": 0.0,
+      "correct_loss_rate": 0.0,
+      "correct_retention_rate": 1.0,
+      "net_repair_per_all": 0.0
+     },
+     "EVID": {
+      "n": 200,
+      "initial_counts": {
+       "C": 190,
+       "W": 10
+      },
+      "final_counts": {
+       "C": 190,
+       "W": 10
+      },
+      "matrix": {
+       "C->C": 190,
+       "W->W": 10
+      },
+      "accuracy": 0.95,
+      "corrected": 0,
+      "corrupted": 0,
+      "correct_lost_to_unsubmitted": 0,
+      "repair_rate": 0.0,
+      "corruption_rate": 0.0,
+      "correct_loss_rate": 0.0,
+      "correct_retention_rate": 1.0,
+      "net_repair_per_all": 0.0
+     },
+     "RR_LEQ": {
+      "n": 200,
+      "initial_counts": {
+       "C": 190,
+       "W": 10
+      },
+      "final_counts": {
+       "C": 189,
+       "W": 11
+      },
+      "matrix": {
+       "C->C": 189,
+       "W->W": 10,
+       "C->W": 1
+      },
+      "accuracy": 0.945,
+      "corrected": 0,
+      "corrupted": 1,
+      "correct_lost_to_unsubmitted": 0,
+      "repair_rate": 0.0,
+      "corruption_rate": 0.005263157894736842,
+      "correct_loss_rate": 0.005263157894736842,
+      "correct_retention_rate": 0.9947368421052631,
+      "net_repair_per_all": -0.005
+     },
+     "RR_GEQ": {
+      "n": 200,
+      "initial_counts": {
+       "C": 190,
+       "W": 10
+      },
+      "final_counts": {
+       "C": 190,
+       "W": 10
+      },
+      "matrix": {
+       "C->C": 190,
+       "W->W": 10
+      },
+      "accuracy": 0.95,
+      "corrected": 0,
+      "corrupted": 0,
+      "correct_lost_to_unsubmitted": 0,
+      "repair_rate": 0.0,
+      "corruption_rate": 0.0,
+      "correct_loss_rate": 0.0,
+      "correct_retention_rate": 1.0,
+      "net_repair_per_all": 0.0
+     },
+     "RR_FINAL": {
+      "n": 200,
+      "initial_counts": {
+       "C": 190,
+       "W": 10
+      },
+      "final_counts": {
+       "C": 190,
+       "W": 10
+      },
+      "matrix": {
+       "C->C": 190,
+       "W->W": 10
+      },
+      "accuracy": 0.95,
+      "corrected": 0,
+      "corrupted": 0,
+      "correct_lost_to_unsubmitted": 0,
+      "repair_rate": 0.0,
+      "corruption_rate": 0.0,
+      "correct_loss_rate": 0.0,
+      "correct_retention_rate": 1.0,
+      "net_repair_per_all": 0.0
+     }
+    },
+    "finqa_rendered": {
+     "SSC": {
+      "n": 200,
+      "initial_counts": {
+       "C": 111,
+       "W": 83,
+       "A": 6
+      },
+      "final_counts": {
+       "C": 126,
+       "W": 68,
+       "A": 6
+      },
+      "matrix": {
+       "C->C": 108,
+       "W->W": 65,
+       "W->C": 18,
+       "C->W": 3,
+       "A->A": 6
+      },
+      "accuracy": 0.63,
+      "corrected": 18,
+      "corrupted": 3,
+      "correct_lost_to_unsubmitted": 0,
+      "repair_rate": 0.21686746987951808,
+      "corruption_rate": 0.02702702702702703,
+      "correct_loss_rate": 0.02702702702702703,
+      "correct_retention_rate": 0.972972972972973,
+      "net_repair_per_all": 0.075
+     },
+     "EVID": {
+      "n": 200,
+      "initial_counts": {
+       "C": 111,
+       "W": 83,
+       "A": 6
+      },
+      "final_counts": {
+       "C": 135,
+       "W": 59,
+       "A": 6
+      },
+      "matrix": {
+       "C->C": 109,
+       "W->W": 57,
+       "W->C": 26,
+       "C->W": 2,
+       "A->A": 6
+      },
+      "accuracy": 0.675,
+      "corrected": 26,
+      "corrupted": 2,
+      "correct_lost_to_unsubmitted": 0,
+      "repair_rate": 0.3132530120481928,
+      "corruption_rate": 0.018018018018018018,
+      "correct_loss_rate": 0.018018018018018018,
+      "correct_retention_rate": 0.9819819819819819,
+      "net_repair_per_all": 0.12
+     },
+     "RR_LEQ": {
+      "n": 200,
+      "initial_counts": {
+       "C": 111,
+       "W": 83,
+       "A": 6
+      },
+      "final_counts": {
+       "C": 138,
+       "W": 56,
+       "A": 6
+      },
+      "matrix": {
+       "C->C": 110,
+       "W->W": 55,
+       "W->C": 28,
+       "C->W": 1,
+       "A->A": 6
+      },
+      "accuracy": 0.69,
+      "corrected": 28,
+      "corrupted": 1,
+      "correct_lost_to_unsubmitted": 0,
+      "repair_rate": 0.3373493975903614,
+      "corruption_rate": 0.009009009009009009,
+      "correct_loss_rate": 0.009009009009009009,
+      "correct_retention_rate": 0.990990990990991,
+      "net_repair_per_all": 0.135
+     },
+     "RR_GEQ": {
+      "n": 200,
+      "initial_counts": {
+       "C": 111,
+       "W": 83,
+       "A": 6
+      },
+      "final_counts": {
+       "C": 138,
+       "W": 56,
+       "A": 6
+      },
+      "matrix": {
+       "C->C": 110,
+       "W->W": 55,
+       "W->C": 28,
+       "C->W": 1,
+       "A->A": 6
+      },
+      "accuracy": 0.69,
+      "corrected": 28,
+      "corrupted": 1,
+      "correct_lost_to_unsubmitted": 0,
+      "repair_rate": 0.3373493975903614,
+      "corruption_rate": 0.009009009009009009,
+      "correct_loss_rate": 0.009009009009009009,
+      "correct_retention_rate": 0.990990990990991,
+      "net_repair_per_all": 0.135
+     },
+     "RR_FINAL": {
+      "n": 200,
+      "initial_counts": {
+       "C": 111,
+       "W": 83,
+       "A": 6
+      },
+      "final_counts": {
+       "C": 138,
+       "W": 56,
+       "A": 6
+      },
+      "matrix": {
+       "C->C": 110,
+       "W->W": 55,
+       "W->C": 28,
+       "C->W": 1,
+       "A->A": 6
+      },
+      "accuracy": 0.69,
+      "corrected": 28,
+      "corrupted": 1,
+      "correct_lost_to_unsubmitted": 0,
+      "repair_rate": 0.3373493975903614,
+      "corruption_rate": 0.009009009009009009,
+      "correct_loss_rate": 0.009009009009009009,
+      "correct_retention_rate": 0.990990990990991,
+      "net_repair_per_all": 0.135
+     }
+    }
+   },
+   "comparison_note": "RR_GEQ uses capped last state on unreached rows and is not an all-rows >=budget policy unless reached_fraction=1; RR_FINAL identical to RR_GEQ except unavailable initial",
+   "EVID_minus_RR_GEQ": {
+    "n": 400,
+    "gained": 3,
+    "lost": 6,
+    "net": -3,
+    "mcnemar_raw": 0.5078125,
+    "source_table_bootstrap95": [
+     -0.022388059701492536,
+     0.007425742574257425
+    ],
+    "holm_p": 1
+   }
+  },
+  "mixed400": {
+   "n": 400,
+   "common_initial": {
+    "C": 323,
+    "W": 73,
+    "A": 4
+   },
+   "arms": {
+    "SSC": {
+     "n": 400,
+     "initial_counts": {
+      "C": 323,
+      "W": 73,
+      "A": 4
+     },
+     "final_counts": {
+      "C": 341,
+      "W": 55,
+      "A": 4
+     },
+     "matrix": {
+      "C->C": 319,
+      "W->W": 51,
+      "W->C": 22,
+      "A->A": 4,
+      "C->W": 4
+     },
+     "accuracy": 0.8525,
+     "corrected": 22,
+     "corrupted": 4,
+     "correct_lost_to_unsubmitted": 0,
+     "repair_rate": 0.3013698630136986,
+     "corruption_rate": 0.01238390092879257,
+     "correct_loss_rate": 0.01238390092879257,
+     "correct_retention_rate": 0.9876160990712074,
+     "net_repair_per_all": 0.045
+    },
+    "EVID": {
+     "n": 400,
+     "initial_counts": {
+      "C": 323,
+      "W": 73,
+      "A": 4
+     },
+     "final_counts": {
+      "C": 346,
+      "W": 50,
+      "A": 4
+     },
+     "matrix": {
+      "C->C": 319,
+      "W->W": 46,
+      "A->A": 4,
+      "W->C": 27,
+      "C->W": 4
+     },
+     "accuracy": 0.865,
+     "corrected": 27,
+     "corrupted": 4,
+     "correct_lost_to_unsubmitted": 0,
+     "repair_rate": 0.3698630136986301,
+     "corruption_rate": 0.01238390092879257,
+     "correct_loss_rate": 0.01238390092879257,
+     "correct_retention_rate": 0.9876160990712074,
+     "net_repair_per_all": 0.0575
+    },
+    "RR_LEQ": {
+     "n": 400,
+     "initial_counts": {
+      "C": 323,
+      "W": 73,
+      "A": 4
+     },
+     "final_counts": {
+      "C": 343,
+      "W": 53,
+      "A": 4
+     },
+     "matrix": {
+      "C->C": 319,
+      "W->W": 49,
+      "A->A": 4,
+      "C->W": 4,
+      "W->C": 24
+     },
+     "accuracy": 0.8575,
+     "corrected": 24,
+     "corrupted": 4,
+     "correct_lost_to_unsubmitted": 0,
+     "repair_rate": 0.3287671232876712,
+     "corruption_rate": 0.01238390092879257,
+     "correct_loss_rate": 0.01238390092879257,
+     "correct_retention_rate": 0.9876160990712074,
+     "net_repair_per_all": 0.05
+    },
+    "RR_GEQ": {
+     "n": 400,
+     "initial_counts": {
+      "C": 323,
+      "W": 73,
+      "A": 4
+     },
+     "final_counts": {
+      "C": 343,
+      "W": 53,
+      "A": 4
+     },
+     "matrix": {
+      "C->C": 319,
+      "W->W": 49,
+      "A->A": 4,
+      "C->W": 4,
+      "W->C": 24
+     },
+     "accuracy": 0.8575,
+     "corrected": 24,
+     "corrupted": 4,
+     "correct_lost_to_unsubmitted": 0,
+     "repair_rate": 0.3287671232876712,
+     "corruption_rate": 0.01238390092879257,
+     "correct_loss_rate": 0.01238390092879257,
+     "correct_retention_rate": 0.9876160990712074,
+     "net_repair_per_all": 0.05
+    },
+    "RR_FINAL": {
+     "n": 400,
+     "initial_counts": {
+      "C": 323,
+      "W": 73,
+      "A": 4
+     },
+     "final_counts": {
+      "C": 343,
+      "W": 53,
+      "A": 4
+     },
+     "matrix": {
+      "C->C": 319,
+      "W->W": 49,
+      "A->A": 4,
+      "C->W": 4,
+      "W->C": 24
+     },
+     "accuracy": 0.8575,
+     "corrected": 24,
+     "corrupted": 4,
+     "correct_lost_to_unsubmitted": 0,
+     "repair_rate": 0.3287671232876712,
+     "corruption_rate": 0.01238390092879257,
+     "correct_loss_rate": 0.01238390092879257,
+     "correct_retention_rate": 0.9876160990712074,
+     "net_repair_per_all": 0.05
+    }
+   },
+   "budget": {
+    "eligible_common": 396,
+    "reached": 395,
+    "reached_fraction": 0.9974747474747475,
+    "target_token_total": 1010867,
+    "actual_known_token_total": 1207803,
+    "median_relative_overshoot_reached": 0.2244759972954699,
+    "p90_relative_overshoot_reached": 0.4906191369606004,
+    "max_relative_overshoot_reached": 0.7019631171921475,
+    "usage_unknown_rows": 0
+   },
+   "new_call_usage": {
+    "requests": 1147,
+    "input_tokens": 1138865,
+    "output_tokens": 68938,
+    "cost_cny_estimated": 1.097206,
+    "known_cost_subtotal_cny": 1.097206,
+    "usage_missing_requests": 0,
+    "finish": {
+     "stop": 1147
+    },
+    "http_status": {
+     "ok": 1147
+    }
+   },
+   "by_source": {
+    "vwtq": {
+     "SSC": {
+      "n": 226,
+      "initial_counts": {
+       "C": 161,
+       "W": 61,
+       "A": 4
+      },
+      "final_counts": {
+       "C": 179,
+       "W": 43,
+       "A": 4
+      },
+      "matrix": {
+       "C->C": 157,
+       "W->W": 39,
+       "W->C": 22,
+       "A->A": 4,
+       "C->W": 4
+      },
+      "accuracy": 0.7920353982300885,
+      "corrected": 22,
+      "corrupted": 4,
+      "correct_lost_to_unsubmitted": 0,
+      "repair_rate": 0.36065573770491804,
+      "corruption_rate": 0.024844720496894408,
+      "correct_loss_rate": 0.024844720496894408,
+      "correct_retention_rate": 0.9751552795031055,
+      "net_repair_per_all": 0.07964601769911504
+     },
+     "EVID": {
+      "n": 226,
+      "initial_counts": {
+       "C": 161,
+       "W": 61,
+       "A": 4
+      },
+      "final_counts": {
+       "C": 184,
+       "W": 38,
+       "A": 4
+      },
+      "matrix": {
+       "C->C": 157,
+       "W->W": 34,
+       "A->A": 4,
+       "W->C": 27,
+       "C->W": 4
+      },
+      "accuracy": 0.8141592920353983,
+      "corrected": 27,
+      "corrupted": 4,
+      "correct_lost_to_unsubmitted": 0,
+      "repair_rate": 0.4426229508196721,
+      "corruption_rate": 0.024844720496894408,
+      "correct_loss_rate": 0.024844720496894408,
+      "correct_retention_rate": 0.9751552795031055,
+      "net_repair_per_all": 0.10176991150442478
+     },
+     "RR_LEQ": {
+      "n": 226,
+      "initial_counts": {
+       "C": 161,
+       "W": 61,
+       "A": 4
+      },
+      "final_counts": {
+       "C": 181,
+       "W": 41,
+       "A": 4
+      },
+      "matrix": {
+       "C->C": 157,
+       "W->W": 37,
+       "A->A": 4,
+       "C->W": 4,
+       "W->C": 24
+      },
+      "accuracy": 0.8008849557522124,
+      "corrected": 24,
+      "corrupted": 4,
+      "correct_lost_to_unsubmitted": 0,
+      "repair_rate": 0.39344262295081966,
+      "corruption_rate": 0.024844720496894408,
+      "correct_loss_rate": 0.024844720496894408,
+      "correct_retention_rate": 0.9751552795031055,
+      "net_repair_per_all": 0.08849557522123894
+     },
+     "RR_GEQ": {
+      "n": 226,
+      "initial_counts": {
+       "C": 161,
+       "W": 61,
+       "A": 4
+      },
+      "final_counts": {
+       "C": 181,
+       "W": 41,
+       "A": 4
+      },
+      "matrix": {
+       "C->C": 157,
+       "W->W": 37,
+       "A->A": 4,
+       "C->W": 4,
+       "W->C": 24
+      },
+      "accuracy": 0.8008849557522124,
+      "corrected": 24,
+      "corrupted": 4,
+      "correct_lost_to_unsubmitted": 0,
+      "repair_rate": 0.39344262295081966,
+      "corruption_rate": 0.024844720496894408,
+      "correct_loss_rate": 0.024844720496894408,
+      "correct_retention_rate": 0.9751552795031055,
+      "net_repair_per_all": 0.08849557522123894
+     },
+     "RR_FINAL": {
+      "n": 226,
+      "initial_counts": {
+       "C": 161,
+       "W": 61,
+       "A": 4
+      },
+      "final_counts": {
+       "C": 181,
+       "W": 41,
+       "A": 4
+      },
+      "matrix": {
+       "C->C": 157,
+       "W->W": 37,
+       "A->A": 4,
+       "C->W": 4,
+       "W->C": 24
+      },
+      "accuracy": 0.8008849557522124,
+      "corrected": 24,
+      "corrupted": 4,
+      "correct_lost_to_unsubmitted": 0,
+      "repair_rate": 0.39344262295081966,
+      "corruption_rate": 0.024844720496894408,
+      "correct_loss_rate": 0.024844720496894408,
+      "correct_retention_rate": 0.9751552795031055,
+      "net_repair_per_all": 0.08849557522123894
+     }
+    },
+    "fintabnetqa": {
+     "SSC": {
+      "n": 174,
+      "initial_counts": {
+       "C": 162,
+       "W": 12
+      },
+      "final_counts": {
+       "C": 162,
+       "W": 12
+      },
+      "matrix": {
+       "C->C": 162,
+       "W->W": 12
+      },
+      "accuracy": 0.9310344827586207,
+      "corrected": 0,
+      "corrupted": 0,
+      "correct_lost_to_unsubmitted": 0,
+      "repair_rate": 0.0,
+      "corruption_rate": 0.0,
+      "correct_loss_rate": 0.0,
+      "correct_retention_rate": 1.0,
+      "net_repair_per_all": 0.0
+     },
+     "EVID": {
+      "n": 174,
+      "initial_counts": {
+       "C": 162,
+       "W": 12
+      },
+      "final_counts": {
+       "C": 162,
+       "W": 12
+      },
+      "matrix": {
+       "C->C": 162,
+       "W->W": 12
+      },
+      "accuracy": 0.9310344827586207,
+      "corrected": 0,
+      "corrupted": 0,
+      "correct_lost_to_unsubmitted": 0,
+      "repair_rate": 0.0,
+      "corruption_rate": 0.0,
+      "correct_loss_rate": 0.0,
+      "correct_retention_rate": 1.0,
+      "net_repair_per_all": 0.0
+     },
+     "RR_LEQ": {
+      "n": 174,
+      "initial_counts": {
+       "C": 162,
+       "W": 12
+      },
+      "final_counts": {
+       "C": 162,
+       "W": 12
+      },
+      "matrix": {
+       "C->C": 162,
+       "W->W": 12
+      },
+      "accuracy": 0.9310344827586207,
+      "corrected": 0,
+      "corrupted": 0,
+      "correct_lost_to_unsubmitted": 0,
+      "repair_rate": 0.0,
+      "corruption_rate": 0.0,
+      "correct_loss_rate": 0.0,
+      "correct_retention_rate": 1.0,
+      "net_repair_per_all": 0.0
+     },
+     "RR_GEQ": {
+      "n": 174,
+      "initial_counts": {
+       "C": 162,
+       "W": 12
+      },
+      "final_counts": {
+       "C": 162,
+       "W": 12
+      },
+      "matrix": {
+       "C->C": 162,
+       "W->W": 12
+      },
+      "accuracy": 0.9310344827586207,
+      "corrected": 0,
+      "corrupted": 0,
+      "correct_lost_to_unsubmitted": 0,
+      "repair_rate": 0.0,
+      "corruption_rate": 0.0,
+      "correct_loss_rate": 0.0,
+      "correct_retention_rate": 1.0,
+      "net_repair_per_all": 0.0
+     },
+     "RR_FINAL": {
+      "n": 174,
+      "initial_counts": {
+       "C": 162,
+       "W": 12
+      },
+      "final_counts": {
+       "C": 162,
+       "W": 12
+      },
+      "matrix": {
+       "C->C": 162,
+       "W->W": 12
+      },
+      "accuracy": 0.9310344827586207,
+      "corrected": 0,
+      "corrupted": 0,
+      "correct_lost_to_unsubmitted": 0,
+      "repair_rate": 0.0,
+      "corruption_rate": 0.0,
+      "correct_loss_rate": 0.0,
+      "correct_retention_rate": 1.0,
+      "net_repair_per_all": 0.0
+     }
+    }
+   },
+   "comparison_note": "RR_GEQ uses capped last state on unreached rows and is not an all-rows >=budget policy unless reached_fraction=1; RR_FINAL identical to RR_GEQ except unavailable initial",
+   "EVID_minus_RR_GEQ": {
+    "n": 400,
+    "gained": 9,
+    "lost": 6,
+    "net": 3,
+    "mcnemar_raw": 0.60723876953125,
+    "source_table_bootstrap95": [
+     -0.012468827930174564,
+     0.02696078431372549
+    ],
+    "holm_p": 1
+   }
+  }
+ },
+ "new_followup_comparisons": {
+  "numeric400": {
+   "n": 400,
+   "gained": 3,
+   "lost": 6,
+   "net": -3,
+   "mcnemar_raw": 0.5078125,
+   "source_table_bootstrap95": [
+    -0.022388059701492536,
+    0.007425742574257425
+   ],
+   "holm_p": 1
+  },
+  "mixed400": {
+   "n": 400,
+   "gained": 9,
+   "lost": 6,
+   "net": 3,
+   "mcnemar_raw": 0.60723876953125,
+   "source_table_bootstrap95": [
+    -0.012468827930174564,
+    0.02696078431372549
+   ],
+   "holm_p": 1
+  }
+ },
+ "total_new_usage": {
+  "requests": 3476,
+  "input_tokens": 4764194,
+  "output_tokens": 253459,
+  "cost_cny_estimated": 4.495706,
+  "known_cost_subtotal_cny": 4.495706,
+  "usage_missing_requests": 0,
+  "finish": {
+   "stop": 3476
+  },
+  "http_status": {
+   "ok": 3476
+  }
+ },
+ "raw_result_sha256": {
+  "fin250": "f5dc639e35f6680d84534018180bcb2db835fa9c357616dd85272444b3091a9d",
+  "numeric400_rr": "0b8f5c7c78e1c30e777b1ab0011f54025eae0c366b678616f6e1c44c9f526595",
+  "mixed400_rr": "bc9fc1dc05fac3439e29d4baec5cbf9b1bc14364ddb08c38ba4af4709e52d433"
+ }
+}

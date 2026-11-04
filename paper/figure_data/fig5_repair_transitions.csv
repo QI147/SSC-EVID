@@ -1,0 +1,7 @@
+﻿dataset,arm,initial,init_C,R1_C,R2_C,W_to_C,C_to_W,C_to_C,W_to_W,A_final,C_to_A,W_to_A,A_to_C,A_to_W,A_to_A,note
+mixed400,SSC,共同初态,323,338,341,22,4,319,51,4,0,0,0,0,4,
+mixed400,EVID,共同初态,323,342,346,27,4,319,46,4,0,0,0,0,4,
+numeric400,SSC,共同初态,301,317,316,18,3,298,75,6,0,0,0,0,6,
+numeric400,EVID,共同初态,301,323,325,26,2,299,67,6,0,0,0,0,6,
+mixed400,EVID,独立初态(EVID_INIT),344,,350,7,1,,,,,,,,,gained/lost为终态配对差，含未提交变化
+numeric400,EVID,独立初态(EVID_INIT),322,,325,4,1,,,,,,,,,gained/lost为终态配对差，含未提交变化

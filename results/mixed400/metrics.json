@@ -1,0 +1,822 @@
+{
+ "dataset": "mixed400",
+ "n": 400,
+ "design": "e2e 4 arms; repair 2 arms (SSC vs EVID36) + call-matched reread control; RR_MATCH comparisons are exploratory and outside the Holm set",
+ "common_initial": {
+  "C": 323,
+  "W": 73,
+  "A": 4
+ },
+ "common_cost": {
+  "requests": 400,
+  "input_tokens": 326379,
+  "output_tokens": 28530,
+  "cost_cny_estimated": 0.338134,
+  "known_cost_subtotal_cny": 0.338134,
+  "usage_missing_requests": 0,
+  "finish": {
+   "stop": 399,
+   "length": 1
+  },
+  "http_status": {
+   "ok": 400
+  }
+ },
+ "e2e": {
+  "DIRECT": {
+   "n": 400,
+   "initial_counts": {
+    "C": 305,
+    "W": 95
+   },
+   "final_counts": {
+    "C": 305,
+    "W": 95
+   },
+   "matrix": {
+    "C->C": 305,
+    "W->W": 95
+   },
+   "accuracy": 0.7625,
+   "corrected": 0,
+   "corrupted": 0,
+   "correct_lost_to_unsubmitted": 0,
+   "repair_rate": 0.0,
+   "corruption_rate": 0.0,
+   "correct_loss_rate": 0.0,
+   "correct_retention_rate": 1.0,
+   "net_repair_per_all": 0.0,
+   "cost": {
+    "requests": 400,
+    "input_tokens": 316370,
+    "output_tokens": 2237,
+    "cost_cny_estimated": 0.259153,
+    "known_cost_subtotal_cny": 0.259153,
+    "usage_missing_requests": 0,
+    "finish": {
+     "stop": 400
+    },
+    "http_status": {
+     "ok": 400
+    }
+   },
+   "by_source": {
+    "vwtq": {
+     "C": 158,
+     "W": 68
+    },
+    "fintabnetqa": {
+     "C": 147,
+     "W": 27
+    }
+   }
+  },
+  "REREAD2": {
+   "n": 400,
+   "initial_counts": {
+    "C": 306,
+    "W": 94
+   },
+   "final_counts": {
+    "C": 313,
+    "W": 87
+   },
+   "matrix": {
+    "C->C": 289,
+    "W->W": 70,
+    "C->W": 17,
+    "W->C": 24
+   },
+   "accuracy": 0.7825,
+   "corrected": 24,
+   "corrupted": 17,
+   "correct_lost_to_unsubmitted": 0,
+   "repair_rate": 0.2553191489361702,
+   "corruption_rate": 0.05555555555555555,
+   "correct_loss_rate": 0.05555555555555555,
+   "correct_retention_rate": 0.9444444444444444,
+   "net_repair_per_all": 0.0175,
+   "cost": {
+    "requests": 800,
+    "input_tokens": 640900,
+    "output_tokens": 4545,
+    "cost_cny_estimated": 0.525013,
+    "known_cost_subtotal_cny": 0.525013,
+    "usage_missing_requests": 0,
+    "finish": {
+     "stop": 800
+    },
+    "http_status": {
+     "ok": 800
+    }
+   },
+   "by_source": {
+    "vwtq": {
+     "C": 156,
+     "W": 70
+    },
+    "fintabnetqa": {
+     "C": 157,
+     "W": 17
+    }
+   }
+  },
+  "SSC": {
+   "n": 400,
+   "initial_counts": {
+    "C": 323,
+    "W": 77
+   },
+   "final_counts": {
+    "C": 321,
+    "W": 79
+   },
+   "matrix": {
+    "C->C": 319,
+    "W->C": 2,
+    "W->W": 75,
+    "C->W": 4
+   },
+   "accuracy": 0.8025,
+   "corrected": 2,
+   "corrupted": 4,
+   "correct_lost_to_unsubmitted": 0,
+   "repair_rate": 0.025974025974025976,
+   "corruption_rate": 0.01238390092879257,
+   "correct_loss_rate": 0.01238390092879257,
+   "correct_retention_rate": 0.9876160990712074,
+   "net_repair_per_all": -0.005,
+   "cost": {
+    "requests": 813,
+    "input_tokens": 812015,
+    "output_tokens": 171506,
+    "cost_cny_estimated": 1.112673,
+    "known_cost_subtotal_cny": 1.112673,
+    "usage_missing_requests": 0,
+    "finish": {
+     "stop": 805,
+     "length": 8
+    },
+    "http_status": {
+     "ok": 813
+    }
+   },
+   "by_source": {
+    "vwtq": {
+     "C": 180,
+     "W": 46
+    },
+    "fintabnetqa": {
+     "C": 141,
+     "W": 33
+    }
+   }
+  },
+  "EVID": {
+   "n": 400,
+   "initial_counts": {
+    "C": 344,
+    "W": 54,
+    "A": 2
+   },
+   "final_counts": {
+    "C": 350,
+    "W": 48,
+    "A": 2
+   },
+   "matrix": {
+    "C->C": 343,
+    "W->W": 47,
+    "A->A": 2,
+    "W->C": 7,
+    "C->W": 1
+   },
+   "accuracy": 0.875,
+   "corrected": 7,
+   "corrupted": 1,
+   "correct_lost_to_unsubmitted": 0,
+   "repair_rate": 0.12962962962962962,
+   "corruption_rate": 0.0029069767441860465,
+   "correct_loss_rate": 0.0029069767441860465,
+   "correct_retention_rate": 0.997093023255814,
+   "net_repair_per_all": 0.015,
+   "cost": {
+    "requests": 1261,
+    "input_tokens": 2485142,
+    "output_tokens": 240908,
+    "cost_cny_estimated": 2.638589,
+    "known_cost_subtotal_cny": 2.638589,
+    "usage_missing_requests": 0,
+    "finish": {
+     "stop": 1252,
+     "length": 9
+    },
+    "http_status": {
+     "ok": 1261
+    }
+   },
+   "by_source": {
+    "vwtq": {
+     "C": 188,
+     "W": 36,
+     "A": 2
+    },
+    "fintabnetqa": {
+     "C": 162,
+     "W": 12
+    }
+   }
+  }
+ },
+ "repair": {
+  "SSC": {
+   "r1": {
+    "n": 400,
+    "initial_counts": {
+     "C": 323,
+     "W": 73,
+     "A": 4
+    },
+    "final_counts": {
+     "C": 338,
+     "W": 58,
+     "A": 4
+    },
+    "matrix": {
+     "C->C": 317,
+     "W->W": 52,
+     "W->C": 21,
+     "A->A": 4,
+     "C->W": 6
+    },
+    "accuracy": 0.845,
+    "corrected": 21,
+    "corrupted": 6,
+    "correct_lost_to_unsubmitted": 0,
+    "repair_rate": 0.2876712328767123,
+    "corruption_rate": 0.018575851393188854,
+    "correct_loss_rate": 0.018575851393188854,
+    "correct_retention_rate": 0.9814241486068112,
+    "net_repair_per_all": 0.0375,
+    "increment_from_previous_round": {
+     "n": 400,
+     "initial_counts": {
+      "C": 323,
+      "W": 73,
+      "A": 4
+     },
+     "final_counts": {
+      "C": 338,
+      "W": 58,
+      "A": 4
+     },
+     "matrix": {
+      "C->C": 317,
+      "W->W": 52,
+      "W->C": 21,
+      "A->A": 4,
+      "C->W": 6
+     },
+     "accuracy": 0.845,
+     "corrected": 21,
+     "corrupted": 6,
+     "correct_lost_to_unsubmitted": 0,
+     "repair_rate": 0.2876712328767123,
+     "corruption_rate": 0.018575851393188854,
+     "correct_loss_rate": 0.018575851393188854,
+     "correct_retention_rate": 0.9814241486068112,
+     "net_repair_per_all": 0.0375
+    },
+    "detection_current_round": {
+     "classified": 396,
+     "TN": 313,
+     "FN": 43,
+     "TP": 30,
+     "initial_unsubmitted": 4,
+     "FP": 10,
+     "error_recall": 0.410958904109589,
+     "detection_precision": 0.75,
+     "selective_accuracy": 0.8661616161616161,
+     "coverage": 1.0,
+     "unknown_rate": 0.0,
+     "note": "UNKNOWN/unexecuted not classified as right/wrong; recall denominator all current W"
+    },
+    "changed_wrong_to_wrong": 8,
+    "exclusive_round_cost": {
+     "requests": 436,
+     "input_tokens": 453012,
+     "output_tokens": 104189,
+     "cost_cny_estimated": 0.643712,
+     "known_cost_subtotal_cny": 0.643712,
+     "usage_missing_requests": 0,
+     "finish": {
+      "stop": 433,
+      "length": 3
+     },
+     "http_status": {
+      "ok": 436
+     }
+    }
+   },
+   "r2": {
+    "n": 400,
+    "initial_counts": {
+     "C": 323,
+     "W": 73,
+     "A": 4
+    },
+    "final_counts": {
+     "C": 341,
+     "W": 55,
+     "A": 4
+    },
+    "matrix": {
+     "C->C": 319,
+     "W->W": 51,
+     "W->C": 22,
+     "A->A": 4,
+     "C->W": 4
+    },
+    "accuracy": 0.8525,
+    "corrected": 22,
+    "corrupted": 4,
+    "correct_lost_to_unsubmitted": 0,
+    "repair_rate": 0.3013698630136986,
+    "corruption_rate": 0.01238390092879257,
+    "correct_loss_rate": 0.01238390092879257,
+    "correct_retention_rate": 0.9876160990712074,
+    "net_repair_per_all": 0.045,
+    "increment_from_previous_round": {
+     "n": 400,
+     "initial_counts": {
+      "C": 338,
+      "W": 58,
+      "A": 4
+     },
+     "final_counts": {
+      "C": 341,
+      "W": 55,
+      "A": 4
+     },
+     "matrix": {
+      "C->C": 338,
+      "W->W": 55,
+      "A->A": 4,
+      "W->C": 3
+     },
+     "accuracy": 0.8525,
+     "corrected": 3,
+     "corrupted": 0,
+     "correct_lost_to_unsubmitted": 0,
+     "repair_rate": 0.05172413793103448,
+     "corruption_rate": 0.0,
+     "correct_loss_rate": 0.0,
+     "correct_retention_rate": 1.0,
+     "net_repair_per_all": 0.0075
+    },
+    "detection_current_round": {
+     "not_executed": 356,
+     "classified": 40,
+     "FP": 5,
+     "initial_unsubmitted": 4,
+     "FN": 11,
+     "TN": 20,
+     "TP": 4,
+     "error_recall": 0.06896551724137931,
+     "detection_precision": 0.4444444444444444,
+     "selective_accuracy": 0.6,
+     "coverage": 0.10101010101010101,
+     "unknown_rate": 0.0,
+     "note": "UNKNOWN/unexecuted not classified as right/wrong; recall denominator all current W"
+    },
+    "changed_wrong_to_wrong": 8,
+    "exclusive_round_cost": {
+     "requests": 49,
+     "input_tokens": 72216,
+     "output_tokens": 18711,
+     "cost_cny_estimated": 0.108295,
+     "known_cost_subtotal_cny": 0.108295,
+     "usage_missing_requests": 0,
+     "finish": {
+      "stop": 46,
+      "length": 3
+     },
+     "http_status": {
+      "ok": 49
+     }
+    }
+   }
+  },
+  "EVID": {
+   "r1": {
+    "n": 400,
+    "initial_counts": {
+     "C": 323,
+     "W": 73,
+     "A": 4
+    },
+    "final_counts": {
+     "C": 342,
+     "W": 54,
+     "A": 4
+    },
+    "matrix": {
+     "C->C": 319,
+     "W->W": 50,
+     "A->A": 4,
+     "W->C": 23,
+     "C->W": 4
+    },
+    "accuracy": 0.855,
+    "corrected": 23,
+    "corrupted": 4,
+    "correct_lost_to_unsubmitted": 0,
+    "repair_rate": 0.3150684931506849,
+    "corruption_rate": 0.01238390092879257,
+    "correct_loss_rate": 0.01238390092879257,
+    "correct_retention_rate": 0.9876160990712074,
+    "net_repair_per_all": 0.0475,
+    "increment_from_previous_round": {
+     "n": 400,
+     "initial_counts": {
+      "C": 323,
+      "W": 73,
+      "A": 4
+     },
+     "final_counts": {
+      "C": 342,
+      "W": 54,
+      "A": 4
+     },
+     "matrix": {
+      "C->C": 319,
+      "W->W": 50,
+      "A->A": 4,
+      "W->C": 23,
+      "C->W": 4
+     },
+     "accuracy": 0.855,
+     "corrected": 23,
+     "corrupted": 4,
+     "correct_lost_to_unsubmitted": 0,
+     "repair_rate": 0.3150684931506849,
+     "corruption_rate": 0.01238390092879257,
+     "correct_loss_rate": 0.01238390092879257,
+     "correct_retention_rate": 0.9876160990712074,
+     "net_repair_per_all": 0.0475
+    },
+    "detection_current_round": {
+     "classified": 393,
+     "TN": 315,
+     "FN": 35,
+     "initial_unsubmitted": 4,
+     "parse_or_method_failure": 2,
+     "TP": 36,
+     "FP": 7,
+     "unknown": 1,
+     "error_recall": 0.4931506849315068,
+     "detection_precision": 0.8372093023255814,
+     "selective_accuracy": 0.8931297709923665,
+     "coverage": 0.9924242424242424,
+     "unknown_rate": 0.0025252525252525255,
+     "note": "UNKNOWN/unexecuted not classified as right/wrong; recall denominator all current W"
+    },
+    "changed_wrong_to_wrong": 4,
+    "exclusive_round_cost": {
+     "requests": 519,
+     "input_tokens": 722362,
+     "output_tokens": 126725,
+     "cost_cny_estimated": 0.920054,
+     "known_cost_subtotal_cny": 0.920054,
+     "usage_missing_requests": 0,
+     "finish": {
+      "stop": 512,
+      "length": 7
+     },
+     "http_status": {
+      "ok": 519
+     }
+    }
+   },
+   "r2": {
+    "n": 400,
+    "initial_counts": {
+     "C": 323,
+     "W": 73,
+     "A": 4
+    },
+    "final_counts": {
+     "C": 346,
+     "W": 50,
+     "A": 4
+    },
+    "matrix": {
+     "C->C": 319,
+     "W->W": 46,
+     "A->A": 4,
+     "W->C": 27,
+     "C->W": 4
+    },
+    "accuracy": 0.865,
+    "corrected": 27,
+    "corrupted": 4,
+    "correct_lost_to_unsubmitted": 0,
+    "repair_rate": 0.3698630136986301,
+    "corruption_rate": 0.01238390092879257,
+    "correct_loss_rate": 0.01238390092879257,
+    "correct_retention_rate": 0.9876160990712074,
+    "net_repair_per_all": 0.0575,
+    "increment_from_previous_round": {
+     "n": 400,
+     "initial_counts": {
+      "C": 342,
+      "W": 54,
+      "A": 4
+     },
+     "final_counts": {
+      "C": 346,
+      "W": 50,
+      "A": 4
+     },
+     "matrix": {
+      "C->C": 342,
+      "W->W": 50,
+      "A->A": 4,
+      "W->C": 4
+     },
+     "accuracy": 0.865,
+     "corrected": 4,
+     "corrupted": 0,
+     "correct_lost_to_unsubmitted": 0,
+     "repair_rate": 0.07407407407407407,
+     "corruption_rate": 0.0,
+     "correct_loss_rate": 0.0,
+     "correct_retention_rate": 1.0,
+     "net_repair_per_all": 0.01
+    },
+    "detection_current_round": {
+     "not_executed": 351,
+     "initial_unsubmitted": 4,
+     "classified": 41,
+     "TN": 24,
+     "TP": 8,
+     "parse_or_method_failure": 4,
+     "FN": 8,
+     "FP": 1,
+     "error_recall": 0.14814814814814814,
+     "detection_precision": 0.8888888888888888,
+     "selective_accuracy": 0.7804878048780488,
+     "coverage": 0.10353535353535354,
+     "unknown_rate": 0.0,
+     "note": "UNKNOWN/unexecuted not classified as right/wrong; recall denominator all current W"
+    },
+    "changed_wrong_to_wrong": 6,
+    "exclusive_round_cost": {
+     "requests": 70,
+     "input_tokens": 134679,
+     "output_tokens": 27101,
+     "cost_cny_estimated": 0.180916,
+     "known_cost_subtotal_cny": 0.180916,
+     "usage_missing_requests": 0,
+     "finish": {
+      "stop": 67,
+      "length": 3
+     },
+     "http_status": {
+      "ok": 70
+     }
+    }
+   }
+  },
+  "RR_MATCH": {
+   "r1": {
+    "n": 400,
+    "initial_counts": {
+     "C": 323,
+     "W": 73,
+     "A": 4
+    },
+    "final_counts": {
+     "C": 337,
+     "W": 59,
+     "A": 4
+    },
+    "matrix": {
+     "C->C": 314,
+     "W->W": 50,
+     "C->W": 9,
+     "A->A": 4,
+     "W->C": 23
+    },
+    "accuracy": 0.8425,
+    "corrected": 23,
+    "corrupted": 9,
+    "correct_lost_to_unsubmitted": 0,
+    "repair_rate": 0.3150684931506849,
+    "corruption_rate": 0.02786377708978328,
+    "correct_loss_rate": 0.02786377708978328,
+    "correct_retention_rate": 0.9721362229102167,
+    "net_repair_per_all": 0.035,
+    "increment_from_previous_round": {
+     "n": 400,
+     "initial_counts": {
+      "C": 323,
+      "W": 73,
+      "A": 4
+     },
+     "final_counts": {
+      "C": 337,
+      "W": 59,
+      "A": 4
+     },
+     "matrix": {
+      "C->C": 314,
+      "W->W": 50,
+      "C->W": 9,
+      "A->A": 4,
+      "W->C": 23
+     },
+     "accuracy": 0.8425,
+     "corrected": 23,
+     "corrupted": 9,
+     "correct_lost_to_unsubmitted": 0,
+     "repair_rate": 0.3150684931506849,
+     "corruption_rate": 0.02786377708978328,
+     "correct_loss_rate": 0.02786377708978328,
+     "correct_retention_rate": 0.9721362229102167,
+     "net_repair_per_all": 0.035
+    },
+    "detection_current_round": {
+     "no_detection_protocol": 396,
+     "initial_unsubmitted": 4,
+     "error_recall": 0.0,
+     "detection_precision": null,
+     "selective_accuracy": null,
+     "coverage": 0.0,
+     "unknown_rate": 0.0,
+     "note": "UNKNOWN/unexecuted not classified as right/wrong; recall denominator all current W"
+    },
+    "changed_wrong_to_wrong": 13,
+    "exclusive_round_cost": {
+     "requests": 519,
+     "input_tokens": 471795,
+     "output_tokens": 51114,
+     "cost_cny_estimated": 0.515459,
+     "known_cost_subtotal_cny": 0.515459,
+     "usage_missing_requests": 0,
+     "finish": {
+      "stop": 510,
+      "length": 9
+     },
+     "http_status": {
+      "ok": 519
+     }
+    }
+   },
+   "r2": {
+    "n": 400,
+    "initial_counts": {
+     "C": 323,
+     "W": 73,
+     "A": 4
+    },
+    "final_counts": {
+     "C": 335,
+     "W": 61,
+     "A": 4
+    },
+    "matrix": {
+     "C->C": 315,
+     "W->W": 53,
+     "C->W": 8,
+     "A->A": 4,
+     "W->C": 20
+    },
+    "accuracy": 0.8375,
+    "corrected": 20,
+    "corrupted": 8,
+    "correct_lost_to_unsubmitted": 0,
+    "repair_rate": 0.273972602739726,
+    "corruption_rate": 0.02476780185758514,
+    "correct_loss_rate": 0.02476780185758514,
+    "correct_retention_rate": 0.9752321981424149,
+    "net_repair_per_all": 0.03,
+    "increment_from_previous_round": {
+     "n": 400,
+     "initial_counts": {
+      "C": 337,
+      "W": 59,
+      "A": 4
+     },
+     "final_counts": {
+      "C": 335,
+      "W": 61,
+      "A": 4
+     },
+     "matrix": {
+      "C->C": 334,
+      "W->W": 58,
+      "A->A": 4,
+      "C->W": 3,
+      "W->C": 1
+     },
+     "accuracy": 0.8375,
+     "corrected": 1,
+     "corrupted": 3,
+     "correct_lost_to_unsubmitted": 0,
+     "repair_rate": 0.01694915254237288,
+     "corruption_rate": 0.008902077151335312,
+     "correct_loss_rate": 0.008902077151335312,
+     "correct_retention_rate": 0.9910979228486647,
+     "net_repair_per_all": -0.005
+    },
+    "detection_current_round": {
+     "not_executed": 351,
+     "initial_unsubmitted": 4,
+     "no_detection_protocol": 45,
+     "error_recall": 0.0,
+     "detection_precision": null,
+     "selective_accuracy": null,
+     "coverage": 0.0,
+     "unknown_rate": 0.0,
+     "note": "UNKNOWN/unexecuted not classified as right/wrong; recall denominator all current W"
+    },
+    "changed_wrong_to_wrong": 13,
+    "exclusive_round_cost": {
+     "requests": 70,
+     "input_tokens": 76630,
+     "output_tokens": 8906,
+     "cost_cny_estimated": 0.085354,
+     "known_cost_subtotal_cny": 0.085354,
+     "usage_missing_requests": 0,
+     "finish": {
+      "stop": 70
+     },
+     "http_status": {
+      "ok": 70
+     }
+    }
+   }
+  }
+ },
+ "comparisons": {
+  "primary_e2e_EVID_minus_SSC": {
+   "n": 400,
+   "gained": 40,
+   "lost": 11,
+   "net": 29,
+   "mcnemar_raw": 5.703811637403078e-05,
+   "source_table_bootstrap95": [
+    0.03740648379052369,
+    0.10869565217391304
+   ],
+   "holm_primary_p": 0.00022815246549612311
+  },
+  "primary_repair_r2_EVID_minus_SSC": {
+   "n": 400,
+   "gained": 12,
+   "lost": 7,
+   "net": 5,
+   "mcnemar_raw": 0.359283447265625,
+   "source_table_bootstrap95": [
+    -0.007792207792207792,
+    0.03431372549019608
+   ],
+   "holm_primary_p": 0.359283447265625
+  },
+  "exploratory_repair_r2_EVID_minus_RR_MATCH": {
+   "n": 400,
+   "gained": 16,
+   "lost": 5,
+   "net": 11,
+   "mcnemar_raw": 0.02660369873046875,
+   "source_table_bootstrap95": [
+    0.005128205128205128,
+    0.04950495049504951
+   ]
+  },
+  "exploratory_repair_r2_SSC_minus_RR_MATCH": {
+   "n": 400,
+   "gained": 16,
+   "lost": 10,
+   "net": 6,
+   "mcnemar_raw": 0.32693958282470703,
+   "source_table_bootstrap95": [
+    -0.009950248756218905,
+    0.04060913705583756
+   ]
+  }
+ },
+ "scope": "development; main natural errors only; shared initial costs not summed across arms",
+ "input_freeze": {
+  "master": "b9cac69167007010d9ecfd6299ed8c29337aeaefae9bb2d244af57e14d055674",
+  "repair_v2": "29fc448471173eddd7f487b3d33120d1956ef79d3e9e79e85a7086f6be98e069",
+  "results": {
+   "initial": "97214fb0be1d3287c07f22a9836a934c9e718f57379ce5abd8313eb1b0747311",
+   "e2e": "6c33ae26dd50d75e673491d61d85157ffc52277909881b20f1ff56ed304cad28",
+   "repair2": "46bb77b23c80b4994606bd52d160fa020904755329a20c42a8f0ddcf38cf3cd6",
+   "rrmatch": "15115579cafcfcdd8dbbc5d0c61a3a53c872062944867d4e0dcbf40cc8cc4578"
+  },
+  "rrmatch_freeze": "bcc45dd1bd761aaf043fb3e50e239b7e78bfab4822960046ae3de0809907fc44"
+ }
+}

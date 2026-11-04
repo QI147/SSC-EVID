@@ -1,0 +1,13 @@
+* text=auto eol=lf
+*.py text
+*.md text
+*.json text
+*.jsonl text
+*.csv text
+*.svg text
+*.png binary
+*.jpg binary
+*.pdf binary
+
+# the method package is shipped byte-for-byte; do not rewrite its line endings
+evid36/*.py -text

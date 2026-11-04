@@ -1,0 +1,3 @@
+# The method (evid36/) and the harness (repro/) use the Python standard library only.
+# numpy is needed by repro/official_eval.py, the official FinTabNetQA normaliser.
+numpy>=1.24

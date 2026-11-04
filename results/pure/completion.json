@@ -1,0 +1,105 @@
+{
+  "datasets": {
+    "fin250": {
+      "n": 250,
+      "reached": 250,
+      "target": 1227531,
+      "actual": 1343906,
+      "counts": {
+        "EVID": {
+          "C": 246,
+          "W": 4
+        },
+        "PURE": {
+          "W": 5,
+          "C": 245
+        }
+      },
+      "paired": {
+        "n": 250,
+        "gained": 4,
+        "lost": 3,
+        "net": 1,
+        "mcnemar_raw": 1.0,
+        "source_table_bootstrap95": [
+          -0.0163265306122449,
+          0.02459016393442623
+        ],
+        "holm_p": 1
+      }
+    },
+    "mixed400": {
+      "n": 400,
+      "reached": 400,
+      "target": 2726050,
+      "actual": 2899101,
+      "counts": {
+        "EVID": {
+          "C": 350,
+          "W": 48,
+          "A": 2
+        },
+        "PURE": {
+          "C": 304,
+          "W": 96
+        }
+      },
+      "paired": {
+        "n": 400,
+        "gained": 51,
+        "lost": 5,
+        "net": 46,
+        "mcnemar_raw": 1.170292474039769e-10,
+        "source_table_bootstrap95": [
+          0.07960199004975124,
+          0.15384615384615385
+        ],
+        "holm_p": 3.5108774221193073e-10
+      }
+    },
+    "numeric400": {
+      "n": 400,
+      "reached": 400,
+      "target": 3016905,
+      "actual": 3383189,
+      "counts": {
+        "EVID": {
+          "C": 325,
+          "W": 74,
+          "A": 1
+        },
+        "PURE": {
+          "C": 280,
+          "W": 120
+        }
+      },
+      "paired": {
+        "n": 400,
+        "gained": 54,
+        "lost": 9,
+        "net": 45,
+        "mcnemar_raw": 6.108279451688681e-09,
+        "source_table_bootstrap95": [
+          0.07537688442211055,
+          0.15099009900990099
+        ],
+        "holm_p": 1.2216558903377361e-08
+      }
+    }
+  },
+  "additional_usage": {
+    "requests": 535,
+    "input_tokens": 316976,
+    "output_tokens": 2392,
+    "cost_cny_estimated": 0.26008,
+    "known_cost_subtotal_cny": 0.26008,
+    "usage_missing_requests": 0,
+    "finish": {
+      "stop": 535
+    },
+    "http_status": {
+      "ok": 535
+    }
+  },
+  "note": "budget completion amendment; original16-call results preserved; no correctness-based selection"
+}

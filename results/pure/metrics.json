@@ -1,0 +1,212 @@
+{
+ "freeze": "5095a079050de81dc96df09e2860e25201c9afe2ba439876522baf73be604a31",
+ "datasets": {
+  "fin250": {
+   "n": 250,
+   "counts": {
+    "EVID": {
+     "C": 246,
+     "W": 4
+    },
+    "VOTE_LEQ": {
+     "W": 5,
+     "C": 245
+    },
+    "VOTE_GEQ": {
+     "W": 5,
+     "C": 245
+    }
+   },
+   "historical_counts": {
+    "EVID": {
+     "W": 18,
+     "C": 232
+    },
+    "VOTE_LEQ": {
+     "W": 41,
+     "C": 209
+    },
+    "VOTE_GEQ": {
+     "W": 42,
+     "C": 208
+    }
+   },
+   "comparison": {
+    "n": 250,
+    "gained": 4,
+    "lost": 3,
+    "net": 1,
+    "mcnemar_raw": 1.0,
+    "source_table_bootstrap95": [
+     -0.0163265306122449,
+     0.02459016393442623
+    ],
+    "holm_p": 1
+   },
+   "budget": {
+    "target": 1227531,
+    "actual": 1343906,
+    "reached": 250,
+    "median_overshoot": 0.09123195704592535
+   },
+   "usage": {
+    "requests": 1733,
+    "input_tokens": 1331994,
+    "output_tokens": 11912,
+    "cost_cny_estimated": 1.097847,
+    "known_cost_subtotal_cny": 1.097847,
+    "usage_missing_requests": 0,
+    "finish": {
+     "stop": 1733
+    },
+    "http_status": {
+     "ok": 1733
+    }
+   }
+  },
+  "mixed400": {
+   "n": 400,
+   "counts": {
+    "EVID": {
+     "C": 350,
+     "W": 48,
+     "A": 2
+    },
+    "VOTE_LEQ": {
+     "C": 305,
+     "W": 95
+    },
+    "VOTE_GEQ": {
+     "C": 303,
+     "W": 97
+    }
+   },
+   "historical_counts": {
+    "EVID": {
+     "C": 350,
+     "W": 48,
+     "A": 2
+    },
+    "VOTE_LEQ": {
+     "C": 305,
+     "W": 95
+    },
+    "VOTE_GEQ": {
+     "C": 303,
+     "W": 97
+    }
+   },
+   "comparison": {
+    "n": 400,
+    "gained": 52,
+    "lost": 5,
+    "net": 47,
+    "mcnemar_raw": 6.401865149108232e-11,
+    "source_table_bootstrap95": [
+     0.08088235294117647,
+     0.15676959619952494
+    ],
+    "holm_p": 1.9205595447324697e-10
+   },
+   "budget": {
+    "target": 2726050,
+    "actual": 2580565,
+    "reached": 351,
+    "median_overshoot": 0.07752170008979348
+   },
+   "usage": {
+    "requests": 3618,
+    "input_tokens": 2559428,
+    "output_tokens": 21137,
+    "cost_cny_estimated": 2.104778,
+    "known_cost_subtotal_cny": 2.104778,
+    "usage_missing_requests": 0,
+    "finish": {
+     "stop": 3618
+    },
+    "http_status": {
+     "ok": 3618
+    }
+   }
+  },
+  "numeric400": {
+   "n": 400,
+   "counts": {
+    "EVID": {
+     "C": 325,
+     "W": 74,
+     "A": 1
+    },
+    "VOTE_LEQ": {
+     "C": 277,
+     "W": 123
+    },
+    "VOTE_GEQ": {
+     "C": 280,
+     "W": 120
+    }
+   },
+   "historical_counts": {
+    "EVID": {
+     "C": 325,
+     "W": 74,
+     "A": 1
+    },
+    "VOTE_LEQ": {
+     "C": 277,
+     "W": 123
+    },
+    "VOTE_GEQ": {
+     "C": 280,
+     "W": 120
+    }
+   },
+   "comparison": {
+    "n": 400,
+    "gained": 54,
+    "lost": 9,
+    "net": 45,
+    "mcnemar_raw": 6.108279451688681e-09,
+    "source_table_bootstrap95": [
+     0.07537688442211055,
+     0.15099009900990099
+    ],
+    "holm_p": 1.2216558903377361e-08
+   },
+   "budget": {
+    "target": 3016905,
+    "actual": 3382357,
+    "reached": 399,
+    "median_overshoot": 0.1056422569027611
+   },
+   "usage": {
+    "requests": 2443,
+    "input_tokens": 3363066,
+    "output_tokens": 19291,
+    "cost_cny_estimated": 2.742612,
+    "known_cost_subtotal_cny": 2.742612,
+    "usage_missing_requests": 0,
+    "finish": {
+     "stop": 2443
+    },
+    "http_status": {
+     "ok": 2443
+    }
+   }
+  }
+ },
+ "usage": {
+  "requests": 7794,
+  "input_tokens": 7254488,
+  "output_tokens": 52340,
+  "cost_cny_estimated": 5.945237,
+  "known_cost_subtotal_cny": 5.945237,
+  "usage_missing_requests": 0,
+  "finish": {
+   "stop": 7794
+  },
+  "http_status": {
+   "ok": 7794
+  }
+ }
+}

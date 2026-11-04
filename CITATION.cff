@@ -1,0 +1,27 @@
+# Citation metadata. Fill in the author block before publishing; the placeholder
+# below is deliberately obvious so it cannot be shipped unnoticed.
+cff-version: 1.2.0
+message: "If you use this code or the frozen results, please cite the paper below."
+title: "SSC-EVID: traceable evidence-driven repair for visual table question answering"
+type: software
+version: 36.0
+date-released: "2026-11-04"
+authors:
+  - family-names: "TODO"
+    given-names: "TODO"
+    affiliation: "TODO"
+repository-code: "https://github.com/TODO/SSC-EVID"
+license: "TODO"          # see LICENSE_TODO.md
+keywords:
+  - visual table question answering
+  - self-correction
+  - evidence tracing
+  - multimodal reasoning
+preferred-citation:
+  type: article
+  title: "SSC-EVID: organising facts and traceable evidence acquisition for visual table question answering"
+  authors:
+    - family-names: "TODO"
+      given-names: "TODO"
+  year: 2026
+  status: submitted

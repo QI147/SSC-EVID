@@ -1,0 +1,24 @@
+# credentials
+.env
+*.key
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# experiment outputs (regenerated; frozen tables live in results/)
+runs/
+reports/
+datasets/*/images/
+datasets/*/pure_budget.json
+vendor/ssc_author/
+
+# os / editor
+.DS_Store
+Thumbs.db
+*.tmp
+.idea/
+.vscode/

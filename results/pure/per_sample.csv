@@ -1,0 +1,1067 @@
+﻿dataset,sample_id,EVID,EVID_label,VOTE_LEQ,VOTE_LEQ_label,VOTE_GEQ,VOTE_GEQ_label,target_tokens,actual_tokens,reached,completion_stage
+mixed400,NEW162,Cologne,C,Cologne,C,Cologne,C,6128,6800,True,54
+mixed400,NEW216,Season 7 (2005),W,Season 7 (2005),W,Season 7 (2005),W,5171,5300,True,54
+mixed400,NEW123,"""As Country as Apple Pie""",C,"""As Country as Apple Pie""",C,"""As Country as Apple Pie""",C,3100,3348,True,54
+mixed400,NEW353,3,C,3,C,3,C,8509,9320,True,54
+mixed400,NEW041,77.7,C,77.7,C,77.7,C,4214,4488,True,54
+mixed400,NEW182,"""The Practical Joke War""",C,"""The Practical Joke War""",C,"""The Practical Joke War""",C,7815,8719,True,54
+mixed400,NEW373,Harbor Freeway,C,Harbor Freeway,C,Harbor Freeway,C,5896,6975,True,54
+mixed400,NEW299,Pierluigi Martini,C,Pierluigi Martini,C,Pierluigi Martini,C,5482,6240,True,54
+mixed400,NEW319,2007,C,2010,W,2010,W,9914,10188,True,55
+mixed400,NEW244,Asian Formula Renault Challenge,C,Asian Formula Renault Challenge,C,Asian Formula Renault Challenge,C,5948,6015,True,54
+mixed400,NEW274,0.1,C,0.1,C,0.1,C,4544,4836,True,54
+mixed400,NEW232,$15.1,C,$15.1,C,$15.1,C,3494,3880,True,54
+mixed400,NEW322,Honda Prelude Chevrolet,C,Honda Prelude Chevrolet,C,Honda Prelude Chevrolet,C,5165,5304,True,54
+mixed400,NEW267,4.00%,C,4.00,C,4.00,C,6991,7272,True,54
+mixed400,NEW223,4x400 m relay,C,4x400 m relay,C,4x400 m relay,C,7857,8128,True,54
+mixed400,NEW166,"$144,362",C,"$144,362",C,"$144,362",C,10274,11904,True,54
+mixed400,NEW218,Chameleon Girl,C,Chameleon Girl,C,Chameleon Girl,C,8820,10900,True,54
+mixed400,NEW195,Andy Stanfield,C,Andy Stanfield,C,Andy Stanfield,C,4113,4164,True,54
+mixed400,NEW227,"5,047 units",C,"5,047",C,"5,047",C,3790,4232,True,54
+mixed400,NEW177,"$4,124 million",C,"$4,124",W,"$4,124",W,6731,7296,True,54
+mixed400,NEW042,8.50%,C,8.50%,C,8.50%,C,5009,5682,True,54
+mixed400,NEW081,Adam Kszczot,C,Adam Kszczot,C,Adam Kszczot,C,3376,3720,True,54
+mixed400,NEW091,"$431,852",C,"$431,852",C,"$431,852",C,4049,4344,True,54
+mixed400,NEW106,"$11,625",C,"$11,625",C,"$11,625",C,3096,3420,True,54
+mixed400,NEW279,2,C,2,C,2,C,5095,5320,True,54
+mixed400,NEW024,,A,"19, 20",W,"19, 20",W,15104,15155,True,55
+mixed400,NEW282,(156),C,(156),C,(156),C,3281,3580,True,54
+mixed400,NEW191,Peter Lampu,W,Peter Lampu,W,Peter Lampu,W,13738,14372,True,55
+mixed400,NEW025,Neptune,W,Ajax,C,Ajax,C,6524,7327,True,54
+mixed400,NEW250,30,W,30,W,30,W,4895,5026,True,54
+mixed400,NEW059,Fluid Management,C,Fluid Management,C,Fluid Management,C,3421,3832,True,54
+mixed400,NEW234,"$2,749.3 million",C,"$2,749.3",W,"$2,749.3",W,3815,4275,True,54
+mixed400,NEW159,"June 4, 2008",C,"June 4, 2008",C,"June 4, 2008",C,4080,4279,True,54
+mixed400,NEW124,"""Forbidden Fruit""",C,"""Forbidden Fruit""",C,"""Forbidden Fruit""",C,18494,19210,True,54
+mixed400,NEW361,Interjet,C,Interjet,C,Interjet,C,3303,3618,True,54
+mixed400,NEW114,2001,C,2001,C,2001,C,5255,5880,True,54
+mixed400,NEW189,27 August 2005,C,15 February 2006,W,15 February 2006,W,18165,18735,True,54
+mixed400,NEW077,"1,304",C,"1,304",C,"1,304",C,3960,4461,True,54
+mixed400,NEW112,$3.0 billion,C,$3.0 billion,C,$3.0 billion,C,3441,3869,True,54
+mixed400,NEW013,2,C,2,C,2,C,4269,4744,True,54
+mixed400,NEW317,below,C,below,C,below,C,4025,4081,True,54
+mixed400,NEW005,Sharp,C,Sharp,C,Sharp,C,6054,6225,True,54
+mixed400,NEW225,"$28,900 (In thousands)",W,"$28,900",W,"$28,900",W,3663,3710,True,54
+mixed400,NEW262,#1 in North America,C,#1 in North America,C,#1 in North America,C,3400,3696,True,54
+mixed400,NEW022,Mr P.Venter,C,Mr P. Venter,W,Mr P. Venter,W,24874,25669,True,55
+mixed400,NEW080,"66,986",C,"66,986",C,"66,986",C,3721,4184,True,54
+mixed400,NEW201,Business,C,Business,C,Business,C,8040,8416,True,54
+mixed400,NEW131,Paul Christy,C,Paul Christy,C,Paul Christy,C,7167,7259,True,55
+mixed400,NEW178,Attorney General of New Mexico,C,Attorney General of New Mexico,C,Attorney General of New Mexico,C,4537,4552,True,54
+mixed400,NEW364,$65.95,C,$65.95,C,$65.95,C,3178,3199,True,54
+mixed400,NEW199,"$ 7,650 million",C,"$ 7,650",W,"$ 7,650",W,5029,5274,True,54
+mixed400,NEW336,4,C,4,C,4,C,6791,6902,True,55
+mixed400,NEW121,"$6,679",C,"$6,679",C,"$6,679",C,6386,7630,True,54
+mixed400,NEW192,Air Commodore K. M. Ahmad,C,Air Commodore K. M. Ahmad,C,Air Commodore K. M. Ahmad,C,4343,4368,True,54
+mixed400,NEW122,91,C,91,C,91,C,7931,9840,True,54
+mixed400,NEW129,9,W,2,W,2,W,39169,39916,True,55
+mixed400,NEW242,"33,499 GWh",C,"33,499 GWh",C,"33,499 GWh",C,3574,4082,True,54
+mixed400,NEW215,"Dzejelana ""Lana"" Baltić (1st Eliminated) and Melisa Popanić (2nd Eliminated)",W,"Dzeljana ""Lana"" Baltić, Melisa Popanić",W,"Dzeljana ""Lana"" Baltić, Melisa Popanić",W,4586,4833,True,54
+mixed400,NEW285,14,C,14,C,14,C,4307,4710,True,54
+mixed400,NEW147,$42.94,C,$42.94,C,$42.94,C,3825,4289,True,54
+mixed400,NEW253,2,C,2,C,2,C,4412,4795,True,54
+mixed400,NEW082,Jacques Villeneuve,C,Jacques Villeneuve,C,Jacques Villeneuve,C,15376,15496,True,55
+mixed400,NEW297,34,C,34,C,34,C,4296,4431,True,54
+mixed400,NEW152,$201.5,C,$201.5,C,$201.5,C,3786,4158,True,54
+mixed400,NEW252,39%,C,39%,C,39%,C,5037,5600,True,54
+mixed400,NEW260,"Mr P.Venter, Mr B.Melman, Mrs E.Myer",W,Mr P. Venter,W,Mr P. Venter,W,63489,63564,True,55
+mixed400,NEW243,8,C,7,W,7,W,7733,7968,True,54
+mixed400,NEW157,Darcy Martini,C,Darcy Martini,C,Darcy Martini,C,5711,5929,True,54
+mixed400,NEW067,Robin Schembera,C,Robin Schembera,C,Robin Schembera,C,3473,3716,True,54
+mixed400,NEW269,Cosmo Line,C,Cosmo Line,C,Cosmo Line,C,4730,5112,True,54
+mixed400,NEW038,"$5,290",C,"$5,290",C,"$5,290",C,3245,3560,True,54
+mixed400,NEW031,Henk Van De Lagemaat,C,Marcellino Lucchi,W,Marcellino Lucchi,W,5753,6174,True,54
+mixed400,NEW400,Chile F2,C,Chile F2,C,Chile F2,C,4220,4314,True,54
+mixed400,NEW116,KK 35,C,KK 35,C,KK 35,C,6797,7035,True,54
+mixed400,NEW240,"$1,015,802 thousand",C,"$1,015,802",W,"$1,015,802",W,6961,7801,True,54
+mixed400,NEW039,"$ 333,845",C,"$ 333,845",C,"$ 333,845",C,4092,4440,True,54
+mixed400,NEW340,$52.36,C,$52.36,C,52.36,C,3150,3180,True,54
+mixed400,NEW139,"$82,215",C,"$ 82,215",C,"$ 82,215",C,4495,4746,True,54
+mixed400,NEW323,IC 342,C,IC 342,C,IC 342,C,3951,4257,True,54
+mixed400,NEW346,1188,C,1188,C,1188,C,3432,3704,True,54
+mixed400,NEW126,1960,C,1960,C,1960,C,3610,3696,True,54
+mixed400,NEW367,$ 53.89,C,$53.89,C,$53.89,C,3861,4008,True,54
+mixed400,NEW088,"24,396",C,"24,396",C,"24,396",C,4857,5656,True,54
+mixed400,NEW170,$51.13,C,51.13,C,51.13,C,3329,3600,True,54
+mixed400,NEW354,"$8,047",C,"$8,047",C,"$8,047",C,5141,5832,True,54
+mixed400,NEW084,Melissa and Joey,C,Melissa and Joey,C,Melissa and Joey,C,3976,4506,True,54
+mixed400,NEW172,Škoda Octavia,C,Škoda Octavia,C,Škoda Octavia,C,6102,6347,True,54
+mixed400,NEW284,24,C,24,C,24,C,12148,12920,True,54
+mixed400,NEW370,Massimiliano Rosolino,C,Massimiliano Rosolino,C,Massimiliano Rosolino,C,5626,5726,True,54
+mixed400,NEW064,"$1,650",C,"$1,650",C,"$1,650",C,5135,5768,True,54
+mixed400,NEW328,$646 million,C,$646,W,$646,W,3399,3620,True,54
+mixed400,NEW217,Fair value of underlying collateral,C,Fair value of underlying collateral,C,Fair value of underlying collateral,C,3718,3924,True,54
+mixed400,NEW388,Jun Hoong Cheong,C,Jun Hoong Cheong,C,Jun Hoong Cheong,C,5771,6150,True,54
+mixed400,NEW359,more,C,less,W,less,W,18966,19294,True,54
+mixed400,NEW089,0.8,W,0.8,W,0.8,W,3860,4011,True,54
+mixed400,NEW311,$77.67,C,$77.67,C,$77.67,C,3258,3519,True,54
+mixed400,NEW055,Kuuga,C,Kuuga,C,Kuuga,C,4919,5851,True,54
+mixed400,NEW313,1.84 %,C,1.84 %,C,1.84 %,C,3510,3784,True,54
+mixed400,NEW095,Vickers Armstrong,C,Vickers Armstrong,C,Vickers Armstrong,C,5321,5712,True,54
+mixed400,NEW309,Olena Fedorova,C,Olena Fedorova,C,Olena Fedorova,C,6336,7422,True,54
+mixed400,NEW334,"2,170 mbpd",C,"2,170",C,"2,170",C,3078,3416,True,54
+mixed400,NEW237,"October 11, 1981",C,"October 11, 1981",C,"October 11, 1981",C,13576,13754,True,55
+mixed400,NEW002,December 2006,C,December 2006,C,December 2006,C,3799,4067,True,54
+mixed400,NEW261,$21.28,C,$21.28,C,$21.28,C,4484,5004,True,54
+mixed400,NEW140,"$31,677",C,"$31,677",C,"$31,677",C,3580,3780,True,54
+mixed400,NEW037,"$1,107.6",C,"$1,107.6",C,"$1,107.6",C,4104,4488,True,54
+mixed400,NEW120,4.2 million tons,C,4.2 million tons,C,4.2 million tons,C,6799,8005,True,54
+mixed400,NEW292,124.4,C,124.4,C,124.4,C,4604,5443,True,54
+mixed400,NEW156,"$ 196,740",C,"$ 196,740",C,"$ 196,740",C,3600,3981,True,54
+mixed400,NEW347,$341.9 million,C,341.9,W,341.9,W,3926,3954,True,54
+mixed400,NEW185,5,C,5,C,5,C,5000,5136,True,54
+mixed400,NEW248,$900 million,C,$900 million,C,$900 million,C,6004,6369,True,54
+mixed400,NEW027,103.22,C,103.22,C,103.22,C,4018,4528,True,54
+mixed400,NEW057,2,C,2,C,2,C,4019,4081,True,54
+mixed400,NEW374,"7,479",C,"7,479",C,"7,479",C,3427,3773,True,54
+mixed400,NEW103,$756,C,$756,C,$756,C,3803,4095,True,54
+mixed400,NEW341,Jalna,W,Akola,C,Akola,C,16298,18168,True,54
+mixed400,NEW389,0.3%,C,0.3,C,0.3,C,3106,3205,True,54
+mixed400,NEW173,"Australia, United States",C,"Netherlands, Australia, United States",W,"Netherlands, Australia, United States",W,9351,9697,True,55
+mixed400,NEW235,"571,000",C,"571,000",C,"571,000",C,5591,6156,True,54
+mixed400,NEW337,10,C,12,W,10,C,30769,31188,True,55
+mixed400,NEW107,$ 147.28,C,$147.28,C,$147.28,C,4460,4714,True,54
+mixed400,NEW300,"$1,427 million",C,"$1,427",W,"$1,427",W,4725,5510,True,54
+mixed400,NEW063,Earnie Stewart,C,Stewart,W,Stewart,W,4796,5178,True,54
+mixed400,NEW066,Rick Alain,W,Rick Alain,W,Rick Alain,W,5515,5986,True,54
+mixed400,NEW390,Real Madrid,C,Alcalá,W,Alcalá,W,13776,14868,True,54
+mixed400,NEW310,6,C,5,W,5,W,7017,7455,True,54
+mixed400,NEW130,at #5 Michigan,W,at #5 Michigan,W,at #5 Michigan,W,3445,3456,True,54
+mixed400,NEW301,Chernobyl-4,C,Chernobyl-4,C,Chernobyl-4,C,4728,5316,True,54
+mixed400,NEW054,"Milwaukee, WI",C,"Milwaukee, WI",C,"Milwaukee, WI",C,4805,4805,True,54
+mixed400,NEW113,Eddie Johnson,C,Eddie Johnson,C,Eddie Johnson,C,5815,6160,True,54
+mixed400,NEW375,London Int. Festival of Science Fiction Film,C,London Int. Festival of Science Fiction Film,C,London Int. Festival of Science Fiction Film,C,4872,5502,True,54
+mixed400,NEW171,"622,814",C,"622,814",C,"622,814",C,4220,4656,True,54
+mixed400,NEW357,"Major General Raza Hussain (2001), Major General Ahmed Bilal (2010)",W,"Dr Abdul Majid, Major General Raza Hussain, Major General Ahmed Bilal",W,"Dr Abdul Majid, Major General Raza Hussain, Major General Ahmed Bilal",W,6391,6615,True,54
+mixed400,NEW155,"38,235",C,"38,235",C,"38,235",C,4188,4602,True,54
+mixed400,NEW087,(624.6) millions of dollars,W,(624.6),W,(624.6),W,3771,4361,True,54
+mixed400,NEW065,$21,C,$21,C,$21,C,6063,7080,True,54
+mixed400,NEW090,"Japan (JPN), South Korea (KOR)",C,Japan,W,Japan,W,8230,8316,True,55
+mixed400,NEW206,Dmitry Mikhailovich Golitsyn,C,Andrey Kirillovich Razumovsky,W,Andrey Kirillovich Razumovsky,W,20525,22084,True,54
+mixed400,NEW004,,A,Mitsui Sumitomo VISA Taiheiyo Masters,W,Mitsui Sumitomo VISA Taiheiyo Masters,W,4192,4193,True,54
+mixed400,NEW043,9,C,10,W,10,W,18100,19053,True,54
+mixed400,NEW342,$47.9 million,C,$47.9 million,C,$47.9 million,C,4097,4378,True,54
+mixed400,NEW188,Indonesia,C,Indonesia,C,Indonesia,C,7230,7524,True,55
+mixed400,NEW314,Carlin,C,Carlin,C,Carlin,C,4974,5291,True,54
+mixed400,NEW246,"Stan Mellor, Mr Brough Scott, Beltrán Osorio, Tommy Carberry, Pat Taaffe",C,"Stan Mellor, Mr Brough Scott, Beltrán Osorio, Tommy Carberry, Pat Taaffe",C,"Stan Mellor, Mr Brough Scott, Beltrán Osorio, Tommy Carberry, Pat Taaffe",C,6027,6192,True,54
+mixed400,NEW345,Australia,C,Australia,C,Australia,C,5656,5873,True,54
+mixed400,NEW102,8.45,C,8.45,C,8.45,C,13847,14772,True,54
+mixed400,NEW247,3,C,3,C,3,C,6280,7404,True,54
+mixed400,NEW377,4,C,4,C,4,C,3343,3416,True,54
+mixed400,NEW046,more,C,less,W,less,W,4473,4627,True,54
+mixed400,NEW387,Albert Wynn,C,"Ben Cardin, Albert Wynn, Steny Hoyer, Roscoe Bartlett, Elijah Cummings",W,"Ben Cardin, Albert Wynn, Steny Hoyer, Roscoe Bartlett, Elijah Cummings",W,6062,6358,True,54
+mixed400,NEW320,above,C,above,C,above,C,5874,5913,True,54
+mixed400,NEW135,"$ 1,251",C,"$1,251",C,"$1,251",C,4896,5334,True,54
+mixed400,NEW393,$9.5 million,C,$ 9.5,W,$ 9.5,W,4998,5070,True,54
+mixed400,NEW154,"$11,832 thousand",W,"$11,832",W,"$11,832",W,5831,6799,True,54
+mixed400,NEW214,Marketing Services,C,Marketing Services,C,Marketing Services,C,4652,5232,True,54
+mixed400,NEW115,"China, Japan, Kazakhstan",W,China,W,China,W,5742,6014,True,55
+mixed400,NEW127,13,C,13,C,13,C,8852,10935,True,54
+mixed400,NEW331,"$757,839",C,"757,839",C,"757,839",C,5286,6338,True,54
+mixed400,NEW048,3,W,3,W,3,W,7913,7932,True,54
+mixed400,NEW099,7,W,5,W,5,W,6541,6714,True,54
+mixed400,NEW360,54.01,C,54.01,C,54.01,C,3345,3444,True,54
+mixed400,NEW384,"1,146,000",C,"1,146,000",C,"1,146,000",C,3243,3430,True,54
+mixed400,NEW164,No,C,No,C,No,C,6234,6512,True,54
+mixed400,NEW151,$28.86,C,$28.86,C,$28.86,C,4738,5184,True,54
+mixed400,NEW073,"$5,843",C,"$5,843",C,"$5,843",C,3433,3766,True,54
+mixed400,NEW339,49,C,49,C,49,C,40069,40326,True,55
+mixed400,NEW219,"$54,800",W,"$54,800",W,"$54,800",W,7451,9080,True,54
+mixed400,NEW230,Jansher Khan,C,Jansher Khan,C,Jansher Khan,C,4904,5684,True,54
+mixed400,NEW056,6,C,6,C,6,C,23523,23980,True,55
+mixed400,NEW295,2,W,3,W,3,W,21227,21720,True,55
+mixed400,NEW366,"$7,577,061 thousand",W,"$11,611,124",W,"$11,611,124",W,6561,7780,True,54
+mixed400,NEW117,Brazil,C,Brazil,C,Brazil,C,9605,9660,True,55
+mixed400,NEW165,$(16.7),W,(16.7),W,(16.7),W,9914,10248,True,55
+mixed400,NEW187,15.7 million,C,$15.7 million,C,$15.7 million,C,2812,2965,True,54
+mixed400,NEW245,357,W,357,W,357,W,4266,4890,True,54
+mixed400,NEW035,Jan Bos,W,Jan Bos,W,Jan Bos,W,6952,7388,True,54
+mixed400,NEW110,Chernobyl-2,C,Chernobyl-2,C,Chernobyl-2,C,5083,5358,True,54
+mixed400,NEW265,8,C,6,W,6,W,8355,9065,True,54
+mixed400,NEW365,7,W,6,W,6,W,18882,19032,True,55
+mixed400,NEW026,$0.68,C,$ 0.68,C,$ 0.68,C,4897,5673,True,54
+mixed400,NEW293,FC Barcelona,C,FC Barcelona,C,FC Barcelona,C,6400,6832,True,54
+mixed400,NEW382,"36,701",C,"36,701",C,"36,701",C,4438,4823,True,54
+mixed400,NEW040,37935,C,39402,W,39402,W,8500,8521,True,54
+mixed400,NEW060,85 thousand,C,85,C,85,C,4746,4830,True,54
+mixed400,NEW198,2,C,2,C,2,C,5783,6155,True,54
+mixed400,NEW326,"$6,999.7 million",C,"$ 6,999.7",W,"$ 6,999.7",W,3839,4416,True,54
+mixed400,NEW175,17.5%,C,17.5%,C,17.5%,C,4502,5118,True,54
+mixed400,NEW181,"""Thanks to You""",C,"""Thanks to You""",C,"""Thanks to You""",C,6332,6606,True,55
+mixed400,NEW014,Japan,C,Japan,C,Japan,C,3208,3555,True,54
+mixed400,NEW058,"242,788",C,"242,788",C,"242,788",C,5759,6762,True,54
+mixed400,NEW068,$14.71,C,$14.71,C,$14.71,C,6256,7290,True,54
+mixed400,NEW092,6,C,10,W,10,W,14123,14124,True,55
+mixed400,NEW075,Spas Delev,C,Spas Delev,C,Spas Delev,C,13053,13100,True,55
+mixed400,NEW143,No,C,No,C,No,C,3681,3736,True,54
+mixed400,NEW176,"Bydgoszcz, Poland",C,"Bydgoszcz, Poland",C,"Bydgoszcz, Poland",C,3503,3984,True,54
+mixed400,NEW343,Queenstown,C,Queenstown,C,Queenstown,C,3832,3942,True,54
+mixed400,NEW097,$62.4,C,$62.4,C,$62.4,C,5223,5500,True,54
+mixed400,NEW329,Tom Adams,C,Tom Adams,C,Tom Adams,C,6169,6805,True,54
+mixed400,NEW137,$58.7 million,C,$58.7,W,$58.7,W,3712,4106,True,54
+mixed400,NEW255,"$1,115,594",C,"$1,115,594",C,"$1,115,594",C,3925,4167,True,54
+mixed400,NEW196,"184,039",C,"184,039",C,"184,039",C,3854,4088,True,54
+mixed400,NEW074,Roman Fricke,C,Roman Fricke,C,Roman Fricke,C,4339,4752,True,54
+mixed400,NEW007,4,C,4,C,4,C,4896,5152,True,54
+mixed400,NEW241,11%,C,11%,C,11%,C,7256,8875,True,54
+mixed400,NEW386,Eskender Mustafayev and David Smetanine,W,"Eskender Mustafaiev, David Smetanine",C,"Eskender Mustafaiev, David Smetanine",C,7406,7620,True,55
+mixed400,NEW380,"220,000",C,"220,000",C,"220,000",C,5236,5814,True,54
+mixed400,NEW372,Italy,C,Italy,C,Italy,C,14427,14880,True,55
+mixed400,NEW125,55 %,C,55%,C,55%,C,3355,3696,True,54
+mixed400,NEW160,6,C,6,C,6,C,5418,5625,True,54
+mixed400,NEW105,3,C,3,C,3,C,4241,4248,True,54
+mixed400,NEW220,48%,C,48%,C,48%,C,3952,4039,True,54
+mixed400,NEW213,155.39,C,155.39,C,155.39,C,3041,3330,True,54
+mixed400,NEW205,Henry Picard,C,Henry Picard,C,Henry Picard,C,4169,4420,True,54
+mixed400,NEW079,Gustav Ernst Graf von Stackelberg,C,Gustav Ernst Graf von Stackelberg,C,Gustav Ernst Graf von Stackelberg,C,9061,10080,True,54
+mixed400,NEW138,$641.8,C,$641.8,C,$641.8,C,3661,3684,True,54
+mixed400,NEW047,Lease expiring 2019,C,Lease expiring 2019,C,Lease expiring 2019,C,5097,5135,True,54
+mixed400,NEW146,404,C,404,C,404,C,3820,4417,True,54
+mixed400,NEW296,Angus - 1 (with Velarde),W,Miera,W,Miera,W,12298,12849,True,54
+mixed400,NEW291,Chernobyl-1,C,Chernobyl-3,W,Chernobyl-3,W,6778,7104,True,54
+mixed400,NEW273,Real Zaragoza,C,Real Zaragoza,C,Real Zaragoza,C,10734,10904,True,54
+mixed400,NEW338,Aguri Suzuki,C,Aguri Suzuki,C,Aguri Suzuki,C,7899,8344,True,54
+mixed400,NEW145,7,C,7,C,7,C,5240,5508,True,54
+mixed400,NEW304,A-,C,A-,C,A-,C,5474,5700,True,54
+mixed400,NEW111,10,C,10,C,10,C,17232,17653,True,55
+mixed400,NEW305,"$1,945,439",C,"$1,945,439",C,"$1,945,439",C,4680,5159,True,54
+mixed400,NEW061,headquarters,C,Headquarters,C,Headquarters,C,27519,29406,True,54
+mixed400,NEW018,"mediate the responses to, and the activation receptors of cell proliferation, migration, differentiation, and survival",C,"mediate the responses to, and the activation receptors of cell proliferation, migration, differentiation, and survival",C,"mediate the responses to, and the activation receptors of cell proliferation, migration, differentiation, and survival",C,4167,4746,True,54
+mixed400,NEW394,"$102,942",C,"$102,942",C,"$102,942",C,3493,3645,True,54
+mixed400,NEW236,"$435,515 (in thousands)",W,"$435,515",W,"$435,515",W,4126,4464,True,54
+mixed400,NEW078,8.75%,C,8.75%,C,8.75%,C,4802,5670,True,54
+mixed400,NEW190,"576,000 square feet",C,"576,000",C,"576,000",C,3514,3951,True,54
+mixed400,NEW109,11,C,7,W,7,W,19421,19652,True,55
+mixed400,NEW355,"$4,174 thousand",C,"$ 4,174",W,"$ 4,174",W,3723,4103,True,54
+mixed400,NEW263,Detroit Lions,C,Detroit Lions,C,Detroit Lions,C,4481,4940,True,54
+mixed400,NEW333,L 29–21,W,L 29–21,W,L 29–21,W,4098,4504,True,54
+mixed400,NEW044,"$2,658.7 million",C,"$2,658.7",W,"$2,658.7",W,4314,4614,True,54
+mixed400,NEW133,$27 million,C,$27 million,C,$27 million,C,3268,3320,True,54
+mixed400,NEW348,"Vail, CO, USA",C,"Vail, CO, USA",C,"Vail, CO, USA",C,3931,4080,True,54
+mixed400,NEW144,4,W,4,W,4,W,6562,6900,True,54
+mixed400,NEW098,"(150,943)",C,"(150,943)",C,"(150,943)",C,7193,8885,True,54
+mixed400,NEW017,1864,C,1864,C,1864,C,12128,12580,True,55
+mixed400,NEW096,Clint Dempsey,C,Clint Dempsey,C,Clint Dempsey,C,4137,4380,True,54
+mixed400,NEW148,Baltimore Bullets*,C,Baltimore Bullets,C,Baltimore Bullets,C,4810,5488,True,54
+mixed400,NEW208,"$210,709",C,"(210,709)",C,"(210,709)",C,4016,4136,True,54
+mixed400,NEW009,National Basketball League,C,National Basketball League,C,National Basketball League,C,7528,7854,True,55
+mixed400,NEW163,"""Intro""",C,"""Intro""",C,"""Intro""",C,10515,10698,True,55
+mixed400,NEW226,A-,C,A-,C,A-,C,3873,3943,True,54
+mixed400,NEW344,3,C,3,C,3,C,12523,12663,True,55
+mixed400,NEW266,5,C,5,C,5,C,4815,5196,True,54
+mixed400,NEW381,4,C,4,C,4,C,6786,7380,True,54
+mixed400,NEW258,2011,C,2011,C,2011,C,10073,10486,True,54
+mixed400,NEW312,6,C,6,C,5,W,9403,9900,True,54
+mixed400,NEW150,"$1,895,777",W,"$1,895,777",W,"$1,895,777",W,4690,5453,True,54
+mixed400,NEW210,Ray Norton,C,Andy Stanfield,W,Andy Stanfield,W,21256,21535,True,55
+mixed400,NEW254,Ralph Guldahl,C,Ralph Guldahl,C,Ralph Guldahl,C,3251,3496,True,54
+mixed400,NEW093,7,C,7,C,7,C,5947,6129,True,54
+mixed400,NEW194,3.1,C,3.1,C,3.1,C,3594,3843,True,54
+mixed400,NEW222,.497,C,.497,C,.497,C,2890,3096,True,54
+mixed400,NEW023,2,C,2,C,2,C,7007,7645,True,54
+mixed400,NEW029,"16,845,353",C,"16,845,353",C,"16,845,353",C,5595,6100,True,54
+mixed400,NEW141,"60,245,718",C,"60,245,718",C,"60,245,718",C,4527,4992,True,54
+mixed400,NEW286,8,C,8,C,8,C,5978,6226,True,54
+mixed400,NEW015,$3.8,C,$ 3.8,C,$ 3.8,C,3805,4269,True,54
+mixed400,NEW395,51.1,C,51.1,C,51.1,C,6435,7550,True,54
+mixed400,NEW277,"$379,035",C,"$ 379,035",C,"$ 379,035",C,4862,5614,True,54
+mixed400,NEW003,"34,325,304",C,"34,325,304",C,"34,325,304",C,5610,6140,True,54
+mixed400,NEW229,$389,C,$389,C,$389,C,3124,3245,True,54
+mixed400,NEW136,21,C,21,C,21,C,3341,3600,True,54
+mixed400,NEW379,3,C,3,C,3,C,6458,7404,True,54
+mixed400,NEW363,Northern Mariana Islands,C,Northern Mariana Islands,C,Northern Mariana Islands,C,3885,3940,True,54
+mixed400,NEW321,13.6%,C,13.6%,C,13.6%,C,4436,5118,True,54
+mixed400,NEW070,$11.94,C,$11.94,C,$11.94,C,3740,4144,True,54
+mixed400,NEW168,Yugoslavia,C,France,W,France,W,9507,9727,True,55
+mixed400,NEW281,223,C,223,C,223,C,3225,3618,True,54
+mixed400,NEW268,Tranche E,C,Tranche E,C,Tranche E,C,3579,3952,True,54
+mixed400,NEW071,Sally Shelton-Colby,C,Sally Shelton-Colby,C,Sally Shelton-Colby,C,4804,5096,True,54
+mixed400,NEW069,Rome,C,Rome,C,Milan,W,13841,14916,True,54
+mixed400,NEW325,Fabril,W,Fabril,W,Fabril,W,6654,7422,True,54
+mixed400,NEW030,6,W,6,W,6,W,23276,24022,True,55
+mixed400,NEW083,$1.30,C,$1.30,C,$1.30,C,6561,7435,True,54
+mixed400,NEW307,$447.7 million,C,447.7,W,447.7,W,2820,3030,True,54
+mixed400,NEW231,4,C,4,C,4,C,7045,7224,True,55
+mixed400,NEW051,4,C,5,W,5,W,7427,7462,True,54
+mixed400,NEW134,"Swiss Open, Switzerland",C,Swiss Open,W,Swiss Open,W,9154,9282,True,54
+mixed400,NEW275,12.0%,C,12.0%,C,12.0%,C,4771,4894,True,54
+mixed400,NEW101,$218,C,$218,C,$218,C,3495,3897,True,54
+mixed400,NEW256,12,C,12,C,12,C,5461,5516,True,54
+mixed400,NEW142,Mike Conway,C,Mike Conway,C,Mike Conway,C,4666,5280,True,54
+mixed400,NEW036,1919,W,1923,W,1923,W,8329,9534,True,54
+mixed400,NEW351,3.14%,C,3.14%,C,3.14%,C,3947,4081,True,54
+mixed400,NEW287,Roger Feutmba,C,Roger Feutmba,C,Roger Feutmba,C,3758,3899,True,54
+mixed400,NEW280,1.3 years,C,1.3,C,1.3,C,6288,7270,True,54
+mixed400,NEW327,"147,965",C,"147,965",C,"147,965",C,4913,5574,True,54
+mixed400,NEW368,$121.93,C,$121.93,C,$121.93,C,3784,4235,True,54
+mixed400,NEW349,"2,124,698",C,"2,124,698",C,"2,124,698",C,3591,3600,True,54
+mixed400,NEW072,2,C,2,C,2,C,6205,6672,True,54
+mixed400,NEW001,"$7,066",C,"$ 7,066",C,"$ 7,066",C,3758,3784,True,54
+mixed400,NEW278,16,C,16,C,16,C,3229,3573,True,54
+mixed400,NEW021,$0.2125,C,$0.2125,C,$0.2125,C,3898,4068,True,54
+mixed400,NEW020,49.4,C,$49.4,C,$49.4,C,4267,4434,True,54
+mixed400,NEW167,$313.5 million,C,$ 313.5,W,$ 313.5,W,5743,5868,True,54
+mixed400,NEW239,8,W,10,W,10,W,23522,23563,True,55
+mixed400,NEW019,"$2,858",C,"2,858",C,"2,858",C,6539,7640,True,54
+mixed400,NEW358,2001,W,2001,W,2001,W,3728,4232,True,54
+mixed400,NEW197,6.17 miles,C,6.17,C,6.17,C,10316,11292,True,54
+mixed400,NEW016,above,C,above,C,above,C,10366,10542,True,54
+mixed400,NEW179,$894.4 million,C,$894.4,W,$894.4,W,7531,8922,True,54
+mixed400,NEW149,21.4%,C,21.4%,C,21.4%,C,5809,6520,True,54
+mixed400,NEW184,11,C,10,W,10,W,8176,8324,True,54
+mixed400,NEW399,Klaus Jürgen Schneider,C,Klaus Jürgen Schneider,C,Klaus Jürgen Schneider,C,3971,4194,True,54
+mixed400,NEW308,"Tokyo, Japan (rows 1-2); Osaka, Japan (rows 3-29)",W,"Tokyo, Japan; Osaka, Japan",W,"Tokyo, Japan; Osaka, Japan",W,12715,12771,True,54
+mixed400,NEW169,New Orleans Saints,C,New Orleans Saints,C,New Orleans Saints,C,4573,5056,True,54
+mixed400,NEW392,"7,611.9 million dollars",W,"7,611.9",W,"7,611.9",W,7861,7973,True,54
+mixed400,NEW391,Balestier Khalsa,C,Balestier Khalsa,C,Balestier Khalsa,C,6991,7110,True,54
+mixed400,NEW371,$23.58,C,$23.58,C,$23.58,C,4706,4928,True,54
+mixed400,NEW352,France,C,France,C,France,C,3343,3620,True,54
+mixed400,NEW289,Tomomi Manako,C,Tomomi Manako,C,Tomomi Manako,C,4944,5286,True,54
+mixed400,NEW272,Juan Borja,C,Juan Borja,C,Juan Borja,C,6893,7776,True,54
+mixed400,NEW045,A1,C,A1,C,A1,C,4689,4725,True,54
+mixed400,NEW294,Adam Kszczot,C,Adam Kszczot,C,Adam Kszczot,C,6461,6915,True,54
+mixed400,NEW161,$22.98-$34.65,C,$22.98-$34.65,C,$22.98-$34.65,C,2895,3072,True,54
+mixed400,NEW257,"The Five Obstructions, Nymphomaniac: Volume I",C,"The Five Obstructions, Nymphomaniac: Volume I",C,"The Five Obstructions, Nymphomaniac: Volume I",C,4608,5166,True,54
+mixed400,NEW335,Lanny Poffo,C,Lanny Poffo,C,Lanny Poffo,C,10191,10416,True,55
+mixed400,NEW006,"$1,172 thousand",C,"1,172",W,"1,172",W,3908,3966,True,54
+mixed400,NEW378,2006,C,2006,C,2006,C,7789,7868,True,54
+mixed400,NEW302,5,C,4,W,4,W,6331,6384,True,54
+mixed400,NEW052,$88,C,$ 88,C,$ 88,C,3472,3708,True,54
+mixed400,NEW271,No,C,yes,W,yes,W,4166,4400,True,54
+mixed400,NEW228,196,C,196,C,196,C,4353,4944,True,54
+mixed400,NEW132,6,C,4,W,4,W,15524,15893,True,55
+mixed400,NEW128,"$14,504 million",C,"$14,504 million",C,"$14,504 million",C,6995,8484,True,54
+mixed400,NEW330,8,C,8,C,8,C,4668,4693,True,54
+mixed400,NEW264,29,C,29%,C,29%,C,5447,6034,True,54
+mixed400,NEW010,1943/44,C,1943/44,C,1943/44,C,4960,5115,True,54
+mixed400,NEW183,Regional Structure and Telecommunications Demand: A Case Study of Kenya (Ph.D. thesis),C,Regional Structure and Telecommunications Demand: A Case Study of Kenya,W,Regional Structure and Telecommunications Demand: A Case Study of Kenya,W,4121,4432,True,54
+mixed400,NEW298,Tamarind,C,Ironwood,W,Ironwood,W,12259,12761,True,54
+mixed400,NEW050,Southeastern,C,Southeastern,C,Southeastern,C,5913,6490,True,54
+mixed400,NEW276,"""Intro""",C,"""Intro""",C,"""Intro""",C,7152,7722,True,54
+mixed400,NEW158,9,W,10,W,10,W,15032,15648,True,55
+mixed400,NEW350,Bryan Field,C,Bryan Field,C,Bryan Field,C,7000,7360,True,55
+mixed400,NEW032,World Indoor Championships,C,World Indoor Championships,C,World Indoor Championships,C,4363,4581,True,54
+mixed400,NEW396,19%,C,19%,C,19%,C,4939,5025,True,54
+mixed400,NEW108,14,C,14,C,14,C,6940,6955,True,54
+mixed400,NEW259,4%,C,4%,C,4%,C,3810,4333,True,54
+mixed400,NEW012,9.8 %,C,9.8%,C,9.8%,C,3229,3248,True,54
+mixed400,NEW153,Nobuatsu Aoki,C,Nobuatsu Aoki,C,Nobuatsu Aoki,C,4653,4900,True,54
+mixed400,NEW028,2,C,2,C,2,C,4655,5075,True,54
+mixed400,NEW362,"$1,328 million",C,"$1,328 million",C,"$1,328 million",C,6412,7378,True,54
+mixed400,NEW034,San Francisco 49ers,C,San Francisco 49ers,C,San Francisco 49ers,C,9690,10520,True,54
+mixed400,NEW062,3.45%,C,3.45%,C,3.45%,C,6899,7932,True,54
+mixed400,NEW204,5:19.35,C,5:19.35,C,5:19.35,C,9896,10664,True,54
+mixed400,NEW053,Tony Lang,W,Tony Lang,W,Tony Lang,W,5181,5784,True,54
+mixed400,NEW119,25,C,25,C,25,C,5380,5838,True,54
+mixed400,NEW221,4,C,3,W,3,W,8277,9888,True,54
+mixed400,NEW207,"Wayne Gilchrest, Ben Cardin, Albert Wynn, Steny Hoyer, Roscoe Bartlett, Elijah Cummings",C,"Wayne Gilchrest, Ben Cardin, Albert Wynn, Steny Hoyer, Roscoe Bartlett, Elijah Cummings",C,"Wayne Gilchrest, Ben Cardin, Albert Wynn, Steny Hoyer, Roscoe Bartlett, Elijah Cummings",C,8438,8784,True,54
+mixed400,NEW076,$289.9,C,$289.9,C,$289.9,C,4641,5448,True,54
+mixed400,NEW118,Tauro F.C.,W,Tauro F.C.,W,Tauro F.C.,W,10933,11153,True,55
+mixed400,NEW211,2.82%,C,2.82%,C,2.82%,C,2973,2984,True,54
+mixed400,NEW249,"COL Erasmus M. Weaver, Jr.",C,"COL Erasmus M. Weaver, Jr.",C,"COL Erasmus M. Weaver, Jr.",C,6095,7230,True,54
+mixed400,NEW385,"(1,160)",C,"$(1,160)",C,"$(1,160)",C,3258,3664,True,54
+mixed400,NEW369,7,W,4,W,4,W,16594,16700,True,55
+mixed400,NEW224,2,W,3,W,3,W,11158,11418,True,55
+mixed400,NEW397,FK Radnički Niš,C,FK Radnički Niš,C,FK Radnički Niš,C,6786,6865,True,54
+mixed400,NEW094,Justin Holiday,C,Justin Holiday,C,Justin Holiday,C,3198,3573,True,54
+mixed400,NEW085,"$ 2,214.8",C,"$ 2,214.8",C,"$ 2,214.8",C,4907,5095,True,54
+mixed400,NEW100,Norwalk,C,Norwalk,C,Norwalk,C,10313,11136,True,54
+mixed400,NEW315,"""The Big Bully""",C,"""The Big Bully""",C,"""The Big Bully""",C,7385,8735,True,54
+mixed400,NEW316,"$3,137",C,"$3,137",C,"$3,137",C,6063,6763,True,54
+mixed400,NEW251,"32,633,242 MMBtu",C,"32,633,242 MMBtu",C,"32,633,242 MMBtu",C,4986,5562,True,54
+mixed400,NEW212,3,C,3,C,3,C,5622,6072,True,54
+mixed400,NEW290,October 24,C,October 24,C,October 24,C,8710,9399,True,54
+mixed400,NEW209,"273,387",C,"273,387",C,"273,387",C,6172,6912,True,54
+mixed400,NEW033,Three month LIBO rate of 2.5%,C,Three month LIBO rate of 2.5%,C,Three month LIBO rate of 2.5%,C,3808,4112,True,54
+mixed400,NEW318,3,C,3,C,3,C,8221,9080,True,54
+mixed400,NEW383,1943/44,C,1942/43,W,1942/43,W,4563,4872,True,54
+mixed400,NEW270,$7.5 million,C,$7.5 million,C,$7.5 million,C,3882,3882,True,54
+mixed400,NEW011,Martha Portobanco,W,Annemari Sandell,C,Annemari Sandell,C,5701,6170,True,54
+mixed400,NEW238,"$1,172.7 million",C,"$1,172.7",W,"$1,172.7",W,6680,7485,True,54
+mixed400,NEW332,"January 31, 2024",C,"January 31, 2024",C,"January 31, 2024",C,3187,3492,True,54
+mixed400,NEW008,Stage 6,W,Stage 6,W,Stage 6,W,13611,14236,True,54
+mixed400,NEW186,"$ 4,647.5",C,"$ 4,647.5",C,"$ 4,647.5",C,8625,9810,True,54
+mixed400,NEW303,0.91,C,0.91,C,0.91,C,3462,3680,True,54
+mixed400,NEW356,Carl Fogarty,C,Carl Fogarty,C,Carl Fogarty,C,7867,7912,True,55
+mixed400,NEW398,"$2,022",C,"$2,022",C,"$2,022",C,3482,3630,True,54
+mixed400,NEW180,180.3,W,180.3,W,180.3,W,6170,7008,True,54
+mixed400,NEW283,94,W,94,W,94,W,26728,27300,True,55
+mixed400,NEW193,North Korea,C,North Korea,C,North Korea,C,5598,5644,True,55
+mixed400,NEW049,3,C,3,C,3,C,5458,5764,True,54
+mixed400,NEW233,United States,C,United States,C,United States,C,11592,11664,True,54
+mixed400,NEW200,$15.98,C,$15.98,C,$15.98,C,3366,3570,True,54
+mixed400,NEW202,$889,C,$889,C,$889,C,4125,4133,True,54
+mixed400,NEW324,533.4,C,533.4,C,533.4,C,3702,3870,True,54
+mixed400,NEW306,9,C,9,C,9,C,6524,6525,True,54
+mixed400,NEW086,(2.3)pts,C,(2.3)pts,C,(2.3)pts,C,2935,3213,True,54
+mixed400,NEW376,95.5%,C,95.5%,C,95.5%,C,3130,3510,True,54
+mixed400,NEW174,9,W,10,C,10,C,13142,13206,True,55
+mixed400,NEW203,2nd,C,2nd,C,2nd,C,4831,5124,True,54
+mixed400,NEW288,KSV Roeselare,C,KSV Roeselare,C,KSV Roeselare,C,7271,7548,True,55
+mixed400,NEW104,Thin Line,C,"""Thin Line""",C,"""Thin Line""",C,3175,3348,True,54
+numeric400,NEW041,77.7,C,77.7,C,77.7,C,4158,4488,True,54
+numeric400,FQADEV166,10.66%,C,10.67%,C,10.67%,C,11322,13161,True,54
+numeric400,NEW232,$15.1,C,$15.1,C,$15.1,C,3418,3880,True,54
+numeric400,NEW267,4.00%,C,4.00,C,4.00,C,5799,6061,True,54
+numeric400,NEW166,"$144,362",C,"$144,362",C,"$144,362",C,7999,9920,True,54
+numeric400,NEW227,"5,047",C,"5,047",C,"5,047",C,3415,3703,True,54
+numeric400,NEW177,"$4,124 million",C,"$4,124",W,"$4,124",W,5987,6081,True,54
+numeric400,FQADEV019,$218.5,W,$218.5,W,$218.5,W,10501,13055,True,54
+numeric400,NEW042,8.50%,C,8.50%,C,8.50%,C,5131,5682,True,54
+numeric400,FQADEV135,0.46%,C,0.45%,C,0.45%,C,10489,12925,True,54
+numeric400,FINADD001,"$3,863",C,"$3,863",C,"$3,863",C,4858,5474,True,54
+numeric400,NEW091,"$431,852",C,"$431,852",C,"$431,852",C,4129,4344,True,54
+numeric400,FQADEV148,38.4%,C,38.37%,C,38.37%,C,10518,12962,True,54
+numeric400,FQADEV069,78.0%,C,78.0,C,78.0%,C,10513,10540,True,54
+numeric400,NEW106,"$11,625",C,"$11,625",C,"$11,625",C,3464,3800,True,54
+numeric400,FQADEV162,4.11%,C,4.11%,C,4.11%,C,6556,6636,True,54
+numeric400,FQADEV190,23.1%,C,23.14%,C,23.14%,C,8796,9190,True,54
+numeric400,FQADEV029,No,C,No,C,No,C,7706,8070,True,54
+numeric400,FINADD005,(23.5),C,(23.5),C,(23.5),C,4397,5008,True,54
+numeric400,NEW282,(156),C,(156),C,(156),C,3207,3222,True,54
+numeric400,FINADD020,$664.9 million,W,$541.7,W,$541.7,W,14938,15719,True,54
+numeric400,NEW059,Fluid Management,C,Fluid Management,C,Fluid Management,C,3414,3832,True,54
+numeric400,NEW234,"$2,749.3 million",C,"$2,749.3",W,"$2,749.3",W,3297,3325,True,54
+numeric400,FQADEV145,0.07,W,0.07,W,0.07,W,8978,10535,True,54
+numeric400,FQADEV002,-64.3%,W,-64.29%,W,-64.29%,W,10356,10374,True,54
+numeric400,NEW077,"1,304 (thousands)",C,"1,304",C,"1,304",C,4173,4462,True,54
+numeric400,NEW112,$3.0 billion,C,$3.0 billion,C,$3.0 billion,C,3180,3434,True,54
+numeric400,FQADEV051,4.29%,W,3.5%,W,3.5%,W,22837,23490,True,54
+numeric400,FINADD002,"991,835",C,"991,835",C,"991,835",C,7907,9835,True,54
+numeric400,FQADEV158,70.99%,C,43.52%,W,43.52%,W,10002,11478,True,54
+numeric400,FQADEV079,$1521.55 million,C,$1521.55,C,$1521.55,C,7858,8719,True,54
+numeric400,FQADEV199,10.57%,C,10.57%,C,10.57%,C,10341,10444,True,54
+numeric400,NEW225,"$28,900 (in thousands)",W,"$28,900",W,"$28,900",W,3507,3710,True,54
+numeric400,NEW262,#1 in North America,C,#1 in North America,C,#1 in North America,C,3644,3696,True,54
+numeric400,FQADEV157,-3.76%,C,-3.76%,C,-3.76%,C,10667,13185,True,54
+numeric400,FINADD012,"(303,000)",C,"(303,000)",C,"(303,000)",C,7851,7880,True,54
+numeric400,FQADEV128,-6 mmboe,W,5,W,5,W,10526,10534,True,54
+numeric400,NEW080,"66,986",C,"66,986",C,"66,986",C,3694,4184,True,54
+numeric400,NEW201,Business,C,Business,C,Business,C,8292,8416,True,54
+numeric400,FQADEV026,$2.8 million,C,$2.8 million,C,$2.8 million,C,9836,11515,True,54
+numeric400,NEW364,$65.95,C,$65.95,C,$65.95,C,3248,3656,True,54
+numeric400,FQADEV073,-24.86%,W,-24.80%,W,-24.80%,W,8593,9289,True,54
+numeric400,NEW199,"$7,650 million",C,"$ 7,650",W,"$ 7,650",W,5044,5274,True,54
+numeric400,FQADEV035,2.33,C,2.33,C,2.33,C,8387,9965,True,54
+numeric400,NEW121,"$6,679",C,"$6,679",C,"$6,679",C,6542,7630,True,54
+numeric400,FQADEV003,$10 million,C,$10 million,C,$10 million,C,10446,10460,True,54
+numeric400,NEW122,91,C,91,C,91,C,7851,7872,True,54
+numeric400,FQADEV081,1030,W,1654,W,1654,W,7475,9215,True,54
+numeric400,NEW242,"33,499 GWh",C,"33,499",C,"33,499 GWh",C,3556,4082,True,54
+numeric400,FQADEV061,-124 million,C,-124 million,C,-124 million,C,11718,13117,True,54
+numeric400,FQADEV161,"$1,041.53 million",W,174.20,W,174.20,W,11658,12009,True,54
+numeric400,NEW147,$42.94,C,$42.94,C,$42.94,C,3497,3752,True,54
+numeric400,FINADD026,$ 89.82,C,$ 89.82,C,$ 89.82,C,4088,4510,True,54
+numeric400,FINADD004,$24.41,C,$24.41,C,$24.41,C,4577,5274,True,54
+numeric400,FQADEV156,4.73%,W,4.73%,W,4.73%,W,10243,10301,True,54
+numeric400,NEW297,34,C,34,C,34,C,3785,3798,True,54
+numeric400,NEW152,$ 201.5,C,$201.5,C,$201.5,C,5102,5346,True,54
+numeric400,NEW252,39%,C,39%,C,39%,C,4009,4200,True,54
+numeric400,FQADEV183,71 thousands of barrels per day,C,71,C,71,C,11584,12901,True,54
+numeric400,FQADEV193,$56.3 million,C,56.3,C,56.3,C,10360,10504,True,54
+numeric400,FQADEV181,"$262,743",C,262743,C,262743,C,18677,19321,True,54
+numeric400,FQADEV151,"$627,442,009.82",W,"$62,435,078.9",W,"$62,435,078.9",W,18484,20432,True,54
+numeric400,FQADEV048,10.56%,C,10.56%,C,10.56%,C,10234,12224,True,54
+numeric400,NEW038,"$5,290",C,"$5,290",C,"$5,290",C,3571,4005,True,54
+numeric400,FQADEV018,-3427,C,-3427,C,-3427,C,10226,11455,True,54
+numeric400,FQADEV173,$117 million,W,$117 million,W,$117 million,W,10965,12885,True,54
+numeric400,FINADD022,0.123 billion gallons,C,0.123 billions of gallons,W,0.123 billions of gallons,W,3838,3935,True,54
+numeric400,NEW240,"$1,015,802 thousand",C,"$1,015,802",W,"$1,015,802",W,5755,6500,True,54
+numeric400,NEW039,"$ 333,845",C,"$ 333,845",C,"$ 333,845",C,4215,4440,True,54
+numeric400,FQADEV089,13.90%,C,13.90,C,13.90,C,6699,7278,True,54
+numeric400,NEW340,52.36,C,$52.36,C,$52.36,C,3221,3579,True,54
+numeric400,FQADEV015,6.21%,C,6.23%,C,6.23%,C,9944,11680,True,54
+numeric400,FQADEV171,994,C,994,C,994,C,10598,13055,True,54
+numeric400,FQADEV031,$8.57 billion,W,$ 1.2 billion,W,$ 1.2 billion,W,9629,9757,True,54
+numeric400,NEW139,"$ 82,215",C,"$ 82,215",C,"$ 82,215",C,4271,4744,True,54
+numeric400,FQADEV095,-34.03%,W,-34.07%,W,-34.07%,W,10737,13050,True,54
+numeric400,FQADEV118,96.04%,C,46.5%,W,46.5%,W,10766,13046,True,54
+numeric400,FQADEV077,$1891.17,W,$1891.17,W,$1891.17,W,10881,13183,True,54
+numeric400,NEW367,$ 53.89,C,$53.89,C,$53.89,C,3976,4008,True,54
+numeric400,FQADEV163,8.24%,C,7.34%,W,7.36%,W,9208,10770,True,54
+numeric400,NEW088,"24,396",C,"24,396",C,"24,396",C,4922,5656,True,54
+numeric400,NEW170,$51.13,C,51.13,C,51.13,C,3416,3600,True,54
+numeric400,FQADEV076,-5 million,C,-5 million,C,-5 million,C,10376,10475,True,54
+numeric400,FQADEV044,-147 million,C,-147,C,-147,C,9759,11283,True,54
+numeric400,NEW354,"$8,047",C,"$8,047",C,"$8,047",C,4737,4860,True,54
+numeric400,FQADEV146,40.73,C,0.85,W,0.85,W,11047,12501,True,54
+numeric400,FQADEV024,6.40,C,6.39,C,6.39,C,10736,13240,True,54
+numeric400,FQADEV170,87.67%,C,87.67%,C,87.67%,C,10468,12965,True,54
+numeric400,FINADD009,"$185,792",C,"$185,792",C,"$185,792",C,3571,3715,True,54
+numeric400,FQADEV058,$1.4 million,W,$1.4 million,W,$1.4 million,W,16826,18067,True,54
+numeric400,NEW064,"$1,650",C,"$1,650",C,"$1,650",C,5275,5768,True,54
+numeric400,NEW328,$646 million,C,$646,W,$646,W,3388,3621,True,54
+numeric400,NEW217,Fair value of underlying collateral,C,Fair value of underlying collateral,C,Fair value of underlying collateral,C,4042,4578,True,54
+numeric400,FQADEV014,$9119 million,C,9119,C,9119,C,10421,12725,True,54
+numeric400,FQADEV038,29.47%,C,29.47%,C,29.47%,C,10701,12455,True,54
+numeric400,NEW089,0.8 million shares,W,0.8,W,0.8,W,3859,4011,True,54
+numeric400,FQADEV134,No,C,No,C,No,C,7086,8310,True,54
+numeric400,NEW311,$77.67,C,$77.67,C,$77.67,C,3844,3963,True,54
+numeric400,NEW313,1.84 %,C,1.84 %,C,1.84 %,C,3053,3096,True,54
+numeric400,FQADEV160,"$1,542 million",C,1542,C,1542,C,10517,13125,True,54
+numeric400,FQADEV084,64.96%,C,10.236,W,10.236,W,10663,13259,True,54
+numeric400,FQADEV105,4.6875,C,4.6875,C,4.6875,C,10428,12500,True,54
+numeric400,FQADEV049,$1058.67 million,W,1058.67,C,1058.67,C,11171,11725,True,54
+numeric400,NEW334,"2,170 mbpd",C,"2,170",C,"2,170",C,3159,3416,True,54
+numeric400,FQADEV023,7.36%,C,7.36%,C,7.36%,C,7072,7946,True,54
+numeric400,NEW002,December 2006,C,December 2006,C,December 2006,C,3799,4067,True,54
+numeric400,NEW261,$21.28,C,$21.28,C,$21.28,C,4534,5004,True,54
+numeric400,NEW140,"$31,677",C,"$31,677",C,"$31,677",C,3475,3780,True,54
+numeric400,FQADEV143,236.98,W,236.98,W,236.98,W,6568,7758,True,54
+numeric400,NEW037,"$1,107.6",C,"$1,107.6",C,"$1,107.6",C,3605,3927,True,54
+numeric400,NEW120,4.2 million tons (a),W,4.2 million tons,C,4.2 million tons,C,6853,8005,True,54
+numeric400,FQADEV180,"$177,926.96",C,"$178,026.96",W,"$178,026.96",W,10468,12945,True,54
+numeric400,FQADEV016,24.03% (2018) and 27.17% (2017),W,23.98%,W,23.98%,W,22099,24339,True,54
+numeric400,NEW292,$124.4,C,$124.4,C,$124.4,C,4869,5446,True,54
+numeric400,FQADEV141,11.48%,W,11.48%,W,11.48%,W,9545,9581,True,54
+numeric400,NEW156,"$ 196,740",C,"$ 196,740",C,"$ 196,740",C,3616,3983,True,54
+numeric400,FQADEV094,37.4,W,37.4,W,37.4,W,6038,6336,True,54
+numeric400,NEW347,$341.9 million,C,341.9,W,341.9,W,4028,4613,True,54
+numeric400,FQADEV070,42.55%,W,42.55%,W,42.55%,W,10324,12450,True,54
+numeric400,FQADEV053,$ 9.32,W,$9.32,W,$9.32,W,8741,8924,True,54
+numeric400,NEW248,$900 million,C,$900 million,C,$900 million,C,6318,6370,True,54
+numeric400,FQADEV198,"Yes, the five-year total return on Ball Corporation outperformed the DJ Containers & Packaging Index.",W,Yes,C,Yes,C,8330,9210,True,54
+numeric400,NEW027,103.22,C,103.22,C,103.22,C,3724,3962,True,54
+numeric400,FQADEV129,unknown,W,138311810,W,138311810,W,14062,15367,True,54
+numeric400,FQADEV123,"$17,720",C,$17720,C,$17720,C,10144,12471,True,54
+numeric400,NEW374,"7,479",C,"7,479",C,"7,479",C,3485,3773,True,54
+numeric400,NEW103,$756,C,$756,C,$756,C,3691,4095,True,54
+numeric400,FQADEV005,"$4,938,000",W,"$5,740,000",W,$574000,W,11104,13207,True,54
+numeric400,NEW389,0.3%,C,0.3,C,0.3,C,3010,3204,True,54
+numeric400,NEW235,"571,000",C,"571,000",C,"571,000",C,5568,6156,True,54
+numeric400,FQADEV124,57.03%,C,57.03%,C,57.03%,C,7523,7985,True,54
+numeric400,FQADEV100,$3,C,$3 million,W,$3,C,10716,12952,True,54
+numeric400,NEW107,$ 147.28,C,$ 147.28,C,$ 147.28,C,4607,4715,True,54
+numeric400,FQADEV194,26.67%,C,26.67%,C,26.67%,C,8906,9925,True,54
+numeric400,FQADEV137,$1.7 million,C,1.7,C,1.7,C,8907,10680,True,54
+numeric400,NEW300,"$1,427 million",C,"$1,427 million",C,"$1,427 million",C,5413,5513,True,54
+numeric400,FQADEV152,10.4%,C,10.4%,C,10.4%,C,8083,9185,True,54
+numeric400,FQADEV174,-13.2,C,-13.2,C,-13.2,C,10646,13005,True,54
+numeric400,FQADEV017,"$454,545.45",C,$0.45 million,W,$0.45 million,W,7528,8725,True,54
+numeric400,FQADEV092,71.90%,C,71.9%,C,71.9%,C,10297,10328,True,54
+numeric400,FINADD015,(7.0)%,C,(7.0)%,C,(7.0)%,C,4279,4431,True,54
+numeric400,FQADEV082,57.6%,C,57.6%,C,57.6%,C,10597,13215,True,54
+numeric400,NEW054,"Milwaukee, WI",C,"Milwaukee, WI",C,"Milwaukee, WI",C,4797,4805,True,54
+numeric400,FQADEV090,$20.147 million,W,$20.147 million,W,$20.147 million,W,9985,10320,True,54
+numeric400,FQADEV142,97.14%,C,97.14%,C,97.14%,C,10091,10460,True,54
+numeric400,FQADEV037,34.77%,C,34.78%,C,34.76%,C,10522,12935,True,54
+numeric400,FQADEV144,24.02%,W,0.24,W,0.24,W,7182,7465,True,54
+numeric400,FQADEV008,-864,C,-864,C,-864,C,10458,13035,True,54
+numeric400,NEW171,"622,814",C,"622,814",C,"622,814",C,4269,4656,True,54
+numeric400,FQADEV028,26.32%,C,25.29%,W,25.24%,W,10802,13045,True,54
+numeric400,NEW155,"38,235",C,"38,235",C,"38,235",C,4248,4602,True,54
+numeric400,NEW087,(624.6) million dollars,W,(624.6),W,(624.6),W,3765,4361,True,54
+numeric400,NEW065,$21,C,$21,C,$21,C,6074,7080,True,54
+numeric400,FQADEV040,1,C,2,W,2,W,11050,12925,True,54
+numeric400,NEW342,$47.9 million,C,$47.9,C,$47.9,C,3789,4378,True,54
+numeric400,FQADEV098,20.11%,W,19.65%,W,19.65%,W,6303,7211,True,54
+numeric400,FQADEV184,-16.14%,W,-16.24%,W,-16.24%,W,7589,8499,True,54
+numeric400,FQADEV153,20.2%,C,20.2%,C,20.2%,C,10546,13151,True,54
+numeric400,FQADEV096,3.4%,W,-13.4%,W,-13.4%,W,9977,12248,True,54
+numeric400,FQADEV165,12.675,C,12.675 million,C,12.675 million,C,9868,11363,True,54
+numeric400,NEW135,"$1,251",C,"$1,251",C,"$1,251",C,5123,5334,True,54
+numeric400,FINADD025,$81.6 million,C,$ 81.6,W,$ 81.6,W,4890,5669,True,54
+numeric400,FQADEV025,2.70%,C,3.21,W,3.21,W,10055,12188,True,54
+numeric400,NEW393,$9.5 million,C,$ 9.5,W,$ 9.5,W,5052,5070,True,54
+numeric400,NEW154,"$11,832 thousand",W,"$11,832",W,"$11,832",W,6114,6796,True,54
+numeric400,FQADEV114,27.5%,C,27.5%,C,27.5%,C,19638,20720,True,54
+numeric400,NEW214,Marketing Services,C,Marketing Services,C,Marketing Services,C,4620,5232,True,54
+numeric400,NEW127,13,C,13,C,13,C,8621,8748,True,54
+numeric400,NEW331,"$757,839",C,"757,839",C,"757,839",C,5239,5282,True,54
+numeric400,FQADEV138,73.86%,C,73.8%,W,73.8%,W,10184,10360,True,54
+numeric400,FQADEV176,38.66%,C,0.0389,W,0.0389,W,20066,21977,True,54
+numeric400,NEW360,54.01,C,54.01,C,54.01,C,2658,2870,True,54
+numeric400,NEW151,$28.86,C,$28.86,C,$28.86,C,7957,8424,True,54
+numeric400,NEW073,"$5,843",C,"$5,843",C,"$5,843",C,3470,3766,True,54
+numeric400,FQADEV168,"$16,750,000",W,$16749999,W,$16749999,W,11244,12912,True,54
+numeric400,FQADEV060,-16,C,-16,C,-16,C,10628,13215,True,54
+numeric400,NEW219,"$54,800 thousand",C,"$54,800",W,"$54,800",W,7732,9080,True,54
+numeric400,NEW366,"$11,611,124 thousand",W,"$11,611,124",W,"$11,611,124",W,6189,6485,True,54
+numeric400,FQADEV067,0.17,W,0.17,W,0.17,W,9639,9736,True,54
+numeric400,NEW165,(16.7),W,(16.7),W,(16.7),W,5540,5856,True,54
+numeric400,FINADD024,"1,958,052 shares",C,"1,958,052",C,"1,958,052",C,4265,4824,True,54
+numeric400,NEW187,$15.7 million,C,$15.7 million,C,$15.7 million,C,3190,3263,True,54
+numeric400,FQADEV177,7.875,W,0.75,C,0.75,C,8281,8460,True,54
+numeric400,NEW245,357 million dollars,W,357,W,357,W,5263,5705,True,54
+numeric400,FQADEV034,5.42%,C,5.38%,C,5.39%,C,7585,7674,True,54
+numeric400,NEW026,$0.68,C,$ 0.68,C,$ 0.68,C,4797,5676,True,54
+numeric400,NEW382,"36,701",C,"36,701",C,"36,701",C,4302,4823,True,54
+numeric400,FQADEV121,-$0.6 billion,C,-0.6 billion,C,-0.6,C,7518,8292,True,54
+numeric400,FINADD023,"282,815",C,"282,815",C,"282,815",C,6437,7488,True,54
+numeric400,NEW060,85 thousand,C,85,C,85,C,4798,4830,True,54
+numeric400,NEW326,"$6,999.7 million",C,"$6,999.7",W,"$6,999.7",W,4666,5041,True,54
+numeric400,NEW175,17.5%,C,17.5%,C,17.5%,C,4491,5118,True,54
+numeric400,FQADEV056,72.09%,C,72.09%,C,72.09%,C,8544,10240,True,54
+numeric400,FQADEV149,"221,866",C,"218,764",W,"218,764",W,11225,12875,True,54
+numeric400,FQADEV066,$25 million,C,$25 million,C,$25 million,C,9231,10930,True,54
+numeric400,NEW058,"242,788",C,"242,788",C,"242,788",C,5551,5635,True,54
+numeric400,FQADEV133,$25.67 million,W,12.33,W,12.33,W,9553,10508,True,54
+numeric400,NEW068,$14.71,C,$14.71,C,$14.71,C,6347,7290,True,54
+numeric400,FQADEV182,296048,C,359648,W,359648,W,9607,11475,True,54
+numeric400,FINADD014,0.0,C,$0.0,C,$0.0,C,4676,5422,True,54
+numeric400,FQADEV122,$111.42,C,-111.42,W,-111.42,W,10947,13240,True,54
+numeric400,FINADD018,620 mbpd,C,620,C,620,C,7489,8765,True,54
+numeric400,FQADEV164,5.48%,C,5.48%,C,5.48%,C,10685,13170,True,54
+numeric400,NEW097,$62.4,C,$62.4,C,$62.4,C,6462,6600,True,54
+numeric400,NEW137,$58.7 million,C,$ 58.7,W,$ 58.7,W,3648,4109,True,54
+numeric400,NEW255,"$1,115,594",C,"$1,115,594",C,"$1,115,594",C,3452,3703,True,54
+numeric400,NEW196,"184,039",C,"184,039",C,"184,039",C,3902,4088,True,54
+numeric400,NEW241,11%,C,11%,C,11%,C,7166,8875,True,54
+numeric400,NEW380,"220,000",C,"220,000",C,"220,000",C,5270,5814,True,54
+numeric400,FQADEV147,4.75%,C,4.75%,C,4.75%,C,10686,13255,True,54
+numeric400,FQADEV191,12.41%,W,-12.4%,C,-12.4%,C,9502,11270,True,54
+numeric400,NEW125,55 %,C,55%,C,55%,C,3193,3234,True,54
+numeric400,FQADEV030,$ 250 million,W,$ 250 million,W,$ 250 million,W,10208,10540,True,54
+numeric400,FQADEV032,137.5,C,137.5,C,137.5,C,10002,11225,True,54
+numeric400,FQADEV006,2.5,C,$ 16254,W,$ 16254,W,22745,23234,True,54
+numeric400,NEW220,48%,C,48%,C,48%,C,5232,5770,True,54
+numeric400,NEW213,155.39,C,155.39,C,155.39,C,3020,3330,True,54
+numeric400,FQADEV106,9.69%,C,9.70%,C,9.70%,C,6979,7175,True,54
+numeric400,FQADEV033,0.0714,C,0.0714,C,0.0714,C,8990,11218,True,54
+numeric400,FINADD017,$585,C,$585,C,$585,C,5790,5934,True,54
+numeric400,NEW138,$641.8,C,$641.8,C,$641.8,C,3669,3684,True,54
+numeric400,NEW047,Lease expiring 2019,C,Lease expiring 2019,C,Lease expiring 2019,C,5075,5135,True,54
+numeric400,NEW146,404,C,404,C,404,C,4230,4417,True,54
+numeric400,FQADEV020,41.60%,C,41.6%,C,41.6%,C,7956,9416,True,54
+numeric400,FQADEV197,null,W,0.0044,W,0.0267,W,14575,15197,True,54
+numeric400,FINADD007,"$2,178.7",C,"$2,178.7",C,"$2,178.7",C,4570,5052,True,54
+numeric400,FQADEV196,unknown,W,1.24%,W,1.24%,W,23525,23705,True,54
+numeric400,NEW304,A-,C,A-,C,A-,C,4988,5700,True,54
+numeric400,NEW305,"$1,945,439",C,"$1,945,439",C,"$1,945,439",C,4200,4422,True,54
+numeric400,NEW394,"$102,942",C,"$102,942",C,"$102,942",C,3474,3646,True,54
+numeric400,FQADEV021,-52.48%,C,-49.0%,W,-49.0%,W,10032,11655,True,54
+numeric400,FQADEV063,388,C,388,C,388,C,8872,9846,True,54
+numeric400,NEW236,"$435,515 (in thousands)",W,"$435,515",W,"$435,515",W,4129,4464,True,54
+numeric400,NEW078,8.75%,C,8.75%,C,8.75%,C,4752,5670,True,54
+numeric400,NEW190,"576,000 square feet",C,"576,000",C,"576,000",C,3151,3512,True,54
+numeric400,NEW355,"$ 4,174 (in thousands)",W,"$ 4,174",W,"$ 4,174",W,3862,4103,True,54
+numeric400,FQADEV102,13.4% ( 13.4 % ),W,13.4%,C,13.4%,C,9981,11650,True,54
+numeric400,FQADEV039,-40.97%,C,-40.97%,C,-40.97%,C,7203,8005,True,54
+numeric400,FQADEV047,$18.6 million,W,$18.6,C,$18.6,C,8049,8934,True,54
+numeric400,FINADD013,$0,C,$0,C,$0,C,3170,3290,True,54
+numeric400,FQADEV075,54.13%,C,54.1%,C,54.1%,C,9662,11925,True,54
+numeric400,FQADEV120,5.84%,C,5.84%,C,5.84%,C,10783,13070,True,54
+numeric400,FQADEV011,0.437,C,0.4368,C,0.4368,C,10155,12445,True,54
+numeric400,NEW044,"$2,658.7 million",C,"$2,658.7",W,"$2,658.7",W,4898,5383,True,54
+numeric400,NEW133,$27 million,C,$27 million,C,$27 million,C,3289,3320,True,54
+numeric400,FQADEV127,-13.34%,C,-13.4%,W,-13.4%,W,9301,9708,True,54
+numeric400,FQADEV068,75.63%,C,0.756,W,0.7563,W,11401,12183,True,54
+numeric400,FQADEV013,1.72,C,1.72,C,1.72,C,7239,8160,True,54
+numeric400,NEW098,"(150,943)",C,"(150,943)",C,"(150,943)",C,7242,8886,True,54
+numeric400,FQADEV057,9.67%,C,9.68%,C,9.68%,C,10049,12461,True,54
+numeric400,FQADEV139,6.89,W,6.89,W,6.89,W,7382,8190,True,54
+numeric400,FQADEV004,89.16%,C,88.9%,C,88.9%,C,10496,12996,True,54
+numeric400,FQADEV101,4087587,W,0.479,W,0.479,W,7915,9192,True,54
+numeric400,FQADEV055,,A,$12.64 million,W,$12.64 million,W,6683,7782,True,54
+numeric400,FQADEV012,24.69%,C,24.69%,C,24.69,C,10344,12887,True,54
+numeric400,FQADEV107,1.1%,C,3.2%,W,3.2%,W,8358,9168,True,54
+numeric400,FQADEV043,$6.932 billion,W,6.932,W,6.932,W,8861,10950,True,54
+numeric400,NEW208,"$(210,709)",C,"(210,709)",C,"(210,709)",C,7277,7755,True,54
+numeric400,FQADEV042,6.30%,C,6.3,C,6.3,C,10568,13019,True,54
+numeric400,NEW226,A-,C,A-,C,A-,C,4127,4599,True,54
+numeric400,NEW150,"$1,895,779",C,"$1,895,779",C,"$1,895,779",C,4678,5453,True,54
+numeric400,FINADD016,$735.8,C,$735.8,C,$735.8,C,5059,5075,True,54
+numeric400,FQADEV154,$13.1 billion,C,13.1,C,13.1,C,10382,10392,True,54
+numeric400,FINADD006,28.2%,C,28.2%,C,28.2%,C,4388,4788,True,54
+numeric400,FQADEV080,2.1%,W,2.1%,W,2.1%,W,9284,9756,True,54
+numeric400,FQADEV172,$218.67 million,W,218.67,W,218.67,W,10581,12475,True,54
+numeric400,FQADEV050,$-1226 million,W,"$1,226 million",C,"$1,226 million",C,10753,13155,True,54
+numeric400,NEW194,3.1,C,3.1,C,3.1,C,3202,3416,True,54
+numeric400,NEW222,.497,C,.497,C,.497,C,2915,3096,True,54
+numeric400,FQADEV109,"$4,424.32 million",W,4424.3,W,4424.3,W,10826,13164,True,54
+numeric400,FQADEV036,-11.5 million,C,-11.5,C,-11.5,C,10697,13256,True,54
+numeric400,NEW029,"16,845,353",C,"16,845,353",C,"16,845,353",C,5630,6100,True,54
+numeric400,NEW141,"60,245,718",C,"60,245,718",C,"60,245,718",C,13787,14144,True,55
+numeric400,FQADEV131,"Approximately 56.0% of the Suros acquisition price was paid in cash ($139,000 out of $248,100).",W,$139000,W,$139000,W,10033,10341,True,54
+numeric400,NEW015,$3.8,C,$ 3.8,C,$ 3.8,C,3817,4269,True,54
+numeric400,NEW395,51.1,C,51.1,C,51.1,C,6710,7550,True,54
+numeric400,NEW277,"$ 379,035",C,"$ 379,035",C,"$ 379,035",C,4447,4812,True,54
+numeric400,FQADEV195,$613,C,$609,W,$609,W,13169,15552,True,54
+numeric400,NEW003,"34,325,304",C,"34,325,304",C,"34,325,304",C,5612,6140,True,54
+numeric400,NEW229,$389,C,$389,C,$389,C,3063,3245,True,54
+numeric400,NEW136,21,C,21,C,21,C,3912,4050,True,54
+numeric400,FQADEV167,"The growth of additions was 21.18% (from $68,125,000 to $82,551,000), while the growth of deductions was -70.09% (from $4,645,000 to $1,390,000).",W,0.12,W,0.12,W,8747,9439,True,54
+numeric400,FQADEV093,-6.85%,C,-6.85%,C,-6.85%,C,10372,10376,True,54
+numeric400,NEW321,13.6%,C,13.6%,C,13.6%,C,4863,5118,True,54
+numeric400,NEW070,$11.94,C,$11.94,C,$11.94,C,4250,4736,True,54
+numeric400,FQADEV001,2800,C,2800,C,2800,C,10403,10428,True,54
+numeric400,NEW268,Tranche E,C,Tranche E,C,Tranche E,C,3575,3952,True,54
+numeric400,FQADEV052,19.5,C,19.5,C,19.5,C,9016,10245,True,54
+numeric400,FINADD021,"$4,449.7 million",C,"$4,449.7",W,"$4,449.7",W,7681,7696,True,54
+numeric400,FQADEV188,3.01%,C,3.01%,C,3.01%,C,10204,10529,True,54
+numeric400,FQADEV062,12.87%,C,12.87%,C,12.87%,C,10885,13220,True,54
+numeric400,FQADEV071,64.71%,W,0.64,W,0.64,W,10414,12165,True,54
+numeric400,FQADEV041,1.74%,C,2.07%,W,2.07%,W,10501,11749,True,54
+numeric400,NEW083,$1.30,C,$1.30,C,$1.30,C,6598,7436,True,54
+numeric400,NEW307,$447.7 million,C,447.7,W,447.7,W,3041,3333,True,54
+numeric400,FQADEV072,-12.5%,C,-12.5%,C,-12.5%,C,11014,12984,True,54
+numeric400,NEW275,12.0%,C,12.0%,C,12.0%,C,4444,4896,True,54
+numeric400,FQADEV186,275.6%,C,37.4%,W,37.4%,W,9513,11733,True,54
+numeric400,FQADEV064,16.13%,C,16.13%,C,16.13%,C,10281,10304,True,54
+numeric400,NEW101,$218,C,$218,C,$218,C,3466,3897,True,54
+numeric400,FQADEV119,$2000 million,C,2000,C,2000,C,11736,12926,True,54
+numeric400,FQADEV159,69.55%,C,70.1%,C,70.1%,C,10515,13117,True,54
+numeric400,NEW351,3.14%,C,3.14%,C,3.14%,C,3920,4081,True,54
+numeric400,NEW280,1.3 years,C,1.3,C,1.3,C,6713,7270,True,54
+numeric400,NEW327,"147,965",C,"147,965",C,"147,965",C,4890,5574,True,54
+numeric400,NEW368,$121.93,C,$121.93,C,$121.93,C,3844,4235,True,54
+numeric400,NEW349,"2,124,698",C,"2,124,698",C,"2,124,698",C,3506,3600,True,54
+numeric400,NEW001,"$7,066",C,"$7,066",C,"$7,066",C,3815,4323,True,54
+numeric400,NEW021,$0.2125,C,$0.2125,C,$0.2125,C,3355,3616,True,54
+numeric400,FQADEV027,$21.7 million,C,$21.7 million,C,$21.7 million,C,8518,9931,True,54
+numeric400,NEW020,$49.4 million,C,$49.4,C,$49.4,C,4267,4434,True,54
+numeric400,NEW167,$313.5 million,C,$ 313.5,W,$ 313.5,W,6018,7043,True,54
+numeric400,NEW019,"$2,858 million",C,"2,858",C,"2,858",C,6518,7641,True,54
+numeric400,FQADEV065,-42.5%,W,-0.4246,W,-0.4246,W,11067,12880,True,54
+numeric400,FQADEV185,-16.79%,C,-16.79%,C,-16.79%,C,10788,13220,True,54
+numeric400,FQADEV126,6.51%,C,6.51%,C,6.51%,C,10831,13310,True,54
+numeric400,FQADEV087,$2259 million,C,$2259,C,$ 2259,C,10414,11428,True,54
+numeric400,NEW179,$894.4 million,C,$894.4 million,C,$894.4 million,C,8034,8924,True,54
+numeric400,NEW149,21.4%,C,21.4%,C,21.4%,C,5805,6520,True,54
+numeric400,FQADEV130,25.74%,C,25.74%,C,25.74%,C,10265,10508,True,54
+numeric400,FQADEV097,$2634 million,C,$2634 million,C,$2634 million,C,10693,13225,True,54
+numeric400,FQADEV155,15.03%,W,15.04%,W,15.04%,W,6155,6864,True,54
+numeric400,NEW392,"$7,611.9 million",C,"7,611.9",W,"7,611.9",W,8210,9965,True,54
+numeric400,NEW371,$23.58,C,$23.58,C,$23.58,C,4009,4224,True,54
+numeric400,FQADEV091,12.95%,W,11.46%,C,11.46%,C,10598,13200,True,54
+numeric400,NEW045,A1,C,A1,C,A1,C,4579,4725,True,54
+numeric400,FQADEV116,0.855 billion,C,0.855,C,0.855,C,10595,13085,True,54
+numeric400,NEW161,$22.98-$34.65,C,$22.98-$34.65,C,$22.98-$34.65,C,2944,3072,True,54
+numeric400,NEW006,"1,172 (In thousands)",W,"1,172",W,"1,172",W,4499,4630,True,54
+numeric400,NEW052,$88,C,$ 88,C,$ 88,C,3431,3707,True,54
+numeric400,NEW228,196,C,196,C,196,C,4354,4944,True,54
+numeric400,FQADEV086,7.49%,C,12.36%,W,10.49%,W,10765,12974,True,54
+numeric400,NEW128,"$14,504 million",C,"$14,504 million",C,"$14,504 million",C,6932,8485,True,54
+numeric400,NEW264,29,C,29,C,29,C,4904,5026,True,54
+numeric400,FQADEV054,-6806,C,-6472.67,W,-6472.67,W,10072,11484,True,54
+numeric400,FQADEV115,1.11%,C,1.1%,W,1.1%,W,6799,7040,True,54
+numeric400,FQADEV175,0%,C,0,C,0,C,10225,10330,True,54
+numeric400,FQADEV009,172,C,"24, 77 and 71",W,"24, 77 and 71",W,10080,10321,True,54
+numeric400,FQADEV078,$4027 million,C,$367,W,$367,W,10403,12726,True,54
+numeric400,NEW396,19%,C,19%,C,19%,C,4844,5025,True,54
+numeric400,FQADEV010,0.737,W,0.738,W,0.738,W,10549,12911,True,54
+numeric400,NEW259,4%,C,4%,C,4%,C,3825,4333,True,54
+numeric400,NEW012,9.8 %,C,9.8%,C,9.8%,C,3367,3712,True,54
+numeric400,NEW362,"$1,328 million",C,"$1,328 million",C,"$1,328 million",C,7789,8852,True,54
+numeric400,FQADEV112,302.8 million,C,302.8,C,302.8,C,11194,13128,True,54
+numeric400,FINADD019,(303),C,(303),C,(303),C,4016,4026,True,54
+numeric400,FINADD008,$455.7,C,$ 455.7,C,$ 455.7,C,3730,3732,True,54
+numeric400,FQADEV022,80.75,C,80.75,C,80.75,C,6144,7184,True,54
+numeric400,NEW062,3.45%,C,3.45%,C,3.45%,C,5913,6610,True,54
+numeric400,FQADEV169,3.33%,C,10.06%,W,10.06%,W,9081,10935,True,54
+numeric400,FINADD003,"$64,050",C,"$64,050",C,"$64,050",C,3193,3223,True,54
+numeric400,FQADEV074,386.79,C,384.9,W,384.9,W,10952,12897,True,54
+numeric400,NEW076,$289.9,C,$289.9,C,$289.9,C,5005,5448,True,54
+numeric400,NEW211,2.82%,C,2.82%,C,2.82%,C,3286,3357,True,54
+numeric400,FQADEV150,-3.19%,C,-3.19%,C,-3.16%,C,9750,11739,True,54
+numeric400,FQADEV045,$14 million,W,$14 million,W,$14 million,W,9968,10300,True,54
+numeric400,FQADEV111,-35.62%,C,-35.62%,C,-35.62%,C,10492,12955,True,54
+numeric400,NEW385,"(1,160)",C,"$(1,160)",C,"$(1,160)",C,3610,3664,True,54
+numeric400,FQADEV083,9.56%,C,9.56%,C,9.56%,C,10588,12935,True,54
+numeric400,FINADD011,$ 79.0,C,$ 79.0,C,$ 79.0,C,4074,4368,True,54
+numeric400,FQADEV189,13.14%,C,0.13,W,0.13,W,7713,8906,True,54
+numeric400,FQADEV007,"$179,062 thousand",C,$179062,C,$179062,C,9545,10980,True,54
+numeric400,FQADEV085,$91.67,C,0.09167,W,0.09167,W,10526,12841,True,54
+numeric400,NEW085,"$ 2,214.8",C,"$ 2,214.8",C,"$ 2,214.8",C,4927,5095,True,54
+numeric400,NEW316,"3,137",C,"$3,137",C,"$3,137",C,7223,8116,True,54
+numeric400,FQADEV125,2.06,W,0.35,W,0.35,W,12095,14351,True,54
+numeric400,NEW251,"32,633,242 MMBtu",C,"32,633,242 MMBtu",C,"32,633,242 MMBtu",C,4930,5565,True,54
+numeric400,NEW209,"273,387",C,"273,387",C,"273,387",C,5463,5760,True,54
+numeric400,NEW033,Three month LIBO rate of 2.5%,C,Three month LIBO rate of 2.5%,C,Three month LIBO rate of 2.5%,C,3739,4112,True,54
+numeric400,FQADEV192,99.90,W,99.90,W,99.90,W,5653,5873,True,54
+numeric400,NEW270,$7.5 million,C,$7.5 million,C,$7.5 million,C,3905,4535,True,54
+numeric400,FQADEV136,"$205,500 thousand",W,"$205,500",W,"$205,500",W,9809,10360,True,54
+numeric400,FQADEV140,$5 million,C,$-1 million,W,$-1 million,W,10978,11664,True,54
+numeric400,FQADEV103,104.85%,C,104.85%,C,104.85%,C,10667,13004,True,54
+numeric400,FQADEV117,"$83,382 thousand",W,83382,W,83382,W,10329,11950,True,54
+numeric400,NEW238,"$1,172.7 million",C,"$1,172.7",W,"$1,172.7",W,6465,7485,True,54
+numeric400,NEW332,"January 31, 2024",C,"January 31, 2024",C,"January 31, 2024",C,3210,3492,True,54
+numeric400,FQADEV178,86.85%,C,86.95%,C,86.94%,C,9215,9953,True,54
+numeric400,FQADEV108,null,W,-15.79%,W,-15.79%,W,8793,10470,True,54
+numeric400,FQADEV104,40%,C,40%,C,40%,C,10414,12905,True,54
+numeric400,FQADEV200,61.42%,C,62.13%,W,62.13%,W,10138,12179,True,54
+numeric400,FQADEV088,54.70%,C,47.24%,W,54.7%,C,10575,13054,True,54
+numeric400,NEW186,"$4,647.5",C,"$ 4,647.5",C,"$ 4,647.5",C,15795,17658,True,54
+numeric400,NEW303,0.91,C,0.91,C,0.91,C,3374,3680,True,54
+numeric400,NEW398,"$2,022",C,"$2,022",C,"$2,022",C,3367,3630,True,54
+numeric400,NEW180,180.3,W,180.3,W,180.3,W,5429,5840,True,54
+numeric400,FQADEV046,7.03%,C,7.03%,C,7.03%,C,11178,12940,True,54
+numeric400,NEW200,$15.98,C,$15.98,C,$15.98,C,3964,4080,True,54
+numeric400,FINADD010,"$720,894",C,"$720,894",C,"$720,894",C,6064,6825,True,54
+numeric400,FQADEV113,2.89%,C,2.89%,C,2.89%,C,10527,10693,True,54
+numeric400,FQADEV059,76.22%,W,"To calculate the percent decline in net income (loss) attributable to common shareholders from 2007 to 2008:
+
+1.  **Identify the values:**
+    *   Net income (loss) attributable to common shareholders in 2007: $211,942 (in thousands)
+    *   Net income (loss) attributable to common shareholders in 2008: $50,408 (in thousands)
+
+2.  **Calculate the decline amount:**
+    *   Decline = Value in 2007 - Value in 2008
+    *   Decline = 211,942 - 50,408 = 161,534
+
+3.  **Calculate the percent decline:**
+    *   Percent Decline = (Decline / Value in 2007) * 100
+    *   Percent Decline = (161,534 / 211,942) * 100
+    *   Percent Decline ≈ 0.76216 * 100
+    *   Percent Decline ≈ 76.2%
+
+76.2%",W,-75.8%,W,10710,10823,True,54
+numeric400,NEW202,$889,C,$889,C,$889,C,4792,5314,True,54
+numeric400,NEW324,533.4,C,533.4,C,533.4,C,3294,3440,True,54
+numeric400,FQADEV187,1.56,C,1.56,C,1.56,C,5450,5518,True,54
+numeric400,FQADEV099,1.42%,C,5.61%,W,5.61%,W,10425,12468,True,54
+numeric400,NEW086,(2.3)pts,C,(2.3)pts,C,(2.3)pts,C,2988,3213,True,54
+numeric400,NEW376,95.5%,C,95.5%,C,95.5%,C,3445,3510,True,54
+numeric400,FQADEV132,-15.20%,C,-7.63%,W,-15.2%,C,11435,13169,True,54
+numeric400,FQADEV110,$22 million,C,$22 million,C,$22 million,C,10096,10432,True,54
+numeric400,FQADEV179,-5.75%,C,-0.057,W,-0.057,W,11093,12977,True,54
+fin250,FTB001,Printing & Identification Industrials,C,Printing & Identification,W,Printing & Identification,W,5070,5103,True,54
+fin250,FTB002,3.14%,C,3.14%,C,3.14%,C,4775,5247,True,54
+fin250,FTB003,39%,C,39%,C,39%,C,3966,4200,True,54
+fin250,FTB004,1.84 %,C,1.84 %,C,1.84 %,C,3039,3096,True,54
+fin250,FTB005,$641.8,C,$641.8,C,$641.8,C,3813,4298,True,54
+fin250,FTB006,400.0,C,400.0,C,400.0,C,4775,5474,True,54
+fin250,FTB007,"36,701",C,"36,701",C,"36,701",C,4354,4823,True,54
+fin250,FTB008,0.123 billion gallons,C,0.123 billion gallons,C,0.123 billion gallons,C,3724,3933,True,54
+fin250,FTB009,48%,C,48%,C,48%,C,3601,4039,True,54
+fin250,FTB010,"34,325,304",C,"34,325,304",C,"34,325,304",C,5703,6140,True,54
+fin250,FTB011,A-,C,A-,C,A-,C,3840,3942,True,54
+fin250,FTB012,77.7,C,77.7,C,77.7,C,4107,4488,True,54
+fin250,FTB013,34,C,34,C,34,C,4847,5064,True,54
+fin250,FTB014,8.75%,C,8.75%,C,8.75%,C,4782,5670,True,54
+fin250,FTB015,85,C,85,C,85,C,4807,4830,True,54
+fin250,FTB016,"$2,178.7",C,"$2,178.7",C,"$2,178.7",C,4532,5052,True,54
+fin250,FTB017,$81.6 million,C,$ 81.6,C,$ 81.6,C,5931,6614,True,54
+fin250,FTB018,"$1,945,439",C,"$1,945,439",C,"$1,945,439",C,4211,4422,True,54
+fin250,FTB019,$218,C,$218,C,$218,C,3764,3897,True,54
+fin250,FTB020,$894.4 million,C,$894.4 million,C,$894.4 million,C,7196,8925,True,54
+fin250,FTB021,$735.8,C,$735.8,C,$735.8,C,4999,5075,True,54
+fin250,FTB022,"$ 7,650 million",C,"$ 7,650",C,"$ 7,650",C,5331,6328,True,54
+fin250,FTB023,"576,000 square feet",C,"576,000",C,"576,000",C,3618,3951,True,54
+fin250,FTB024,"$ 196,740",C,"$ 196,740",C,"$ 196,740",C,3593,3981,True,54
+fin250,FTB025,$28.86,C,$28.86,C,$28.86,C,9301,9720,True,54
+fin250,FTB026,$455.7,C,$ 455.7,C,$ 455.7,C,3813,4354,True,54
+fin250,FTB027,"$431,852",C,"$431,852",C,"$431,852",C,4073,4344,True,54
+fin250,FTB028,"147,965",C,"147,965",C,"147,965",C,4976,5574,True,54
+fin250,FTB029,"220,000",C,"220,000",C,"220,000",C,5247,5814,True,54
+fin250,FTB030,A-,C,A-,C,A-,C,5044,5700,True,54
+fin250,FTB031,"$5,843",C,"$5,843",C,"$5,843",C,3485,3766,True,54
+fin250,FTB032,"$44,517",C,"$44,517",C,"$44,517",C,5850,6450,True,54
+fin250,FTB033,$102.07,C,$102.07,C,$102.07,C,3206,3608,True,54
+fin250,FTB034,3,C,3,C,3,C,7437,7465,True,54
+fin250,FTB035,"$4,124 million",C,"$4,124",C,"$4,124",C,6060,6080,True,54
+fin250,FTB036,"2,124,698",C,"2,124,698",C,"2,124,698",C,3512,3600,True,54
+fin250,FTB037,"622,814",C,"622,814",C,"622,814",C,4301,4656,True,54
+fin250,FTB038,196,C,196,C,196,C,4369,4944,True,54
+fin250,FTB039,"32,633,242 MMBtu",C,"32,633,242",C,"32,633,242",C,10596,11112,True,54
+fin250,FTB040,"$ 4,647.5",C,"$ 4,647.5",C,"$ 4,647.5",C,8587,9810,True,54
+fin250,FTB041,"5,047",C,"5,047",C,"5,047",C,3490,3703,True,54
+fin250,FTB042,Fair value of underlying collateral,C,Fair value of underlying collateral,C,Fair value of underlying collateral,C,4122,4578,True,54
+fin250,FTB043,17 weeks,C,17 weeks,C,17 weeks,C,2754,2964,True,54
+fin250,FTB044,$3.2 billion,C,$3.2 billion,C,$3.2,C,3340,3664,True,54
+fin250,FTB045,$201.5,C,$201.5,C,$201.5,C,5759,5940,True,54
+fin250,FTB046,404,C,404,C,404,C,3709,3786,True,54
+fin250,FTB047,"Milwaukee, WI",C,"Milwaukee, WI",C,"Milwaukee, WI",C,4837,5766,True,54
+fin250,FTB048,"97,489",C,"97,489",C,"97,489",C,5219,5970,True,54
+fin250,FTB049,$124.4,C,124.4,C,124.4,C,4707,5444,True,54
+fin250,FTB050,$18.70,C,$18.70,C,$18.70,C,2648,2730,True,54
+fin250,FTB051,17.5%,C,17.5%,C,17.5%,C,4508,5118,True,54
+fin250,FTB052,"$ 235,596",C,"$235,596",C,"$235,596",C,4284,4808,True,54
+fin250,FTB053,8.50%,C,8.50%,C,8.50%,C,5327,5682,True,54
+fin250,FTB054,"9,938,015",C,"9,938,015",C,"9,938,015",C,4737,5103,True,54
+fin250,FTB055,"$1,328 million",C,"1,328",C,"1,328",C,6697,7375,True,54
+fin250,FTB056,$11.86,W,$11.86,W,$11.86,W,4645,5238,True,54
+fin250,FTB057,$53.89,C,$53.89,C,$53.89,C,3807,4008,True,54
+fin250,FTB058,"$11,832 thousand",C,"$11,832",W,"$11,832",W,5447,5666,True,54
+fin250,FTB059,"$ 333,845",C,"$ 333,845",C,"$ 333,845",C,4397,4440,True,54
+fin250,FTB060,"$11,625",C,"$11,625",C,"$11,625",C,3162,3420,True,54
+fin250,FTB061,$15.98,C,$15.98,C,$15.98,C,3312,3570,True,54
+fin250,FTB062,(16.7),C,(16.7),C,(16.7),C,5730,5856,True,54
+fin250,FTB063,"$185,792",C,"$185,792",C,"$185,792",C,3538,3716,True,54
+fin250,FTB064,0.3%,C,0.3,C,0.3,C,3364,3564,True,54
+fin250,FTB065,$664.9 million,C,$541.7,W,$541.7,W,7278,7860,True,54
+fin250,FTB066,.497,C,.497,C,.497,C,3097,3440,True,54
+fin250,FTB067,"33,499 GWh",C,"33,499",C,"33,499 GWh",C,4628,4664,True,54
+fin250,FTB068,Tranche E,C,Tranche E,C,Tranche E,C,3528,3952,True,54
+fin250,FTB069,$7.5 million,C,$7.5 million,C,$7.5 million,C,3805,3888,True,54
+fin250,FTB070,"$4,627.1",C,"$4,627.1",C,"$4,627.1",C,6266,6920,True,54
+fin250,FTB071,3.45%,C,3.45%,C,3.45%,C,6202,6610,True,54
+fin250,FTB072,"$757,839",C,"757,839",C,"757,839",C,5067,5282,True,54
+fin250,FTB073,$42.94,C,$42.94,C,$42.94,C,3458,3753,True,54
+fin250,FTB074,12.7,C,12.7,C,12.7,C,3101,3424,True,54
+fin250,FTB075,$47.9 million,C,$47.9 million,C,$47.9 million,C,3835,4380,True,54
+fin250,FTB076,"$(63,139) thousand",C,"(63,139)",C,"(63,139)",C,6083,6714,True,54
+fin250,FTB077,55 %,C,55%,C,55%,C,3305,3696,True,54
+fin250,FTB078,"$7,611.9 million",C,"7,611.9",C,"7,611.9",C,7883,7972,True,54
+fin250,FTB079,620 mbpd,C,620,C,620,C,7452,8767,True,54
+fin250,FTB080,"3,769 MBbls",W,"4,852",C,"4,852",C,18676,18735,True,54
+fin250,FTB081,28.2%,C,28.2%,C,28.2%,C,4406,4788,True,54
+fin250,FTB082,$990,C,990,C,990,C,4522,4675,True,54
+fin250,FTB083,"$1,895,777",W,"1,895,779",C,"1,895,779",C,4739,5452,True,54
+fin250,FTB084,"$1,115,594",C,"$1,115,594",C,"$1,115,594",C,3617,3703,True,54
+fin250,FTB085,"$1,015,802 thousand",C,"$1,015,802",C,"$1,015,802",C,5877,6500,True,54
+fin250,FTB086,"$54,800 thousand",C,"$54,800",C,"$54,800",C,8095,9081,True,54
+fin250,FTB087,$ 0.68,C,$ 0.68,C,$ 0.68,C,4849,5676,True,54
+fin250,FTB088,$21,C,$21,C,$21,C,6355,7080,True,54
+fin250,FTB089,$319,C,$319,C,$319,C,4586,5194,True,54
+fin250,FTB090,Marketing Services,C,Marketing Services,C,Marketing Services,C,4643,5232,True,54
+fin250,FTB091,"1,086.6",C,"1,086.6",C,"$1,086.6",C,5333,5708,True,54
+fin250,FTB092,"$1,172.7 million",C,"$1,172.7",C,"$1,172.7",C,6463,7485,True,54
+fin250,FTB093,$0.2125,C,$0.2125,C,$0.2125,C,3387,3616,True,54
+fin250,FTB094,"$ 720,894",C,"$720,894",C,"$720,894",C,6013,6825,True,54
+fin250,FTB095,"$ 4,174 (in thousands)",C,"$ 4,174",C,"$ 4,174",C,3705,4103,True,54
+fin250,FTB096,21,C,21,C,21,C,3580,3600,True,54
+fin250,FTB097,1.3 years,C,1.3,C,1.3,C,6878,7270,True,54
+fin250,FTB098,$3.8,C,$ 3.8,C,$ 3.8,C,3765,4269,True,54
+fin250,FTB099,$420.0,C,420.0,C,420.0,C,4743,5430,True,54
+fin250,FTB100,"$ (5,135)",W,"$(5,135)",C,"$(5,135)",C,3084,3233,True,54
+fin250,FTB101,"7,994 thousand shares",C,"7,994",C,"7,994",C,4956,5160,True,54
+fin250,FTB102,(7.0)%,C,(7.0)%,C,(7.0)%,C,3727,3798,True,54
+fin250,FTB103,$1.30,C,$1.30,C,$1.30,C,6310,7436,True,54
+fin250,FTB104,$646 million,C,$646,C,$646,C,3242,3292,True,54
+fin250,FTB105,49.4,C,$49.4,C,$49.4,C,4209,4434,True,54
+fin250,FTB106,$193.3 million,C,$193.3,C,$193.3,C,6706,7874,True,54
+fin250,FTB107,$27 million,C,$27 million,C,$27 million,C,2903,2988,True,54
+fin250,FTB108,"$4,449.7 million",C,"$4,449.7",C,"$4,449.7",C,7688,7696,True,54
+fin250,FTB109,$88,C,$ 88,C,$ 88,C,3220,3398,True,54
+fin250,FTB110,A1,C,A1,C,A1,C,4860,5670,True,54
+fin250,FTB111,$56.6 million,C,56.6,C,56.6,C,4018,4491,True,54
+fin250,FTB112,(303),C,(303),C,(303),C,4056,4697,True,54
+fin250,FTB113,$147.28,C,$ 147.28,C,$ 147.28,C,4597,4715,True,54
+fin250,FTB114,#1 in North America,C,#1 in North America,C,#1 in North America,C,3421,3696,True,54
+fin250,FTB115,Business,C,Business,C,Business,C,8569,10520,True,54
+fin250,FTB116,$62.4 million,C,$62.4,C,$62.4,C,6486,6600,True,54
+fin250,FTB117,4.2 million tons,C,4.2 million tons,C,4.2 million tons,C,6921,8005,True,54
+fin250,FTB118,"January 31, 2024",C,"January 31, 2024",C,"January 31, 2024",C,3242,3492,True,54
+fin250,FTB119,"$8,047",C,"$8,047",C,"$8,047",C,5129,5832,True,54
+fin250,FTB120,"12""-16""",C,12”-16”,C,12”-16”,C,7392,8785,True,54
+fin250,FTB121,$14.71,C,$14.71,C,$14.71,C,6304,7290,True,54
+fin250,FTB122,"$12,509.9 million",C,"$ 12,509.9",C,"$ 12,509.9",C,5270,6005,True,54
+fin250,FTB123,"242,788",C,"242,788",C,"242,788",C,5836,6762,True,54
+fin250,FTB124,$289.9,C,$289.9,C,$289.9,C,4659,5448,True,54
+fin250,FTB125,"991,835",C,"991,835",C,"991,835",C,7820,7868,True,54
+fin250,FTB126,$21.28,C,$21.28,C,$21.28,C,4993,5004,True,54
+fin250,FTB127,"$14,504 million",C,"$14,504 million",C,"$14,504 million",C,8122,8483,True,54
+fin250,FTB128,"$2,749.3 million",C,"$2,749.3",C,"$2,749.3",C,3906,4275,True,54
+fin250,FTB129,$447.7 million,C,447.7,C,447.7,C,2801,3030,True,54
+fin250,FTB130,$23.58,C,$23.58,C,$23.58,C,3937,4224,True,54
+fin250,FTB131,"7,479",C,"7,479",C,"7,479",C,3481,3773,True,54
+fin250,FTB132,$313.5 million,C,$ 313.5,C,$ 313.5,C,5441,5870,True,54
+fin250,FTB133,$107.2 million,C,$107.2,C,$107.2,C,3534,3738,True,54
+fin250,FTB134,"24,396",C,"24,396",C,"24,396",C,5056,5656,True,54
+fin250,FTB135,"$(210,709)",C,"(210,709)",C,"(210,709)",C,4333,4653,True,54
+fin250,FTB136,"$7,577,061 thousand",C,"$11,611,124",W,"$11,611,124",W,14393,15564,True,54
+fin250,FTB137,$121.93,C,$121.93,C,$121.93,C,3828,4235,True,54
+fin250,FTB138,"$1,427 million",C,"$1,427 million",C,"$1,427 million",C,4666,5511,True,54
+fin250,FTB139,$889,C,$889,C,$889,C,4654,4722,True,54
+fin250,FTB140,$36 million,C,$36 million,C,$36 million,C,3909,4158,True,54
+fin250,FTB141,95.5%,C,95.5%,C,95.5%,C,3565,3900,True,54
+fin250,FTB142,"$1,304 thousand",C,"$1,304",C,"$1,304",C,4552,5102,True,54
+fin250,FTB143,$389,C,$389,C,$389,C,3099,3245,True,54
+fin250,FTB144,(2.3)pts,C,(2.3)pts,C,(2.3)pts,C,3415,3570,True,54
+fin250,FTB145,$ 0.15,C,$ 0.15,C,$ 0.15,C,6443,7510,True,54
+fin250,FTB146,$126 million,C,126,C,126,C,3901,3990,True,54
+fin250,FTB147,"282,815",C,"282,815",C,"282,815",C,6395,7488,True,54
+fin250,FTB148,0.0,C,0.0,C,0.0,C,4646,5420,True,54
+fin250,FTB149,"$ 82,215",C,"$82,215",C,"$ 82,215",C,4221,4743,True,54
+fin250,FTB150,"(150,943)",C,"(150,943)",C,"(150,943)",C,8045,8885,True,54
+fin250,FTB151,$3.0 billion,C,$3.0 billion,C,$3.0 billion,C,3491,3861,True,54
+fin250,FTB152,(156),C,(156),C,(156),C,3234,3580,True,54
+fin250,FTB153,Three month LIBO rate of 2.5%,C,Three month LIBO rate of 2.5%,C,Three month LIBO rate of 2.5%,C,3708,4112,True,54
+fin250,FTB154,"16,845,353",C,"16,845,353",C,"16,845,353",C,5577,6100,True,54
+fin250,FTB155,"$2,658.7 million",C,"$2,658.7",C,"$2,658.7",C,4611,4615,True,54
+fin250,FTB156,21.4%,C,21.4%,C,21.4%,C,5831,6520,True,54
+fin250,FTB157,13,C,13,C,13,C,8551,8748,True,54
+fin250,FTB158,"1,172 (in thousands)",C,"1,172",C,"1,172",C,3900,3966,True,54
+fin250,FTB159,0.91,C,0.91,C,0.91,C,3075,3312,True,54
+fin250,FTB160,$0,C,$0,C,$0,C,3385,3619,True,54
+fin250,FTB161,"$64,050",C,"$64,050",C,"$64,050",C,4288,4395,True,54
+fin250,FTB162,"$3,137",C,"$3,137",C,"$3,137",C,6105,6763,True,54
+fin250,FTB163,2.82%,C,2.82%,C,2.82%,C,2965,2984,True,54
+fin250,FTB164,$ 89.82,C,$ 89.82,C,$ 89.82,C,3923,4059,True,54
+fin250,FTB165,"38,235",C,"38,235",C,"38,235",C,4183,4602,True,54
+fin250,FTB166,"512,809 MBOE",C,"512,809",C,"512,809",C,6779,7530,True,54
+fin250,FTB167,$756,C,$756,C,$756,C,3885,4095,True,54
+fin250,FTB168,Fluid Management,C,Fluid Management,C,Fluid Management,C,3428,3832,True,54
+fin250,FTB169,12.0%,C,12.0%,C,12.0%,C,4443,4895,True,54
+fin250,FTB170,"$1,650",C,"$1,650",C,"$1,650",C,4942,4944,True,54
+fin250,FTB171,$341.9 million,C,341.9,C,341.9,C,4406,4613,True,54
+fin250,FTB172,533.4,C,533.4,C,533.4,C,3893,4300,True,54
+fin250,FTB173,"$2,858 million",C,"2,858",C,"2,858",C,6555,7640,True,54
+fin250,FTB174,9.8 %,C,9.8%,C,9.8%,C,3892,4176,True,54
+fin250,FTB175,$36.00,C,$36.00,C,$36.00,C,3724,4256,True,54
+fin250,FTB176,"38,880",C,"38,880",C,"38,880",C,7396,9110,True,54
+fin250,FTB177,"$4,075.1",C,"$4,075.1",C,"$4,075.1",C,4549,5292,True,54
+fin250,FTB178,$ 77.67,C,$ 77.67,C,$ 77.67,C,3906,3963,True,54
+fin250,FTB179,"$435,515",C,"$435,515",C,"$435,515",C,4410,4464,True,54
+fin250,FTB180,$999.0,C,999.0,C,999.0,C,4997,5042,True,54
+fin250,FTB181,$26.40,C,$26.40,C,$26.40,C,3870,4284,True,54
+fin250,FTB182,51.1,C,51.1,C,51.1,C,6458,7550,True,54
+fin250,FTB183,"$1,251",C,"$1,251",C,"$1,251",C,4179,4572,True,54
+fin250,FTB184,(624.6) million dollars,C,(624.6),C,(624.6),C,3744,4361,True,54
+fin250,FTB185,4%,C,4%,C,4%,C,3793,4333,True,54
+fin250,FTB186,$19.00,C,19.00,C,19.00,C,4057,4185,True,54
+fin250,FTB187,"66,986",C,"66,986",C,"66,986",C,3807,4184,True,54
+fin250,FTB188,$ 79.0,C,$ 79.0,C,$ 79.0,C,3769,4368,True,54
+fin250,FTB189,"2,170 mbpd",C,"2,170",C,"2,170",C,3382,3416,True,54
+fin250,FTB190,0.8 million shares,C,0.8,C,0.8,C,3990,4011,True,54
+fin250,FTB191,$900 million,C,$900 million,C,$900 million,C,6597,7644,True,54
+fin250,FTB192,"$6,999.7 million",C,"$ 6,999.7",C,"$ 6,999.7",C,3854,4413,True,54
+fin250,FTB193,13.6%,C,13.6%,C,13.6%,C,4408,5118,True,54
+fin250,FTB194,"$102,942",C,"102,942",C,"102,942",C,3528,3643,True,54
+fin250,FTB195,"$14,809",C,"$14,809",C,"$14,809",C,4426,4783,True,54
+fin250,FTB196,91,C,91,C,91,C,8000,9840,True,54
+fin250,FTB197,4.00%,C,4.00,C,4.00,C,6779,7273,True,54
+fin250,FTB198,Lease expiring 2019,C,Lease expiring 2019,C,Lease expiring 2019,C,5143,6162,True,54
+fin250,FTB199,"$5,290",C,"$5,290",C,"$5,290",C,3337,3559,True,54
+fin250,FTB200,"$958,531",C,"$958,531",C,"$958,531",C,4361,4513,True,54
+fin250,FTB201,"$31,677",C,"$31,677",C,"$31,677",C,3567,3780,True,54
+fin250,FTB202,"1,958,052",C,"1,958,052",C,"1,958,052",C,3758,4221,True,54
+fin250,FTB203,54.01,C,54.01,C,54.01,C,2725,2870,True,54
+fin250,FTB204,180.3 million,C,180.3,C,180.3,C,6183,7008,True,54
+fin250,FTB205,"60,245,718",C,"60,245,718",C,"60,245,718",C,4471,4992,True,54
+fin250,FTB206,11%,C,11%,C,11%,C,7180,8875,True,54
+fin250,FTB207,"$986,641",C,"986,641",C,"986,641",C,6302,6800,True,54
+fin250,FTB208,Lease expiring 2019,C,Lease expiring 2019,C,Lease expiring 2019,C,4962,5814,True,54
+fin250,FTB209,"146,384,247",C,"146,384,247",C,"146,384,247",C,9110,9400,True,54
+fin250,FTB210,29,C,29,C,29,C,5422,6031,True,54
+fin250,FTB211,$51.13,C,51.13,C,51.13,C,3420,3600,True,54
+fin250,FTB212,103.22,C,103.22,C,103.22,C,5266,5660,True,54
+fin250,FTB213,$ 9.5 million,C,$ 9.5,C,$ 9.5,C,5018,5070,True,54
+fin250,FTB214,"$6,679",C,"$6,679",C,"$6,679",C,6420,7630,True,54
+fin250,FTB215,"273,387",C,"273,387",C,"273,387",C,5451,5760,True,54
+fin250,FTB216,3.1,C,3.1,C,3.1,C,3754,3843,True,54
+fin250,FTB217,"(303,000)",C,"(303,000)",C,"(303,000)",C,8047,9850,True,54
+fin250,FTB218,61%,C,61%,C,61%,C,5207,5530,True,54
+fin250,FTB219,$15.1,C,$15.1,C,$15.1,C,3974,4365,True,54
+fin250,FTB220,"$3,863",C,"$3,863",C,"$3,863",C,4243,4692,True,54
+fin250,FTB221,December 2006,C,December 2006,C,December 2006,C,3790,4067,True,54
+fin250,FTB222,"571,000",C,"571,000",C,"571,000",C,6331,7182,True,54
+fin250,FTB223,"$7,066",C,"$ 7,066",C,"$ 7,066",C,3515,3785,True,54
+fin250,FTB224,155.39,C,155.39,C,155.39,C,3247,3330,True,54
+fin250,FTB225,$22.98-$34.65,C,$22.98-$34.65,C,$22.98-$34.65,C,2938,3072,True,54
+fin250,FTB226,$541.7,C,$541.7,C,$541.7,C,6612,7515,True,54
+fin250,FTB227,"$28,900 (in thousands)",C,"$28,900",C,"$28,900",C,3475,3710,True,54
+fin250,FTB228,(23.5),C,(23.5),C,(23.5),C,3788,4382,True,54
+fin250,FTB229,"$144,362",C,"$144,362",C,"$144,362",C,8025,9920,True,54
+fin250,FTB230,"$2,214.8",C,"$ 2,214.8",C,"$ 2,214.8",C,5472,6114,True,54
+fin250,FTB231,"$2,022",C,"$2,022",C,"$2,022",C,3917,3993,True,54
+fin250,FTB232,$994.2,C,$994.2,C,$994.2,C,6478,7630,True,54
+fin250,FTB233,$52.36,C,$52.36,C,$52.36,C,3220,3579,True,54
+fin250,FTB234,357,C,357,C,357,C,4596,4890,True,54
+fin250,FTB235,$3.0 million,C,3.0,C,3.0,C,4769,5640,True,54
+fin250,FTB236,"$1,107.6",C,"$1,107.6",C,"$1,107.6",C,4276,4488,True,54
+fin250,FTB237,$11.94,C,$11.94,C,$11.94,C,3717,4144,True,54
+fin250,FTB238,84.9%,C,84.9%,C,84.9%,C,7801,7860,True,54
+fin250,FTB239,$79.0 million,C,$79.0,C,$79.0,C,7665,7700,True,54
+fin250,FTB240,19%,C,19%,C,19%,C,4804,5025,True,54
+fin250,FTB241,"$10,861 thousand",C,"$10,861",C,"$10,861",C,3348,3660,True,54
+fin250,FTB242,"$(1,160)",C,"$(1,160)",C,"(1,160)",C,3306,3664,True,54
+fin250,FTB243,$585,C,$585,C,$585,C,5724,5934,True,54
+fin250,FTB244,"$379,035",C,"$ 379,035",C,"$ 379,035",C,4475,4812,True,54
+fin250,FTB245,$65.95,C,$65.95,C,$65.95,C,3314,3656,True,54
+fin250,FTB246,3/2/2009,C,3/2/2009,C,3/2/2009,C,8929,10950,True,54
+fin250,FTB247,$24.41,C,$24.41,C,$24.41,C,4473,5274,True,54
+fin250,FTB248,$58.7 million,C,$ 58.7,C,$ 58.7,C,3991,4108,True,54
+fin250,FTB249,15.7 million,C,$15.7 million,C,$15.7 million,C,2836,2967,True,54
+fin250,FTB250,"184,039",C,"184,039",C,"184,039",C,3749,4088,True,54
