@@ -1,5 +1,8 @@
-# Citation metadata. Fill in the author block before publishing; the placeholder
-# below is deliberately obvious so it cannot be shipped unnoticed.
+# Citation metadata.
+# ORCID and affiliation are left out rather than guessed — add them before the
+# camera-ready release if you want them to appear in the "Cite this repository"
+# panel. `status: submitted` on the preferred citation is intentional until the
+# paper is accepted.
 cff-version: 1.2.0
 message: "If you use this code or the frozen results, please cite the paper below."
 title: "SSC-EVID: traceable evidence-driven repair for visual table question answering"
@@ -7,11 +10,10 @@ type: software
 version: 36.0
 date-released: "2026-11-04"
 authors:
-  - family-names: "TODO"
-    given-names: "TODO"
-    affiliation: "TODO"
-repository-code: "https://github.com/TODO/SSC-EVID"
-license: "TODO"          # see LICENSE_TODO.md
+  - family-names: "Qi"
+    given-names: "Kai"
+repository-code: "https://github.com/QI147/SSC-EVID"
+license: "MIT"
 keywords:
   - visual table question answering
   - self-correction
@@ -21,7 +23,7 @@ preferred-citation:
   type: article
   title: "SSC-EVID: organising facts and traceable evidence acquisition for visual table question answering"
   authors:
-    - family-names: "TODO"
-      given-names: "TODO"
+    - family-names: "Qi"
+      given-names: "Kai"
   year: 2026
   status: submitted

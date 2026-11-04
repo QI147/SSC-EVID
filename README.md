@@ -1,5 +1,14 @@
 # SSC-EVID · evidence-driven repair for visual table QA
 
+**[Results](#reported-results)** · **[Quick start](#quick-start-no-key-no-images-1-minute)** ·
+**[Reproducing a run](#reproducing-a-run)** · **[Method](#layout-of-the-method-package)** ·
+**[Figures](paper/)** · **[Citation](#licence-and-citation)** ·
+**[What is not here](#what-is-deliberately-not-here)**
+
+*Manuscript under review. The code, the per-question outputs and the figures are
+released so the reported numbers can be checked — the checks below run in about a
+minute with no API key and no images.*
+
 Code, frozen per-question results and reproduction steps for the paper
 **“SSC-EVID: organising facts and traceable evidence acquisition for visual table
 question answering”**.
@@ -34,6 +43,11 @@ table image + question
 | `docs/` | Method, reproduction, experiment map, data/licensing, prompts, scope |
 | `tests/` | 32 offline tests: protocol, scoring, ablation parity, full harness with a stub model |
 | `paper/` | Camera-ready figures (SVG/PDF/PNG) and the CSV behind each figure |
+
+Figures carry Chinese labels because the manuscript is in Chinese; `paper/figures/`
+holds each one as SVG, PDF and PNG, and `paper/figure_data/` holds the CSV it was
+drawn from. Open the SVG or PDF to zoom without loss — the README keeps the flow
+above as text so it stays readable in a terminal and in dark mode.
 
 ## Reported results
 
@@ -74,6 +88,19 @@ three of the four modules. “Not detected” is not “no effect”.
 
 `python scripts/verify_reported_numbers.py` recomputes **all 56 numbers above**
 from `results/` and fails on any mismatch. It needs no key and no images.
+
+Where each table comes from — the commands rebuild a table from a finished run
+under `runs/`; `verify_reported_numbers.py` instead recomputes the published
+numbers from the frozen `results/`, so it works on a machine that never ran a model.
+
+| Table | Frozen file | Rebuild with |
+|---|---|---|
+| Main results (end to end) | `results/mixed400/end_to_end.csv`, `results/numeric400/end_to_end.csv` | `python scripts/score_all.py` |
+| Shared-initial repair | `results/*/repair_rounds.csv` | `python scripts/score_all.py` |
+| FinTabNetQA 250 (official metric) | `results/fin250/predictions.csv` | `python -m repro.score_fin250` |
+| Independent vote (matched budget) | `results/pure/per_sample.csv` | `python -m repro.score_pure` |
+| Module ablation | `results/ablation/per_sample.csv` | `python -m repro.score_ablation` |
+| All 56 quoted numbers | `results/` (read-only) | `python scripts/verify_reported_numbers.py` |
 
 ## Quick start (no key, no images, ~1 minute)
 
@@ -126,9 +153,25 @@ by all shards, and a restart resumes from the ledger instead of re-sampling.
 
 ## Licence and citation
 
-Code: no licence is granted yet — `LICENSE_TODO.md` explains the decision that must
-be made before publishing; do not assume MIT. Third-party material: `NOTICE.md`.
-Citation metadata: `CITATION.cff` (author fields are placeholders).
+The code is released under the **MIT licence** — see `LICENSE`. It covers the
+authors' code only: `repro/official_eval.py` stays Apache-2.0 (it is derived from
+`allenai/allennlp-semparse`), the SSC comparison arm is not redistributed, and the
+benchmark table images are not included at all. Details in `NOTICE.md` and
+`docs/data.md`.
+
+```bibtex
+@misc{qi2026sscevid,
+  title        = {SSC-EVID: organising facts and traceable evidence acquisition
+                  for visual table question answering},
+  author       = {Qi, Kai},
+  year         = {2026},
+  note         = {Code and frozen results, version 36.0},
+  howpublished = {\url{https://github.com/QI147/SSC-EVID}}
+}
+```
+
+`CITATION.cff` carries the same metadata, so GitHub's *Cite this repository*
+button works without copying the block above.
 
 ## Layout of the method package
 

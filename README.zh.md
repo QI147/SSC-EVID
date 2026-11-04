@@ -58,11 +58,10 @@ python scripts/verify_reported_numbers.py    # 56/56 项与论文一致
 模块消融：完整 352/327，四个删改版本净差在 −5 至 +2 题之间，Holm p 全为 1.00；
 正文同时给出触发率（92.6% 停在检查、6.1% 进入取证），说明这是「测不出」而非「无作用」。
 
-## 五、上传 GitHub 前需要你决定的五件事
+## 五、上传前后仍待确认的几件事
 
-1. **选许可证**：仓库目前**没有**授权。`LICENSE_TODO.md` 列了 MIT / Apache-2.0 / 文档与代码分开三种方案，
-   选好后另存为 `LICENSE`，并改 `CITATION.cff` 的 `license` 与 `README.md` 末尾。
-2. **填作者信息**：`CITATION.cff` 里 `TODO` 是故意显眼的占位符。
+1. ~~选许可证~~ 已定：**MIT**，见 `LICENSE`。第三方材料不在此授权范围内（`NOTICE.md`）。
+2. **补作者信息**：`CITATION.cff` 已填 `Qi, Kai`；ORCID 与单位留空，未替你猜。
 3. **图片是否入库**：默认 `.gitignore` 排除 `datasets/*/images/`；若要公开图片，先按 `docs/data.md`
    核对各来源许可（TableVQA-Bench 声明 CC-BY-4.0，FinQA 为 MIT，原始财报图像需另行判断），
    并考虑 Git LFS（约 90 MB）。

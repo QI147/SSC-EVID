@@ -1,15 +1,16 @@
 # Publishing checklist
 
-The repository is initialised on branch `main` and everything is staged; there is no
-commit yet because the author identity and the licence are yours to choose.
+Done already: branch `main`, first commit `d5f9b89`, pushed to
+`https://github.com/QI147/SSC-EVID` (public), MIT licence in `LICENSE`, author block
+in `CITATION.cff` filled with the name only. What is left is below.
 
 ## 1. Decide before the first push
 
 | Item | Action | Where |
 |---|---|---|
-| Licence | pick MIT / Apache-2.0 / split, save as `LICENSE` | `LICENSE_TODO.md` |
-| Authors | replace every `TODO` | `CITATION.cff` |
-| Repository URL | replace `https://github.com/TODO/SSC-EVID` | `CITATION.cff`, `README.md` if you add badges |
+| Licence | **done — MIT**; swap the file if you change your mind | `LICENSE` |
+| Authors | add ORCID / affiliation (currently name only) | `CITATION.cff` |
+| Repository URL | **done — `QI147/SSC-EVID`** | `CITATION.cff` |
 | Double-blind | keep `paper/` to figures only (current state); do not add the manuscript or acknowledgements | `paper/` |
 | Images | default is excluded. If you publish them, check the per-source terms and use Git LFS | `docs/data.md`, `.gitignore` |
 | SSC code | leave `vendor/ssc_author/` empty; the arm is optional | `NOTICE.md` |
