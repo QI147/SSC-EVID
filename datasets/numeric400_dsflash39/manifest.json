@@ -1,0 +1,12 @@
+{
+ "n": 400,
+ "source_counts": {
+  "fintabnetqa": 200,
+  "finqa_rendered": 200
+ },
+ "tables": 373,
+ "runtime_sha256": "e977c6800064d0410f665a282d0049a74c4f489ff1ad0465b0271f32421c180f",
+ "eval_sha256": "5d8389313f6062f8883de25df3a08190711a8093031a631ddfc652eb8be4dc12",
+ "scope": "development; source/rendering strata mandatory; not a claim every answer is a number or word",
+ "historical_labels_unchanged": true
+}

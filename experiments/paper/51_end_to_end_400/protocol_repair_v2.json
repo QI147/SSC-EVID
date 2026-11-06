@@ -1,0 +1,32 @@
+{
+ "version": "repair_two_arm_20261030_v2",
+ "scope": "repair stage only; end-to-end unchanged at four arms",
+ "relation_to_v1": {
+  "v1_master_freeze": "runs/<dataset>/freeze.json (unchanged, still governs initial and e2e)",
+  "v2_freeze": "runs/<dataset>/repair2/freeze_v2.json (pins v1 freeze sha, initial/e2e result shas, imported module hashes)",
+  "reused_inputs": "common initial (400, answer+brief reasoning) and e2e four-arm results, both hash-verified and read-only"
+ },
+ "end_to_end": ["DIRECT", "REREAD2", "SSC", "EVID36"],
+ "repair_arms": ["SSC", "EVID36"],
+ "removed_from_repair": ["KEEP", "RR_MATCH", "EVID50"],
+ "removal_reason": "PI decision: repair compares only the two author methods. KEEP add no requests and was dropped with the arm set; RR_MATCH (call-count matched reread) and EVID50 (ablation) are not run in this batch.",
+ "rounds": 2,
+ "early_stop": "unchanged: stop after validated correct with unchanged answer; changed answer or unknown may enter round2; missing initial stays unsubmitted for both arms",
+ "limits": {
+  "per_sample": {"FIX_SSC": 4, "FIX_EVID": 8},
+  "per_arm_total": {"FIX_SSC": 1600, "FIX_EVID": 3200},
+  "per_dataset": 4800,
+  "both_datasets": 9600,
+  "money_hard_cap": false
+ },
+ "cost_reporting": "SSC and EVID request counts are not matched; each arm reports actual requests, tokens and fee estimate from the ledger.",
+ "scoring": "unchanged evaluate.py definitions (display_match OR exec_match; fixed 400 denominator; UNKNOWN separate)",
+ "primary_comparisons": [
+  "e2e numeric400 SSC vs EVID36",
+  "e2e mixed400 SSC vs EVID36",
+  "repair round2 numeric400 SSC vs EVID36",
+  "repair round2 mixed400 SSC vs EVID36"
+ ],
+ "statistics": "exact paired McNemar; Holm over the four primary comparisons; source-stratified table-cluster bootstrap for intervals",
+ "deviation_note": "This file is not part of the v1 freeze hash set. It records a repair-stage design change made before the repair stage started, so v1 initial and e2e evidence stays valid and untouched."
+}

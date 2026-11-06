@@ -1,0 +1,90 @@
+{
+ "dataset": "zh_opt16_v36",
+ "n": 16,
+ "model": {
+  "name": "qwen3.8-flash",
+  "temperature": 0,
+  "thinking": false,
+  "max_tokens": 1200,
+  "retry": 0
+ },
+ "limits": {
+  "e2e": {
+   "DIRECT": 1,
+   "REREAD2": 2,
+   "SSC_INIT": 1,
+   "SSC": 2,
+   "EVID_FACTS": 1,
+   "EVID_INIT": 1,
+   "EVID": 4
+  },
+  "initial": {
+   "COMMON": 1
+  },
+  "repair": {
+   "FIX_SSC": 4,
+   "FIX_EVID": 8,
+   "RR_MATCH": 8
+  },
+  "fin250": {
+   "REREAD2": 2,
+   "EVID_FACTS": 1,
+   "EVID_INIT": 1,
+   "EVID": 4
+  },
+  "pure": {
+   "RR_TOKEN": 16
+  }
+ },
+ "files": {
+  "repro/__init__.py": "d441642f9aba4ca50cbdf9cf61cb5834319b3b8b284a005981f55edf85cd7195",
+  "repro/ablation.py": "67b83d4bedd9af860a02d35c0ba3e97d30418df2144cdac75211d32bacae71e6",
+  "repro/client.py": "52000345a51d08f47edf1adf48d78c200326dcb565886cd2eace18396f142245",
+  "repro/common.py": "ac3bedf8f28440587ed3ad0609bb95befd514a370152ceeacaf4ba8f7c8408f2",
+  "repro/config.py": "9aa0c3f2c2ad64a45e505974913420b3883b215c8477a56517346831f9de3ba7",
+  "repro/display_scoring.py": "bc9c3e910920588e7194b371cc922ecb389337f112b0f25515dc8e523c2947cc",
+  "repro/evaluate.py": "38379460a90e8eb954f64a10d0e7ba567da015536002b8476f0ca126da9e7581",
+  "repro/json_helpers.py": "2c105c12aa79201222f43b392415561b06f8f390c335f828552e9e59ae1fe59a",
+  "repro/numeric_helpers.py": "2eb967f2039fc30b7e47f43204c4cc89b89d79866c0833f29e68c2800120561e",
+  "repro/official_eval.py": "0163ad04b6cd6d66e98b3965f8b53318383567f9bc015a713fcdbf691e157228",
+  "repro/run_ablation.py": "33857a0290df51b77ba818b6331f2caa6e6851d7db46db2a2213260aed526dff",
+  "repro/runner.py": "69c7d60c38d1fce440e4fd6597c87c3b02e82d0a9f9b9c7c41cc2b2d2ebcdd8f",
+  "repro/score_ablation.py": "fa2f6844b3c209a1569f88505e653c06a466a2fb8b50f3711800728d27dd20e0",
+  "repro/score_fin250.py": "f1278367021243746a87aed4cca94aae0f79826c6f05fc37915c142555ae0fb9",
+  "repro/score_pure.py": "9a4fa0fc68a3153b37c9bbeb6d0314cd91926a6a38ce93ec8d5d4722a5cc0f9f",
+  "repro/scoring.py": "b85e8e90733ba2bb76ac89ba91fb567619f9f6399c29ab2ebe4dd29e983bac1b",
+  "repro/ssc_baseline.py": "b07a843ceb9a86cdb8e1cb9e58812680fed854dab80b36cc12210623b3bd9079",
+  "evid36/__init__.py": "e0c80ff14a12ba6a0353098e79eedf4be08383b0a146a157caa7b1d266016abc",
+  "evid36/evid_integrated.py": "97a54678e98b47ff053d0c1c4e13637244ce03ec79e137fc06a203b4e6c3946b",
+  "evid36/fact_first.py": "e9002412d3504d724cd8bfd96323c0def3e8e76a0e7e72b9ed3f3eb6e971d50a",
+  "evid36/fact_protocol.py": "b62c10c48dc708e3dc373cd5ee13ef1ab852edf1089550182e07cd727d534de7",
+  "evid36/variant.py": "8bf933f3db47c970d9d73a2991cbbfdef52726e5eb73fca76c862524ddb22df6",
+  "datasets/zh_opt16_v36/manifest.json": "7377acfdb2594d492b70834021ca843c7388cc14d26abc8bbef55483e95a9f8c",
+  "datasets/zh_opt16_v36/eval.jsonl": "996ae55137cf0b11ec891e68f46d5c3caeb19314513fda28fae1347bcee658d8",
+  "datasets/zh_opt16_v36/runtime.jsonl": "dd6d76ab7be31612518ca17189ff453a91e1af9e533ed4146b964f9c945f8948",
+  "datasets/zh_tableeval/images/ZH002.png": "3630fcfcf416e2375ff2328cf9f6deed016ab73b7d6cdd3c69e64b637ccd434c",
+  "datasets/zh_tableeval/images/ZH001.png": "f404617efdc7dc17afe08e2d945ff04634b5a4f9f4eb81fa821ac4e18bb8f342",
+  "datasets/zh_tableeval/images/ZH003.png": "04b6c3d73f35d4aff3eeb44c8c8350215bd68c5d6989f6fc056f6f763ae71d10",
+  "datasets/zh_tableeval/images/ZH005.png": "e2645e827f575c66c7740cc03d7d5c209735065df7ee726262f5609c28f1cbf1",
+  "datasets/zh_tableeval/images/ZH007.png": "60486312936d5281bcccb578c19eb75660ea8fb1111ebe663d9dcde127274b8f",
+  "datasets/zh_tableeval/images/ZH006.png": "b34d9a5c47cc75227bdad488f03caa1f41f8d26dec05f7364f6875856f09aa09",
+  "datasets/zh_tableeval/images/ZH008.png": "3e0317457900f05479debe9c1f06aa5ea8f5f870afb3d9d29198444dfedf52a7",
+  "datasets/zh_tableeval/images/ZH010.png": "1c62bfd90eee30278748a71e7c4272d10eba5daf39b4a0571ace0eedf1ed38a6",
+  "datasets/zh_tableeval/images/ZH012.png": "d362c0bce64d3c13be5668a5feb084bf94a0db968b9ba3e177ae06719e96a911",
+  "datasets/zh_tableeval/images/ZH011.png": "8a9133fa8fa27506c33608cd57f213585867713a7327fa5b01abe22c391e5666",
+  "datasets/zh_tableeval/images/ZH013.png": "49250235de9d085e314f3efab0ba4632542852c72d23fcbfb9419e0174ae38bb",
+  "datasets/zh_tableeval/images/ZH015.png": "acc0c937a0d93dd4184790d7076b63b13900d66bbae2d0fbe65d37364fa0a0e3",
+  "datasets/zh_tableeval/images/ZH017.png": "d8f5ae300efcfa3c685e9ac44def08f91695191115b1438dc9d76463defc1f7d",
+  "datasets/zh_tableeval/images/ZH016.png": "d685cf5f35baee0a6f89c9c057cbc26d3dac25410915a38f25cc2908fe281b00",
+  "datasets/zh_tableeval/images/ZH018.png": "2b04f06e39055c018fff742440da70d2947700c8f1ce0280ac1e6976f1260bfd",
+  "datasets/zh_tableeval/images/ZH020.png": "3ecb724be4d536967ff2f8d5e0a7e9d514d62e47b7f4920f4af79604773cfcea"
+ },
+ "e2e_arms": [
+  "evid",
+  "ssc"
+ ],
+ "prompt_variant": "36",
+ "python": "3.14.7 | packaged by Anaconda, Inc. | (main, Aug 14 2026, 10:12:46) [MSC v.1942 64 bit (AMD64)]",
+ "protocol": "e2e independent initials; shared frozen answer+reason; max 2 repairs; model judgment separate from structural outcome",
+ "sha256": "b8e70db18ba0d721b43bc065168e8bec6e3f713f66f58a3132e6ed4f1e56a160"
+}

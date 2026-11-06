@@ -1,0 +1,61 @@
+{
+  "caller_adaptation": "close image file after reading; transport wrapper adds receipts and bounded retries, never alters model prompts or score definitions",
+  "method": "methods/evid36 unchanged bytes",
+  "source_directory": "<internal-root>",
+  "files": [
+    {
+      "original_sha256": "e9eb11f68b1d58269a7589758f2c0dbd49f7a7099dec5d76441047f9b8b7fc34",
+      "original": "<internal-root>",
+      "target": "caller.py",
+      "copied_sha256": "f29bae3273c085fc4c24017a07406648f2de8a626bfa5d9fa39b94e6c414020a"
+    },
+    {
+      "original_sha256": "a032861e40865548e3692238b584de418b6d1e564127a8d0eab5f84b1386388b",
+      "original": "<internal-root>",
+      "target": "common.py",
+      "copied_sha256": "a032861e40865548e3692238b584de418b6d1e564127a8d0eab5f84b1386388b"
+    },
+    {
+      "original_sha256": "10daad954118f9205bf437bdecd3ebf64cba296620d72349c0f2cf42713a39a2",
+      "original": "<internal-root>",
+      "target": "display_scoring.py",
+      "copied_sha256": "10daad954118f9205bf437bdecd3ebf64cba296620d72349c0f2cf42713a39a2"
+    },
+    {
+      "original_sha256": "961d3b9fa903aec5de80af2aa853e41e98ebc7efafefd300eabaff97c7ca421f",
+      "original": "<internal-root>",
+      "target": "evaluate.py",
+      "copied_sha256": "961d3b9fa903aec5de80af2aa853e41e98ebc7efafefd300eabaff97c7ca421f"
+    },
+    {
+      "original_sha256": "541c680cbd5a9cefb5e5d563cf5800f182e45e2bd9effa6ca67f412c3a333943",
+      "original": "<internal-root>",
+      "target": "experiment.py",
+      "copied_sha256": "541c680cbd5a9cefb5e5d563cf5800f182e45e2bd9effa6ca67f412c3a333943"
+    },
+    {
+      "original_sha256": "53c83baf7edd83934ab70c5f338336f5e12a7b7c62f68bc1bfb2193f42855a0e",
+      "original": "<internal-root>",
+      "target": "json_helpers.py",
+      "copied_sha256": "53c83baf7edd83934ab70c5f338336f5e12a7b7c62f68bc1bfb2193f42855a0e"
+    },
+    {
+      "original_sha256": "476f8aac13fe234d01483be72129b3f6b636e72fd12ab2d2c1083738f82cb24e",
+      "original": "<internal-root>",
+      "target": "numeric_helpers.py",
+      "copied_sha256": "476f8aac13fe234d01483be72129b3f6b636e72fd12ab2d2c1083738f82cb24e"
+    },
+    {
+      "original_sha256": "c956fb4328756c5a04fbacfce6d697ef41b5e3c94332c40124dd3228aa8ddb1b",
+      "original": "<internal-root>",
+      "target": "scoring.py",
+      "copied_sha256": "c956fb4328756c5a04fbacfce6d697ef41b5e3c94332c40124dd3228aa8ddb1b"
+    },
+    {
+      "original_sha256": "c137ffd109adcd315a007efe4728e60d98b2d5642aa3673cc500e96149ba4c11",
+      "original": "<internal-root>",
+      "target": "ssc_adapter.py",
+      "copied_sha256": "c137ffd109adcd315a007efe4728e60d98b2d5642aa3673cc500e96149ba4c11"
+    }
+  ]
+}

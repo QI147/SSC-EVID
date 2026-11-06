@@ -1,6 +1,6 @@
 {
  "NEW271": {
-  "image": "C:\\Users\\Lenovo\\Desktop\\证据驱动修复架构\\D10\\01_代码\\53_实验四消融\\datasets\\mixed400\\images\\NEW271.jpg",
+  "image": "datasets/mixed400/images/NEW271.jpg",
   "size": [
    1024,
    322
@@ -39,7 +39,7 @@
   "note": "示意框仅为显示层标注；原图像素未修改；未增删表内文字"
  },
  "NEW365": {
-  "image": "C:\\Users\\Lenovo\\Desktop\\证据驱动修复架构\\D10\\01_代码\\53_实验四消融\\datasets\\mixed400\\images\\NEW365.jpg",
+  "image": "datasets/mixed400/images/NEW365.jpg",
   "size": [
    1024,
    302

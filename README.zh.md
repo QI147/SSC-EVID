@@ -16,8 +16,8 @@
             └─ 最终复核：只有「判对 + 引用有效 + 无未决项」才交付
 ```
 
-* `evid36/` 是**方法本体**，三个文件、只用标准库、不做任何 I/O，与产出论文数据的版本逐字节一致
-  （MD5 见 `evid36/README.md`）。
+* `evid36/` 是**方法本体**，只用标准库、不做任何 I/O；默认 `EVID_PROMPT_VARIANT=36`
+  即产出论文数据的契约（可选变体与 MD5 口径见 `evid36/README.md`）。
 * `repro/` 是实验脚手架：传输、冻结、三种试次、基线、消融臂、评分。
 * `results/` 是逐题冻结结果，`scripts/verify_reported_numbers.py` 用它复算论文里的 56 个数字。
 
@@ -62,9 +62,9 @@ python scripts/verify_reported_numbers.py    # 56/56 项与论文一致
 
 1. ~~选许可证~~ 已定：**MIT**，见 `LICENSE`。第三方材料不在此授权范围内（`NOTICE.md`）。
 2. **补作者信息**：`CITATION.cff` 已填 `Qi, Kai`；ORCID 与单位留空，未替你猜。
-3. **图片是否入库**：默认 `.gitignore` 排除 `datasets/*/images/`；若要公开图片，先按 `docs/data.md`
-   核对各来源许可（TableVQA-Bench 声明 CC-BY-4.0，FinQA 为 MIT，原始财报图像需另行判断），
-   并考虑 Git LFS（约 90 MB）。
+3. ~~图片是否入库~~ 已定：**不入库**。`.gitignore` 排除 `datasets/*/images/` 与
+   `datasets/_raw/`（TableEval 原始转储约 30 MB）；每行 `runtime.jsonl` 带图片 SHA256，
+   按 `docs/data.md` 的来源自行导入。若要改主意，先核对各来源许可并考虑 Git LFS。
 4. **SSC 作者代码**：未随仓库分发（未找到许可证）。公开仓库保持 `vendor/ssc_author/` 为空，
    需要 SSC 对照臂的复现者自行放置 `prompts.py` 与 `parser.py`。
 5. **论文草稿是否入库**：`paper/` 目前只放图与图数据，没有放正文，避免双盲评审时泄露作者身份。
@@ -72,13 +72,29 @@ python scripts/verify_reported_numbers.py    # 56/56 项与论文一致
 
 ## 六、与内部实验目录的关系
 
-* 方法是 36 版；`evid36/` 与内部 `methods/evid36` 逐字节相同。
-* 仓库只保留支撑论文主张的实验：端到端、共同初态修复、FinTabNetQA 250、等预算独立投票、五臂模块消融。
+* 方法是 36 版；`evid36/` 与内部 `methods/evid36` 内容一致（仅 CRLF→LF 行尾差异，
+  MD5 说明见 `evid36/README.md`）。默认 `EVID_PROMPT_VARIANT=36` 即论文契约。
+* 论文五个实验包的**源码**已归档到 `experiments/paper/`（51/52/54/55/59），
+  私有端点与本机绝对路径已替换为占位符；约 1 GB 的调用流水、receipts、
+  内部数据树仍不入库。归档源码用于溯源，真正可跑的是根目录 `repro/` + `scripts/`。
 * 未包含：44/50 版扩展、P1/P2/P3 未执行设计、附录 B 的「带自身历史重读」、
   已被 59 取代的 56/57/58、未执行的 60。逐项原因见 `docs/scope.md`。
-* 内部路径、私有端点、凭据路径已全部参数化；`runs/`、`reports/`、图片、调用流水默认不入库。
+* 论文正文（含作者信息与致谢）不入库；`paper/` 只放图、图数据与重绘脚本。
 
-## 七、引用
+## 七、论文快照之后新增的实验
+
+| 位置 | 内容 | 结论边界 |
+|---|---|---|
+| `experiments/zh_opt16/` | 2026-11-05 中文优化试点：16 题、v36/v40/v41 三个提示契约、冻结逐题输出与审查记录 | **优化材料，不是留出测试**，不得用于显著性结论 |
+| `datasets/zh_opt16_v36/`、`_v40/`、`_v41/` | 同一 16 题的三份清单（逐字节相同，仅目录名不同） | 图片按 SHA256 引用，不随仓库发布 |
+| `datasets/zh_tableeval*`、`vtabfact250*`、`vwtqsyn250*`、`*_dsflash*`、`*_qwen*` | 中文 TableEval 200 题、两个合成 TableVQA 分片、第二模型与提示变体子集 | 清单与金标入库，图片不入库 |
+| `reports/*.json` | 第二模型端到端、格式鲁棒性的冻结汇总 | 仅这三份 JSON 放行，其余 `reports/` 输出仍忽略 |
+
+新实验不改变 `evid36/` 与 `results/`；`python -m unittest discover -s tests` 和
+`python scripts/verify_reported_numbers.py` 仍只校验论文数字。许可与来源见
+`docs/data.md`，命令映射见 `docs/experiment-map.md`。
+
+## 八、引用
 
 投稿前请补全 `CITATION.cff`；论文正文中的表 2–5 与本仓库 `results/` 一一对应，
 `scripts/verify_reported_numbers.py` 会在数字被改动时直接报错。

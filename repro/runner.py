@@ -32,6 +32,7 @@ from . import config
 from . import ssc_baseline as SSC
 from evid36 import evid_integrated as E36
 from evid36 import fact_first as F36
+from evid36.variant import VARIANT as PROMPT_VARIANT
 
 ROOT = C.ROOT
 MODEL = {"name": None, "temperature": 0, "thinking": False, "max_tokens": 1200, "retry": 0}
@@ -200,6 +201,8 @@ def snapshot(dataset):
              "thinking": config.ENABLE_THINKING, "max_tokens": config.MAX_TOKENS,
              "retry": config.RETRY}
     obj = {"dataset": dataset, "n": n, "model": model, "limits": LIMITS, "files": files,
+           "e2e_arms": sorted(config.E2E_ARMS) or "all",
+           "prompt_variant": PROMPT_VARIANT,
            "python": sys.version,
            "protocol": ("e2e independent initials; shared frozen answer+reason; max 2 repairs; "
                         "model judgment separate from structural outcome")}
@@ -349,30 +352,41 @@ def ssc_initial(item, invoke):
 
 
 def run_e2e(item, invoke, with_ssc=True, with_evid=True):
-    direct = invoke("DIRECT", "answer_once", DIRECT, "Question: " + item["question"], item["image"])
-    first = invoke("REREAD2", "read1", DIRECT, "Question: " + item["question"], item["image"])
-    a = text_answer(first)
-    second = invoke("REREAD2", "read2", REREAD,
-                    json.dumps({"question": item["question"], "previous_answer": a}, ensure_ascii=False),
-                    item["image"])
-    b = text_answer(second)
+    """Run the end-to-end arms.
+
+    ``config.E2E_ARMS`` (env ``EVID_E2E_ARMS``) restricts the executed arms.  It
+    exists for the cross-model replication, where only the two arms under test
+    (SSC, EVID) are re-run on the second backbone; every other arm is absent
+    from the record rather than filled with a zero.
+    """
+    requested = config.E2E_ARMS
     record = {"sample_id": item["sample_id"], "dataset": item["dataset"],
-              "initials": {"DIRECT": {"answer": None}}, "arms": {}, "initial_calls": {}}
-    record["initials"]["DIRECT"] = {"answer": text_answer(direct)}
-    record["arms"]["DIRECT"] = {"answer": text_answer(direct),
-                                "status": "ANSWERED" if text_answer(direct) is not None else "UNSUBMITTED",
-                                "calls": [direct]}
-    record["initials"]["REREAD2"] = {"answer": a}
-    record["arms"]["REREAD2"] = {"answer": b if b is not None else a,
-                                 "status": "REREAD" if b is not None else "FALLBACK_READ1",
-                                 "calls": [first, second]}
-    if with_ssc:
+              "initials": {}, "arms": {}, "initial_calls": {}}
+    if not requested or "direct" in requested:
+        direct = invoke("DIRECT", "answer_once", DIRECT, "Question: " + item["question"], item["image"])
+        record["initials"]["DIRECT"] = {"answer": text_answer(direct)}
+        record["arms"]["DIRECT"] = {"answer": text_answer(direct),
+                                    "status": "ANSWERED" if text_answer(direct) is not None else "UNSUBMITTED",
+                                    "calls": [direct]}
+    if not requested or "reread2" in requested:
+        first = invoke("REREAD2", "read1", DIRECT, "Question: " + item["question"], item["image"])
+        a = text_answer(first)
+        second = invoke("REREAD2", "read2", REREAD,
+                        json.dumps({"question": item["question"], "previous_answer": a},
+                                   ensure_ascii=False),
+                        item["image"])
+        b = text_answer(second)
+        record["initials"]["REREAD2"] = {"answer": a}
+        record["arms"]["REREAD2"] = {"answer": b if b is not None else a,
+                                     "status": "REREAD" if b is not None else "FALLBACK_READ1",
+                                     "calls": [first, second]}
+    if with_ssc and (not requested or "ssc" in requested):
         initial, ssc_resp = ssc_initial(item, invoke)
         ssc = SSC.finish(item, initial, invoke) if initial else {"answer": None, "status": "INITIAL_MISSING", "calls": []}
         record["initials"]["SSC"] = initial
         record["arms"]["SSC"] = ssc
         record["initial_calls"]["SSC"] = ssc_resp
-    if with_evid:
+    if with_evid and (not requested or "evid" in requested):
         evid_initial, evid_record = F36.initial(item, invoke)
         evid = E36.run(item, evid_initial, invoke) if evid_initial else \
             {"answer": None, "status": "INITIAL_MISSING", "calls": []}

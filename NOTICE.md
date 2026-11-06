@@ -24,6 +24,10 @@ image.
   text are included.
 * **FinTabNet / SEC filings** — the original financial table images derive from public
   company filings; redistribution terms should be reviewed before publishing images.
+* **TableEval** (`zh_tableeval*` and `zh_opt16_*` cohorts) — `wenge-research/TableEval`,
+  `TableEval-test.jsonl`, declared Apache-2.0; cite Zhu et al., EMNLP 2025. Only the
+  question text, gold answers, rendered-image hashes and manifests are included;
+  neither the rendered images nor the upstream dump are redistributed.
 
 If you add images to this repository, you are responsible for the licence that applies
 to them; `scripts/import_images.py` only checks hashes.

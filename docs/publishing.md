@@ -11,8 +11,8 @@ in `CITATION.cff` filled with the name only. What is left is below.
 | Licence | **done — MIT**; swap the file if you change your mind | `LICENSE` |
 | Authors | add ORCID / affiliation (currently name only) | `CITATION.cff` |
 | Repository URL | **done — `QI147/SSC-EVID`** | `CITATION.cff` |
-| Double-blind | keep `paper/` to figures only (current state); do not add the manuscript or acknowledgements | `paper/` |
-| Images | default is excluded. If you publish them, check the per-source terms and use Git LFS | `docs/data.md`, `.gitignore` |
+| Double-blind | keep `paper/` to figures only (current state); do not add the manuscript or acknowledgements. The archived experiment source in `experiments/paper/` contains no author identity | `paper/`, `experiments/paper/` |
+| Images | **decided — excluded**; manifests carry SHA256, `datasets/_raw/` excluded too | `docs/data.md`, `.gitignore` |
 | SSC code | leave `vendor/ssc_author/` empty; the arm is optional | `NOTICE.md` |
 | Secrets | confirm `.env` is untracked, no key in history | `git status`, `git log -p` |
 

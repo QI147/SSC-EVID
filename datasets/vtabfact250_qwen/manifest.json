@@ -1,0 +1,16 @@
+{
+  "n": 250,
+  "unique_images": 224,
+  "unique_tables": 224,
+  "answer_distribution": {
+    "0": 120,
+    "1": 130
+  },
+  "source_counts": {
+    "vtabfact": 250
+  },
+  "runtime_sha256": "ff52028e75a4cb9b04d809ef4ec6d197ab5c8e34498a70ae9ef13af30037b824",
+  "eval_sha256": "07bba7f82f32d0d810879f3f44efe844d8048fdf2a5b6ff5c828850e52b1ba6d",
+  "scope": "public benchmark subset; frozen before any model run; not used for prompt or branch selection",
+  "built_from": "huggingface:terryoo/TableVQA-Bench:vtabfact"
+}

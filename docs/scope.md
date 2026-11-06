@@ -14,6 +14,9 @@ paper, plus the code needed to re-run it.
 | Independent vote to a per-item token target | controls “is the gain just more reading?”, §6.2 | `repro/runner.py::pure_trajectory` |
 | Five-arm module ablation | tests each module end to end, table 5 | `repro/ablation.py` |
 | Frozen per-question tables | lets a reviewer recompute all reported numbers | `results/` |
+| Archival source of the five paper packages | shows exactly which runner, scorer and protocol produced each table | `experiments/paper/` |
+| Chinese optimisation pilot (16 items, v36/v40/v41) | post-paper diagnosis, explicitly **not** a held-out test | `experiments/zh_opt16/`, `datasets/zh_opt16_*` |
+| Later cohorts' manifests and frozen summaries | second-backbone and Chinese-cohort runs | `datasets/`, `reports/*.json` |
 
 ## Excluded, with reasons
 
@@ -28,9 +31,27 @@ paper, plus the code needed to re-run it.
 | Pilot packages 13–43 | development history, no claim depends on them | internal archive |
 | Images, full call ledgers | size and licences; manifests + hashes are shipped instead | private archive |
 
+## Post-paper additions
+
+The source of packages 51/52/54/55/59 is now archived in `experiments/paper/`
+(67 files, ~600 KB): top-level `*.py`, protocols, freeze files, design notes and
+SHA256 provenance. Their `runs/`, `reports/`, `datasets/`, `methods/` and
+`vendor/` trees — about 1 GB — are still excluded, as are the packages that
+support no claim. Private endpoints and absolute machine paths were redacted
+before archiving; the archival code is readable provenance, not a runnable
+harness.
+
+`experiments/zh_opt16/` is a 16-question Chinese optimisation pilot with three
+prompt contracts. It is **not** a held-out evaluation, was selected without
+looking at model outcomes, and must not be quoted as a significance result. Its
+datasets live in `datasets/zh_opt16_v36|v40|v41/`; its frozen outputs live in
+`experiments/zh_opt16/results/`. Neither the pilot nor the archived source is
+read by `scripts/verify_reported_numbers.py`.
+
 ## Differences from the internal packages
 
-The method is byte-identical (`md5` recorded in `evid36/README.md`). The harness was
+The method's content is byte-identical to the internal source (CRLF→LF line
+endings only; `md5` notes in `evid36/README.md`). The harness was
 edited where a private value would have leaked or a path would not exist on another
 machine:
 

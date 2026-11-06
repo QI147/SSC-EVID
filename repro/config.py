@@ -11,8 +11,16 @@ from pathlib import Path
 # ---------------------------------------------------------------- model
 MODEL = os.environ.get("EVID_MODEL", "qwen3.8-flash")
 TEMPERATURE = 0
-ENABLE_THINKING = False
-MAX_TOKENS = 1200
+# ``enable_thinking`` is a DashScope-specific field. Endpoints that do not
+# implement it reject the whole request, so it is only sent when explicitly
+# allowed (default: send, preserving the original behaviour).
+ENABLE_THINKING = os.environ.get("EVID_ENABLE_THINKING", "0") == "1"
+SEND_THINKING_FLAG = os.environ.get("EVID_SEND_THINKING", "1") == "1"
+# Provider-neutral form: {"thinking": {"type": "<value>"}}. DeepSeek enables
+# chain-of-thought by default and must be told "disabled" explicitly, otherwise
+# the reasoning trace eats the output budget and ``content`` comes back empty.
+THINKING_BLOCK = os.environ.get("EVID_THINKING_BLOCK", "").strip().lower()
+MAX_TOKENS = int(os.environ.get("EVID_MAX_TOKENS", "1200"))
 RETRY = 0                      # the paper does not retry to success
 
 # ---------------------------------------------------------------- endpoint
@@ -34,7 +42,12 @@ PRICE_OUTPUT = float(os.environ.get("EVID_PRICE_OUTPUT", "2.7"))
 
 # ---------------------------------------------------------------- limits
 # Max real attempts for one logical request (transport failures only).
-TRANSPORT_ATTEMPTS = 3
+# A gateway outage is retried more times than the default without ever being
+# charged to the method's per-item budget (see client.Caller._limit_hit).
+TRANSPORT_ATTEMPTS = int(os.environ.get("EVID_TRANSPORT_ATTEMPTS", "3"))
+# Restrict the end-to-end stage to a subset of arms, e.g. "ssc,evid" for the
+# cross-model replication.  Empty means all four arms (the paper's protocol).
+E2E_ARMS = {a.strip().lower() for a in os.environ.get("EVID_E2E_ARMS", "").split(",") if a.strip()}
 # Max independent re-reads per question in the budget-matched control.
 MAX_READS = 16
 

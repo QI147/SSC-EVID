@@ -35,7 +35,7 @@ table image + question
 
 | Path | Contents |
 |---|---|
-| `evid36/` | **The method**, three modules, byte-identical to the version that produced the paper’s numbers |
+| `evid36/` | **The method**, three modules; the published contract is the default (`EVID_PROMPT_VARIANT=36`), optional switches are documented in `evid36/README.md` |
 | `repro/` | Transport, freeze, trials, baselines, ablation arms, scoring |
 | `scripts/` | Command-line entry points (preflight, run, score, verify, prompt dump) |
 | `datasets/` | Question/image manifests and gold files for the three cohorts (images not included) |
@@ -43,6 +43,9 @@ table image + question
 | `docs/` | Method, reproduction, experiment map, data/licensing, prompts, scope |
 | `tests/` | 32 offline tests: protocol, scoring, ablation parity, full harness with a stub model |
 | `paper/` | Camera-ready figures (SVG/PDF/PNG) and the CSV behind each figure |
+| `paper/scripts/` | Redraw figures 3–6 and S1 from the shipped CSVs (matplotlib, optional) |
+| `experiments/` | Post-paper archives: original source of the five paper experiment packages, and the Chinese optimisation pilot |
+| `datasets/`, `reports/` | Manifests and frozen summaries of the later Chinese / second-backbone cohorts (images excluded) |
 
 Figures carry Chinese labels because the manuscript is in Chinese; `paper/figures/`
 holds each one as SVG, PDF and PNG, and `paper/figure_data/` holds the CSV it was
@@ -139,6 +142,27 @@ python scripts/score_all.py
 harness never spends silently. A request budget is enforced by a file lock shared
 by all shards, and a restart resumes from the ledger instead of re-sampling.
 
+## Added after the paper snapshot
+
+Two archives live under `experiments/` and are deliberately kept out of the
+`results/` tables:
+
+* **`experiments/paper/`** — the original source of the five internal packages
+  behind tables 2a/2b/4/5 and §6.2, with the private endpoint and machine paths
+  redacted. It is provenance, not a second harness; the runnable code is still
+  `repro/` + `scripts/`.
+* **`experiments/zh_opt16/`** — a 2026-11-05 Chinese optimisation pilot on 16
+  questions with three prompt variants (v36 / v40 / v41), including frozen
+  per-question outputs and review notes. **Those 16 items are optimisation
+  material, not a held-out test**; the pilot supports no significance claim and is
+  not part of the paper.
+
+`datasets/` also carries the later cohorts (Chinese TableEval, two synthetic
+TableVQA shards, second-backbone subsets and the 16-item pilot set). Their
+manifests, questions and gold files are included; images are not. `docs/data.md`
+has the licences and `docs/experiment-map.md` maps each new artefact to its
+command.
+
 ## What is deliberately not here
 
 * **Images.** Table images come from public benchmarks with their own licences; the
@@ -146,10 +170,13 @@ by all shards, and a restart resumes from the ledger instead of re-sampling.
   refuses a hash mismatch. See `docs/data.md`.
 * **The SSC author’s source.** No licence was found in that checkout, so the adapter
   loads it from `vendor/ssc_author/` if you provide it.
-* **Internal experiment packages** that do not support a claim in the paper: the
-  44/50 variants, the P1/P2/P3 designs that were never executed, the
-  reread-with-own-history control, and the intermediate pilot packages. `docs/scope.md`
-  lists each one and where its frozen output lives.
+* **The internal experiment trees and their run ledgers.** Source of the five
+  packages that produced the paper's tables is archived in `experiments/paper/`;
+  their ~1 GB of call logs, receipts, absolute paths and private data trees are
+  not. `docs/scope.md` lists the packages that support no claim and were left out
+  entirely (44/50 variants, P1/P2/P3, superseded ablations, pilots 13–43).
+* **The manuscript.** `paper/` stays figures-only; the draft carries author
+  identity and acknowledgements and must not enter a double-blind repository.
 
 ## Licence and citation
 

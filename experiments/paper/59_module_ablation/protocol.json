@@ -1,0 +1,249 @@
+{
+ "experiment": "实验四：完整流程的端到端模块消融（五臂）",
+ "created": "2026-11-03",
+ "status": "authorized-running",
+ "authorized": true,
+ "paid_requests_made": 0,
+ "observation_unit": "每个版本都从表格图像+问题开始，运行到最终答案；以完整 EVID36 为参照，每次只删/换一个模块。不含固定候选回放，不只比较初态，不只跑已知错题。",
+ "replaces": {
+  "paper_main_ablation": "论文正文的原主消融表（58 号端到端作答策略比较）改列补充材料“初态作答策略分析”",
+  "preserved": [
+   "53_实验四消融 的 v1/v2 修复消融与 4A/4B/4C 记录（原文与 results.json 一字不改）",
+   "57_实验四BC_取证与记录消融 的两臂结果与账本",
+   "P0-4 门禁回放（离线固定候选）的来源与结果"
+  ],
+  "forbidden": "不覆盖原始结果文件；不挑选新旧版本中的较高成绩拼表；不把历史 350/325 与本批 FULL 混为同批"
+ },
+ "source_review": {
+  "method": "methods/evid36/{fact_first,evid_integrated,fact_protocol}.py",
+  "call_graph_doc": "01_调用图审查.md",
+  "chain": "事实观察 → 初始作答 → 支持检查 → 缺口动作 → 新证据接入 → 候选生成 → 当前候选复核 → 最终交付",
+  "max_rounds": 1,
+  "no_two_round_driver": true
+ },
+ "arms": {
+  "FULL": {
+   "definition": "完整 EVID36；逐字节复用冻结 36 版方法代码，独立执行完整流程",
+   "removed": [],
+   "kept": [
+    "fact_first.initial",
+    "evid_integrated.run"
+   ],
+   "calls_max": 6
+  },
+  "NO_FACT_FIRST": {
+   "definition": "去事实先行初态：用 GENERIC2 的普通两次读图生成答案与简短推理，替代 事实观察＋基于事实作答；不生成初始结构化事实账本",
+   "removed": [
+    "observe_facts 调用",
+    "基于事实账本的 initial_answer 调用",
+    "初始 evidence 账本"
+   ],
+   "kept": [
+    "支持检查",
+    "定向取证",
+    "候选生成",
+    "最终复核"
+   ],
+   "compat": [
+    "空初始账本：检查提示追加两句，允许先记录新的图像观察再判；supporting_ids=[] 不再自动算契约失败",
+    "空账本时引用规则放宽（仅此一处），judgment_issue 的其余四条判定与 FULL 一致"
+   ],
+   "confound": "判 correct 时可零观察通过，比 FULL 的引用要求宽；该比例会单独统计并披露",
+   "second_read_receives": [
+    "question",
+    "previous_answer",
+    "previous_reasoning"
+   ],
+   "calls_max": 6
+  },
+  "GENERIC_ACQ": {
+   "definition": "去定向动作：初态与检查同 FULL；发生有效缺口时，把 E36.ACQUIRE+ACTION+DIRECTIVES[action] 换成通用重新观察提示",
+   "removed": [
+    "按缺口类型选择的动作专用指令（ACTION 行与 7 条 DIRECTIVES）"
+   ],
+   "kept": [
+    "原图",
+    "问题",
+    "当前答案",
+    "检查上下文（analysis/gap/verdict）",
+    "证据接入",
+    "候选生成",
+    "复核"
+   ],
+   "residual_direction": "通用提示的数据段仍含检查给出的 gap.target 与 analysis，属于残留定向信息，不隐瞒",
+   "calls_max": 6
+  },
+  "NO_ACQ": {
+   "definition": "去新增取证：初态与检查同 FULL；需要修复时跳过新增观察，候选生成只用原图、初态记录与检查意见",
+   "removed": [
+    "acquire_* 调用",
+    "新证据 a1.. 的接入"
+   ],
+   "kept": [
+    "初态",
+    "支持检查",
+    "候选生成",
+    "最终复核"
+   ],
+   "compat": [
+    "REPAIR/RECHECK 各追加一句：本次未取证，账本只有初始观察，无 a ID"
+   ],
+   "rules": [
+    "不生成虚假新 ID",
+    "证据不足时候选可以不通过复核，记录具体原因",
+    "不放宽 FULL 的通过标准"
+   ],
+   "note": "检验的是“新增取证及其后续影响”，不是单纯少一次调用",
+   "calls_max": 5
+  },
+  "NO_GATE": {
+   "definition": "去最终复核：初态、检查、定向取证、候选生成同 FULL；候选通过与 FULL 相同的格式/答案类型/引用存在性校验后直接采纳，不发语义复核",
+   "removed": [
+    "recheck 调用"
+   ],
+   "kept": [
+    "候选结构性校验（verdict/analysis/answer/reasoning/supporting_ids/changed_without_incorrect/unresolved）"
+   ],
+   "rules": [
+    "完整在线流程，不是历史固定候选的离线回放",
+    "不删除候选合法性校验",
+    "不改早停",
+    "不改取证提示"
+   ],
+   "calls_max": 6
+  }
+ },
+ "not_included": {
+  "no_record_arm": "暂不做“去证据账本”：账本与检查、引用、复核耦合，直接删除会同时改变多个模块；如以后研究记录形式，另立“结构化记录 vs 等内容文本”实验",
+  "no_new_modules": "不加入 44/50 版的必要性、可靠性、敏感性模块；不升级模型"
+ },
+ "datasets": {
+  "mixed400": "原混合400，题目/图像/参考答案/固定分母不变",
+  "numeric400": "原数字400，同上",
+  "overlap": 174,
+  "overlap_rule": "174 题同图、同问、同 ID、同金标；按“图像 SHA256＋问题文本＋实际请求内容”复用完全相同的请求，结果映射回两条逻辑样本，费用只算一次",
+  "pooled": "如报告合池，按 (图像 SHA256, 问题) 去重为 626，并标探索性",
+  "scope_note": "开发数据，不称独立测试；不按某版本是否答对选题、剔除或续跑"
+ },
+ "model": {
+  "name": "qwen3.8-flash",
+  "temperature": 0,
+  "thinking": false,
+  "max_tokens": 1200,
+  "retry": 0,
+  "source": "51/experiment.py 的 MODEL 常量；运行时同时写入 caller 的模块级参数",
+  "endpoint_rule": "从凭据文件读取，不硬编码；冻结记录 scheme/host/path，运行时逐字比对，漂移即拒绝发请求"
+ },
+ "cache": {
+  "identity": "sha256(model|完整提示文本|图像 sha256|max_tokens|temperature|thinking|response_mode)，不含实验臂",
+  "share_rule": "只在实际请求内容完全相同时命中；分支出现差异后不再命中",
+  "record": "每次逻辑请求记 content_key / 是否命中 / 首调 call_id / 首调来源臂 / 真实 call_id / 费用",
+  "billing": "命中不重复计费；真实费用单独汇总",
+  "forbid": "禁止按正确性决定复用或重新请求"
+ },
+ "caps": {
+  "per_item": 6,
+  "per_item_by_arm": {
+   "FULL": 6,
+   "NO_FACT_FIRST": 6,
+   "GENERIC_ACQ": 6,
+   "NO_ACQ": 5,
+   "NO_GATE": 6
+  },
+  "batch_total": 9000,
+  "retry": 0,
+  "atomic": "文件锁配额，所有分片共享同一计数器；每次真实尝试计数，失败不退还不删账",
+  "money_hard_cap": false,
+  "cap_note": "请求数硬顶不是金额硬闸"
+ },
+ "scoring": {
+  "primary": "原 400 题冻结口径：display_match OR exec_match（evaluate.label）",
+  "sensitivity": "单位归并（去货币符号/千分位/尾部单位词，或按金标小数位取整后相等）",
+  "denominator": "固定 400/题集；未提交与解析失败都留在分母；不因显著性改换主指标"
+ },
+ "statistics": {
+  "preregistered": "4 消融 × 2 题集 = 8 项；各自与 FULL 配对",
+  "test": "双侧精确 McNemar",
+  "multiplicity": "Holm，family size = 8",
+  "interval": "按来源分层、表级聚类 bootstrap 95%，10,000 次，seed 20261103",
+  "assumption_note": "McNemar 视题为独立；表级聚类区间承认同表多题相关，两者假设不同，并列报告",
+  "wording": "不显著不写成等效；不写“模块贡献为零”；单模块消融不证明各贡献可加"
+ },
+ "execution": {
+  "smoke": "授权后先跑预注册前 5 个样本，五臂全覆盖；只看链路、记录、配额、分支，不看金标成绩调提示",
+  "then": "链路符合冻结协议则自动续跑全批，不再重复询问",
+  "defect_rule": "发现方法实现缺陷则保留批次，修复后另建版本，不边改方法边拼结果",
+  "shards": 8,
+  "shard_note": "分片只负责调度，不各自获得完整总预算",
+  "seed_note": "按固定顺序交错运行五臂，记录日期与返回模型名"
+ },
+ "freeze": {
+  "covers": [
+   "arms.py",
+   "run59.py",
+   "score59.py",
+   "protocol（设计字段）",
+   "history_lock.json",
+   "experiment.py",
+   "caller.py",
+   "common.py",
+   "scoring.py",
+   "numeric_helpers.py",
+   "display_scoring.py",
+   "json_helpers.py",
+   "methods/evid36/*.py",
+   "datasets/{mixed400,numeric400}/{runtime,eval}.jsonl",
+   "全部 800 张实际图像",
+   "缓存身份规则",
+   "统计协议",
+   "各阶段单价基准"
+  ],
+  "auth_fields_excluded": [
+   "authorized",
+   "authorized_at",
+   "authorization",
+   "status",
+   "paid_requests_made",
+   "authorization_note",
+   "cap_rationale"
+  ],
+  "why": "先验证再请求；授权开关不应改变方法冻结值"
+ },
+ "secondary_preregistered": {
+  "id": "S1 修复可达子集",
+  "definition": "以模型自己的检查判定为门（check_verdict != correct），不含任何金标信息；在该子集上重算 4 个消融与 FULL 的配对差",
+  "why": "四个模块中的三个只在检查判 incorrect/unknown 时才可能生效；全 400 分母下这些题的占比约 4.6%，主比较的功效因此很低。子集分析预先登记，用于回答“模块在它能起作用的题上是否起作用”，不替代主结果",
+  "rules": [
+   "子集由模型判定定义，不由对错定义",
+   "主结果仍用全 400 分母",
+   "子集结果单独报 n 与区间，不并入主表",
+   "不得在看到结果后改子集定义"
+  ]
+ },
+ "power_note": "按 51 e2e 实测：检查判 correct 约 93%，因此 GENERIC_ACQ / NO_ACQ / NO_GATE 三臂只在约 4.6% 的题上与 FULL 实际分叉。三臂的增量调用少、信息量也少；这是本设计的结构性限制，不因增加样本而改变。",
+ "smoke": {
+  "items": "order 0..4（626 条唯一题里的前 5 条，混合400 开头）",
+  "arms": "五臂全覆盖",
+  "check_only": [
+   "链路是否走完",
+   "账本与收据是否落盘",
+   "配额是否只增不超",
+   "分支是否符合预期"
+  ],
+  "forbidden": "不看金标成绩、不据此调提示",
+  "then": "链路符合冻结协议则自动续跑全批，不再询问"
+ },
+ "data_destination": {
+  "proposed": "D10/01_代码/59_实验四端到端模块消融/runs/main",
+  "external_transfer": false,
+  "contents": "results_s*.jsonl、requests_s*.jsonl、quota.json、infra_incidents.jsonl、worker_s*.log"
+ },
+ "authorized_at": "2026-11-03 14:34 GMT+8",
+ "authorization": {
+  "by": "user",
+  "at": "2026-11-03 14:34 GMT+8",
+  "option": "授权，硬顶 9,000 次",
+  "scope": "800 logical samples (626 unique) x 5 arms; destination 59_.../runs/main; endpoint example.invalid; model qwen3.8-flash T=0 thinking=false max_tokens=1200 retry=0",
+  "cap": 9000
+ }
+}

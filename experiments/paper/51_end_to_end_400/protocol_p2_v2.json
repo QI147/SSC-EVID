@@ -1,0 +1,181 @@
+{
+ "protocol_id": "p2_fixed_diagnostic_prefix_vs_generic_acquisition",
+ "version": "v2-draft",
+ "status": "FROZEN_PENDING_AUTHORIZATION",
+ "authorized": false,
+ "paid_requests_made": 0,
+ "question": "在同一个冻结的检查结论与观察之上，把模型自己诊断出的目标与动作传给取证，是否比“通用重读取证”更有效。",
+ "dataset": "mixed400",
+ "n_tasks": 400,
+ "shared_prefix": {
+  "common": "冻结，不重跑",
+  "check": "冻结，只读，成本单列",
+  "observations_from_check": "两组共用同一份",
+  "check_cost_is_new": false,
+  "action_subset_reference": "reports/p0/p2_action_subset_mixed400.json"
+ },
+ "groups": {
+  "D_diagnosed": "传入模型诊断的原始 gap.target 与 action",
+  "G_generic": "通用重读取证；不传缺口、目标、动作"
+ },
+ "controls_held_equal": [
+  "两组都是结构化证据，使用完全相同的取证JSON契约",
+  "supporting_ids 在 D/G 两组均为必填，校验规则相同，不得只在通用组放宽",
+  "相同的修正提示、支持引用校验与最终复核",
+  "通用组只是不接收缺口/目标/动作作为输入，不因此改变任何输出字段要求"
+ ],
+ "early_stop": {
+  "rule": "初态缺失、检查判correct、检查契约失败 -> 两组同一规则早停；incorrect进入动作；已解析的unknown可进入取证并单独报告",
+  "same_for_both": true,
+  "keeps_both_strata": "初态正确与初态错误都保留在全400主分母内"
+ },
+ "call_budget": {
+  "max_new_calls_per_task_per_group": 3,
+  "breakdown": [
+   "1 次取证",
+   "1 次修正",
+   "1 轮复核"
+  ],
+  "hard_cap_requests": 2400
+ },
+ "both_groups_new": true,
+ "primary_metrics": {
+  "denominator": "完整 400",
+  "metrics": [
+   "final_correct",
+   "W_to_C",
+   "C_to_W",
+   "unsubmitted"
+  ]
+ },
+ "mechanism_metrics": {
+  "requires_independent_annotation": true,
+  "list": [
+   "目标命中",
+   "有效新增观察",
+   "支持充分性",
+   "误拦",
+   "误放"
+  ],
+  "note": "未标注前只报自动流程事实，不写成机制结论"
+ },
+ "affected_subset": {
+  "reported": true,
+  "replaces_primary_denominator": false
+ },
+ "oracle_branch": {
+  "allowed": true,
+  "name": "诊断上界",
+  "definition": "在人工诊断正确的条件下给同一动作",
+  "reporting_rule": "只能叫诊断上界，不得当实际算法成绩；不得只选实际方法修好的题",
+  "status": "optional, separate authorization"
+ },
+ "outputs": {
+  "runs": "runs/mixed400/p2_{group}/",
+  "reports": "reports/p2/"
+ },
+ "budget": {
+  "requests_hard_cap": 2400,
+  "estimated_cost_cny_range": [
+   3.6,
+   6.0
+  ],
+  "estimate_basis": "本次混合400实测单次调用费用均值 0.0014–0.0017，上浮 40% 作估计"
+ },
+ "data_destination": "本机 runs/mixed400/p2_*；不落任何外部存储；账本含提示与响应原文",
+ "denominator_scope": {
+  "full_denominator": 400,
+  "action_eligible_n": 44,
+  "action_eligible_source": "repair2/EVID round 1, unique sample_id",
+  "branch_counts": {
+   "early_stop_check_correct": 350,
+   "action_check_incorrect": 43,
+   "early_stop_initial_missing": 4,
+   "early_stop_check_contract": 2,
+   "action_check_unknown": 1
+  },
+  "subset_file": "reports/p0/p2_action_subset_mixed400.json",
+  "subset_sha256": "58bc5df03fa9d88c86f8f126e3fbbbe3a73065a362a65a79d9f62ef547e9c47f",
+  "rule": "主结果报全400；动作子集另报。不得用跨臂的66/249充当效应上限"
+ },
+ "citation_contract": {
+  "evidence_item_required": [
+   "id",
+   "location",
+   "content",
+   "source"
+  ],
+  "supporting_ids_required_in_both_groups": true,
+  "same_validation_and_final_review": true,
+  "note": "P1普通文本无需ID的规则只属于P1，不能照搬到P2；否则不再是只消融取证动作"
+ },
+ "supersedes": "v1-draft (wrong 66/249 ceiling; relaxed supporting_ids in generic group)",
+ "answer_contract": {
+  "primary": "unit_merged",
+  "primary_rule": "货币符号、千分位、尾部单位词可省略；数值本身必须一致。四组共用同一比较器。",
+  "sensitivity": "strict（仅原 scoring.eval_one）。主结果用 unit_merged，strict 作为敏感性同时报告。",
+  "why": "P0-3 显示原契约把“缺单位”判错，端到端 EVID−SSC 从 +29/+17 降到 +9/−4。若不在 P1 预注册，四组差异会被格式噪声主导。",
+  "evidence": "reports/scoring_audit/contract_sensitivity.json",
+  "forbidden": "不得在看到结果后更换主契约；不得只对某一组放宽。",
+  "applies_to": "两组共享，最终复核与终态判定同源"
+ },
+ "count_question_contract": {
+  "n_mixed400": 87,
+  "rule": "问“多少实体”时必须去重到实体，问“多少行/记录”时按行。口径逐题冻结，不得由模型自行选择。",
+  "known_gold_errors": [
+   {
+    "sample_id": "NEW369",
+    "gold": "2",
+    "verified_answer": "6"
+   },
+   {
+    "sample_id": "NEW158",
+    "gold": "8",
+    "verified_answer": "9"
+   },
+   {
+    "sample_id": "NEW283",
+    "gold": "93",
+    "verified_answer": "94"
+   },
+   {
+    "sample_id": "NEW144",
+    "gold": "2",
+    "verified_answer": "4"
+   },
+   {
+    "sample_id": "NEW224",
+    "gold": "1",
+    "verified_answer": "2"
+   }
+  ],
+  "note": "两处均为逐图核实；错误方向是“把去重后的正确计数判错”。",
+  "evidence": "reports/p0/P0-3_评分契约与答案键审计.md",
+  "verified_correct_gold": [
+   "NEW221",
+   "FQADEV040"
+  ],
+  "verified_note": "已核 7 题：错 5、对 2；87 道计数题中 80 道未核。定向抽样，错误率不可外推。"
+ },
+ "existential_contract": {
+  "n_mixed400": 17,
+  "rule": "存在式问法（任举一队/一个例子）按答案集判定，不得钉单一名称。答案集须在冻结池里显式列出。",
+  "current_defect_example": "NEW118 金标 América Managua；Tauro F.C. 因有一场 0-0 有效却被判 W。",
+  "if_not_enforced": "这 17 题的判错不可解释，且会随臂的措辞偏好波动。"
+ },
+ "gold_verification_gate": {
+  "status": "PARTIAL",
+  "required_before_authorization": [
+   "剩余 80 道计数题逐图核验",
+   "12 条非计数题共识背离裁定",
+   "空金标 3 题的处理规则写入分母说明"
+  ],
+  "empty_gold_samples": [
+   "FQADEV141",
+   "FQADEV094",
+   "FQADEV195"
+  ],
+  "consensus_candidates": 17,
+  "evidence": "reports/scoring_audit/gold_corrected.json"
+ }
+}

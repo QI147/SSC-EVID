@@ -46,6 +46,77 @@ If support is insufficient keep uncertainty explicit, no fabrication.
 Return the JSON directly, no preamble or Markdown. Keep reasoning to two short sentences.
 Do not repeat the evidence list; cite IDs. Keep the complete requested answer and units.'''
 
+# ---------------------------------------------------------------- variant 37
+# Same information, different packaging.  The 36 answer field invites
+# "23.13% increase (from $60,786m in 2008 to $74,843m in 2009)"; a backbone that
+# complies then fails an exact-match scorer even though the value is right.
+# 37 keeps the printed unit (the table's own scale words) and drops everything
+# else, and it makes the answer name the row it used.
+from .variant import VARIANT
+
+OBSERVE_V37 = OBSERVE + '''
+Return at most 10 row tuples. Keep only the cells the answer depends on and put
+the rest of the range in scope/unresolved. If the question's condition selects one
+row, list that row FIRST; do not list unrelated rows as context.'''
+
+ANSWER_V37 = ANSWER.split('Include the full requested answer:')[0] + '''Answer with the value exactly as the table prints it: the number with the unit or
+scale word shown in its header (for example 124 or 23.13%), the entity name, or a
+comma-separated list for a list question. Nothing else in answer: no sentence, no
+parenthesis, no calculation steps, no "approximately", and do not restate the
+condition. Put the qualifiers you would otherwise append into basis_row/reasoning.
+Name the physical row or header the value comes from in basis_row, and make
+supporting_ids point at that row. A numeric lookup and listing matching entities
+are different tasks. Do not substitute counts for lists.
+Do not copy a computational error from prose if auxiliary arithmetic contradicts it.
+Use existing IDs. A candidate may be unverified: if the observation protocol failed,
+read the original image directly and use supporting_ids=[] rather than inventing facts
+or IDs. If no defensible candidate exists, answer:null and disclose why.
+Null/unverified/unbound records are clues only; blank is never numeric zero.
+Return the JSON directly, no preamble or Markdown. Keep reasoning to one short sentence.'''
+
+ANSWER_V37 = ANSWER_V37.replace(
+    '{"answer":"...","reasoning":"brief fact-based explanation",',
+    '{"answer":"value only","basis_row":"physical row or header used",'
+    '"reasoning":"one short sentence",')
+
+if VARIANT == '37':
+    OBSERVE, ANSWER = OBSERVE_V37, ANSWER_V37
+
+# ---------------------------------------------------------------- variant 38
+# 37 removed the 36 unit/magnitude clause along with the narrative and lost the
+# scale words the gold answers carry ("$2,749.3 million" -> "$2,749.3",
+# "-124" -> "124").  38 keeps 36's unit requirement verbatim and bans only the
+# packaging: sentence, parentheses, working, restated condition.
+ANSWER_V38 = ANSWER.replace(
+    '{"answer":"...","reasoning":"brief fact-based explanation",',
+    '{"answer":"...","basis_row":"physical row or header used",'
+    '"reasoning":"brief fact-based explanation",') + '''
+The answer string itself carries the value and its printed unit only: no sentence,
+no parenthesis, no calculation steps, no restatement of the condition, and no
+"approximately". Write a decrease, loss or drop as a negative number instead of the
+word. Anything else you would have appended belongs in basis_row or reasoning.'''
+
+if VARIANT == '38':
+    ANSWER = ANSWER_V38
+
+# ---------------------------------------------------------------- variant 39
+# 38 left two error families on the second backbone: answering a different thing
+# than asked ("above or below" -> "172,000"; "which season" -> "2005"; an office
+# -> the person holding it) and silently rounding (4.74% -> 4.7%).  39 adds the
+# answer-type contract, the row-consistency requirement and a precision rule.
+ANSWER_V39 = ANSWER_V38 + '''
+Respect question_plan.answer_type. A comparison answers exactly one of
+yes/no/above/below/more/less/equal and never the number being compared. An entity
+answer is the entity itself, not the office it holds, the year it refers to or
+another cell of the same row. A count answer is the count, not the listed items.
+The answer must be a value that appears in the row named by basis_row; if it does
+not appear there, choose again before answering.
+Copy the precision printed in the table: do not round 4.74 to 4.7 or 627,442,961
+to 627,443,000.'''
+
+if VARIANT == '39':
+    ANSWER = ANSWER_V39
+
 def number(value):
     if isinstance(value,bool):raise ValueError('boolean is not numeric')
     s=str(value).strip()

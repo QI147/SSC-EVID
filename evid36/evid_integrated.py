@@ -59,6 +59,26 @@ and disclose unresolved obligations. Selection/list answers must stay names/list
 not counts. Do not let missing schema be a reason to invent a different answer.
 Do not add new observations outside the ledger; any new observation needs another
 acquisition which is outside this call's permission. No Markdown or long narrative.'''
+
+# variant 37: the repaired answer obeys the same packaging rule as the initial one.
+from .variant import VARIANT
+if VARIANT == '37':
+    REPAIR = REPAIR + '''
+The answer field follows the initial-answer contract: the value exactly as the table
+prints it (number with its printed unit, entity, or comma-separated list), with no
+sentence, no parenthesis, no calculation steps and no restated condition.'''
+if VARIANT == '38':
+    REPAIR = REPAIR + '''
+The answer field carries the value and its printed unit only: no sentence, no
+parenthesis, no calculation steps, no restated condition and no "approximately".
+Write a decrease, loss or drop as a negative number instead of the word.'''
+if VARIANT == '39':
+    REPAIR = REPAIR + '''
+The answer field carries the value and its printed unit only: no sentence, no
+parenthesis, no calculation steps, no restated condition and no "approximately".
+Write a decrease, loss or drop as a negative number instead of the word. Respect the
+declared answer_type (a comparison answers yes/no/above/below/more/less/equal, never
+the compared number), and copy the precision printed in the table instead of rounding.'''
 RECHECK='''Check the candidate against the question, image and supplied evidence ledger.
 Return ONE compact JSON object:
 {"verdict":"correct|incorrect|unknown","analysis":"brief finding",

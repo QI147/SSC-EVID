@@ -1,0 +1,30 @@
+{
+  "n": 200,
+  "tables": 142,
+  "source_counts": {
+    "tableeval_zh": 200
+  },
+  "scope": "Chinese held-out subset rendered from TableEval markdown tables; single sub-question, exactly one gold answer, answerable, short answer, clean grid render. Composite/multi-answer/refusal items excluded because the frozen scorer compares one string only.",
+  "license": "TableEval is Apache-2.0; cite Zhu et al., EMNLP 2025",
+  "source_repo": "wenge-research/TableEval (TableEval-test.jsonl)",
+  "filter_dropped": {
+    "多答案": 282,
+    "表格不可渲染": 163,
+    "复合子问题": 127,
+    "答案过长": 11,
+    "不可回答": 192
+  },
+  "invalid_tasks": {
+    "表格结构理解": "题目询问合并单元格；干净网格渲染压平了层级/嵌套结构，这些题在渲染后的图像上失去原评测意义，不计入有效评测。"
+  },
+  "valid_task_count": 191,
+  "note": "题目集合与图片在 2026-11-05 定稿后未改动；本字段为事后标注，不触发重抽或重渲染，已跑结果仍可复现。",
+  "seed": 20261105,
+  "task_counts": {
+    "数值分析": 61,
+    "信息查询": 61,
+    "表格推理": 8,
+    "数据分析": 61,
+    "表格结构理解": 9
+  }
+}

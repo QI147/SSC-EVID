@@ -1,0 +1,226 @@
+{
+  "methods": [
+    {
+      "source": "01_代码\\36_EVID稳健记录_候选与核验分离\\evid_integrated.py",
+      "source_sha256": "3a34cdbd91fc5af83908d6751a47bdb13d9482c73a2463bcc88fa82b7b66ff18",
+      "target": "methods\\evid36\\evid_integrated.py",
+      "adaptations": [
+        [
+          "import evid_integrated as E",
+          "from . import evid_integrated as E"
+        ],
+        [
+          "import fact_protocol as P",
+          "from . import fact_protocol as P"
+        ],
+        [
+          "import evidence_rn as RN",
+          "from . import evidence_rn as RN"
+        ]
+      ]
+    },
+    {
+      "source": "01_代码\\36_EVID稳健记录_候选与核验分离\\fact_first.py",
+      "source_sha256": "5cb7bc108b8cfc81f2c04f77e3ebb1047688b0040c46cd4a2368e4c887931cc3",
+      "target": "methods\\evid36\\fact_first.py",
+      "adaptations": [
+        [
+          "import evid_integrated as E",
+          "from . import evid_integrated as E"
+        ],
+        [
+          "import fact_protocol as P",
+          "from . import fact_protocol as P"
+        ],
+        [
+          "import evidence_rn as RN",
+          "from . import evidence_rn as RN"
+        ]
+      ]
+    },
+    {
+      "source": "01_代码\\36_EVID稳健记录_候选与核验分离\\fact_protocol.py",
+      "source_sha256": "5888edc07cfa16b25773ea14f6e65d4746dbe267e40a064057d64ba8a210eb78",
+      "target": "methods\\evid36\\fact_protocol.py",
+      "adaptations": [
+        [
+          "import evid_integrated as E",
+          "from . import evid_integrated as E"
+        ],
+        [
+          "import fact_protocol as P",
+          "from . import fact_protocol as P"
+        ],
+        [
+          "import evidence_rn as RN",
+          "from . import evidence_rn as RN"
+        ]
+      ]
+    },
+    {
+      "source": "01_代码\\50_EVID早期指标与证据接入\\evid_integrated.py",
+      "source_sha256": "ae2d40c474eab862ef9de90311f8d0eb245400c2c555a8b59ab79bd758c60180",
+      "target": "methods\\evid50\\evid_integrated.py",
+      "adaptations": [
+        [
+          "import evid_integrated as E",
+          "from . import evid_integrated as E"
+        ],
+        [
+          "import fact_protocol as P",
+          "from . import fact_protocol as P"
+        ],
+        [
+          "import evidence_rn as RN",
+          "from . import evidence_rn as RN"
+        ]
+      ]
+    },
+    {
+      "source": "01_代码\\50_EVID早期指标与证据接入\\fact_first.py",
+      "source_sha256": "525549b4806d3f035e4b3bf77c1c0fda0cc01d9666049402d9fe1b3f62fe406a",
+      "target": "methods\\evid50\\fact_first.py",
+      "adaptations": [
+        [
+          "import evid_integrated as E",
+          "from . import evid_integrated as E"
+        ],
+        [
+          "import fact_protocol as P",
+          "from . import fact_protocol as P"
+        ],
+        [
+          "import evidence_rn as RN",
+          "from . import evidence_rn as RN"
+        ]
+      ]
+    },
+    {
+      "source": "01_代码\\50_EVID早期指标与证据接入\\fact_protocol.py",
+      "source_sha256": "5888edc07cfa16b25773ea14f6e65d4746dbe267e40a064057d64ba8a210eb78",
+      "target": "methods\\evid50\\fact_protocol.py",
+      "adaptations": [
+        [
+          "import evid_integrated as E",
+          "from . import evid_integrated as E"
+        ],
+        [
+          "import fact_protocol as P",
+          "from . import fact_protocol as P"
+        ],
+        [
+          "import evidence_rn as RN",
+          "from . import evidence_rn as RN"
+        ]
+      ]
+    },
+    {
+      "source": "01_代码\\50_EVID早期指标与证据接入\\evidence_rn.py",
+      "source_sha256": "90dac83f35c9d4792da7d9a6b59011a0b11ae8b377c97072fc419657559e5781",
+      "target": "methods\\evid50\\evidence_rn.py",
+      "adaptations": [
+        [
+          "import evid_integrated as E",
+          "from . import evid_integrated as E"
+        ],
+        [
+          "import fact_protocol as P",
+          "from . import fact_protocol as P"
+        ],
+        [
+          "import evidence_rn as RN",
+          "from . import evidence_rn as RN"
+        ]
+      ]
+    },
+    {
+      "source": "06_相关研究与代码参考\\table-self-correction\\experiments\\src\\prompts.py",
+      "source_sha256": "bb9230b8b6356b5fa9cf8346bcdfec81ff0fe40496e1d89df9dd8a8fcc2bd365",
+      "target": "vendor\\ssc_author\\prompts.py",
+      "adaptations": []
+    },
+    {
+      "source": "06_相关研究与代码参考\\table-self-correction\\experiments\\src\\parser.py",
+      "source_sha256": "932e9bd774bb1b2c7d0eda0d6f12e87eac828bc4b42296bae1caa4a87f96f211",
+      "target": "vendor\\ssc_author\\parser.py",
+      "adaptations": []
+    },
+    {
+      "source": "01_代码\\36_EVID稳健记录_候选与核验分离\\ssc_original_visual.py",
+      "source_sha256": "a254bf3efe6ca9ff037df8b53be580f16b6f907ea78dca5cf71558d8b28973ef",
+      "target": "ssc_adapter.py",
+      "adaptations": [
+        [
+          "Path(__file__).resolve().parents[2]/'06_相关研究与代码参考/table-self-correction/experiments/src'",
+          "Path(__file__).resolve().parent/'vendor/ssc_author'"
+        ],
+        [
+          "item.get('dataset')=='fintabnetqa'",
+          "item.get('dataset') in ('fintabnetqa','finqa_rendered')"
+        ]
+      ]
+    },
+    {
+      "source": "01_代码\\12_统一实验入口\\caller.py",
+      "source_sha256": "84b1005f94577fe868434424dbb42e663e77e7d1354f3c6e5c520041c80b299e",
+      "target": "caller.py",
+      "adaptations": [
+        [
+          "from d11_run import parse_json_block",
+          "from json_helpers import parse_json_block"
+        ],
+        [
+          "CRED_DEFAULT = (r\"<local-runner>\"\n                r\"\\credentials\\bailian.env\")",
+          "CRED_DEFAULT = None"
+        ],
+        [
+          "    p = cred_path or os.environ.get(\"BAILIAN_CRED_FILE\") or CRED_DEFAULT",
+          "    if os.environ.get(\"BAILIAN_BASE_URL\") and os.environ.get(\"BAILIAN_API_KEY\"):\n        return {k:os.environ[k] for k in (\"BAILIAN_BASE_URL\",\"BAILIAN_API_KEY\")}\n    p = cred_path or os.environ.get(\"BAILIAN_CRED_FILE\") or CRED_DEFAULT"
+        ],
+        [
+          "if not os.path.exists(p):",
+          "if not p or not os.path.exists(p):"
+        ],
+        [
+          "\"original_cost_cny\": c.get(\"original_cost_cny\"),",
+          "\"original_cost_cny\": c.get(\"original_cost_cny\"),\n                                  \"finish_reason\": c.get(\"finish_reason\"),"
+        ],
+        [
+          "\"fingerprint\": fp,\n                                 \"response_text\"",
+          "\"fingerprint\": fp,\n                                 \"finish_reason\": c.get(\"finish_reason\"),\n                                 \"response_text\""
+        ],
+        [
+          "\"parsed\": parsed,\n                              \"model_returned\"",
+          "\"parsed\": parsed,\n                              \"finish_reason\": finish,\n                              \"model_returned\""
+        ]
+      ]
+    },
+    {
+      "source": "01_代码\\12_统一实验入口\\scoring.py",
+      "source_sha256": "2632d9577b2dbb17f8e3ad6ff3accb405dda1b60d14ed1ecb9ce5820e138f776",
+      "target": "scoring.py",
+      "adaptations": [
+        [
+          "import common as C",
+          ""
+        ],
+        [
+          "import d11_eval as E",
+          "import numeric_helpers as E"
+        ],
+        [
+          "import runner as RUN",
+          "import numeric_helpers as RUN"
+        ]
+      ]
+    },
+    {
+      "source": "01_代码\\00_核心运行器\\display_scoring.py",
+      "source_sha256": "bc9c3e910920588e7194b371cc922ecb389337f112b0f25515dc8e523c2947cc",
+      "target": "display_scoring.py",
+      "adaptations": []
+    }
+  ],
+  "ssc_redistribution_status": "No LICENSE found in local upstream checkout; keep private pending review",
+  "caller_changes": "credential env portability; cached finish_reason and empty successful text preserved; file handles closed; atomic cache replacement; no prompt or scoring changes; missing usage has unknown cost, never recorded as zero fee"
+}

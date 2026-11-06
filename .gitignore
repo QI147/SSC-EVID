@@ -11,9 +11,14 @@ venv/
 
 # experiment outputs (regenerated; frozen tables live in results/)
 runs/
-reports/
+reports/*
+# frozen summaries of the post-paper runs are shipped; other reports stay local
+!reports/format_robust_ds.json
+!reports/format_robust_qwen.json
+!reports/second_model_e2e.json
 datasets/*/images/
 datasets/*/pure_budget.json
+datasets/_raw/
 vendor/ssc_author/
 
 # os / editor

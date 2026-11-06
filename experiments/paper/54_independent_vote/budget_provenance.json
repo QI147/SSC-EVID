@@ -1,0 +1,23 @@
+[
+ {
+  "dataset": "fin250",
+  "baseline": "<internal-root>",
+  "sha256": "f5dc639e35f6680d84534018180bcb2db835fa9c357616dd85272444b3091a9d",
+  "target_tokens": 1227531,
+  "n": 250
+ },
+ {
+  "dataset": "mixed400",
+  "baseline": "<internal-root>",
+  "sha256": "6c33ae26dd50d75e673491d61d85157ffc52277909881b20f1ff56ed304cad28",
+  "target_tokens": 2726050,
+  "n": 400
+ },
+ {
+  "dataset": "numeric400",
+  "baseline": "<internal-root>",
+  "sha256": "d57d02a868a7c12bee949bb62d2d999e23925be5d8a49895784fa940b16d7b28",
+  "target_tokens": 3016905,
+  "n": 400
+ }
+]

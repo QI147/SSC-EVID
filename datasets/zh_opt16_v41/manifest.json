@@ -1,0 +1,24 @@
+{
+  "n": 16,
+  "tables": 16,
+  "purpose": "optimization; not independent test",
+  "selection": "fixed task round robin; unique source_group; no model outcome selection",
+  "sample_ids": [
+    "ZH002",
+    "ZH001",
+    "ZH003",
+    "ZH005",
+    "ZH007",
+    "ZH006",
+    "ZH008",
+    "ZH010",
+    "ZH012",
+    "ZH011",
+    "ZH013",
+    "ZH015",
+    "ZH017",
+    "ZH016",
+    "ZH018",
+    "ZH020"
+  ]
+}

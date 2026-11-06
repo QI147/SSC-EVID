@@ -1,0 +1,17 @@
+{
+  "n": 200,
+  "tables": 143,
+  "source_counts": {
+    "tableeval_zh": 200
+  },
+  "scope": "Chinese development subset rendered from TableEval markdown tables; single-turn, short answer, clean grid render",
+  "license": "TableEval is Apache-2.0; cite Zhu et al., EMNLP 2025",
+  "seed": 20261105,
+  "task_counts": {
+    "表格结构理解": 40,
+    "信息查询": 40,
+    "表格推理": 40,
+    "数据分析": 40,
+    "数值分析": 40
+  }
+}

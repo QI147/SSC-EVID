@@ -32,8 +32,11 @@ from the same record so the text context and the table cannot drift apart.
 
 ## What is not in git
 
-**Images.** They are ~90 MB across the three cohorts, and their redistribution terms
-differ per source. Instead:
+**Images.** They are ~90 MB across the three paper cohorts plus ~7 MB of Chinese
+renders, and their redistribution terms differ per source. The 30 MB
+`datasets/_raw/TableEval-test.jsonl` upstream dump is also excluded (`_raw/` in
+`.gitignore`); `scripts/build_zh_tableeval.py` rebuilds the Chinese cohort from a
+local copy. Instead:
 
 * every `runtime.jsonl` row carries the SHA256 of the exact image used;
 * `scripts/import_images.py` copies a local image folder into
@@ -52,6 +55,25 @@ The rendered FinQA images can be rebuilt from `REBUILD_SPEC.json` plus
 `rendering.json`; the canvas is 1600 px wide, Arial 21/23 px, 29 px line height. The
 paper used the stored PNGs, not a re-render, so a rebuilt canvas may differ in
 pixels — the recorded SHA is the authority.
+
+## Additional cohorts (post-paper)
+
+These were added after the camera-ready snapshot. They are **not** in the paper's
+tables and are not read by `scripts/verify_reported_numbers.py`.
+
+| Cohort | Items | Origin | Licence / status |
+|---|---:|---|---|
+| `zh_tableeval`, `zh_tableeval_qwen*` | 200 | rendered from `TableEval-test.jsonl` (Chinese markdown tables) | TableEval is Apache-2.0; cite Zhu et al., EMNLP 2025. Images excluded. |
+| `zh_opt16_v36`, `_v40`, `_v41` | 16 each | task round-robin over `zh_tableeval`, one question per table, no model-outcome selection | **optimisation material, not held-out**; the three folders are byte-identical |
+| `vtabfact250`, `vwtqsyn250`, `*_qwen` | 250 each | synthetic TableVQA shards | manifests and gold only |
+| `mixed400_*` / `numeric400_*` (`dsflash`, `qwen38`, variants 37/38/39, `pilot8`) | 8–400 | second-backbone and prompt-contract subsets | manifests and gold only |
+| `fin250`, `mixed400`, `numeric400` | paper cohorts | see above | unchanged |
+
+All of them follow the same rule: `runtime.jsonl` (with `image_sha256`),
+`eval.jsonl` and `manifest.json` are in git; images are not. Frozen summaries of
+the runs are the three JSON files in `reports/` that `.gitignore` explicitly
+re-includes; the rest of `reports/` and all of `runs/` stay local. The 16-item
+pilot's per-question outputs are frozen in `experiments/zh_opt16/results/`.
 
 ## Traceability
 

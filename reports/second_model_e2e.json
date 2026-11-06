@@ -1,0 +1,123 @@
+{
+  "zh_tableeval_qwen": {
+    "dataset": "zh_tableeval_qwen",
+    "n": 200,
+    "arms": {
+      "SSC": {
+        "n": 200,
+        "initial_counts": {
+          "W": 151,
+          "C": 49
+        },
+        "final_counts": {
+          "W": 152,
+          "C": 48
+        },
+        "matrix": {
+          "W->W": 150,
+          "C->C": 47,
+          "W->C": 1,
+          "C->W": 2
+        },
+        "accuracy": 24.0,
+        "corrected": 1,
+        "corrupted": 2,
+        "correct_lost_to_unsubmitted": 0,
+        "repair_rate": 0.006622516556291391,
+        "corruption_rate": 0.04081632653061224,
+        "correct_loss_rate": 0.04081632653061224,
+        "correct_retention_rate": 0.9591836734693877,
+        "net_repair_per_all": -0.005,
+        "correct_final": 48,
+        "correct_initial": 49,
+        "initial_accuracy": 24.5,
+        "by_source": {
+          "tableeval_zh": {
+            "n": 200,
+            "correct": 48
+          }
+        },
+        "cost": {
+          "requests": 417,
+          "input_tokens": 551403,
+          "output_tokens": 113120,
+          "cost_cny_estimated": 0.746559,
+          "known_cost_subtotal_cny": 0.746559,
+          "usage_missing_requests": 0,
+          "finish": {
+            "stop": 407,
+            "length": 10
+          },
+          "http_status": {
+            "ok": 417
+          }
+        }
+      },
+      "EVID": {
+        "n": 200,
+        "initial_counts": {
+          "W": 143,
+          "C": 52,
+          "A": 5
+        },
+        "final_counts": {
+          "W": 142,
+          "C": 53,
+          "A": 5
+        },
+        "matrix": {
+          "W->W": 142,
+          "C->C": 52,
+          "W->C": 1,
+          "A->A": 5
+        },
+        "accuracy": 26.5,
+        "corrected": 1,
+        "corrupted": 0,
+        "correct_lost_to_unsubmitted": 0,
+        "repair_rate": 0.006993006993006993,
+        "corruption_rate": 0.0,
+        "correct_loss_rate": 0.0,
+        "correct_retention_rate": 1.0,
+        "net_repair_per_all": 0.005,
+        "correct_final": 53,
+        "correct_initial": 52,
+        "initial_accuracy": 26.0,
+        "by_source": {
+          "tableeval_zh": {
+            "n": 200,
+            "correct": 53
+          }
+        },
+        "cost": {
+          "requests": 636,
+          "input_tokens": 1515314,
+          "output_tokens": 159180,
+          "cost_cny_estimated": 1.64204,
+          "known_cost_subtotal_cny": 1.64204,
+          "usage_missing_requests": 0,
+          "finish": {
+            "stop": 633,
+            "length": 3
+          },
+          "http_status": {
+            "ok": 636
+          }
+        }
+      }
+    },
+    "comparisons": {
+      "SSC_vs_EVID": {
+        "n": 200,
+        "gained": 14,
+        "lost": 9,
+        "net": 5,
+        "mcnemar_raw": 0.4048728942871094,
+        "source_table_bootstrap95": [
+          -0.024390243902439025,
+          0.07425742574257425
+        ]
+      }
+    }
+  }
+}

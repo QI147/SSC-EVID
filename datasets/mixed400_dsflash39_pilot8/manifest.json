@@ -1,0 +1,12 @@
+{
+ "n": 400,
+ "source_counts": {
+  "vwtq": 226,
+  "fintabnetqa": 174
+ },
+ "tables": 268,
+ "runtime_sha256": "19510607ce5e44e68edf164499b85a81edc33d07f32b1a8ac7a71d47c63c3a4d",
+ "eval_sha256": "0d111161c1af75899cf9409e8cd5669fc0254ca8e8418952a24f7cf5d7d893f4",
+ "scope": "development; source/rendering strata mandatory; not a claim every answer is a number or word",
+ "historical_labels_unchanged": true
+}

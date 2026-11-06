@@ -1,0 +1,21 @@
+{
+ "version":"numeric_mixed400_20261030_v1",
+ "main_evid":"original36",
+ "ablation":"50 repair stage only, not extra end-to-end arm",
+ "data":{"numeric400":"retained financial200 + fixed FinQA dev200 with full original context rendered","mixed400":"retained original174 financial +226 Wikipedia"},
+ "end_to_end":["DIRECT independent answer-only","REREAD2 independent answer-only read1 then unconditional reread","SSC independent author step1 then structured check/correction","EVID36 independent facts-first initial then evidence actions"],
+ "shared_initial":"Independent JSON answer + brief reasoning, no evidence/self-review; all400 outputs frozen before repair. Answer-only historical results not reused.",
+ "repair_arms":["KEEP","SSC","EVID","RR_MATCH","EVID50"],
+ "rounds":2,
+ "early_stop":"Stop after validated correct KEEP; changed answer or unknown may enter round2; incomplete initial remains unsubmitted for all arms.",
+ "ssc":"Author prompts/parser/one-cycle branching unchanged; repeat repair-only cycle at most2 times. If author correction emits no new rationale, mark it unavailable and retain prior error analysis as historical analysis, never pass stale reasoning as a new rationale.",
+ "evidence_memory":"Carry own ledger, scope and uncertainty. Namespace previous round evidence IDs, preserving mapping and raw content; do not share method evidence.",
+ "reread_match":"Same COMMON; match EVID36 logical call count per round, no EVID answers/evidence/gold passed; includes up to8 calls, not forced if EVID early-stops.",
+ "limits":{"e2e_per_dataset":4800,"initial_per_dataset":400,"repair_per_dataset":11200,"all_requests":32800,"money_hard_cap":false},
+ "scoring":"unchanged historical display_match OR exec_match; FinQA answer/exe_ans native references; fixed400 denominator including failures",
+ "metrics":{"repair_rate":"initialW_to_C / initialW","corruption_rate":"initialC_to_W / initialC","correct_loss_rate":"initialC_to_W_or_A / initialC","error_recall":"declared_incorrect_on_initialW / initialW","detection_precision":"TP/(TP+FP)","selective_detection_accuracy":"(TP+TN)/(declared correct_or_incorrect on C/W)","detection_coverage":"declared correct_or_incorrect on C/W divided by C+W","unknown":"separate, never a correct/incorrect classification","wrong_changed_to_wrong":"separate from unchangedW_to_W"},
+ "primary_comparisons":["e2e numeric400 SSC vs EVID","e2e mixed400 SSC vs EVID","repair round2 numeric400 SSC vs EVID","repair round2 mixed400 SSC vs EVID"],
+ "statistics":"exact paired McNemar; Holm over four primary comparisons; source-stratified table-cluster bootstrap; other tests exploratory",
+ "diagnostic_injection":"Separate clearly synthetic diagnostic only; not in natural-error main scores or sample selection.",
+ "publication":"Private preparation only. No automatic GitHub upload. Upstream SSC redistribution permission and source-data rights require review before publishing."
+}

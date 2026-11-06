@@ -1,0 +1,33 @@
+{"sha256": "b8e70db18ba0d721b43bc065168e8bec6e3f713f66f58a3132e6ed4f1e56a160"}
+{"mode": "e2e", "dataset": "zh_opt16_v36", "shard": "0/1", "completed": 16}
+{"merged": 16, "mode": "e2e", "dataset": "zh_opt16_v36"}
+{"sha256": "b8e70db18ba0d721b43bc065168e8bec6e3f713f66f58a3132e6ed4f1e56a160", "drift": []}
+zh_opt16_v36  n=16
+  臂           主评分       宽松     表述损失     宽松-主
+  SSC           4        8        4       +4
+  EVID          6        7        1       +1
+  主评分：EVID−SSC 净 +2（赢 2 / 输 0）  McNemar p=0.5000  区间[+0.00,+31.25]pp
+  宽松：EVID−SSC 净 -1（赢 0 / 输 1）  McNemar p=1.0000  区间[-18.75,+0.00]pp
+
+  任务                n     SSC主    EVID主     SSC宽    EVID宽
+  信息查询              4        0        2        2        2
+  数值分析              4        1        1        2        2
+  数据分析              4        0        0        1        0
+  表格推理              4        3        3        3        3
+{"sha256": "7372ac3fdf854574bc77d56add2cd806627c137c1b95f8efe6e9ea67eefa9750"}
+{"mode": "e2e", "dataset": "zh_opt16_v40", "shard": "0/1", "completed": 16}
+{"merged": 16, "mode": "e2e", "dataset": "zh_opt16_v40"}
+{"sha256": "7372ac3fdf854574bc77d56add2cd806627c137c1b95f8efe6e9ea67eefa9750", "drift": []}
+zh_opt16_v40  n=16
+  臂           主评分       宽松     表述损失     宽松-主
+  SSC           4        8        4       +4
+  EVID          7        7        0       +0
+  主评分：EVID−SSC 净 +3（赢 3 / 输 0）  McNemar p=0.2500  区间[+0.00,+37.50]pp
+  宽松：EVID−SSC 净 -1（赢 0 / 输 1）  McNemar p=1.0000  区间[-18.75,+0.00]pp
+
+  任务                n     SSC主    EVID主     SSC宽    EVID宽
+  信息查询              4        0        2        2        2
+  数值分析              4        1        2        2        2
+  数据分析              4        0        0        1        0
+  表格推理              4        3        3        3        3
+PAID PILOT COMPLETE

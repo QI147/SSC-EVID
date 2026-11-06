@@ -1,0 +1,122 @@
+{
+  "deepseek-v4.1-flash-1017/mixed400": {
+    "SSC": {
+      "n": 400,
+      "frozen": 323,
+      "relaxed": 323
+    },
+    "EVID": {
+      "n": 400,
+      "frozen": 298,
+      "relaxed": 318
+    },
+    "net_frozen": -25,
+    "net_relaxed": -5,
+    "compare_frozen": {
+      "n": 400,
+      "gained": 25,
+      "lost": 50,
+      "net": -25,
+      "mcnemar_raw": 0.0052282430040142824,
+      "source_table_bootstrap95": [
+        -0.1037037037037037,
+        -0.020942408376963352
+      ],
+      "per_source": {
+        "fintabnetqa": {
+          "n": 174,
+          "SSC": 147,
+          "EVID": 147
+        },
+        "vwtq": {
+          "n": 226,
+          "SSC": 176,
+          "EVID": 151
+        }
+      }
+    },
+    "compare_relaxed": {
+      "n": 400,
+      "gained": 26,
+      "lost": 31,
+      "net": -5,
+      "mcnemar_raw": 0.5966417603730826,
+      "source_table_bootstrap95": [
+        -0.04830917874396135,
+        0.023316062176165803
+      ],
+      "per_source": {
+        "fintabnetqa": {
+          "n": 174,
+          "SSC": 147,
+          "EVID": 162
+        },
+        "vwtq": {
+          "n": 226,
+          "SSC": 176,
+          "EVID": 156
+        }
+      }
+    }
+  },
+  "deepseek-v4.1-flash-1017/numeric400": {
+    "SSC": {
+      "n": 400,
+      "frozen": 303,
+      "relaxed": 305
+    },
+    "EVID": {
+      "n": 400,
+      "frozen": 253,
+      "relaxed": 319
+    },
+    "net_frozen": -50,
+    "net_relaxed": 14,
+    "compare_frozen": {
+      "n": 400,
+      "gained": 28,
+      "lost": 78,
+      "net": -50,
+      "mcnemar_raw": 1.251224275151152e-06,
+      "source_table_bootstrap95": [
+        -0.17424242424242425,
+        -0.07785888077858881
+      ],
+      "per_source": {
+        "finqa_rendered": {
+          "n": 200,
+          "SSC": 133,
+          "EVID": 85
+        },
+        "fintabnetqa": {
+          "n": 200,
+          "SSC": 170,
+          "EVID": 168
+        }
+      }
+    },
+    "compare_relaxed": {
+      "n": 400,
+      "gained": 32,
+      "lost": 18,
+      "net": 14,
+      "mcnemar_raw": 0.06490864707227217,
+      "source_table_bootstrap95": [
+        0.0,
+        0.0691358024691358
+      ],
+      "per_source": {
+        "finqa_rendered": {
+          "n": 200,
+          "SSC": 135,
+          "EVID": 128
+        },
+        "fintabnetqa": {
+          "n": 200,
+          "SSC": 170,
+          "EVID": 191
+        }
+      }
+    }
+  }
+}

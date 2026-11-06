@@ -12,6 +12,7 @@ identical prefixes are shared across arms and a deleted module costs nothing ext
 import base64
 import hashlib
 import json
+import mimetypes
 import os
 import time
 import urllib.error
@@ -88,10 +89,15 @@ class Caller:
                     if record.get("reused"):
                         continue
                     init_n += 1
+                    if record.get("status") != "ok":
+                        continue
                     key = (record.get("arm"), record.get("sid"))
                     self.q_count[key] = self.q_count.get(key, 0) + 1
                     arm = record.get("arm") or "*"
                     self.arm_total[arm] = self.arm_total.get(arm, 0) + 1
+        # Only completed exchanges are observations.  An HTTP outage is an
+        # infrastructure event, so it must not consume a role's budget.
+        self.ok_total = sum(self.q_count.values())
         self.batch = batch_state if batch_state is not None else {"real_requests": init_n}
         if batch_state is not None and "real_requests" not in batch_state:
             batch_state["real_requests"] = init_n
@@ -107,10 +113,9 @@ class Caller:
         limit_arm = self.per_arm_total.get(arm, self.per_arm_total.get("*"))
         if limit_arm is not None and self.arm_total.get(arm, 0) >= limit_arm:
             return "per-arm request cap %s reached (%s)" % (limit_arm, arm)
-        if self.batch["real_requests"] >= self.batch_total:
+        if self.ok_total >= self.batch_total:
             return "batch request cap %s reached" % self.batch_total
         return None
-
     def _fingerprint(self, image_sha, prompt, request_scope=None):
         digest = hashlib.sha256()
         for part in (config.MODEL, prompt, image_sha, str(config.MAX_TOKENS),
@@ -166,16 +171,23 @@ class Caller:
         if image_path:
             with open(image_path, "rb") as handle:
                 encoded = base64.b64encode(handle.read()).decode()
+            # Datasets render tables as JPEG; declaring PNG for a JPEG payload is
+            # accepted by some gateways and rejected by others, so the type is
+            # taken from the file extension.
+            mime = mimetypes.guess_type(str(image_path))[0] or "image/png"
             content = [{"type": "image_url",
-                        "image_url": {"url": "data:image/png;base64," + encoded}},
+                        "image_url": {"url": "data:%s;base64,%s" % (mime, encoded)}},
                        {"type": "text", "text": prompt}]
         else:
             content = [{"type": "text", "text": prompt}]
         body = {"model": config.MODEL,
                 "messages": [{"role": "user", "content": content}],
                 "temperature": config.TEMPERATURE,
-                "enable_thinking": config.ENABLE_THINKING,
                 "max_tokens": config.MAX_TOKENS}
+        if config.SEND_THINKING_FLAG:
+            body["enable_thinking"] = config.ENABLE_THINKING
+        if config.THINKING_BLOCK:
+            body["thinking"] = {"type": config.THINKING_BLOCK}
         started = time.time()
         call_id = "%s-%s-%s-%d" % (self.run_id, arm, sid, self.batch["real_requests"] + 1)
         status, error, data = "ok", None, {}
@@ -197,8 +209,12 @@ class Caller:
         if status == "ok" and "prompt_tokens" in usage and "completion_tokens" in usage:
             cost = (usage.get("prompt_tokens", 0) * config.PRICE_INPUT
                     + usage.get("completion_tokens", 0) * config.PRICE_OUTPUT) / 1e6
+        reasoning = ""
         try:
-            text = data["choices"][0]["message"].get("content") or ""
+            message = data["choices"][0]["message"]
+            text = message.get("content") or ""
+            # Some gateways put chain-of-thought here instead of in ``content``.
+            reasoning = message.get("reasoning_content") or ""
             finish = data["choices"][0].get("finish_reason")
         except Exception:
             text, finish = "", None
@@ -215,11 +231,14 @@ class Caller:
                   "prompt_text": prompt,
                   "image_path": (os.path.relpath(image_path, C.ROOT) if image_path else None),
                   "image_sha256": image_sha, "response_text": text,
+                  "reasoning_content": (reasoning[:4000] if reasoning else ""),
                   "json_parse_error": parse_error}
         self.records.append(record)
         self.batch["real_requests"] += 1
-        self.q_count[(arm, sid)] = self.q_count.get((arm, sid), 0) + 1
-        self.arm_total[arm] = self.arm_total.get(arm, 0) + 1
+        if status == "ok":
+            self.ok_total += 1
+            self.q_count[(arm, sid)] = self.q_count.get((arm, sid), 0) + 1
+            self.arm_total[arm] = self.arm_total.get(arm, 0) + 1
         if status == "ok" and (parsed or self.response_mode == "text"):
             self.cache[fingerprint] = {"usage": usage, "response_text": text,
                                        "parsed": parsed,

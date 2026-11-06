@@ -1,0 +1,31 @@
+{
+ "version": "pure_reread_controls_20261102_v4_v5",
+ "scope": "diagnostic only; not part of the main design or the Holm set",
+ "purpose": "separate 'looking at the image again' from 'being shown your previous answer'",
+ "arms": {
+  "v4": {
+   "dir": "runs/<dataset>/rrepure",
+   "prompt": "REREAD_JSON wording (contains the sentence 'The previous answer may be wrong')",
+   "payload": "question only",
+   "freeze": "runs/<dataset>/rrepure/freeze_v4.json"
+  },
+  "v5": {
+   "dir": "runs/<dataset>/rrepure2",
+   "prompt": "neutral: plain answer instruction + JSON output, no mention of any previous answer",
+   "payload": "question only",
+   "freeze": "runs/<dataset>/rrepure2/freeze_v5.json"
+  }
+ },
+ "matching": "per sample and round, same call count as EVID36; nothing else transferred",
+ "model": {"name": "qwen3.8-flash", "temperature": 0, "thinking": false, "max_tokens": 1200, "retry": 0},
+ "post_hoc_readings": {
+  "LAST": "final answer of the last round (arm as implemented)",
+  "MAJORITY": "majority over its own reads, ties to the latest"
+ },
+ "result_summary": {
+  "numeric400": {"initial": 301, "pure_v4_last": 292, "pure_v5_last": 287, "rrmatch": 329, "evid": 325},
+  "mixed400": {"initial": 323, "pure_v4_last": 312, "pure_v5_last": 311, "rrmatch": 335, "evid": 346},
+  "identical_prompt_different_answer": {"numeric400": 45, "mixed400": 23}
+ },
+ "note": "Pure rereading degrades accuracy relative to a single initial answer; the gain of RR_MATCH therefore comes from the feedback loop, not from extra looks at the image."
+}

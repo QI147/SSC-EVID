@@ -51,3 +51,16 @@ counts; FinTabNetQA relieved/exact; vote counts; all five ablation arms on both 
   22–39% depending on the set.
 * The ablation’s null results are reported with the trigger rate; see
   `docs/scope.md`.
+
+## Post-paper results (not part of the 56 checks)
+
+* `experiments/zh_opt16/results/<v>/` — the 16-item Chinese optimisation pilot,
+  three prompt variants: `results_s0.jsonl` (16 rows), `freeze.json`, `quota.json`,
+  `paid_budget.json`, `console.log`. **Not a held-out test**; see
+  `experiments/zh_opt16/README.md`.
+* `reports/format_robust_ds.json`, `reports/format_robust_qwen.json`,
+  `reports/second_model_e2e.json` — frozen summaries of the second-backbone and
+  Chinese-cohort runs. Only these three reports are tracked; the rest of
+  `reports/` and all of `runs/` are regenerable local output.
+
+`verify_reported_numbers.py` deliberately does not read any of these.

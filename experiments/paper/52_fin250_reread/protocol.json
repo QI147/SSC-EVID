@@ -1,0 +1,14 @@
+{
+ "version":"paper_followups_20261030_v1",
+ "authorization":"User explicitly approved experiment1 and experiment3 follow-up paid execution and paper integration in current turn",
+ "endpoint_host":"example.invalid",
+ "model":{"name":"qwen3.8-flash","temperature":0,"thinking":false,"max_tokens":1200},
+ "exp1":{"dataset":"entire250 FinTabNetQA native-image split, fixed upstream order","arms":["REREAD2","original EVID36"],"initials":"independent","logical_request_caps":{"REREAD2":2,"EVID":6},"real_attempt_cap":2000,"scoring_primary":"official relieved accuracy, with official exact also reported","scoring_secondary":"unchanged historical display_match OR exec_match"},
+ "exp3":{"cohorts":["numeric400","mixed400"],"new_arm":"RR_TOKEN","initial":"same frozen COMMON, no regeneration","target":"per-item EVID36 repair prompt_tokens+completion_tokens, excluding COMMON","calls":"unconditional original-image reread, answer and brief reasoning only; model sees no EVID answer/evidence/gap/diagnosis/budget or gold","stopping":"first completed logical request reaching/exceeding target or16 real attempts; known-usage uncertainty stops with disclosure","recorded_states":["last at/below target, COMMON if no call fits","first at/above target if reached","last valid own answer on cap/failure"],"caps":{"per_sample_real_attempts":16,"per_cohort_real_attempts":6400,"both_real_attempts":12800},"statistics":"two follow-up cohort comparisons Holm, old four primary tests unchanged","reporting":"full400 denominator including missing initials, failure and cap; no exact-token or all-row>=budget claim if not reached"},
+ "transport":{"max_additional_retries":2,"eligible":"Timeout/connection/429/5xx only","semantic_retry":false,"failed_attempts":"append-only ledger, never removed or refunded; all count against cap","usage_missing":"cost remains unknown; report known subtotal and count"},
+ "reused_old_records":"read-only copies pinned by hashes; no old run/code/ledger edited",
+ "total_real_attempt_cap":14800,
+ "money_hard_cap":false,
+ "price_estimate_cny_per_million":{"input":0.8,"output":2.7},
+ "paper":"backup prior manuscript; update observed results, official historical comparison in separate block; no claims for unrun ablations or44/50 candidate-context features"
+}

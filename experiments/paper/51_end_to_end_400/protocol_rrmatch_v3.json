@@ -1,0 +1,16 @@
+{
+ "version": "rrmatch_control_20261102_v3",
+ "scope": "repair stage only; added after the two-arm repair batch",
+ "purpose": "test whether EVID36's repair edge survives matching its request count with plain rereads",
+ "arm": "RR_MATCH",
+ "matching_rule": "per sample and per round, perform exactly as many rereads as EVID36 actually made; no access to EVID answers, evidence, labels or verdicts",
+ "inputs": {
+  "common_initial": "runs/<dataset>/initial/results.jsonl (hash-verified)",
+  "call_counts": "runs/<dataset>/repair2/results.jsonl arms.EVID.rounds[].calls (hash-verified)",
+  "freeze": "runs/<dataset>/rrmatch/freeze_v3.json"
+ },
+ "prompt": "unchanged REREAD_JSON: reread the original image, redo the reading, return JSON answer plus brief basis",
+ "limits": {"per_sample": 8, "batch_total": 3200, "both_datasets_actual": 1217},
+ "status": "exploratory; outside the four Holm-corrected primary comparisons",
+ "cost_note": "request-count matched, token/price not matched: EVID prompts carry its evidence ledger, so at equal calls EVID costs more (numeric: same 628 calls, 1.63 vs 1.12 CNY)"
+}

@@ -10,7 +10,17 @@ they were not quietly edited while being packaged.
 | `fact_first.py` | `0e9e98a016800e434a9cd4e1d6f28076` | 138 | observation-first initial answer + explicit calculator |
 | `fact_protocol.py` | `3bd68c8afe3a1d4d8f3f93b5da192f2c` | 148 | compact observation format, strict JSON, loss-aware recovery |
 
-Verify with `md5sum evid36/*.py` (or `certutil -hashfile <file> MD5` on Windows).
+These hashes are for the internal source files, which use CRLF line endings. Git
+stores the same content with LF, so `md5sum` on a clone returns different values;
+compare with `tr -d '\r'` or `git show 38418da:evid36/<file>` instead. The content
+is identical to the internal `methods/evid36`.
+
+The checked-out tree also carries `variant.py` and optional prompt-contract
+switches (37/38/39 here, 40/41 under `experiments/zh_opt16/variants/`), selected
+once at import by `EVID_PROMPT_VARIANT`. The default `36` is the published
+contract; the switches are inert unless the variable is set. With the default,
+`python -m unittest discover -s tests` and
+`python scripts/verify_reported_numbers.py` both pass unchanged.
 
 ## Using it without the harness
 
